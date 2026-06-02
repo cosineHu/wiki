@@ -8,6 +8,12 @@
 .obsidian/appearance.json
 .obsidian/graph.json
 
+# Claudian local config (contains API tokens - NEVER commit)
+.claudian/
+
+# Claude Code / AI agent artifacts
+.claude/
+
 # OS files
 .DS_Store
 Thumbs.db
