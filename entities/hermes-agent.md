@@ -34,8 +34,17 @@ Hermes 拥有丰富的内置 skill 生态，涵盖研究、笔记、开发、媒
 - github/codebase-inspection — 代码库分析
 - email/himalaya — 邮件管理
 
+## 第二大脑集成
+
+[[Hermes Agent]] + [[Obsidian]] 可构建 [[第二大脑（Second Brain）]]，核心包括：
+- [[分层记忆系统]]（L0-L3）
+- [[LLM Wiki（Karpathy 模式）]] 知识摄入
+- 与 [[Dify]]、[[n8n]]、[[Ollama]] 等工具集成
+
 ## 相关
 
 - [[LLM Wiki（Karpathy 模式）]]
 - [[Andrej Karpathy]]
 - [[obsidian-headless]]
+- [[第二大脑（Second Brain）]]
+- [[分层记忆系统]]

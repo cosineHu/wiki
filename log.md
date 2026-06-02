@@ -22,3 +22,16 @@
   - comparisons/rag-vs-wiki.md (RAG vs Wiki 对比)
 - 更新文件:
   - index.md (新增 5 个页面条目)
+
+## [2026-06-02] ingest | Hermes Agent + Obsidian 打造第二大脑系列
+- 来源: https://blog.csdn.net/sgr011215/article/details/160530313
+- 创建文件:
+  - raw/articles/hermes-obsidian-second-brain-2026.md (原始来源)
+  - concepts/second-brain.md (第二大脑概念)
+  - concepts/layered-memory-system.md (分层记忆系统)
+  - entities/dify.md (Dify)
+  - entities/n8n.md (n8n)
+  - entities/ollama.md (Ollama)
+- 更新文件:
+  - entities/hermes-agent.md (补充第二大脑集成交叉引用)
+  - index.md (新增 5 个页面条目)
