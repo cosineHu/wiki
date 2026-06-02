@@ -1,8 +1,7 @@
 # Wiki Schema
 
 ## Domain
-General knowledge base — technology, research, and personal notes.
-(Update this to your specific domain, e.g. "AI/ML research", "software engineering", etc.)
+综合性知识库 — 技术、研究、个人笔记，无所不包。
 
 ## Conventions
 - File names: lowercase, hyphens, no spaces (e.g., `transformer-architecture.md`)
