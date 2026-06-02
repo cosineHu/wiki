@@ -35,3 +35,17 @@
 - 更新文件:
   - entities/hermes-agent.md (补充第二大脑集成交叉引用)
   - index.md (新增 5 个页面条目)
+
+
+## [2026-06-02] ingest | Hermes Agent + Obsidian 打造第二大脑系列
+- 来源: https://blog.csdn.net/sgr011215/article/details/160530313
+- 创建文件:
+  - raw/articles/hermes-obsidian-second-brain-2026.md
+  - concepts/second-brain.md
+  - concepts/layered-memory-system.md
+  - entities/dify.md
+  - entities/n8n.md
+  - entities/ollama.md
+- 更新文件:
+  - entities/hermes-agent.md
+  - index.md
