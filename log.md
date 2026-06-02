@@ -49,3 +49,12 @@
 - 更新文件:
   - entities/hermes-agent.md
   - index.md
+
+## [2026-06-02] ingest | Hermes Agent + Obsidian 打造第二大脑（一）：为什么需要第二大脑？
+- 来源: https://blog.csdn.net/sgr011215/article/details/160530542
+- 创建文件:
+  - raw/articles/hermes-second-brain-part1-2026.md (原始来源)
+- 更新文件:
+  - concepts/second-brain.md (补充三个核心特征、四大痛点表格)
+  - concepts/layered-memory-system.md (补充来源引用)
+  - entities/hermes-agent.md (补充来源引用)

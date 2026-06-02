@@ -4,7 +4,7 @@ created: 2026-06-02
 updated: 2026-06-02
 type: concept
 tags: [knowledge-base, llm, reference]
-sources: [raw/articles/hermes-obsidian-second-brain-2026.md]
+sources: [raw/articles/hermes-obsidian-second-brain-2026.md, raw/articles/hermes-second-brain-part1-2026.md]
 confidence: medium
 ---
 
@@ -20,6 +20,21 @@ Hermes Agent = 智能收集 + 自动整理 + 分层记忆
 ─────────────────────────────────────────────
 第二大脑     = AI 驱动的个人知识管理系统
 ```
+
+### 三个核心特征（源自系列第一篇）
+
+1. **信息不丢失** — 所有输入有记录，所有处理有痕迹
+2. **知识可积累** — 站在前人肩膀上，读过的论文形成记忆，用过的方案沉淀为经验
+3. **关联自然浮现** — AI 主动发现关联，知识涌现是自动的而非人工梳理
+
+### 四大痛点与方案
+
+| 痛点 | 表现 | 解决方案 |
+|------|------|----------|
+| 信息碎片化 | Notion/微信/印象笔记各存一份，找不到最新版 | 统一收件箱，所有来源归入 Obsidian Vault |
+| AI 无记忆 | 每次对话从零开始，重复解释上下文 | [[分层记忆系统]] L0-L3 持久化 |
+| 知识不积累 | 论文读完就忘，同一坑踩两次 | AI 自动摘要 + 知识网络 + 交叉引用 |
+| 信息孤岛 | 灵感在微信，代码在 GitHub，文档在 Notion | 跨平台整合，双向链接打通 |
 
 ## 解决的痛点
 
