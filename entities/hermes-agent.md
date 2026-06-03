@@ -61,3 +61,7 @@ Hermes 拥有丰富的内置 skill 生态，涵盖研究、笔记、开发、媒
 - [[obsidian-headless]]
 - [[第二大脑（Second Brain）]]
 - [[分层记忆系统]]
+- [[Obsidian]]
+- [[双向链接（Obsidian）]]
+- [[Obsidian 标签系统与 Frontmatter]]
+- [[Obsidian Dataview 查询]]

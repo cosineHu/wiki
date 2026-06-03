@@ -36,20 +36,6 @@
   - entities/hermes-agent.md (补充第二大脑集成交叉引用)
   - index.md (新增 5 个页面条目)
 
-
-## [2026-06-02] ingest | Hermes Agent + Obsidian 打造第二大脑系列
-- 来源: https://blog.csdn.net/sgr011215/article/details/160530313
-- 创建文件:
-  - raw/articles/hermes-obsidian-second-brain-2026.md
-  - concepts/second-brain.md
-  - concepts/layered-memory-system.md
-  - entities/dify.md
-  - entities/n8n.md
-  - entities/ollama.md
-- 更新文件:
-  - entities/hermes-agent.md
-  - index.md
-
 ## [2026-06-02] ingest | Hermes Agent + Obsidian 打造第二大脑（一）：为什么需要第二大脑？
 - 来源: https://blog.csdn.net/sgr011215/article/details/160530542
 - 创建文件:
@@ -68,3 +54,16 @@
   - concepts/layered-memory-system.md (补充来源引用)
   - entities/hermes-agent.md (补充部署架构、来源引用)
 
+## [2026-06-03] ingest | Hermes Agent + Obsidian 打造第二大脑（四）：Obsidian 核心操作与踩坑
+- 来源: https://blog.csdn.net/sgr011215/article/details/160530681
+- 创建文件:
+  - raw/articles/hermes-obsidian-core-ops-2026.md (原始来源)
+  - entities/obsidian.md (Obsidian 实体页)
+  - concepts/obsidian-bidirectional-links.md (双向链接)
+  - concepts/obsidian-tag-system.md (标签系统与 Frontmatter)
+  - concepts/obsidian-dataview.md (Dataview 查询)
+- 更新文件:
+  - concepts/second-brain.md (新增 Obsidian 交叉引用)
+  - entities/hermes-agent.md (新增 Obsidian 交叉引用)
+  - concepts/obsidian-headless.md (新增 Obsidian 交叉引用)
+  - index.md (新增 4 个页面条目，总页数 14)

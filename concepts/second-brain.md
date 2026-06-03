@@ -113,3 +113,6 @@ Hermes Agent = 智能收集 + 自动整理 + 分层记忆
 - [[Hermes Agent]]
 - [[Obsidian]]
 - [[分层记忆系统]]
+- [[双向链接（Obsidian）]]
+- [[Obsidian 标签系统与 Frontmatter]]
+- [[Obsidian Dataview 查询]]

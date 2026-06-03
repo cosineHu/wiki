@@ -1,7 +1,7 @@
 ---
 title: obsidian-headless
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-06-03
 type: concept
 tags: [devops, tool, sync]
 sources: [raw/articles/hermes-llm-wiki-skill-2026.md]
@@ -66,3 +66,6 @@ Obsidian Sync 需付费订阅。免费替代：
 - [[LLM Wiki（Karpathy 模式）]]
 - [[Hermes Agent]]
 - [[Obsidian]]
+- [[双向链接（Obsidian）]]
+- [[Obsidian 标签系统与 Frontmatter]]
+- [[Obsidian Dataview 查询]]
