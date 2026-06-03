@@ -4,11 +4,14 @@ created: 2026-06-02
 updated: 2026-06-03
 type: concept
 tags: [knowledge-base, llm, reference]
-sources: [raw/articles/hermes-obsidian-second-brain-2026.md, raw/articles/hermes-second-brain-part1-2026.md, raw/articles/hermes-second-brain-part2-2026.md]
+sources: [raw/articles/hermes-obsidian-second-brain-2026.md, raw/articles/hermes-second-brain-part1-2026.md, raw/articles/hermes-second-brain-part2-2026.md, raw/articles/hermes-vs-openclaw-features-2026.md]
 confidence: medium
 ---
 
 # 第二大脑（Second Brain）
+
+> 概念由 **Tiago Forte** 在《Building a Second Brain》一书中提出。
+> 核心理念：第一大脑负责思考、创造、决策；第二大脑负责存储、组织、检索。
 
 将 [[Obsidian]] 的本地知识管理与 [[Hermes Agent]] 的 AI 能力结合，构建持久化、可积累的个人知识系统。
 

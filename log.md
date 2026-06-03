@@ -77,3 +77,15 @@
 - 更新文件:
   - entities/hermes-agent.md (新增 OpenClaw 交叉引用)
   - index.md (新增 2 个页面条目，总页数 16)
+
+## [2026-06-03] ingest | Hermes vs OpenClaw — 核心差异、知识库参考、会话隔离、第二大脑
+- 来源: 用户上传文档 (Hermes vs OpenClaw.md)
+- 创建文件:
+  - raw/articles/hermes-vs-openclaw-features-2026.md (原始来源)
+  - concepts/hermes-knowledge-reference.md (知识库参考方式)
+  - concepts/hermes-session-isolation.md (会话隔离机制)
+- 更新文件:
+  - comparisons/openclaw-vs-hermes.md (补充 Skill/Gateway 核心能力差异表)
+  - concepts/second-brain.md (补充 Tiago Forte 起源)
+  - entities/hermes-agent.md (新增交叉引用)
+  - index.md (新增 2 个页面条目，总页数 18)

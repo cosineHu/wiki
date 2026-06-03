@@ -67,3 +67,5 @@ Hermes 拥有丰富的内置 skill 生态，涵盖研究、笔记、开发、媒
 - [[Obsidian Dataview 查询]]
 - [[OpenClaw]]
 - [[OpenClaw vs Hermes Agent]]
+- [[Hermes 知识库参考方式]]
+- [[Hermes 会话隔离机制]]

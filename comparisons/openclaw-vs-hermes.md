@@ -4,7 +4,7 @@ created: 2026-06-03
 updated: 2026-06-03
 type: comparison
 tags: [comparison, agent, llm, open-source]
-sources: [raw/articles/openclaw-vs-hermes-2026.md]
+sources: [raw/articles/openclaw-vs-hermes-2026.md, raw/articles/hermes-vs-openclaw-features-2026.md]
 confidence: medium
 ---
 
@@ -57,6 +57,16 @@ confidence: medium
 | 已知风险 | 公开暴露实例多，被安全机构关注 | 公开报告问题较少 |
 | 风险来源 | 增长速度、默认配置、开放端口 | 更年轻，审计机会少 |
 | 建议 | 不要默认相信默认配置 | 同样适用 |
+
+### 核心能力差异
+
+| 维度 | OpenClaw | Hermes Agent |
+|------|----------|-------------|
+| **自改进 Skill** | ❌ 无此机制 | ✅ 可复用流程保存为 SKILL.md，后续会话自动加载 |
+| **持久记忆** | 文件级记忆 | SQLite + FTS + LLM 摘要，支持 Honcho/Mem0 等后端 |
+| **多平台 Gateway** | 主要是 API Server 模式 | 16+ 平台（Telegram/Discord/Slack/飞书/钉钉/企业微信/Signal/Matrix/Email/Webhook） |
+| **定时任务** | 需自行搭建 | 内置 cronjob 系统 |
+| **定位** | "裸 Agent"，能力依赖自行搭建 | 完整 Agent 基础设施平台，开箱自带记忆/技能/多平台/定时任务 |
 
 ## 适合人群
 
