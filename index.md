@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-03 | Total pages: 14
+> Last updated: 2026-06-03 | Total pages: 16
 
 ## Entities
 - [[andrej-karpathy]] — AI 研究员，LLM Wiki 模式提出者，前 Tesla AI 总监
@@ -11,6 +11,7 @@
 - [[n8n]] — 开源工作流自动化平台，400+ 集成
 - [[obsidian]] — 基于本地 Markdown 的笔记与知识管理工具，第二大脑存储核心
 - [[ollama]] — 本地 LLM 运行工具，一键部署开源模型
+- [[openclaw]] — 开源 AI Agent 平台，强调跨平台连接与社区技能生态
 
 ## Concepts
 - [[layered-memory-system]] — 分层记忆系统：L0-L3 四层 AI 记忆架构
@@ -22,6 +23,7 @@
 - [[second-brain]] — 第二大脑：Hermes Agent + Obsidian 构建 AI 驱动的个人知识系统
 
 ## Comparisons
+- [[openclaw-vs-hermes]] — OpenClaw vs Hermes Agent：平台 vs 伙伴，AI Agent 未来路线之争
 - [[rag-vs-wiki]] — RAG 检索增强生成 vs Wiki 知识库：两种 AI 知识管理范式对比
 
 ## Queries

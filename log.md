@@ -67,3 +67,13 @@
   - entities/hermes-agent.md (新增 Obsidian 交叉引用)
   - concepts/obsidian-headless.md (新增 Obsidian 交叉引用)
   - index.md (新增 4 个页面条目，总页数 14)
+
+## [2026-06-03] ingest | OpenClaw vs Hermes：AI Agent 未来之争
+- 来源: https://www.drpang.ai/openclaw-vs-hermes-ai-agent-future/
+- 创建文件:
+  - raw/articles/openclaw-vs-hermes-2026.md (原始来源)
+  - entities/openclaw.md (OpenClaw 实体页)
+  - comparisons/openclaw-vs-hermes.md (OpenClaw vs Hermes 对比)
+- 更新文件:
+  - entities/hermes-agent.md (新增 OpenClaw 交叉引用)
+  - index.md (新增 2 个页面条目，总页数 16)

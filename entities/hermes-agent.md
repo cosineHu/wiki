@@ -4,7 +4,7 @@ created: 2026-06-02
 updated: 2026-06-03
 type: entity
 tags: [llm, open-source, agent]
-sources: [raw/articles/hermes-llm-wiki-skill-2026.md, raw/articles/hermes-second-brain-part1-2026.md, raw/articles/hermes-second-brain-part2-2026.md]
+sources: [raw/articles/hermes-llm-wiki-skill-2026.md, raw/articles/hermes-second-brain-part1-2026.md, raw/articles/hermes-second-brain-part2-2026.md, raw/articles/openclaw-vs-hermes-2026.md]
 confidence: high
 ---
 
@@ -65,3 +65,5 @@ Hermes 拥有丰富的内置 skill 生态，涵盖研究、笔记、开发、媒
 - [[双向链接（Obsidian）]]
 - [[Obsidian 标签系统与 Frontmatter]]
 - [[Obsidian Dataview 查询]]
+- [[OpenClaw]]
+- [[OpenClaw vs Hermes Agent]]
