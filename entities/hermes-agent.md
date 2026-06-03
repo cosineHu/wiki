@@ -1,10 +1,10 @@
 ---
 title: Hermes Agent
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-06-03
 type: entity
 tags: [llm, open-source, agent]
-sources: [raw/articles/hermes-llm-wiki-skill-2026.md, raw/articles/hermes-second-brain-part1-2026.md]
+sources: [raw/articles/hermes-llm-wiki-skill-2026.md, raw/articles/hermes-second-brain-part1-2026.md, raw/articles/hermes-second-brain-part2-2026.md]
 confidence: high
 ---
 
@@ -40,6 +40,19 @@ Hermes 拥有丰富的内置 skill 生态，涵盖研究、笔记、开发、媒
 - [[分层记忆系统]]（L0-L3）
 - [[LLM Wiki（Karpathy 模式）]] 知识摄入
 - 与 [[Dify]]、[[n8n]]、[[Ollama]] 等工具集成
+
+
+## 部署架构
+
+基于 Docker Compose 的生产级部署，核心组件：
+- **Hermes Web** — Web UI (:3000)
+- **Hermes API** — API 服务 (:8080)
+- **Hermes Worker** — 任务队列处理器
+- **PostgreSQL** — 持久化数据存储
+- **Redis** — 缓存 + 任务队列
+- **Nginx/Caddy** — 反向代理 + HTTPS
+
+部署注意事项：至少 4GB RAM、配置 Docker 镜像加速器、使用 healthcheck 确保启动顺序、时区设置 TZ=Asia/Shanghai。
 
 ## 相关
 

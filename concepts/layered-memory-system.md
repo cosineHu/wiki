@@ -1,10 +1,10 @@
 ---
 title: 分层记忆系统
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-06-03
 type: concept
 tags: [llm, agent, architecture]
-sources: [raw/articles/hermes-obsidian-second-brain-2026.md, raw/articles/hermes-second-brain-part1-2026.md]
+sources: [raw/articles/hermes-obsidian-second-brain-2026.md, raw/articles/hermes-second-brain-part1-2026.md, raw/articles/hermes-second-brain-part2-2026.md]
 confidence: medium
 ---
 

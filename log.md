@@ -58,3 +58,13 @@
   - concepts/second-brain.md (补充三个核心特征、四大痛点表格)
   - concepts/layered-memory-system.md (补充来源引用)
   - entities/hermes-agent.md (补充来源引用)
+
+## [2026-06-03] ingest | Hermes Agent + Obsidian 打造第二大脑（二）：我的踩坑经验与完整部署方案
+- 来源: https://blog.csdn.net/sgr011215/article/details/160530638
+- 创建文件:
+  - raw/articles/hermes-second-brain-part2-2026.md (原始来源)
+- 更新文件:
+  - concepts/second-brain.md (补充部署踩坑要点表格、技术架构层次)
+  - concepts/layered-memory-system.md (补充来源引用)
+  - entities/hermes-agent.md (补充部署架构、来源引用)
+

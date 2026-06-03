@@ -1,10 +1,10 @@
 ---
 title: 第二大脑（Second Brain）
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-06-03
 type: concept
 tags: [knowledge-base, llm, reference]
-sources: [raw/articles/hermes-obsidian-second-brain-2026.md, raw/articles/hermes-second-brain-part1-2026.md]
+sources: [raw/articles/hermes-obsidian-second-brain-2026.md, raw/articles/hermes-second-brain-part1-2026.md, raw/articles/hermes-second-brain-part2-2026.md]
 confidence: medium
 ---
 
@@ -51,6 +51,32 @@ Hermes Agent = 智能收集 + 自动整理 + 分层记忆
 - **智能层**：Hermes Agent（摄入、整理、查询）
 - **记忆层**：[[分层记忆系统]]（L0-L3）
 - **同步层**：Git + GitHub 私有仓库（替代付费 Obsidian Sync）
+
+## 部署踩坑要点（源自系列第二篇）
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 内存不足 OOM | PostgreSQL + Redis + Hermes 服务同时运行 | 至少 4GB RAM，设置 swap |
+| Docker 镜像拉取失败 | 国内网络限制 | 配置镜像加速器 / 代理 |
+| 端口冲突 | 默认端口已被占用 | 修改 docker-compose 端口映射 |
+| API Key 泄露 | .env 明文存储 | 使用 Docker secrets / 环境变量注入 |
+| Obsidian 同步丢文件 | 文件锁 / 同步冲突 | Git 同步 + 合并策略 |
+| 数据库连接超时 | 容器启动顺序 | depends_on + healthcheck |
+| Redis 内存溢出 | 默认无限制 | 设置 maxmemory + 淘汰策略 |
+| 时区混乱 | 容器默认 UTC | TZ=Asia/Shanghai 环境变量 |
+| 同步死锁 | 多进程文件锁 | 文件锁超时 + 重试机制 |
+
+### 技术架构层次
+
+```
+├── 操作系统层: macOS / Linux / Windows WSL2
+├── 虚拟化层: Docker Engine / Docker Desktop
+├── 数据层: PostgreSQL + Redis
+├── 应用层: Hermes API + Hermes Worker + Hermes Web
+├── LLM 层: OpenAI / Anthropic / 本地模型
+├── 同步层: Obsidian Vault + Git
+└── 网络层: 端口映射 / 域名 / 防火墙 / 反向代理
+```
 
 ## 适合人群
 
