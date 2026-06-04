@@ -90,6 +90,7 @@ Hermes 拥有丰富的内置 skill 生态，涵盖研究、笔记、开发、媒
 
 - [[LLM Wiki（Karpathy 模式）]]
 - [[Andrej Karpathy]]
+- [[Karpathy 式知识库方法（Karpathy Knowledge Base Method）]]
 - [[obsidian-headless]]
 - [[第二大脑（Second Brain）]]
 - [[分层记忆系统]]

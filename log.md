@@ -133,3 +133,12 @@
 - 更新文件:
   - concepts/hermes-skills-system.md (新增交叉引用)
   - index.md (新增 1 个页面条目，总页数 25)
+
+## [2026-06-04] ingest | Karpathy 式 AI 知识库搭建指南：让 Claude Code + Obsidian 成为你的第二大脑
+- 来源: https://segmentfault.com/a/1190000047707371
+- 创建文件:
+  - raw/articles/karpathy-knowledge-base-guide-2026.md (原始来源)
+  - concepts/karpathy-knowledge-base-method.md (Karpathy 式知识库方法)
+- 更新文件:
+  - entities/hermes-agent.md (新增交叉引用)
+  - index.md (新增 1 个页面条目，总页数 26)

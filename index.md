@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-04 | Total pages: 25
+> Last updated: 2026-06-04 | Total pages: 26
 
 ## Entities
 - [[andrej-karpathy]] — AI 研究员，LLM Wiki 模式提出者，前 Tesla AI 总监
@@ -20,6 +20,7 @@
 - [[hermes-session-isolation]] — Hermes 会话隔离机制：Profile / Gateway / Pairing / 终端四层隔离
 - [[hermes-skills-system]] — Hermes 技能系统：自动生成+改进+Reflection+Skill Evolution
 - [[hermes-terminal-backends]] — Hermes 六种终端后端：Local/Docker/SSH/Daytona/Singularity/Modal
+- [[karpathy-knowledge-base-method]] — Karpathy 式知识库方法：四阶段流程、三层目录、Claude Code+Claudian 工具链
 - [[layered-memory-system]] — 分层记忆系统：L0-L3 四层 AI 记忆架构
 - [[llm-wiki]] — Karpathy 的 LLM Wiki 模式：互联 Markdown 知识库，持续积累复利增长
 - [[memory-agent-vs-workflow-agent]] — Memory Agent vs Workflow Agent：任务后经验消失还是积累？
