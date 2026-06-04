@@ -124,3 +124,12 @@
   - concepts/second-brain.md (新增企业架构交叉引用)
   - comparisons/openclaw-vs-hermes.md (补充企业第二大脑场景适配表)
   - index.md (新增 2 个页面条目，总页数 24)
+
+## [2026-06-04] ingest | Skills 从 0 到 1 怎么写：AI Agent Skills 完整创建教程（2026）
+- 来源: https://www.cnblogs.com/qiniushanghai/p/20027864
+- 创建文件:
+  - raw/articles/skills-creation-tutorial-2026.md (原始来源)
+  - concepts/skills-authoring-guide.md (Skills 编写指南)
+- 更新文件:
+  - concepts/hermes-skills-system.md (新增交叉引用)
+  - index.md (新增 1 个页面条目，总页数 25)

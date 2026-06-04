@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-04 | Total pages: 24
+> Last updated: 2026-06-04 | Total pages: 25
 
 ## Entities
 - [[andrej-karpathy]] — AI 研究员，LLM Wiki 模式提出者，前 Tesla AI 总监
@@ -28,6 +28,7 @@
 - [[obsidian-headless]] — Obsidian 无头模式，服务器端通过 Obsidian Sync 同步 vault
 - [[obsidian-tag-system]] — Obsidian 标签系统与 Frontmatter：标签层级、元数据规范
 - [[second-brain]] — 第二大脑：Tiago Forte 提出，Hermes Agent + Obsidian 构建 AI 驱动的个人知识系统
+- [[skills-authoring-guide]] — Skills 编写指南：agentskills 标准、三阶段加载、Frontmatter 字段、跨工具兼容
 
 ## Comparisons
 - [[hermes-vs-other-agents]] — Hermes vs AutoGPT/CrewAI/Claude Code：学习闭环、多平台、模型无关对比
