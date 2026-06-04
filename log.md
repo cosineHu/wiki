@@ -89,3 +89,14 @@
   - concepts/second-brain.md (补充 Tiago Forte 起源)
   - entities/hermes-agent.md (新增交叉引用)
   - index.md (新增 2 个页面条目，总页数 18)
+
+## [2026-06-03] ingest | Hermes Agent 深度解析：会自我进化的开源 AI Agent
+- 来源: https://ruizhehou.github.io/2026/05/01/Hermes-Agent%E8%A7%A3%E6%9E%90/
+- 创建文件:
+  - raw/articles/hermes-agent-deep-dive-2026.md (原始来源)
+  - concepts/hermes-skills-system.md (技能系统详解)
+  - concepts/hermes-terminal-backends.md (六种终端后端)
+  - comparisons/hermes-vs-other-agents.md (vs AutoGPT/CrewAI/Claude Code)
+- 更新文件:
+  - entities/hermes-agent.md (补充核心特性、RL 训练、对比引用)
+  - index.md (新增 3 个页面条目，总页数 21)
