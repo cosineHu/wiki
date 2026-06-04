@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-03 | Total pages: 21
+> Last updated: 2026-06-04 | Total pages: 22
 
 ## Entities
 - [[andrej-karpathy]] — AI 研究员，LLM Wiki 模式提出者，前 Tesla AI 总监
@@ -15,6 +15,7 @@
 
 ## Concepts
 - [[hermes-knowledge-reference]] — Hermes 知识库参考方式：AGENTS.md / Skill / Memory / Obsidian 四种方式
+- [[hermes-memory-architecture]] — Hermes 四层记忆架构：热记忆/情景回忆/Skills/Honcho，缓存感知设计
 - [[hermes-session-isolation]] — Hermes 会话隔离机制：Profile / Gateway / Pairing / 终端四层隔离
 - [[hermes-skills-system]] — Hermes 技能系统：自动生成+改进的 Skill 生命周期，程序性记忆
 - [[hermes-terminal-backends]] — Hermes 六种终端后端：Local/Docker/SSH/Daytona/Singularity/Modal
@@ -28,7 +29,7 @@
 
 ## Comparisons
 - [[hermes-vs-other-agents]] — Hermes vs AutoGPT/CrewAI/Claude Code：学习闭环、多平台、模型无关对比
-- [[openclaw-vs-hermes]] — OpenClaw vs Hermes Agent：平台 vs 伙伴，Skill/Gateway/记忆/定时任务全面对比
+- [[openclaw-vs-hermes]] — OpenClaw vs Hermes Agent：平台 vs 伙伴，记忆架构/缓存感知全面对比
 - [[rag-vs-wiki]] — RAG 检索增强生成 vs Wiki 知识库：两种 AI 知识管理范式对比
 
 ## Queries

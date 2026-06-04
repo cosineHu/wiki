@@ -104,3 +104,4 @@ Hermes 拥有丰富的内置 skill 生态，涵盖研究、笔记、开发、媒
 - [[Hermes 技能系统（Skills System）]]
 - [[Hermes 终端后端（Terminal Backends）]]
 - [[Hermes Agent vs 其他 Agent 框架]]
+- [[Hermes 记忆架构（Memory Architecture）]]

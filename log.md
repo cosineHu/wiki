@@ -100,3 +100,14 @@
 - 更新文件:
   - entities/hermes-agent.md (补充核心特性、RL 训练、对比引用)
   - index.md (新增 3 个页面条目，总页数 21)
+
+## [2026-06-04] ingest | Hermes Agent 的记忆系统：为什么它修正了 OpenClaw 的错误
+- 来源: https://cloud.tencent.com.cn/developer/article/2668217
+- 原文: Manthan Gupta（@manthanguptaa）
+- 创建文件:
+  - raw/articles/hermes-memory-system-2026.md (原始来源)
+  - concepts/hermes-memory-architecture.md (四层记忆架构)
+- 更新文件:
+  - comparisons/openclaw-vs-hermes.md (补充记忆架构差异表)
+  - entities/hermes-agent.md (新增交叉引用)
+  - index.md (新增 1 个页面条目，总页数 22)
