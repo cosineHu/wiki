@@ -111,3 +111,16 @@
   - comparisons/openclaw-vs-hermes.md (补充记忆架构差异表)
   - entities/hermes-agent.md (新增交叉引用)
   - index.md (新增 1 个页面条目，总页数 22)
+
+## [2026-06-04] ingest | 基于 Hermes Agent + Obsidian 的企业级第二大脑知识库体系研究
+- 来源: 用户上传文档
+- 创建文件:
+  - raw/articles/enterprise-second-brain-2026.md (原始来源)
+  - concepts/enterprise-second-brain-architecture.md (企业级架构)
+  - concepts/memory-agent-vs-workflow-agent.md (Memory Agent vs Workflow Agent)
+- 更新文件:
+  - concepts/hermes-memory-architecture.md (补充工作/情景/语义/技能四层视角)
+  - concepts/hermes-skills-system.md (补充 Reflection + Skill Evolution 机制)
+  - concepts/second-brain.md (新增企业架构交叉引用)
+  - comparisons/openclaw-vs-hermes.md (补充企业第二大脑场景适配表)
+  - index.md (新增 2 个页面条目，总页数 24)

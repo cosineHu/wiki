@@ -119,3 +119,5 @@ Hermes Agent = 智能收集 + 自动整理 + 分层记忆
 - [[双向链接（Obsidian）]]
 - [[Obsidian 标签系统与 Frontmatter]]
 - [[Obsidian Dataview 查询]]
+- [[企业级第二大脑架构（Enterprise Second Brain）]]
+- [[Memory Agent vs Workflow Agent]]

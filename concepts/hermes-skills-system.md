@@ -78,8 +78,42 @@ Use this skill when asked to deploy a service to production.
 
 **把 Agent 的经验转化为可调用的程序性记忆**。这与其他 Agent 框架的「静态记忆」有本质区别——Hermes 是主动的、自驱的知识积累，而非被动等待用户告知。
 
+## Reflection 机制
+
+Hermes 最大的创新之一——任务完成后不立即结束，而是执行反思：
+
+```
+本次任务成功了吗？
+为什么成功？为什么失败？
+下次如何优化？
+```
+
+形成可复用经验。例如：
+
+```
+用户需求：搭建 RAG 系统
+执行结果：成功
+经验：先完成数据清洗，再进行 Embedding，效果最佳
+```
+
+## Skill Evolution
+
+```
+原始经历：完成一次 RAG 项目
+     ↓ 总结
+标准流程：RAG 部署标准流程
+     ↓ 抽象
+技能：企业知识库建设
+```
+
+实现 **经验 → 技能** 转化。这也是 Hermes 区别于 Workflow Agent（Dify/Coze/OpenClaw）的核心能力。
+
+详见 [[Memory Agent vs Workflow Agent]]
+
 ## 相关
 
 - [[Hermes Agent]]
 - [[OpenClaw vs Hermes Agent]]
 - [[Hermes 知识库参考方式]]
+- [[Hermes 记忆架构（Memory Architecture）]]
+- [[Memory Agent vs Workflow Agent]]
