@@ -1,11 +1,11 @@
 ---
 title: 企业级第二大脑架构（Enterprise Second Brain）
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-06-05
 type: concept
 tags: [knowledge-base, enterprise, architecture, second-brain]
 sources: [raw/articles/enterprise-second-brain-2026.md]
-confidence: medium
+confidence: high
 ---
 
 # 企业级第二大脑架构

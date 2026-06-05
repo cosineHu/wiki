@@ -1,11 +1,11 @@
 ---
 title: 第二大脑（Second Brain）
 created: 2026-06-02
-updated: 2026-06-03
+updated: 2026-06-05
 type: concept
 tags: [knowledge-base, llm, reference]
 sources: [raw/articles/hermes-obsidian-second-brain-2026.md, raw/articles/hermes-second-brain-part1-2026.md, raw/articles/hermes-second-brain-part2-2026.md, raw/articles/hermes-vs-openclaw-features-2026.md]
-confidence: medium
+confidence: high
 ---
 
 # 第二大脑（Second Brain）

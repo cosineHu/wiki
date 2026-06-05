@@ -1,11 +1,11 @@
 ---
 title: RAG vs Wiki
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-06-05
 type: comparison
 tags: [comparison, llm, knowledge-base]
 sources: [raw/articles/hermes-llm-wiki-skill-2026.md]
-confidence: medium
+confidence: high
 ---
 
 # RAG vs Wiki

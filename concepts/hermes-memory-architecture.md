@@ -1,7 +1,7 @@
 ---
 title: Hermes 记忆架构（Memory Architecture）
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-06-05
 type: concept
 tags: [llm, agent, memory, architecture]
 sources: [raw/articles/hermes-memory-system-2026.md]
@@ -153,3 +153,6 @@ Skills 存储可复用工作流。不会全部注入 prompt，只注入紧凑索
 - [[Hermes 技能系统（Skills System）]]
 - [[OpenClaw vs Hermes Agent]]
 - [[Hermes 知识库参考方式]]
+- [[分层记忆系统]] — 概念层面的 L0-L3 四层模型
+- [[Memory Agent vs Workflow Agent]] — 认知心理学视角的四层记忆
+- [[三种记忆模型对比（Three Memory Models）]] — 三模型映射关系与综合对比

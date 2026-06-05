@@ -1,11 +1,11 @@
 ---
 title: OpenClaw
 created: 2026-06-03
-updated: 2026-06-03
+updated: 2026-06-05
 type: entity
 tags: [llm, open-source, agent, platform]
 sources: [raw/articles/openclaw-vs-hermes-2026.md]
-confidence: medium
+confidence: high
 ---
 
 # OpenClaw

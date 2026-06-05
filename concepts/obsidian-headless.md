@@ -1,11 +1,11 @@
 ---
 title: obsidian-headless
 created: 2026-06-02
-updated: 2026-06-03
+updated: 2026-06-05
 type: concept
 tags: [devops, tool, sync]
 sources: [raw/articles/hermes-llm-wiki-skill-2026.md]
-confidence: medium
+confidence: high
 ---
 
 # obsidian-headless

@@ -148,3 +148,12 @@
 - 警告 (35): 16 个孤立页面（入链为 0，因断链导致）+ 19 个未分类标签
 - 提示 (11): 11 个 raw/ 源文件 sha256 漂移（内容曾被修改或重新抓取）
 - 正常: frontmatter 完整、索引无遗漏/僵尸、无过期内容、无超大页面、日志无需轮转
+
+## [2026-06-05] evolve | 每周知识再进化
+- 置信度提升 (8): second-brain (medium→high, 4 sources), layered-memory-system (medium→high, 3 sources), openclaw-vs-hermes (medium→high, 2 sources+跨页佐证), hermes-vs-other-agents (medium→high, 跨页佐证), rag-vs-wiki (medium→high, 跨页佐证), enterprise-second-brain-architecture (medium→high, 跨页佐证), openclaw (medium→high, 跨页佐证), obsidian-headless (medium→high, 跨页佐证)
+- 跨页面合成: 发现三种「四层记忆」模型（分层记忆系统/ Hermes记忆架构/ 认知心理学模型），创建 comparisons/three-memory-models.md 进行映射对比
+- 交叉引用增强: layered-memory-system ↔ hermes-memory-architecture ↔ memory-agent-vs-workflow-agent 三向链接完成
+- 矛盾检测: 无新矛盾发现（页面内容互补无冲突）
+- 知识缺口: 109 个断链（中文别名问题）已在 6/5 lint 中报告，待人工处理
+- 创建文件: comparisons/three-memory-models.md
+- 更新文件: concepts/second-brain.md, concepts/layered-memory-system.md, concepts/hermes-memory-architecture.md, concepts/memory-agent-vs-workflow-agent.md, concepts/enterprise-second-brain-architecture.md, concepts/obsidian-headless.md, comparisons/openclaw-vs-hermes.md, comparisons/hermes-vs-other-agents.md, comparisons/rag-vs-wiki.md, entities/openclaw.md, index.md

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-04 | Total pages: 26
+> Last updated: 2026-06-05 | Total pages: 27
 
 ## Entities
 - [[andrej-karpathy]] — AI 研究员，LLM Wiki 模式提出者，前 Tesla AI 总监
@@ -35,5 +35,6 @@
 - [[hermes-vs-other-agents]] — Hermes vs AutoGPT/CrewAI/Claude Code：学习闭环、多平台、模型无关对比
 - [[openclaw-vs-hermes]] — OpenClaw vs Hermes Agent：平台 vs 伙伴，企业第二大脑场景适配对比
 - [[rag-vs-wiki]] — RAG 检索增强生成 vs Wiki 知识库：两种 AI 知识管理范式对比
+- [[three-memory-models]] — 三种记忆模型对比：概念设计/工程实现/认知心理学三视角映射
 
 ## Queries
