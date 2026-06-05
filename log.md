@@ -157,3 +157,9 @@
 - 知识缺口: 109 个断链（中文别名问题）已在 6/5 lint 中报告，待人工处理
 - 创建文件: comparisons/three-memory-models.md
 - 更新文件: concepts/second-brain.md, concepts/layered-memory-system.md, concepts/hermes-memory-architecture.md, concepts/memory-agent-vs-workflow-agent.md, concepts/enterprise-second-brain-architecture.md, concepts/obsidian-headless.md, comparisons/openclaw-vs-hermes.md, comparisons/hermes-vs-other-agents.md, comparisons/rag-vs-wiki.md, entities/openclaw.md, index.md
+
+## [2026-06-05] lint | 229 个问题发现
+- 严重 (183): 183 个断链 — 所有 wikilinks 使用中文别名（如 `[[Hermes Agent]]`、`[[第二大脑（Second Brain）]]`），但实际页面 slug 为英文（`hermes-agent`、`second-brain`），导致全部断链。这是同一根因，非 183 个独立问题。
+- 警告 (45): 25 个孤立页面（因断链导致入链为 0）+ 20 个未分类标签（agent, agentskills, ai, automation, enterprise, knowledge-base, markdown, memory, metadata, multi-tenant, obsidian, platform, plugin, query, second-brain, self-improving, serverless, skill, sync, tool）
+- 提示 (11): 11 个 raw/ 源文件 sha256 漂移（与上次 lint 相同的 11 个文件）
+- 正常: frontmatter 完整、索引无遗漏/僵尸、无过期内容、无矛盾标记、无低置信度页面、无超大页面、日志无需轮转（16 条）
