@@ -170,3 +170,10 @@
 - 提示 (12): 12 个 raw/ 源文件 sha256 漂移（全部 12 个 raw 文件，与上次 lint 相同的已知问题）
 - 正常: frontmatter 完整（27/27）、索引无遗漏/僵尸（27/27 匹配）、无过期内容（全部 updated 在 6 月）、无矛盾标记、无低置信度页面、无超大页面（最大 158 行）、日志无需轮转（17 条）
 - 根因分析: 184 个断链是同一根因 — 页面 slug 使用英文命名（如 `hermes-agent`），但所有 wikilinks 使用中文 title（如 `[[Hermes Agent]]`）。修复方案：二选一 — (A) 将所有 wikilinks 改为英文 slug 格式，或 (B) 将所有页面文件重命名为中文 slug。推荐方案 A（保持 slug 英文，批量替换 wikilinks）。
+
+## [2026-06-07] lint | 199 个问题发现
+- 严重 (159): 159 个断链 — 与 6/5、6/6 同一根因，所有 wikilinks 使用中文别名（如 `[[Hermes Agent]]`、`[[第二大脑（Second Brain）]]`），但实际页面 slug 为英文（`hermes-agent`、`second-brain`）。27 个页面中仅 6 个 wikilinks 有效（`obsidian`、`obsidian-headless`、`dify`、`n8n`、`ollama`、`openclaw` 等直接匹配英文 slug 的链接）。索引无遗漏、无僵尸条目。
+- 警告 (40): 21 个孤立页面（因断链导致所有页面入链为 0）+ 19 个未分类标签（agent, agentskills, ai, automation, enterprise, knowledge-base, markdown, memory, metadata, multi-tenant, platform, plugin, query, second-brain, self-improving, serverless, skill, sync, tool — 与 6/5 相同，未修复）
+- 提示 (0): 无过期内容、无矛盾标记、无低置信度页面、无超大页面
+- 正常: frontmatter 完整（27/27）、索引无遗漏/僵尸（27/27 匹配）、日志无需轮转（18 条）
+- 趋势: 断链数从 184→184→159（减少 25 个，因部分页面出链去重后计数变化），根因未变。已连续 3 天报告同一问题，建议尽快执行方案 A 批量修复。
