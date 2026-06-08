@@ -1,6 +1,6 @@
 # profile.md — AI 操作规程
 
-> 本文档定义了 AI Agent 在使用 wiki1/ 认知闭环操作系统时的标准操作规程。
+> 本文档定义了 AI Agent 在使用 meta/ 认知闭环操作系统时的标准操作规程。
 > 版本: 1.0 | 创建: 2026-06-08
 
 ## 核心原则
@@ -21,7 +21,7 @@
 
 ### 第 2 步：场景匹配
 
-- 加载 `wiki1/scenarios/scenarios.yaml`
+- 加载 `meta/scenarios/scenarios.yaml`
 - 按 trigger 字段匹配最合适的场景
 - 如无精确匹配，沿 related_scenarios 扩展搜索
 - 如仍无匹配，标记为"新场景"，进入通用处理流程
@@ -29,14 +29,14 @@
 
 ### 第 3 步：概念组装
 
-- 加载 `wiki1/meta-concepts.yaml` 和 `wiki1/compose-concepts.yaml`
+- 加载 `meta/meta-concepts.yaml` 和 `meta/compose-concepts.yaml`
 - 按场景 composition 中每个 phase 指定的 concepts，加载对应的原子概念和组合概念
 - 如果 phase 指定了组合概念，展开其 decomposition 获取原子概念序列
 - 输出：本场景需要的完整概念调用链
 
 ### 第 4 步：实体调取
 
-- 加载 `wiki1/entities/*.yaml`（5 个分类文件）
+- 加载 `meta/entities/*.yaml`（5 个分类文件）
 - 按场景 composition 中每个 phase 指定的 entities，加载对应的实体
 - 检查实体间的 relations，补充间接相关的实体
 - 输出：本场景需要的完整实体集合
@@ -173,18 +173,18 @@ reverse_check_result:
 - 每个新页面必须至少有 2 个 [[wikilinks]] 出链
 - 更新 `wiki/index.md` 和 `wiki/log.md`
 - `git add -A && git commit` 提交
-- 摄入完成后，检查 wiki1/ 是否需要更新
+- 摄入完成后，检查 meta/ 是否需要更新
 
 ## 自我迭代规则
 
-1. 每次 yaml 反向校验的发现，以骨架形式追加到 `wiki1/_pending/` 目录
+1. 每次 yaml 反向校验的发现，以骨架形式追加到 `meta/_pending/` 目录
 2. 用户审核后，合入对应的 yaml 文件
 3. 合入时更新文件的版本号和条目数
-4. 记录变更到 `wiki1/CHANGELOG.md`
+4. 记录变更到 `meta/CHANGELOG.md`
 
 ## 约束与边界
 
-- wiki1/ 只存元信息（结构、关系、组装规则），不存知识内容本身
+- meta/ 只存元信息（结构、关系、组装规则），不存知识内容本身
 - 知识内容存储在 wiki/ 中
 - 实体关系仅限 4 种：is_a、uses、depends_on、related_to
 - 实体层级最多 3 层

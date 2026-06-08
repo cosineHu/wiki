@@ -5,24 +5,24 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
-## [2026-06-08] ingest | 认知闭环操作系统 — wiki1/ 初始化
+## [2026-06-08] ingest | 认知闭环操作系统 — meta/ 初始化
 - 来源: https://mp.weixin.qq.com/s/ZMZHQVbtRFbQ22DgvY8YCw
 - 创建文件:
   - raw/articles/cognitive-closed-loop-wiki1-2026.md (原始来源)
   - concepts/cognitive-closed-loop.md (认知闭环操作系统概念)
-  - comparisons/wiki-vs-wiki1.md (wiki/ vs wiki1/ 对比)
-  - wiki1/README.md (wiki1 架构说明)
-  - wiki1/profile.md (AI 操作规程，7 步流水线 + yaml 反向校验)
-  - wiki1/meta-concepts.yaml (35 个原子概念，IPO 建模)
-  - wiki1/compose-concepts.yaml (20 个组合概念，decomposition 分解)
-  - wiki1/entities/knowledge-management.yaml (20 个知识管理实体)
-  - wiki1/entities/ai-agent.yaml (18 个 AI Agent 实体)
-  - wiki1/entities/thinking-methods.yaml (12 个思维方法实体)
-  - wiki1/entities/people.yaml (8 个人物实体)
-  - wiki1/entities/infrastructure.yaml (12 个基础设施实体)
-  - wiki1/scenarios/scenarios.yaml (20 个场景，完整 composition 组装规则)
-  - wiki1/CHANGELOG.md (变更日志)
-  - wiki1/_pending/ (待审核的 yaml 骨架目录)
+  - comparisons/wiki-vs-wiki1.md (wiki/ vs meta/ 对比)
+  - meta/README.md (meta 架构说明)
+  - meta/profile.md (AI 操作规程，7 步流水线 + yaml 反向校验)
+  - meta/meta-concepts.yaml (35 个原子概念，IPO 建模)
+  - meta/compose-concepts.yaml (20 个组合概念，decomposition 分解)
+  - meta/entities/knowledge-management.yaml (20 个知识管理实体)
+  - meta/entities/ai-agent.yaml (18 个 AI Agent 实体)
+  - meta/entities/thinking-methods.yaml (12 个思维方法实体)
+  - meta/entities/people.yaml (8 个人物实体)
+  - meta/entities/infrastructure.yaml (12 个基础设施实体)
+  - meta/scenarios/scenarios.yaml (20 个场景，完整 composition 组装规则)
+  - meta/CHANGELOG.md (变更日志)
+  - meta/_pending/ (待审核的 yaml 骨架目录)
 - 更新文件:
   - SCHEMA.md (新增双层架构说明)
   - index.md (新增 2 个页面条目，总计 34 页)

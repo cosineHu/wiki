@@ -43,8 +43,8 @@ scenarios:
       - phase: 7
         name: 反向校验
         concepts: ["yaml-reverse-check"]
-        entities: ["wiki1-meta-layer"]
-        rule: "检查是否有新概念/实体/场景/关系需要补充到 wiki1/"
+        entities: ["meta-meta-layer"]
+        rule: "检查是否有新概念/实体/场景/关系需要补充到 meta/"
     related_scenarios:
       - query-wiki-knowledge
       - wiki-health-check
@@ -57,7 +57,7 @@ scenarios:
       - phase: 1
         name: 场景匹配
         concepts: ["scene-matching"]
-        entities: ["wiki1-scenario-layer"]
+        entities: ["meta-scenario-layer"]
         rule: "根据问题匹配最合适的场景，确定组装规则"
       - phase: 2
         name: 知识检索
@@ -67,7 +67,7 @@ scenarios:
       - phase: 3
         name: 知识组装
         concepts: ["knowledge-assembly"]
-        entities: ["wiki1-concept-layer", "wiki1-entity-layer"]
+        entities: ["meta-concept-layer", "meta-entity-layer"]
         rule: "按场景 composition 规则编排概念和实体"
       - phase: 4
         name: 原文深挖
@@ -82,7 +82,7 @@ scenarios:
       - phase: 6
         name: 反向校验
         concepts: ["yaml-reverse-check"]
-        entities: ["wiki1-meta-layer"]
+        entities: ["meta-meta-layer"]
         rule: "检查回答过程中是否发现了知识库的缺口"
     related_scenarios:
       - ingest-article-to-wiki
@@ -96,12 +96,12 @@ scenarios:
       - phase: 1
         name: 输入解析
         concepts: ["scene-matching", "task-decomposition"]
-        entities: ["wiki1-scenario-layer"]
+        entities: ["meta-scenario-layer"]
         rule: "解析写作需求，确定主题、受众、篇幅"
       - phase: 2
         name: 概念匹配
         concepts: ["information-retrieval", "knowledge-assembly"]
-        entities: ["wiki1-concept-layer"]
+        entities: ["meta-concept-layer"]
         rule: "匹配相关的原子概念和组合概念"
       - phase: 3
         name: 问题分解
@@ -126,7 +126,7 @@ scenarios:
       - phase: 7
         name: 自检输出
         concepts: ["yaml-reverse-check", "cross-referencing"]
-        entities: ["wiki1-meta-layer"]
+        entities: ["meta-meta-layer"]
         rule: "检查：框架完整？逻辑自洽？有案例支撑？发现新概念/实体？"
     related_scenarios:
       - query-wiki-knowledge
@@ -165,8 +165,8 @@ scenarios:
       - phase: 6
         name: 元模型校验
         concepts: ["yaml-reverse-check"]
-        entities: ["wiki1-meta-layer"]
-        rule: "检查 wiki1/ 是否覆盖了 wiki/ 中的所有概念和实体"
+        entities: ["meta-meta-layer"]
+        rule: "检查 meta/ 是否覆盖了 wiki/ 中的所有概念和实体"
       - phase: 7
         name: 报告生成
         concepts: ["structured-writing"]
@@ -189,17 +189,17 @@ scenarios:
       - phase: 2
         name: 缺口发现
         concepts: ["yaml-reverse-check"]
-        entities: ["wiki1-meta-layer"]
+        entities: ["meta-meta-layer"]
         rule: "检查 5 个维度：新场景？新概念？新实体？新关系？死链？"
       - phase: 3
         name: 骨架生成
         concepts: ["knowledge-structuring"]
-        entities: ["wiki1-meta-layer"]
+        entities: ["meta-meta-layer"]
         rule: "将发现转化为 yaml 条目骨架，待人工审核"
       - phase: 4
         name: 增量合入
         concepts: ["incremental-update"]
-        entities: ["wiki1-meta-layer"]
+        entities: ["meta-meta-layer"]
         rule: "人工审核后合入主库，更新相关交叉引用"
       - phase: 5
         name: 效果验证
@@ -238,12 +238,12 @@ scenarios:
       - phase: 5
         name: 组合分解
         concepts: ["task-decomposition"]
-        entities: ["wiki1-concept-layer"]
+        entities: ["meta-concept-layer"]
         rule: "为每个组合概念定义 decomposition，每步引用原子概念"
       - phase: 6
         name: 反向校验
         concepts: ["yaml-reverse-check"]
-        entities: ["wiki1-meta-layer"]
+        entities: ["meta-meta-layer"]
         rule: "检查是否有遗漏的方法论，颗粒度是否一致"
     related_scenarios:
       - knowledge-evolution-cycle
@@ -272,8 +272,8 @@ scenarios:
       - phase: 4
         name: 交叉引用
         concepts: ["cross-referencing"]
-        entities: ["wiki1-meta-layer"]
-        rule: "在 wiki1/ 中注册该技能对应的概念和实体"
+        entities: ["meta-meta-layer"]
+        rule: "在 meta/ 中注册该技能对应的概念和实体"
       - phase: 5
         name: 测试验证
         concepts: ["feedback-loop"]
@@ -384,7 +384,7 @@ scenarios:
       - phase: 5
         name: 知识沉淀
         concepts: ["memory-writing", "skill-registration"]
-        entities: ["hermes-memory-system", "wiki1-meta-layer"]
+        entities: ["hermes-memory-system", "meta-meta-layer"]
         rule: "将问题和解决方案记录到记忆系统和知识库"
     related_scenarios:
       - hermes-config-optimization
@@ -418,7 +418,7 @@ scenarios:
       - phase: 5
         name: 健康检查
         concepts: ["yaml-reverse-check"]
-        entities: ["wiki1-meta-layer"]
+        entities: ["meta-meta-layer"]
         rule: "快速健康检查：孤立页面、死链、过期内容"
       - phase: 6
         name: 版本提交
@@ -641,12 +641,12 @@ scenarios:
       - phase: 1
         name: 选题匹配
         concepts: ["scene-matching", "information-retrieval"]
-        entities: ["wiki1-scenario-layer"]
+        entities: ["meta-scenario-layer"]
         rule: "从知识库中匹配合适的选题和素材"
       - phase: 2
         name: 内容组装
         concepts: ["knowledge-assembly"]
-        entities: ["wiki1-concept-layer"]
+        entities: ["meta-concept-layer"]
         rule: "按文章写作场景组装素材"
       - phase: 3
         name: 平台适配
@@ -709,13 +709,13 @@ scenarios:
       - phase: 1
         name: 覆盖扫描
         concepts: ["information-retrieval"]
-        entities: ["wiki1-meta-layer", "llm-wiki"]
-        rule: "对比 wiki/ 中的内容与 wiki1/ 中的元模型覆盖"
+        entities: ["meta-meta-layer", "llm-wiki"]
+        rule: "对比 wiki/ 中的内容与 meta/ 中的元模型覆盖"
       - phase: 2
         name: 缺口识别
         concepts: ["comparative-analysis", "yaml-reverse-check"]
         entities: []
-        rule: "识别：wiki/ 中有但 wiki1/ 中未建模的概念/实体"
+        rule: "识别：wiki/ 中有但 meta/ 中未建模的概念/实体"
       - phase: 3
         name: 优先级排序
         concepts: ["task-decomposition"]

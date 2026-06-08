@@ -1,23 +1,23 @@
-# wiki1/ — 场景驱动的认知闭环操作系统
+# meta/ — 场景驱动的认知闭环操作系统
 
-> 从静态知识图谱到可执行认知操作系统。wiki/ 是"图书馆"，wiki1/ 是"工厂"。
+> 从静态知识图谱到可执行认知操作系统。wiki/ 是"图书馆"，meta/ 是"工厂"。
 
 ## 三层架构
 
 ```
-wiki1/
+meta/
 ├── README.md              # 本文件
 ├── profile.md             # AI 操作规程（7步流水线 + 反向校验）
 ├── meta-concepts.yaml     # 原子概念：不可再分的最小方法单元（IPO 建模）
 ├── compose-concepts.yaml  # 组合概念：由原子概念串接而成的复合方法
 ├── entities/              # 实体层：人事物，5 个分类文件
-│   ├── thing-cognition.yaml       # 事物认知
-│   ├── problem-solving.yaml       # 问题解决
-│   ├── knowledge-management.yaml  # 知识库与知识管理
-│   ├── learning-practice.yaml     # 学习实践复盘
-│   └── others.yaml                # 其他（人物、底层技术、组织）
+│   ├── ai-agent.yaml               # AI Agent 相关实体
+│   ├── infrastructure.yaml         # 基础设施实体
+│   ├── knowledge-management.yaml   # 知识库与知识管理
+│   ├── people.yaml                 # 人物实体
+│   └── thinking-methods.yaml       # 思维方法实体
 └── scenarios/             # 场景层：问题驱动的组装规则
-    └── scenarios.yaml     # 43 个场景，每个包含 trigger/goal/composition/related_scenarios
+    └── scenarios.yaml     # 20 个场景，每个包含 trigger/goal/composition/related_scenarios
 ```
 
 ## 设计原则
@@ -31,9 +31,9 @@ wiki1/
 ## 与 wiki/ 的关系
 
 - wiki/ = 资料库 + 知识库（萃取后的结构化文章）
-- wiki1/ = 模式库（元信息：结构、关系、组装规则）
-- wiki1/ 通过 `source:` 字段反向指回 wiki/ 中的原始页面
-- wiki1/ 不存储知识内容本身，只存储"如何调用和组装知识"
+- meta/ = 模式库（元信息：结构、关系、组装规则）
+- meta/ 通过 `source:` 字段反向指回 wiki/ 中的原始页面
+- meta/ 不存储知识内容本身，只存储"如何调用和组装知识"
 
 ## 版本
 

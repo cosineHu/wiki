@@ -113,7 +113,7 @@ meta_concepts:
       - "按 phase 顺序编排知识单元"
       - "检查组装结果是否覆盖场景的所有 phase"
     output: "面向特定场景的知识组装方案"
-    tools: ["llm-wiki", "wiki1-scenarios"]
+    tools: ["llm-wiki", "meta-scenarios"]
     quality_check: "组装结果是否覆盖了场景的所有 phase？是否遗漏关键概念？"
 
   - id: task-decomposition
@@ -409,7 +409,7 @@ meta_concepts:
       - "检查是否有死链（引用不存在的 id）"
       - "将所有发现以 yaml 条目骨架形式输出"
     output: "待审核的 yaml 条目骨架列表"
-    tools: ["wiki1"]
+    tools: ["meta"]
     quality_check: "是否覆盖了所有 5 个检查维度？骨架格式是否正确？"
 
   - id: scene-matching
@@ -423,7 +423,7 @@ meta_concepts:
       - "如无精确匹配，沿 related_scenarios 扩展搜索"
       - "返回最佳匹配场景及其 composition 规则"
     output: "匹配的场景 + 组装规则"
-    tools: ["wiki1-scenarios"]
+    tools: ["meta-scenarios"]
     quality_check: "场景匹配是否准确？是否考虑了 related_scenarios？"
 
   - id: source-deep-dive
@@ -480,5 +480,5 @@ meta_concepts:
       - "更新元模型（概念/实体/场景/关系）"
       - "验证更新后的系统是否解决了原问题"
     output: "持续进化的知识系统"
-    tools: ["wiki1", "yaml-reverse-check"]
+    tools: ["meta", "yaml-reverse-check"]
     quality_check: "反馈是否被转化为具体改进？改进后是否验证了效果？"

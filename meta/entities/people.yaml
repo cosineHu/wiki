@@ -75,7 +75,7 @@ entities:
     level: 1
     type: person
     description: "微信公众号作者，LLM-Wiki 认知闭环系统的实践者和分享者"
-    source: wiki/raw/articles/cognitive-closed-loop-wiki1-2026.md
+    source: wiki/raw/articles/cognitive-closed-loop-meta-2026.md
     relations:
       - target: cognitive-closed-loop
         type: related_to

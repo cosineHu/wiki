@@ -19,8 +19,8 @@ entities:
         name: Concepts 层（知识萃取）
         level: 2
         description: "从原始资料中萃取的结构化知识页面"
-      - id: wiki1-meta-layer-child
-        name: wiki1 元模型层（模式库）
+      - id: meta-meta-layer-child
+        name: meta 元模型层（模式库）
         level: 2
         description: "场景驱动的认知闭环操作系统，存储结构/关系/组装规则"
     relations:
@@ -242,7 +242,7 @@ entities:
     level: 1
     type: methodology
     description: "场景驱动的认知闭环操作系统：使用→发现→更新→再使用"
-    source: wiki/raw/articles/cognitive-closed-loop-wiki1-2026.md
+    source: wiki/raw/articles/cognitive-closed-loop-meta-2026.md
     children:
       - id: ipo-model
         name: IPO 模型
@@ -255,25 +255,25 @@ entities:
     relations:
       - target: llm-wiki
         type: depends_on
-      - target: wiki1-meta-layer
+      - target: meta-meta-layer
         type: is_a
 
-  - id: wiki1-meta-layer
-    name: wiki1 元模型层
+  - id: meta-meta-layer
+    name: meta 元模型层
     level: 1
     type: architecture
     description: "三层架构（场景层→概念层→实体层）+ IPO 闭环的认知操作系统"
-    source: wiki/raw/articles/cognitive-closed-loop-wiki1-2026.md
+    source: wiki/raw/articles/cognitive-closed-loop-meta-2026.md
     children:
-      - id: wiki1-scenario-layer
+      - id: meta-scenario-layer
         name: 场景层
         level: 2
         description: "问题驱动的组装规则，定义 trigger/goal/composition/related_scenarios"
-      - id: wiki1-concept-layer
+      - id: meta-concept-layer
         name: 概念层
         level: 2
         description: "原子概念（IPO 建模）+ 组合概念（decomposition 分解）"
-      - id: wiki1-entity-layer
+      - id: meta-entity-layer
         name: 实体层
         level: 2
         description: "人事物，5 个分类文件，3 层父子结构，4 种关系"
@@ -289,7 +289,7 @@ entities:
     type: specification
     description: "AI 操作规程，定义 7 步标准流水线 + yaml 反向校验"
     relations:
-      - target: wiki1-meta-layer
+      - target: meta-meta-layer
         type: depends_on
 
   - id: cron-job

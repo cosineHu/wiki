@@ -144,7 +144,7 @@ compose_concepts:
         purpose: "对比页面更新日期与来源日期，发现过时内容"
       - step: 5
         meta: yaml-reverse-check
-        purpose: "反向校验 wiki1/ 元模型是否覆盖所有知识"
+        purpose: "反向校验 meta/ 元模型是否覆盖所有知识"
     triggers: "定期（每日/每周）或用户主动触发"
     output: "健康检查报告（含问题列表和修复建议）"
 

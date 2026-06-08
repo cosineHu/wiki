@@ -71,9 +71,9 @@ entities:
     name: YAML
     level: 1
     type: format
-    description: "人类可读的数据序列化格式，wiki1/ 元模型的主要存储格式"
+    description: "人类可读的数据序列化格式，meta/ 元模型的主要存储格式"
     relations:
-      - target: wiki1-meta-layer
+      - target: meta-meta-layer
         type: uses
 
   - id: json

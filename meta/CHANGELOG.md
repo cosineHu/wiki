@@ -1,9 +1,9 @@
-# wiki1/ CHANGELOG
+# meta/ CHANGELOG
 
-> 记录 wiki1/ 元模型的所有变更
+> 记录 meta/ 元模型的所有变更
 > 格式: `## [YYYY-MM-DD] type | description`
 
-## [2026-06-08] create | wiki1/ 认知闭环操作系统初始化
+## [2026-06-08] create | meta/ 认知闭环操作系统初始化
 
 - 灵感来源: 人月聊IT《进一步优化LLM-Wiki大模型知识库，构建场景驱动的认知闭环》
 - 创建文件:
