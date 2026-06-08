@@ -76,3 +76,15 @@ confidence: high
 - [[rag-vs-wiki]] — RAG 是检索模式，认知闭环是组装模式
 - [[hermes-skills-system]] — Hermes 技能系统与认知闭环的场景-组装-校验理念一致
 - [[enterprise-second-brain-architecture]] — 企业级第二大脑架构可以应用认知闭环升级
+
+## IPO 建模
+
+| 维度 | 内容 |
+|------|------|
+| **Input** | 用户请求（自然语言）；知识库当前状态（wiki/ + meta/） |
+| **Process** | ① 问题解析（提取意图、约束、期望输出） → ② 场景匹配（按 trigger 匹配 scenarios.yaml） → ③ 概念组装（按 composition 加载原子/组合概念） → ④ 实体调取（加载 entities yaml + 间接关系） → ⑤ 原文深挖（回溯 raw/ 获取案例数据） → ⑥ 结构化执行（按 phase 顺序逐步执行） → ⑦ YAML 反向校验（5 维检查：新场景/概念/实体/关系/死链） |
+| **Output** | 完整的执行结果 + 反向校验报告（缺口发现 + 补充骨架） |
+| **Tools** | search_files, read_file, write_file, terminal, skill_view, meta/ yaml 文件 |
+| **Quality Check** | 是否匹配了正确的场景？composition 是否完整执行？反向校验是否覆盖 5 个维度？ |
+
+> 场景驱动认知闭环的本质是"组装优于理解"——AI 不需要理解用户意图，只需严格按场景的 composition 规则组装知识。

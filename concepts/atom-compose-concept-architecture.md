@@ -85,3 +85,15 @@ decomposition：
 - [[ipo-closed-loop]] — IPO 闭环是原子概念的建模方式
 - [[llm-wiki]] — LLM Wiki 的概念层可以升级为原子-组合双层架构
 - [[hermes-skills-system]] — Hermes 技能的原子-组合模式与本架构一致
+
+## IPO 建模
+
+| 维度 | 内容 |
+|------|------|
+| **Input** | 需要建模的方法论集合（概念清单 + 使用场景） |
+| **Process** | ① 识别所有方法，判断可分解性 → ② 不可再分的归为原子概念，填充 IPO 四元组 → ③ 可分解的归为组合概念，写出 decomposition（每步引用原子概念 + 目的说明） → ④ 建立概念间的引用关系 → ⑤ 写入 meta-concepts.yaml 和 compose-concepts.yaml |
+| **Output** | 两层概念体系（原子概念 yaml + 组合概念 yaml），支持场景层按需组装 |
+| **Tools** | read_file, write_file, patch, meta/ yaml 文件 |
+| **Quality Check** | 原子概念是否有完整 IPO？组合概念是否有至少 2 步 decomposition？引用关系是否有效？ |
+
+> 原子-组合双层架构的本质是"颗粒度管理"——在可执行性和可复用性之间找到最优平衡。

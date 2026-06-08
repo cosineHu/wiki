@@ -69,6 +69,7 @@ One page per concept or topic. Include:
 - Current state of knowledge
 - Open questions or debates
 - Related concepts ([[wikilinks]])
+- **IPO 建模** (required for core concepts): Input / Process / Output / Tools / Quality Check table, following the meta/meta-concepts.yaml IPO format. This transforms the page from "descriptive knowledge" to "executable specification" that AI can assemble into solutions.
 
 ## Comparison Pages
 Side-by-side analyses. Include:

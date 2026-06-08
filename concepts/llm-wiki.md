@@ -1,7 +1,7 @@
 ---
 title: LLM Wiki（Karpathy 模式）
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-06-08
 type: concept
 tags: [llm, knowledge-base, reference]
 sources: [raw/articles/hermes-llm-wiki-skill-2026.md]
@@ -75,6 +75,18 @@ wiki/
 Wiki 目录天然兼容 [[Obsidian]]，`[[wikilinks]]` 可点击，图谱视图可视化知识网络，YAML frontmatter 支持 Dataview 查询。
 
 服务器端可通过 [[obsidian-headless]] 实现无 GUI 同步。
+
+## IPO 建模
+
+| 维度 | 内容 |
+|------|------|
+| **Input** | 外部来源（文章 URL、论文 PDF、对话记录）；用户的知识查询 |
+| **Process** | ① 捕获原始来源 → raw/ 目录（含 source_url/ingested/sha256） → ② 检查已有内容避免重复 → ③ 萃取实体（名词）和概念（动词） → ④ 创建/更新 wiki 页面（含 frontmatter、交叉引用、标签） → ⑤ 更新 index.md 和 log.md → ⑥ git commit 提交 |
+| **Output** | 结构化的互联知识库（markdown 页面 + 索引 + 日志 + Git 版本历史） |
+| **Tools** | read_file, write_file, search_files, terminal(git), llm-wiki skill |
+| **Quality Check** | 每个页面是否有完整 frontmatter？是否有至少 2 个 [[wikilinks]]？是否避免了重复创建？ |
+
+> LLM Wiki 的本质是"编译一次，持续复用"。IPO 建模明确了从原始信息到结构化知识的完整转化链路。
 
 ## 相关工具
 

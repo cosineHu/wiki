@@ -32,19 +32,19 @@ confidence: high
 
 ## 演进路径
 
-资料库（raw/） → 知识库（wiki/） → 模式库（wiki1/）
+资料库（raw/） → 知识库（wiki/） → 模式库（wiki/meta/）
 
 每一次迭代，知识的可用性都向前推进：从"我能看"到"我能查"，再到"AI 能调用、能组装、能自我迭代"。
 
 ## 与 LLM Wiki 的关系
 
 - wiki/ = 资料库 + 知识库（萃取后的结构化文章）
-- wiki1/ = 模式库（元信息：结构、关系、组装规则）
-- wiki1/ 通过 `source:` 字段反向指回 wiki/ 中的原始页面
+- wiki/meta/ = 模式库（元信息：结构、关系、组装规则）
+- wiki/meta/ 通过 `source:` 字段反向指回 wiki/ 中的原始页面
 
 ## 参考
 
 - [[llm-wiki]] — LLM Wiki 基础模式
 - [[enterprise-second-brain-architecture]] — 企业级第二大脑架构
 - [[hermes-skills-system]] — Hermes 技能系统（类比：概念 = 技能，场景 = 编排）
-- [[rag-vs-wiki]] — RAG vs Wiki 对比（wiki1 是 Wiki 的下一阶段进化）
+- [[rag-vs-wiki]] — RAG vs Wiki 对比（meta/ 是 Wiki 的下一阶段进化）

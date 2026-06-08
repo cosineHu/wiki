@@ -131,3 +131,15 @@ dead_links:
 - [[ipo-closed-loop]] — 反向校验会检查 IPO 的完整性和有效性
 - [[atom-compose-concept-architecture]] — 反向校验会发现新的原子/组合概念
 - [[llm-wiki]] — LLM Wiki 的 lint 功能是反向校验的前身
+
+## IPO 建模
+
+| 维度 | 内容 |
+|------|------|
+| **Input** | 一次完整的知识库使用会话（场景执行记录 + 工具调用日志 + 产出内容） |
+| **Process** | ① 新场景检查（是否有未定义的 trigger/goal/composition） → ② 新概念检查（是否有未收录的方法/动作） → ③ 新实体检查（是否有未收录的人事物/名词） → ④ 新关系检查（是否有未记录的 is_a/uses/depends_on/related_to） → ⑤ 死链检查（yaml 和 wiki 中的引用是否有效） → ⑥ 汇总为结构化报告 → ⑦ 生成补充骨架写入 meta/_pending/ |
+| **Output** | 反向校验报告（yaml 格式）+ 补充骨架文件（可合入 meta/ 的 yaml 片段） |
+| **Tools** | search_files, read_file, write_file, meta/ yaml 文件 |
+| **Quality Check** | 5 个维度是否全部覆盖？发现的缺口是否有对应的补充骨架？报告是否可操作？ |
+
+> YAML 反向校验是认知闭环的"反馈回路"——每次使用都是一次进化机会，让知识库在使用中持续生长。

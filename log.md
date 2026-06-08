@@ -217,3 +217,21 @@
   - concepts/yaml-reverse-validation.md (YAML 反向校验：知识库自我迭代机制)
   - comparisons/static-kb-vs-cognitive-os.md (静态知识库 vs 认知操作系统)
 - 更新文件: index.md (新增 5 个页面条目，总页数 27→32)
+
+## [2026-06-08] evolve | 三步落地：IPO 建模 + 场景层 + 反向校验接入 cron
+- 核心动作: 将 meta/ 认知闭环系统正式接入 wiki 运营体系
+- 第一步 — 概念页 IPO 建模:
+  - concepts/hermes-skills-system.md: 新增 IPO 段（Input/Process/Output/Tools/Quality Check）
+  - concepts/llm-wiki.md: 新增 IPO 段
+  - concepts/scenario-driven-cognitive-loop.md: 新增 IPO 段
+  - concepts/atom-compose-concept-architecture.md: 新增 IPO 段
+  - concepts/yaml-reverse-validation.md: 新增 IPO 段
+  - concepts/ipo-closed-loop.md: 新增 IPO 段
+- 第二步 — 场景层已就位: meta/scenarios/scenarios.yaml（20 个场景，含 composition 组装规则）
+- 第三步 — cron 任务升级:
+  - 每日知识审计 (7e7b8f34c165): 增加 meta/ 层检查（yaml 一致性、交叉引用、死链）
+  - 每周知识再进化 (431e61cc81b5): 增加场景覆盖度评估、基于 meta/ 的缺口发现
+  - 每日反向校验 (962848e46455): 新增 cron，执行 5 维 yaml 反向校验（新场景/概念/实体/关系/死链）
+- 修复: concepts/cognitive-closed-loop.md 中 3 处 wiki1/ 引用 → wiki/meta/
+- 更新: SCHEMA.md 新增概念页 IPO 建模要求
+- 删除: wiki1/ 目录（内容已移入 wiki/meta/）
