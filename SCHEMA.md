@@ -3,6 +3,19 @@
 ## Domain
 综合性知识库 — 技术、研究、个人笔记，无所不包。
 
+## 双层架构
+
+本仓库包含两层知识体系：
+
+- **wiki/** — 资料库 + 知识库：萃取后的结构化文章（Markdown），存储知识内容本身
+- **wiki1/** — 模式库（认知闭环操作系统）：元信息（YAML），存储结构、关系、组装规则
+  - 三层架构：场景层 → 概念层（原子+组合） → 实体层
+  - IPO 闭环：Input → Process → Output
+  - 4 种实体关系：is_a / uses / depends_on / related_to
+  - 每次使用后强制执行 yaml 反向校验
+
+wiki1/ 通过 `source:` 字段反向指回 wiki/ 中的原始页面。详见 `wiki1/README.md` 和 `wiki1/profile.md`。
+
 ## Conventions
 - File names: lowercase, hyphens, no spaces (e.g., `transformer-architecture.md`)
 - Every wiki page starts with YAML frontmatter (see below)

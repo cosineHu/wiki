@@ -1,0 +1,123 @@
+# entity-thinking-methods.yaml — 思维方法相关实体
+# 分类: 思维框架、方法论、认知工具
+# 版本: 1.0 | 创建: 2026-06-08 | 条目数: 12
+
+entities:
+
+  - id: first-principles-thinking
+    name: 第一性原理思维
+    level: 1
+    type: methodology
+    description: "剥离类比和假设，从最底层不可再分的基本要素出发推导解决方案"
+    relations:
+      - target: elon-musk
+        type: related_to
+      - target: system-thinking
+        type: related_to
+
+  - id: system-thinking
+    name: 系统思考
+    level: 1
+    type: methodology
+    description: "从整体和关系的角度理解问题，关注要素间的相互作用和反馈回路"
+    relations:
+      - target: first-principles-thinking
+        type: related_to
+      - target: causal-chain-analysis
+        type: uses
+
+  - id: critical-thinking
+    name: 批判性思维
+    level: 1
+    type: methodology
+    description: "对信息和论证进行理性分析和评估的思维模式"
+    relations:
+      - target: system-thinking
+        type: related_to
+
+  - id: mece-principle
+    name: MECE 原则
+    level: 1
+    type: methodology
+    description: "Mutually Exclusive, Collectively Exhaustive — 相互独立、完全穷尽的分解方法"
+    relations:
+      - target: task-decomposition
+        type: uses
+
+  - id: sbr-model
+    name: SBR 模型
+    level: 1
+    type: framework
+    description: "Situation-Behavior-Result 情境-行为-结果分析模型"
+    relations:
+      - target: first-principles-thinking
+        type: uses
+
+  - id: inductive-deductive-loop
+    name: 归纳-演绎闭环
+    level: 1
+    type: methodology
+    description: "从具体实例归纳规律，再用规律演绎预测，验证后修正规律的循环"
+    relations:
+      - target: inductive-reasoning
+        type: uses
+      - target: deductive-reasoning
+        type: uses
+
+  - id: pdca-cycle
+    name: PDCA 循环
+    level: 1
+    type: methodology
+    description: "Plan-Do-Check-Act 持续改进循环"
+    relations:
+      - target: feedback-loop
+        type: related_to
+
+  - id: five-whys
+    name: 5 Whys 分析法
+    level: 1
+    type: technique
+    description: "通过连续追问'为什么'追溯问题根本原因的方法"
+    relations:
+      - target: causal-chain-analysis
+        type: uses
+
+  - id: fishbone-diagram
+    name: 鱼骨图（因果图）
+    level: 1
+    type: technique
+    description: "可视化因果分析的图形工具，按人机料法环分类原因"
+    relations:
+      - target: causal-chain-analysis
+        type: uses
+
+  - id: swot-analysis
+    name: SWOT 分析
+    level: 1
+    type: framework
+    description: "Strengths-Weaknesses-Opportunities-Threats 战略分析框架"
+    relations:
+      - target: comparative-analysis
+        type: uses
+
+  - id: ooda-loop
+    name: OODA 循环
+    level: 1
+    type: methodology
+    description: "Observe-Orient-Decide-Act 快速决策循环"
+    relations:
+      - target: pdca-cycle
+        type: related_to
+      - target: feedback-loop
+        type: related_to
+
+  - id: second-order-thinking
+    name: 二阶思维
+    level: 1
+    type: methodology
+    description: "不仅考虑直接后果，还考虑后果的后果"
+    relations:
+      - target: system-thinking
+        type: related_to
+      - target: causal-chain-analysis
+        type: uses

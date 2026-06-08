@@ -1,0 +1,126 @@
+# entity-infrastructure.yaml — 基础设施与技术相关实体
+# 分类: 技术栈、协议、基础设施
+# 版本: 1.0 | 创建: 2026-06-08 | 条目数: 12
+
+entities:
+
+  - id: linux
+    name: Linux
+    level: 1
+    type: technology
+    description: "开源操作系统内核，Hermes Agent 的主要运行环境"
+    relations:
+      - target: hermes-agent
+        type: depends_on
+
+  - id: docker
+    name: Docker
+    level: 1
+    type: technology
+    description: "容器化平台，Hermes 终端后端之一"
+    relations:
+      - target: hermes-terminal-backends
+        type: is_a
+
+  - id: ssh
+    name: SSH
+    level: 1
+    type: protocol
+    description: "安全外壳协议，Hermes 远程终端后端的基础"
+    relations:
+      - target: hermes-terminal-backends
+        type: uses
+
+  - id: git-protocol
+    name: Git
+    level: 1
+    type: technology
+    description: "分布式版本控制系统"
+    children:
+      - id: git-ssh
+        name: SSH 协议
+        level: 2
+        description: "通过 SSH 密钥认证的 Git 传输协议"
+      - id: git-https
+        name: HTTPS 协议
+        level: 2
+        description: "通过 HTTPS 的 Git 传输协议，在国内可能被墙"
+    relations:
+      - target: github
+        type: uses
+
+  - id: python
+    name: Python
+    level: 1
+    type: technology
+    description: "Hermes Agent 的主要开发语言"
+    relations:
+      - target: hermes-agent
+        type: depends_on
+
+  - id: nodejs
+    name: Node.js
+    level: 1
+    type: technology
+    description: "JavaScript 运行时，obsidian-headless 等工具的运行环境"
+    relations:
+      - target: obsidian-headless
+        type: depends_on
+
+  - id: yaml
+    name: YAML
+    level: 1
+    type: format
+    description: "人类可读的数据序列化格式，wiki1/ 元模型的主要存储格式"
+    relations:
+      - target: wiki1-meta-layer
+        type: uses
+
+  - id: json
+    name: JSON
+    level: 1
+    type: format
+    description: "JavaScript Object Notation，API 数据交换格式"
+    relations:
+      - target: yaml
+        type: related_to
+
+  - id: sqlite
+    name: SQLite
+    level: 1
+    type: technology
+    description: "嵌入式关系数据库，Hermes 会话存储后端"
+    relations:
+      - target: hermes-agent
+        type: uses
+
+  - id: fts5
+    name: FTS5
+    level: 1
+    type: technology
+    description: "SQLite 全文搜索引擎，Hermes session_search 的底层实现"
+    relations:
+      - target: sqlite
+        type: is_a
+      - target: hermes-agent
+        type: uses
+
+  - id: systemd
+    name: systemd
+    level: 1
+    type: technology
+    description: "Linux 系统和服务管理器，用于管理 obsidian-headless 等后台服务"
+    relations:
+      - target: linux
+        type: depends_on
+      - target: obsidian-headless
+        type: uses
+
+  - id: openai
+    name: OpenAI
+    level: 1
+    type: organization
+    description: "ChatGPT/GPT 系列模型的开发公司"
+    relations:
+      - target: andrej-karpathy
+        type: related_to

@@ -1,0 +1,442 @@
+# compose-concepts.yaml — 组合概念（由原子概念串接而成的复合方法）
+# 每个组合概念必须包含至少两步的 decomposition，每一步引用一个 meta 概念
+# 版本: 1.0 | 创建: 2026-06-08 | 条目数: 20
+
+compose_concepts:
+
+  - id: wiki-ingest-pipeline
+    name: Wiki 摄入流水线
+    category: knowledge-management
+    description: 将外部来源（文章/URL/文档）完整摄入知识库的标准流程
+    decomposition:
+      - step: 1
+        meta: git-sync
+        purpose: "拉取远程最新版本，避免冲突"
+      - step: 2
+        meta: knowledge-extraction
+        purpose: "从原始来源中提取结构化知识单元"
+      - step: 3
+        meta: metadata-annotation
+        purpose: "为每个知识单元添加 frontmatter 元数据"
+      - step: 4
+        meta: incremental-update
+        purpose: "将新知合并到已有页面，避免重复"
+      - step: 5
+        meta: cross-referencing
+        purpose: "建立双向链接，融入知识网络"
+      - step: 6
+        meta: version-control
+        purpose: "提交变更并推送到远程仓库"
+    triggers: "用户发送文章链接或文档"
+    output: "更新后的知识库（新页面 + 更新页面 + 索引 + 日志）"
+
+  - id: wiki-query-pipeline
+    name: Wiki 查询流水线
+    category: knowledge-management
+    description: 基于知识库回答用户问题的标准流程
+    decomposition:
+      - step: 1
+        meta: information-retrieval
+        purpose: "从知识库中检索相关页面"
+      - step: 2
+        meta: knowledge-assembly
+        purpose: "将检索到的知识按问题需求编排"
+      - step: 3
+        meta: source-deep-dive
+        purpose: "必要时回溯原始文章获取细节"
+      - step: 4
+        meta: structured-writing
+        purpose: "按框架组织回答，确保逻辑清晰"
+    triggers: "用户询问知识库覆盖范围内的问题"
+    output: "基于知识库的结构化回答"
+
+  - id: deep-thinking
+    name: 深度思考
+    category: thinking
+    description: 面对复杂问题时进行系统性的深度思考
+    decomposition:
+      - step: 1
+        meta: task-decomposition
+        purpose: "将复杂问题分解为可处理的子问题"
+      - step: 2
+        meta: first-principles
+        purpose: "对核心子问题进行第一性原理分析"
+      - step: 3
+        meta: causal-chain-analysis
+        purpose: "追溯问题的根本原因和因果链"
+      - step: 4
+        meta: system-thinking
+        purpose: "从整体视角理解要素间的相互作用"
+      - step: 5
+        meta: retrospective-summary
+        purpose: "总结思考过程，提取可复用的方法论"
+    triggers: "面对复杂、陌生或需要创新解决方案的问题"
+    output: "系统性的问题分析报告 + 解决方案"
+
+  - id: rapid-domain-entry
+    name: 快速切入新领域
+    category: learning
+    description: 快速建立对新领域的结构化认知
+    decomposition:
+      - step: 1
+        meta: information-retrieval
+        purpose: "检索领域核心概念和关键实体"
+      - step: 2
+        meta: abstract-modeling
+        purpose: "构建领域的简化概念模型"
+      - step: 3
+        meta: mece-decomposition
+        purpose: "按 MECE 原则拆解领域的知识结构"
+      - step: 4
+        meta: comparative-analysis
+        purpose: "与已知领域对比，加速理解"
+      - step: 5
+        meta: knowledge-structuring
+        purpose: "将新领域知识结构化存入知识库"
+    triggers: "需要快速了解一个全新领域"
+    output: "新领域的结构化知识地图"
+
+  - id: knowledge-base-article-writing
+    name: 基于知识库的文章写作
+    category: content-creation
+    description: 基于知识库素材进行结构化文章创作
+    decomposition:
+      - step: 1
+        meta: scene-matching
+        purpose: "匹配写作场景，确定文章框架"
+      - step: 2
+        meta: task-decomposition
+        purpose: "将写作任务分解为段落/章节"
+      - step: 3
+        meta: knowledge-assembly
+        purpose: "按框架组装知识库中的概念和实体"
+      - step: 4
+        meta: source-deep-dive
+        purpose: "回溯原始文章获取具体案例和数据"
+      - step: 5
+        meta: structured-writing
+        purpose: "按框架进行结构化写作"
+      - step: 6
+        meta: cross-referencing
+        purpose: "添加内部链接，形成知识网络"
+      - step: 7
+        meta: yaml-reverse-check
+        purpose: "反向校验，发现新概念/实体/场景"
+    triggers: "需要基于知识库撰写新文章"
+    output: "结构化文章 + 反向校验发现"
+
+  - id: knowledge-base-health-check
+    name: 知识库健康检查
+    category: knowledge-management
+    description: 定期检查知识库的结构完整性、一致性和时效性
+    decomposition:
+      - step: 1
+        meta: information-retrieval
+        purpose: "扫描所有页面，建立完整清单"
+      - step: 2
+        meta: cross-referencing
+        purpose: "检查孤立页面和死链"
+      - step: 3
+        meta: metadata-annotation
+        purpose: "验证 frontmatter 完整性和标签一致性"
+      - step: 4
+        meta: comparative-analysis
+        purpose: "对比页面更新日期与来源日期，发现过时内容"
+      - step: 5
+        meta: yaml-reverse-check
+        purpose: "反向校验 wiki1/ 元模型是否覆盖所有知识"
+    triggers: "定期（每日/每周）或用户主动触发"
+    output: "健康检查报告（含问题列表和修复建议）"
+
+  - id: agent-skill-orchestration
+    name: Agent 技能编排
+    category: ai-agent
+    description: 将多个原子技能编排为完整的 Agent 工作流
+    decomposition:
+      - step: 1
+        meta: task-decomposition
+        purpose: "将用户需求分解为可独立执行的子任务"
+      - step: 2
+        meta: tool-calling
+        purpose: "为每个子任务选择合适的工具"
+      - step: 3
+        meta: context-management
+        purpose: "在有限上下文中高效组织信息"
+      - step: 4
+        meta: memory-writing
+        purpose: "将关键发现持久化到记忆系统"
+      - step: 5
+        meta: skill-registration
+        purpose: "如果流程可复用，注册为新技能"
+    triggers: "用户提出需要多步骤完成的复杂任务"
+    output: "完成的任务 + 可能的技能注册"
+
+  - id: second-brain-daily-sync
+    name: 第二大脑日常同步
+    category: knowledge-management
+    description: 第二大脑系统的日常维护和同步流程
+    decomposition:
+      - step: 1
+        meta: git-sync
+        purpose: "同步知识库到最新版本"
+      - step: 2
+        meta: memory-retrieval
+        purpose: "回顾最近的记忆和会话"
+      - step: 3
+        meta: information-retrieval
+        purpose: "检查是否有待处理的知识碎片"
+      - step: 4
+        meta: incremental-update
+        purpose: "将新发现整合到知识库"
+      - step: 5
+        meta: version-control
+        purpose: "提交变更"
+    triggers: "每日定时触发"
+    output: "同步并更新后的知识库"
+
+  - id: system-architecture-design
+    name: 系统架构设计
+    category: problem-solving
+    description: 从需求到架构方案的系统性设计流程
+    decomposition:
+      - step: 1
+        meta: task-decomposition
+        purpose: "分解需求，识别核心问题和约束"
+      - step: 2
+        meta: first-principles
+        purpose: "从第一性原理出发确定设计原则"
+      - step: 3
+        meta: abstract-modeling
+        purpose: "构建系统的概念架构模型"
+      - step: 4
+        meta: comparative-analysis
+        purpose: "对比备选方案，选择最优架构"
+      - step: 5
+        meta: system-thinking
+        purpose: "验证架构的系统性影响和反馈回路"
+    triggers: "需要设计新系统或重构现有系统"
+    output: "系统架构方案 + 设计决策记录"
+
+  - id: decision-making-framework
+    name: 决策框架
+    category: problem-solving
+    description: 面对重要决策时的系统性分析框架
+    decomposition:
+      - step: 1
+        meta: task-decomposition
+        purpose: "明确决策问题的边界和约束"
+      - step: 2
+        meta: first-principles
+        purpose: "剥离假设，回归决策的本质目标"
+      - step: 3
+        meta: comparative-analysis
+        purpose: "多维度对比各选项的优劣"
+      - step: 4
+        meta: causal-chain-analysis
+        purpose: "推演各选项的连锁后果"
+      - step: 5
+        meta: retrospective-summary
+        purpose: "记录决策逻辑，供未来复盘"
+    triggers: "面临重要决策或选择"
+    output: "决策分析报告 + 决策记录"
+
+  - id: personal-methodology-extraction
+    name: 个人方法论萃取
+    category: meta
+    description: 从个人经验和文章中系统性地提取方法论
+    decomposition:
+      - step: 1
+        meta: knowledge-extraction
+        purpose: "从个人文章中提取方法论片段"
+      - step: 2
+        meta: inductive-reasoning
+        purpose: "从多个片段中归纳出通用方法"
+      - step: 3
+        meta: mece-decomposition
+        purpose: "确保方法论体系的完整性和互斥性"
+      - step: 4
+        meta: knowledge-structuring
+        purpose: "将方法论结构化为原子+组合双层架构"
+      - step: 5
+        meta: yaml-reverse-check
+        purpose: "检查是否有遗漏的方法论"
+    triggers: "积累了足够多的个人文章和经验"
+    output: "结构化的个人方法论体系"
+
+  - id: cron-job-design
+    name: 定时任务设计
+    category: automation
+    description: 设计和部署知识库的自动化定时任务
+    decomposition:
+      - step: 1
+        meta: task-decomposition
+        purpose: "分析哪些知识管理任务适合自动化"
+      - step: 2
+        meta: cron-job-scheduling
+        purpose: "为每个任务设置合适的调度策略"
+      - step: 3
+        meta: feedback-loop
+        purpose: "设计任务的反馈和改进机制"
+      - step: 4
+        meta: yaml-reverse-check
+        purpose: "检查自动化流程是否覆盖了所有必要步骤"
+    triggers: "需要为知识库设置自动化维护"
+    output: "部署完成的定时任务 + 监控机制"
+
+  - id: multi-agent-collaboration
+    name: 多 Agent 协作
+    category: ai-agent
+    description: 编排多个 AI Agent 并行或串行完成复杂任务
+    decomposition:
+      - step: 1
+        meta: task-decomposition
+        purpose: "将总任务分解为可并行的子任务"
+      - step: 2
+        meta: session-isolation
+        purpose: "确保各 Agent 的上下文互不污染"
+      - step: 3
+        meta: tool-calling
+        purpose: "每个 Agent 独立调用所需工具"
+      - step: 4
+        meta: knowledge-assembly
+        purpose: "汇总各 Agent 的结果并编排"
+      - step: 5
+        meta: memory-writing
+        purpose: "将协作经验持久化"
+    triggers: "任务可并行分解且各子任务独立"
+    output: "多 Agent 协作完成的结果"
+
+  - id: knowledge-evolution-cycle
+    name: 知识进化循环
+    category: meta
+    description: 知识库的自我进化闭环：使用→发现→更新→再使用
+    decomposition:
+      - step: 1
+        meta: scene-matching
+        purpose: "匹配使用场景，触发知识调用"
+      - step: 2
+        meta: knowledge-assembly
+        purpose: "按场景规则组装知识"
+      - step: 3
+        meta: yaml-reverse-check
+        purpose: "使用后反向校验，发现缺口"
+      - step: 4
+        meta: incremental-update
+        purpose: "将发现的新概念/实体/场景合入元模型"
+      - step: 5
+        meta: feedback-loop
+        purpose: "验证更新效果，形成闭环"
+    triggers: "每次知识库被使用后自动触发"
+    output: "持续进化的知识系统"
+
+  - id: csdn-article-publishing
+    name: CSDN 文章发布
+    category: content-creation
+    description: 从知识库选题到 CSDN 发布的完整流程
+    decomposition:
+      - step: 1
+        meta: scene-matching
+        purpose: "确定文章主题和写作场景"
+      - step: 2
+        meta: knowledge-assembly
+        purpose: "从知识库组装文章素材"
+      - step: 3
+        meta: structured-writing
+        purpose: "按 CSDN 技术博文风格结构化写作"
+      - step: 4
+        meta: cross-referencing
+        purpose: "添加系列文章的内部链接"
+      - step: 5
+        meta: yaml-reverse-check
+        purpose: "反向校验，发现知识库缺口"
+    triggers: "需要发布新的 CSDN 系列文章"
+    output: "CSDN 就绪的文章 + 知识库更新"
+
+  - id: concept-entity-separation
+    name: 概念实体分离
+    category: knowledge-management
+    description: 将混杂的概念和实体进行系统性分离和重组
+    decomposition:
+      - step: 1
+        meta: knowledge-extraction
+        purpose: "从现有知识库中提取所有条目"
+      - step: 2
+        meta: mece-decomposition
+        purpose: "按'方法/动作'vs'人事物/名词'二分"
+      - step: 3
+        meta: abstract-modeling
+        purpose: "为概念设计 IPO 模型，为实体设计层级结构"
+      - step: 4
+        meta: knowledge-structuring
+        purpose: "将分离后的概念和实体写入新结构"
+      - step: 5
+        meta: cross-referencing
+        purpose: "重建概念与实体之间的引用关系"
+    triggers: "知识库中概念和实体混杂，需要重构"
+    output: "分离后的概念层 + 实体层"
+
+  - id: hermes-config-optimization
+    name: Hermes 配置优化
+    category: ai-agent
+    description: 系统性地优化 Hermes Agent 的配置
+    decomposition:
+      - step: 1
+        meta: information-retrieval
+        purpose: "检索当前配置和最佳实践"
+      - step: 2
+        meta: comparative-analysis
+        purpose: "对比当前配置与推荐配置"
+      - step: 3
+        meta: task-decomposition
+        purpose: "将优化分解为可逐步实施的变更"
+      - step: 4
+        meta: skill-registration
+        purpose: "将优化后的配置固化为技能"
+      - step: 5
+        meta: feedback-loop
+        purpose: "验证优化效果"
+    triggers: "Hermes 性能不佳或需要适配新场景"
+    output: "优化后的 Hermes 配置"
+
+  - id: technical-troubleshooting
+    name: 技术故障排查
+    category: problem-solving
+    description: 系统性地排查和解决技术问题
+    decomposition:
+      - step: 1
+        meta: task-decomposition
+        purpose: "明确问题现象和影响范围"
+      - step: 2
+        meta: causal-chain-analysis
+        purpose: "追溯问题的根本原因"
+      - step: 3
+        meta: first-principles
+        purpose: "从基本原理出发验证假设"
+      - step: 4
+        meta: comparative-analysis
+        purpose: "对比多种解决方案"
+      - step: 5
+        meta: retrospective-summary
+        purpose: "记录问题和解决方案，防止复发"
+    triggers: "遇到技术故障或异常行为"
+    output: "问题诊断报告 + 解决方案 + 预防措施"
+
+  - id: cron-job-health-monitor
+    name: 定时任务健康监控
+    category: automation
+    description: 监控定时任务的执行状态和输出质量
+    decomposition:
+      - step: 1
+        meta: information-retrieval
+        purpose: "获取定时任务的执行日志"
+      - step: 2
+        meta: comparative-analysis
+        purpose: "对比预期输出与实际输出"
+      - step: 3
+        meta: causal-chain-analysis
+        purpose: "分析异常的根本原因"
+      - step: 4
+        meta: feedback-loop
+        purpose: "将发现反馈到任务优化"
+    triggers: "定时任务执行后或出现异常时"
+    output: "健康监控报告 + 优化建议"

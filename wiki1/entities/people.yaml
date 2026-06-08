@@ -1,0 +1,83 @@
+# entity-people.yaml — 人物相关实体
+# 分类: 关键人物
+# 版本: 1.0 | 创建: 2026-06-08 | 条目数: 8
+
+entities:
+
+  - id: andrej-karpathy
+    name: Andrej Karpathy
+    level: 1
+    type: person
+    description: "AI 研究员，LLM Wiki 模式提出者，前 Tesla AI 总监，OpenAI 联合创始人"
+    source: wiki/entities/andrej-karpathy.md
+    relations:
+      - target: llm-wiki
+        type: related_to
+      - target: openai
+        type: related_to
+
+  - id: tiago-forte
+    name: Tiago Forte
+    level: 1
+    type: person
+    description: "第二大脑（Second Brain）方法论提出者，《Building a Second Brain》作者"
+    relations:
+      - target: second-brain
+        type: related_to
+
+  - id: elon-musk
+    name: Elon Musk
+    level: 1
+    type: person
+    description: "Tesla/SpaceX CEO，第一性原理思维的著名实践者"
+    relations:
+      - target: first-principles-thinking
+        type: related_to
+
+  - id: aristotle
+    name: 亚里士多德
+    level: 1
+    type: person
+    description: "古希腊哲学家，第一性原理概念的起源"
+    relations:
+      - target: first-principles-thinking
+        type: related_to
+
+  - id: rene-descartes
+    name: 笛卡尔
+    level: 1
+    type: person
+    description: "法国哲学家，'我思故我在'，方法论怀疑的奠基人"
+    relations:
+      - target: first-principles-thinking
+        type: related_to
+
+  - id: charlie-munger
+    name: Charlie Munger
+    level: 1
+    type: person
+    description: "Berkshire Hathaway 副董事长，多元思维模型倡导者"
+    relations:
+      - target: system-thinking
+        type: related_to
+
+  - id: peter-senge
+    name: Peter Senge
+    level: 1
+    type: person
+    description: "《第五项修炼》作者，系统思考和学习型组织理论的奠基人"
+    relations:
+      - target: system-thinking
+        type: related_to
+
+  - id: renyueliaoit
+    name: 人月聊IT
+    level: 1
+    type: person
+    description: "微信公众号作者，LLM-Wiki 认知闭环系统的实践者和分享者"
+    source: wiki/raw/articles/cognitive-closed-loop-wiki1-2026.md
+    relations:
+      - target: cognitive-closed-loop
+        type: related_to
+      - target: llm-wiki
+        type: related_to

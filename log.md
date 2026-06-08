@@ -5,6 +5,34 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-06-08] ingest | 认知闭环操作系统 — wiki1/ 初始化
+- 来源: https://mp.weixin.qq.com/s/ZMZHQVbtRFbQ22DgvY8YCw
+- 创建文件:
+  - raw/articles/cognitive-closed-loop-wiki1-2026.md (原始来源)
+  - concepts/cognitive-closed-loop.md (认知闭环操作系统概念)
+  - comparisons/wiki-vs-wiki1.md (wiki/ vs wiki1/ 对比)
+  - wiki1/README.md (wiki1 架构说明)
+  - wiki1/profile.md (AI 操作规程，7 步流水线 + yaml 反向校验)
+  - wiki1/meta-concepts.yaml (35 个原子概念，IPO 建模)
+  - wiki1/compose-concepts.yaml (20 个组合概念，decomposition 分解)
+  - wiki1/entities/knowledge-management.yaml (20 个知识管理实体)
+  - wiki1/entities/ai-agent.yaml (18 个 AI Agent 实体)
+  - wiki1/entities/thinking-methods.yaml (12 个思维方法实体)
+  - wiki1/entities/people.yaml (8 个人物实体)
+  - wiki1/entities/infrastructure.yaml (12 个基础设施实体)
+  - wiki1/scenarios/scenarios.yaml (20 个场景，完整 composition 组装规则)
+  - wiki1/CHANGELOG.md (变更日志)
+  - wiki1/_pending/ (待审核的 yaml 骨架目录)
+- 更新文件:
+  - SCHEMA.md (新增双层架构说明)
+  - index.md (新增 2 个页面条目，总计 34 页)
+- 核心设计:
+  - 三层架构: 场景层 → 概念层（原子+组合） → 实体层
+  - IPO 闭环贯穿三层
+  - 4 种实体关系: is_a / uses / depends_on / related_to
+  - 每次使用后强制执行 yaml 反向校验（5 个维度）
+  - 7 步标准流水线: 问题解析→场景匹配→概念组装→实体调取→原文深挖→结构化执行→反向校验
+
 ## [2026-06-02] create | Wiki initialized
 - Domain: General knowledge base (technology, research, personal notes)
 - Structure created with SCHEMA.md, index.md, log.md

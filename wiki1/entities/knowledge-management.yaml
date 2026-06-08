@@ -1,0 +1,313 @@
+# entity-knowledge-management.yaml — 知识库与知识管理相关实体
+# 分类: 知识管理工具、方法、平台
+# 版本: 1.0 | 创建: 2026-06-08 | 条目数: 20
+
+entities:
+
+  - id: llm-wiki
+    name: LLM Wiki
+    level: 1
+    type: methodology
+    description: "Karpathy 提出的互联 Markdown 知识库模式，持续积累复利增长"
+    source: wiki/concepts/llm-wiki.md
+    children:
+      - id: wiki-raw-layer
+        name: Raw 层（原始资料）
+        level: 2
+        description: "不可变的原始来源存储层"
+      - id: wiki-concepts-layer
+        name: Concepts 层（知识萃取）
+        level: 2
+        description: "从原始资料中萃取的结构化知识页面"
+      - id: wiki1-meta-layer-child
+        name: wiki1 元模型层（模式库）
+        level: 2
+        description: "场景驱动的认知闭环操作系统，存储结构/关系/组装规则"
+    relations:
+      - target: obsidian
+        type: uses
+      - target: karpathy-knowledge-base-method
+        type: is_a
+      - target: rag-vs-wiki
+        type: related_to
+
+  - id: obsidian
+    name: Obsidian
+    level: 1
+    type: tool
+    description: "基于本地 Markdown 的笔记与知识管理工具，第二大脑存储核心"
+    source: wiki/entities/obsidian.md
+    children:
+      - id: obsidian-bidirectional-links
+        name: 双向链接
+        level: 2
+        description: "[[wikilinks]] 语法实现笔记间双向引用"
+      - id: obsidian-dataview
+        name: Dataview 插件
+        level: 2
+        description: "通过查询语法对 frontmatter 进行过滤、排序、聚合"
+      - id: obsidian-graph-view
+        name: 图谱视图
+        level: 2
+        description: "可视化知识网络，发现隐藏关联"
+      - id: obsidian-tag-system
+        name: 标签系统
+        level: 2
+        description: "层级化标签（如 ai/llm），支持嵌套分类"
+      - id: obsidian-headless
+        name: 无头模式
+        level: 2
+        description: "服务器端通过 Obsidian Sync 同步 vault"
+    relations:
+      - target: second-brain
+        type: uses
+      - target: hermes-agent
+        type: related_to
+      - target: git
+        type: uses
+
+  - id: second-brain
+    name: 第二大脑
+    level: 1
+    type: methodology
+    description: "Tiago Forte 提出的个人知识管理系统，Hermes Agent + Obsidian 构建 AI 驱动版本"
+    source: wiki/concepts/second-brain.md
+    children:
+      - id: second-brain-code
+        name: CODE 方法
+        level: 2
+        description: "Capture-Organize-Distill-Express 四步法"
+      - id: second-brain-para
+        name: PARA 方法
+        level: 2
+        description: "Projects-Areas-Resources-Archives 分类法"
+    relations:
+      - target: obsidian
+        type: uses
+      - target: hermes-agent
+        type: uses
+      - target: llm-wiki
+        type: related_to
+
+  - id: enterprise-second-brain
+    name: 企业级第二大脑
+    level: 1
+    type: architecture
+    description: "Hermes + 飞书 + Obsidian + llm-wiki + Git 知识闭环架构"
+    source: wiki/concepts/enterprise-second-brain-architecture.md
+    relations:
+      - target: hermes-agent
+        type: depends_on
+      - target: obsidian
+        type: depends_on
+      - target: feishu
+        type: uses
+      - target: git
+        type: uses
+
+  - id: karpathy-knowledge-base-method
+    name: Karpathy 知识库方法
+    level: 1
+    type: methodology
+    description: "四阶段流程、三层目录、Claude Code + Claudian 工具链"
+    source: wiki/concepts/karpathy-knowledge-base-method.md
+    relations:
+      - target: llm-wiki
+        type: is_a
+      - target: claude-code
+        type: uses
+
+  - id: rag
+    name: RAG（检索增强生成）
+    level: 1
+    type: technology
+    description: "检索增强生成，从知识库中检索相关片段注入 LLM 上下文"
+    relations:
+      - target: llm-wiki
+        type: related_to
+      - target: vector-database
+        type: uses
+
+  - id: git
+    name: Git
+    level: 1
+    type: tool
+    description: "分布式版本控制系统，用于知识库的版本管理和多端同步"
+    children:
+      - id: github
+        name: GitHub
+        level: 2
+        description: "代码和知识库托管平台"
+      - id: git-post-commit-hook
+        name: Post-Commit Hook
+        level: 2
+        description: "提交后自动推送到远程仓库"
+    relations:
+      - target: obsidian
+        type: related_to
+      - target: llm-wiki
+        type: uses
+
+  - id: notion
+    name: Notion
+    level: 1
+    type: tool
+    description: "全能型笔记与协作平台，支持数据库、看板、文档"
+    relations:
+      - target: obsidian
+        type: related_to
+
+  - id: feishu
+    name: 飞书
+    level: 1
+    type: platform
+    description: "字节跳动旗下协作平台，Hermes Agent 的主要交互通道"
+    children:
+      - id: feishu-doc
+        name: 飞书文档
+        level: 2
+        description: "在线协作文档"
+      - id: feishu-bot
+        name: 飞书机器人
+        level: 2
+        description: "Hermes Agent 通过飞书机器人接收和回复消息"
+    relations:
+      - target: hermes-agent
+        type: uses
+
+  - id: csdn
+    name: CSDN
+    level: 1
+    type: platform
+    description: "中国最大的 IT 技术社区，用户（安逸i）的技术博客发布平台"
+    relations:
+      - target: hermes-agent
+        type: related_to
+
+  - id: markdown
+    name: Markdown
+    level: 1
+    type: format
+    description: "轻量级标记语言，知识库的通用存储格式"
+    relations:
+      - target: obsidian
+        type: uses
+      - target: llm-wiki
+        type: uses
+
+  - id: yaml-frontmatter
+    name: YAML Frontmatter
+    level: 1
+    type: format
+    description: "Markdown 文件头部的 YAML 元数据块，支持结构化字段"
+    relations:
+      - target: markdown
+        type: is_a
+      - target: obsidian-dataview
+        type: uses
+
+  - id: wikilinks
+    name: Wikilinks
+    level: 1
+    type: syntax
+    description: "[[双括号]] 语法，在笔记间建立双向链接"
+    relations:
+      - target: obsidian-bidirectional-links
+        type: is_a
+      - target: markdown
+        type: uses
+
+  - id: vector-database
+    name: 向量数据库
+    level: 1
+    type: technology
+    description: "存储和检索向量嵌入的数据库，RAG 的核心组件"
+    relations:
+      - target: rag
+        type: depends_on
+
+  - id: knowledge-graph
+    name: 知识图谱
+    level: 1
+    type: technology
+    description: "以图结构存储实体及其关系的知识表示方式"
+    relations:
+      - target: llm-wiki
+        type: related_to
+      - target: obsidian-graph-view
+        type: related_to
+
+  - id: cognitive-closed-loop
+    name: 认知闭环
+    level: 1
+    type: methodology
+    description: "场景驱动的认知闭环操作系统：使用→发现→更新→再使用"
+    source: wiki/raw/articles/cognitive-closed-loop-wiki1-2026.md
+    children:
+      - id: ipo-model
+        name: IPO 模型
+        level: 2
+        description: "Input-Process-Output 流程建模，将方法描述转化为可执行规范"
+      - id: yaml-reverse-check-entity
+        name: YAML 反向校验
+        level: 2
+        description: "每次使用后反向检查元模型中的遗漏和缺口"
+    relations:
+      - target: llm-wiki
+        type: depends_on
+      - target: wiki1-meta-layer
+        type: is_a
+
+  - id: wiki1-meta-layer
+    name: wiki1 元模型层
+    level: 1
+    type: architecture
+    description: "三层架构（场景层→概念层→实体层）+ IPO 闭环的认知操作系统"
+    source: wiki/raw/articles/cognitive-closed-loop-wiki1-2026.md
+    children:
+      - id: wiki1-scenario-layer
+        name: 场景层
+        level: 2
+        description: "问题驱动的组装规则，定义 trigger/goal/composition/related_scenarios"
+      - id: wiki1-concept-layer
+        name: 概念层
+        level: 2
+        description: "原子概念（IPO 建模）+ 组合概念（decomposition 分解）"
+      - id: wiki1-entity-layer
+        name: 实体层
+        level: 2
+        description: "人事物，5 个分类文件，3 层父子结构，4 种关系"
+    relations:
+      - target: cognitive-closed-loop
+        type: is_a
+      - target: llm-wiki
+        type: depends_on
+
+  - id: profile-md
+    name: profile.md
+    level: 1
+    type: specification
+    description: "AI 操作规程，定义 7 步标准流水线 + yaml 反向校验"
+    relations:
+      - target: wiki1-meta-layer
+        type: depends_on
+
+  - id: cron-job
+    name: Cron 定时任务
+    level: 1
+    type: mechanism
+    description: "Hermes Agent 的定时任务机制，实现知识库的自动化维护"
+    children:
+      - id: cron-knowledge-evolution
+        name: 知识进化定时任务
+        level: 2
+        description: "定期执行知识库健康检查和自我进化"
+      - id: cron-daily-sync
+        name: 每日同步定时任务
+        level: 2
+        description: "每日自动同步知识库并整合新发现"
+    relations:
+      - target: hermes-agent
+        type: depends_on
+      - target: cognitive-closed-loop
+        type: uses

@@ -1,0 +1,247 @@
+# entity-ai-agent.yaml — AI Agent 相关实体
+# 分类: Agent 平台、框架、工具、概念
+# 版本: 1.0 | 创建: 2026-06-08 | 条目数: 18
+
+entities:
+
+  - id: hermes-agent
+    name: Hermes Agent
+    level: 1
+    type: platform
+    description: "Nous Research 的 MIT 开源 AI Agent 平台，学习闭环 + 技能系统 + 多平台"
+    source: wiki/entities/hermes-agent.md
+    children:
+      - id: hermes-memory-system
+        name: 记忆系统
+        level: 2
+        description: "四层记忆架构：热记忆/情景回忆/Skills/Honcho"
+        source: wiki/concepts/hermes-memory-architecture.md
+      - id: hermes-skills-system
+        name: 技能系统
+        level: 2
+        description: "自动生成+改进+Reflection+Skill Evolution"
+        source: wiki/concepts/hermes-skills-system.md
+      - id: hermes-terminal-backends
+        name: 终端后端
+        level: 2
+        description: "六种终端后端：Local/Docker/SSH/Daytona/Singularity/Modal"
+        source: wiki/concepts/hermes-terminal-backends.md
+      - id: hermes-session-isolation
+        name: 会话隔离
+        level: 2
+        description: "Profile/Gateway/Pairing/终端四层隔离"
+        source: wiki/concepts/hermes-session-isolation.md
+      - id: hermes-knowledge-reference
+        name: 知识库参考
+        level: 2
+        description: "AGENTS.md/Skill/Memory/Obsidian 四种参考方式"
+        source: wiki/concepts/hermes-knowledge-reference.md
+      - id: hermes-gateway
+        name: Gateway 网关
+        level: 2
+        description: "多平台消息路由和格式适配"
+      - id: hermes-cron
+        name: Cron 定时任务
+        level: 2
+        description: "定时触发 Agent 执行自动化任务"
+    relations:
+      - target: openclaw
+        type: related_to
+      - target: obsidian
+        type: uses
+      - target: feishu
+        type: uses
+
+  - id: openclaw
+    name: OpenClaw
+    level: 1
+    type: platform
+    description: "开源 AI Agent 平台，强调跨平台连接与社区技能生态"
+    source: wiki/entities/openclaw.md
+    relations:
+      - target: hermes-agent
+        type: related_to
+
+  - id: claude-code
+    name: Claude Code
+    level: 1
+    type: tool
+    description: "Anthropic 的 AI 编程助手，可在终端中直接操作代码库"
+    relations:
+      - target: hermes-agent
+        type: related_to
+
+  - id: codex-cli
+    name: OpenAI Codex CLI
+    level: 1
+    type: tool
+    description: "OpenAI 的 AI 编程 CLI 工具"
+    relations:
+      - target: claude-code
+        type: related_to
+
+  - id: dify
+    name: Dify
+    level: 1
+    type: platform
+    description: "开源 LLM 应用开发平台，可视化编排 AI 工作流"
+    source: wiki/entities/dify.md
+    relations:
+      - target: n8n
+        type: related_to
+
+  - id: n8n
+    name: n8n
+    level: 1
+    type: platform
+    description: "开源工作流自动化平台，400+ 集成"
+    source: wiki/entities/n8n.md
+    relations:
+      - target: dify
+        type: related_to
+
+  - id: ollama
+    name: Ollama
+    level: 1
+    type: tool
+    description: "本地 LLM 运行工具，一键部署开源模型"
+    source: wiki/entities/ollama.md
+    relations:
+      - target: hermes-agent
+        type: uses
+
+  - id: memory-agent
+    name: Memory Agent
+    level: 1
+    type: concept
+    description: "有持久记忆的 Agent，任务后经验积累而非消失"
+    source: wiki/concepts/memory-agent-vs-workflow-agent.md
+    relations:
+      - target: workflow-agent
+        type: related_to
+      - target: hermes-memory-system
+        type: is_a
+
+  - id: workflow-agent
+    name: Workflow Agent
+    level: 1
+    type: concept
+    description: "无状态的工作流 Agent，任务完成后经验消失"
+    source: wiki/concepts/memory-agent-vs-workflow-agent.md
+    relations:
+      - target: memory-agent
+        type: related_to
+
+  - id: layered-memory
+    name: 分层记忆系统
+    level: 1
+    type: concept
+    description: "L0-L3 四层 AI 记忆架构"
+    source: wiki/concepts/layered-memory-system.md
+    children:
+      - id: memory-l0
+        name: L0 工作记忆
+        level: 2
+        description: "当前会话的上下文窗口"
+      - id: memory-l1
+        name: L1 短期记忆
+        level: 2
+        description: "跨会话的情景回忆"
+      - id: memory-l2
+        name: L2 长期记忆
+        level: 2
+        description: "持久化的用户偏好和事实"
+      - id: memory-l3
+        name: L3 元记忆
+        level: 2
+        description: "关于记忆的记忆，记忆管理策略"
+    relations:
+      - target: hermes-memory-system
+        type: related_to
+
+  - id: skill-system
+    name: 技能系统
+    level: 1
+    type: concept
+    description: "AI Agent 的可复用工作流程注册和执行机制"
+    children:
+      - id: skill-md
+        name: SKILL.md
+        level: 2
+        description: "技能定义文件，包含触发条件、步骤、pitfalls"
+      - id: skill-evolution
+        name: 技能进化
+        level: 2
+        description: "技能在使用中自动改进和优化的机制"
+    relations:
+      - target: hermes-skills-system
+        type: is_a
+
+  - id: agent-context-window
+    name: Agent 上下文窗口
+    level: 1
+    type: concept
+    description: "AI Agent 单次可处理的最大 token 数量限制"
+    relations:
+      - target: context-management
+        type: related_to
+
+  - id: delegation
+    name: 任务委派
+    level: 1
+    type: mechanism
+    description: "主 Agent 将子任务委派给子 Agent 并行执行的机制"
+    relations:
+      - target: hermes-agent
+        type: depends_on
+      - target: multi-agent-collaboration
+        type: uses
+
+  - id: toolset
+    name: 工具集
+    level: 1
+    type: concept
+    description: "Agent 可调用的工具集合，按功能分组（terminal/file/web/browser 等）"
+    relations:
+      - target: hermes-agent
+        type: depends_on
+
+  - id: profile
+    name: Profile（配置隔离）
+    level: 1
+    type: mechanism
+    description: "Hermes 的多配置环境隔离机制，不同项目使用独立的 skills/plugins/cron/memories"
+    relations:
+      - target: hermes-session-isolation
+        type: is_a
+
+  - id: gateway
+    name: Gateway（网关）
+    level: 1
+    type: mechanism
+    description: "Hermes 的多平台消息路由层，连接飞书/Telegram/Discord 等平台"
+    relations:
+      - target: hermes-gateway
+        type: is_a
+      - target: feishu
+        type: uses
+
+  - id: prompt-engineering
+    name: Prompt 工程
+    level: 1
+    type: technique
+    description: "设计和优化 AI Agent 的系统提示词以控制行为和输出质量"
+    relations:
+      - target: hermes-agent
+        type: uses
+
+  - id: subagent-driven-development
+    name: 子 Agent 驱动开发
+    level: 1
+    type: methodology
+    description: "通过 delegate_task 子 Agent 执行开发计划的两阶段审查模式"
+    relations:
+      - target: delegation
+        type: uses
+      - target: hermes-agent
+        type: depends_on

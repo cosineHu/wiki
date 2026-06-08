@@ -1,0 +1,484 @@
+# meta-concepts.yaml — 原子概念（不可再分的最小方法单元）
+# 每个原子概念必须有完整的 IPO 四元组
+# 版本: 1.0 | 创建: 2026-06-08 | 条目数: 35
+
+meta_concepts:
+
+  - id: knowledge-extraction
+    name: 知识萃取
+    category: knowledge-management
+    description: 从原始信息中提取结构化知识单元
+    input: "原始文本/文章/对话"
+    process:
+      - "识别核心论点与关键事实"
+      - "区分概念（方法/动作）与实体（人事物/名词）"
+      - "提取可独立成文的知识单元"
+      - "标注来源与置信度"
+    output: "结构化的知识卡片/页面（含 frontmatter、标签、来源）"
+    tools: ["llm-wiki", "obsidian", "hermes-agent"]
+    quality_check: "萃取后的知识单元是否可独立理解？是否标注了来源？"
+
+  - id: knowledge-structuring
+    name: 知识结构化
+    category: knowledge-management
+    description: 将零散知识按统一模式组织为可检索、可关联的体系
+    input: "萃取后的知识卡片集合"
+    process:
+      - "确定分类维度（类型、领域、层级）"
+      - "为每个知识单元分配类型（entity/concept/comparison/query）"
+      - "建立交叉引用关系（最少 2 个出链）"
+      - "写入索引（index.md）和日志（log.md）"
+    output: "结构化的知识库页面 + 索引 + 日志"
+    tools: ["llm-wiki", "obsidian"]
+    quality_check: "每个页面是否有明确的类型和标签？是否有交叉引用？"
+
+  - id: cross-referencing
+    name: 交叉引用
+    category: knowledge-management
+    description: 在知识单元之间建立双向链接，形成知识网络
+    input: "新创建或更新的知识页面"
+    process:
+      - "扫描页面内容，识别可关联的已有页面"
+      - "在新页面中添加 [[wikilinks]]（最少 2 个）"
+      - "检查被引用页面是否需要回链"
+      - "更新相关页面的 'related' 字段"
+    output: "具有双向链接的知识网络"
+    tools: ["obsidian", "llm-wiki"]
+    quality_check: "每个页面是否至少有 2 个出链？是否有孤立页面？"
+
+  - id: metadata-annotation
+    name: 元数据标注
+    category: knowledge-management
+    description: 为知识单元添加结构化元数据（frontmatter），支持检索和过滤
+    input: "知识页面内容"
+    process:
+      - "确定页面类型（entity/concept/comparison/query）"
+      - "从标签分类中选择合适的标签"
+      - "标注创建日期、来源、置信度"
+      - "如涉及矛盾，标注 contested 和 contradictions"
+    output: "带有完整 YAML frontmatter 的知识页面"
+    tools: ["obsidian", "llm-wiki"]
+    quality_check: "frontmatter 是否包含所有必填字段？标签是否在分类体系中？"
+
+  - id: incremental-update
+    name: 增量更新
+    category: knowledge-management
+    description: 将新信息合并到已有知识页面，而非覆盖或重复创建
+    input: "新来源 + 已有知识库"
+    process:
+      - "检索已有页面，判断是否已覆盖该主题"
+      - "若已有页面：追加新信息，更新 updated 日期"
+      - "若信息矛盾：标注两种观点及日期，标记 contested"
+      - "若新主题：按创建流程新建页面"
+    output: "更新后的知识页面（保留历史，追加新知）"
+    tools: ["llm-wiki", "obsidian"]
+    quality_check: "是否避免了重复创建？矛盾是否被显式标注？"
+
+  - id: version-control
+    name: 版本控制
+    category: knowledge-management
+    description: 使用 Git 管理知识库的版本历史，支持协作和回滚
+    input: "知识库变更"
+    process:
+      - "变更前 git pull 同步远程"
+      - "变更后 git add -A 暂存所有变更"
+      - "git commit 提交（含描述性消息）"
+      - "git push 推送到远程仓库"
+    output: "版本受控的知识库，可追溯每次变更"
+    tools: ["git", "github"]
+    quality_check: "commit 消息是否描述清晰？是否先 pull 再 push？"
+
+  - id: information-retrieval
+    name: 信息检索
+    category: knowledge-management
+    description: 从知识库中按关键词、标签或语义检索相关信息
+    input: "查询问题或关键词"
+    process:
+      - "读取 index.md 定位相关页面分类"
+      - "使用 search_files 进行全文/标签检索"
+      - "读取匹配页面内容"
+      - "按相关度排序返回结果"
+    output: "排序后的相关页面列表及内容摘要"
+    tools: ["llm-wiki", "obsidian-dataview"]
+    quality_check: "检索结果是否覆盖了所有相关页面？排序是否合理？"
+
+  - id: knowledge-assembly
+    name: 知识组装
+    category: knowledge-management
+    description: 将多个知识单元按场景需求编排为完整解决方案
+    input: "场景需求 + 相关知识页面集合"
+    process:
+      - "解析场景需求，确定所需知识类型"
+      - "按场景的 composition 规则选取概念和实体"
+      - "按 phase 顺序编排知识单元"
+      - "检查组装结果是否覆盖场景的所有 phase"
+    output: "面向特定场景的知识组装方案"
+    tools: ["llm-wiki", "wiki1-scenarios"]
+    quality_check: "组装结果是否覆盖了场景的所有 phase？是否遗漏关键概念？"
+
+  - id: task-decomposition
+    name: 任务分解
+    category: problem-solving
+    description: 将复杂任务按 MECE 原则拆解为可独立执行的子任务
+    input: "复杂任务描述"
+    process:
+      - "识别任务的最终目标"
+      - "按阶段/维度/层级进行 MECE 分解"
+      - "为每个子任务定义输入、输出和依赖"
+      - "确定子任务的执行顺序（串行/并行）"
+    output: "结构化的子任务列表（含依赖关系和执行顺序）"
+    tools: ["hermes-agent", "todo"]
+    quality_check: "子任务是否相互独立且完全穷尽？依赖关系是否清晰？"
+
+  - id: mece-decomposition
+    name: MECE 分解
+    category: problem-solving
+    description: 相互独立、完全穷尽（Mutually Exclusive, Collectively Exhaustive）的分解方法
+    input: "待分解的复杂问题或领域"
+    process:
+      - "选择分解维度（时间/结构/程度/因素）"
+      - "确保每个子项之间无重叠（Mutually Exclusive）"
+      - "确保所有子项之和覆盖全貌（Collectively Exhaustive）"
+      - "验证分解结果是否满足 MECE 条件"
+    output: "MECE 分解后的子项列表"
+    tools: []
+    quality_check: "子项之间是否有重叠？是否遗漏了重要维度？"
+
+  - id: first-principles
+    name: 第一性原理
+    category: problem-solving
+    description: 剥离类比和假设，从最底层不可再分的基本要素出发推导解决方案
+    input: "待分析的复杂问题"
+    process:
+      - "识别表面现象和既有假设"
+      - "剥离类比和惯例（'别人都这么做'）"
+      - "追问底层不可再分的基本要素"
+      - "基于第一原理重新推导解决方案"
+    output: "基于底层逻辑的解决方案"
+    tools: ["sbr-model", "inductive-deductive-loop"]
+    quality_check: "是否剥离了所有类比假设？推导链条是否完整？"
+
+  - id: causal-chain-analysis
+    name: 因果链分析
+    category: problem-solving
+    description: 追溯问题的根本原因，构建从根因到表象的因果链条
+    input: "待分析的问题或现象"
+    process:
+      - "明确问题的表象（What）"
+      - "逐层追问为什么（Why），每层至少追问 3 次"
+      - "构建从根因到表象的因果链"
+      - "识别因果链中的关键节点（杠杆点）"
+    output: "因果链图谱 + 关键杠杆点"
+    tools: ["5-whys", "fishbone-diagram"]
+    quality_check: "因果链是否连续无跳跃？是否找到了可干预的杠杆点？"
+
+  - id: comparative-analysis
+    name: 对比分析
+    category: problem-solving
+    description: 在多个选项之间建立多维度的系统性对比
+    input: "待对比的多个选项 + 对比维度"
+    process:
+      - "确定对比对象和对比目的"
+      - "选择对比维度（功能/性能/成本/生态/适用场景）"
+      - "逐维度收集信息并填入对比表"
+      - "基于对比结果给出场景化建议（而非绝对优劣）"
+    output: "多维度对比表 + 场景化选型建议"
+    tools: ["llm-wiki", "obsidian"]
+    quality_check: "对比维度是否全面？结论是否区分了场景？"
+
+  - id: retrospective-summary
+    name: 复盘总结
+    category: problem-solving
+    description: 对已完成的工作进行结构化回顾，提取经验教训
+    input: "已完成的工作/项目/决策"
+    process:
+      - "回顾目标：当初的目标是什么？"
+      - "评估结果：实际结果与目标的差距？"
+      - "分析原因：成功/失败的关键因素？"
+      - "总结规律：可复用的经验/应避免的坑？"
+    output: "复盘报告（含经验教训和行动项）"
+    tools: ["obsidian", "llm-wiki"]
+    quality_check: "是否提取了可复用的规律？是否生成了具体行动项？"
+
+  - id: inductive-reasoning
+    name: 归纳推理
+    category: thinking
+    description: 从具体实例中抽象出一般规律
+    input: "多个具体实例/数据点"
+    process:
+      - "收集足够多的具体实例"
+      - "识别实例之间的共性模式"
+      - "抽象出一般性规律或原则"
+      - "用反例验证规律的边界条件"
+    output: "一般性规律/原则 + 适用范围"
+    tools: []
+    quality_check: "样本量是否足够？是否有反例？规律的边界是否清晰？"
+
+  - id: deductive-reasoning
+    name: 演绎推理
+    category: thinking
+    description: 从一般性前提推导出具体结论
+    input: "一般性前提/原则 + 具体情境"
+    process:
+      - "明确一般性前提（大前提）"
+      - "确认具体情境符合前提条件（小前提）"
+      - "逻辑推导出具体结论"
+      - "检查推导过程是否存在逻辑跳跃"
+    output: "具体结论 + 推导链条"
+    tools: []
+    quality_check: "前提是否成立？推导过程是否严密？"
+
+  - id: abstract-modeling
+    name: 抽象建模
+    category: thinking
+    description: 从复杂现实中提取关键要素，构建简化但有效的概念模型
+    input: "复杂的现实问题或系统"
+    process:
+      - "识别系统中的核心要素"
+      - "忽略次要细节，聚焦关键关系"
+      - "构建概念模型（层次/流程/关系图）"
+      - "用模型解释或预测系统行为"
+    output: "概念模型 + 模型解释"
+    tools: ["architecture-diagram", "excalidraw"]
+    quality_check: "模型是否抓住了核心要素？是否能用模型解释已知现象？"
+
+  - id: system-thinking
+    name: 系统思考
+    category: thinking
+    description: 从整体和关系的角度理解问题，关注要素间的相互作用和反馈回路
+    input: "复杂系统或问题"
+    process:
+      - "识别系统边界和关键要素"
+      - "分析要素之间的因果关系和反馈回路"
+      - "识别系统的杠杆点和延迟效应"
+      - "预测干预措施的系统性影响"
+    output: "系统分析报告（含因果回路图和杠杆点）"
+    tools: ["causal-chain-analysis", "abstract-modeling"]
+    quality_check: "是否考虑了反馈回路？是否识别了非预期的副作用？"
+
+  - id: skill-registration
+    name: 技能注册
+    category: ai-agent
+    description: 将可复用的工作流程注册为 AI Agent 的技能
+    input: "经过验证的工作流程"
+    process:
+      - "定义技能的触发条件（何时使用）"
+      - "编写结构化的步骤说明（含命令和参数）"
+      - "添加 pitfalls（常见错误和注意事项）"
+      - "注册到技能系统并验证可加载"
+    output: "可被 AI Agent 调用的技能文件（SKILL.md）"
+    tools: ["hermes-agent", "skill-manage"]
+    quality_check: "技能是否可被独立加载和执行？是否包含 pitfalls？"
+
+  - id: tool-calling
+    name: 工具调用
+    category: ai-agent
+    description: AI Agent 选择合适的工具并正确传参来完成子任务
+    input: "子任务描述"
+    process:
+      - "分析子任务，确定所需的工具类型"
+      - "从可用工具集中选择最合适的工具"
+      - "构造正确的参数（必填+可选）"
+      - "执行工具调用并处理返回结果"
+    output: "工具调用结果"
+    tools: ["hermes-agent"]
+    quality_check: "工具选择是否合理？参数是否正确？错误是否被处理？"
+
+  - id: memory-writing
+    name: 记忆写入
+    category: ai-agent
+    description: 将持久化信息写入 AI Agent 的记忆系统
+    input: "需要持久化的信息"
+    process:
+      - "判断信息是否值得持久化（偏好 > 环境 > 流程）"
+      - "选择记忆目标（user/memory）"
+      - "以声明式事实格式写入（非指令式）"
+      - "避免记录会快速过期的信息"
+    output: "持久化的记忆条目"
+    tools: ["hermes-agent", "memory"]
+    quality_check: "信息是否值得持久化？格式是否为声明式？是否会快速过期？"
+
+  - id: memory-retrieval
+    name: 记忆检索
+    category: ai-agent
+    description: 从 AI Agent 的记忆系统中检索相关信息
+    input: "查询意图"
+    process:
+      - "确定检索范围（当前会话/历史会话/持久记忆）"
+      - "使用 session_search 检索历史会话"
+      - "检查持久记忆中是否有相关事实"
+      - "综合检索结果形成上下文"
+    output: "相关记忆条目 + 上下文"
+    tools: ["hermes-agent", "session-search", "memory"]
+    quality_check: "检索是否覆盖了所有相关记忆？是否有遗漏？"
+
+  - id: context-management
+    name: 上下文管理
+    category: ai-agent
+    description: 在有限的上下文窗口中高效组织信息
+    input: "大量相关信息"
+    process:
+      - "评估信息优先级（核心 > 参考 > 背景）"
+      - "将核心信息前置，参考信息按需加载"
+      - "使用摘要替代完整内容（保留关键细节）"
+      - "当上下文接近限制时主动压缩或外化"
+    output: "优化后的上下文组织"
+    tools: ["hermes-agent"]
+    quality_check: "核心信息是否完整保留？是否有信息丢失？"
+
+  - id: session-isolation
+    name: 会话隔离
+    category: ai-agent
+    description: 确保不同会话/用户/项目之间的上下文不互相污染
+    input: "多会话环境"
+    process:
+      - "为每个会话分配独立的上下文空间"
+      - "通过 Profile 隔离不同项目的配置和记忆"
+      - "通过 Gateway 隔离不同平台的会话"
+      - "终端会话独立（每个会话独立的 shell 环境）"
+    output: "隔离的会话环境"
+    tools: ["hermes-agent"]
+    quality_check: "不同会话之间的数据是否完全隔离？配置是否独立？"
+
+  - id: multi-platform-delivery
+    name: 多平台分发
+    category: ai-agent
+    description: 将 AI Agent 的响应分发到多个平台（飞书/Telegram/Discord 等）
+    input: "AI Agent 响应内容"
+    process:
+      - "识别响应的目标平台"
+      - "根据平台特性调整格式（飞书用富文本，Telegram 用 Markdown）"
+      - "通过 Gateway 路由到对应平台"
+      - "处理平台特定的限制（长度、格式、附件）"
+    output: "适配各平台格式的响应"
+    tools: ["hermes-agent", "gateway"]
+    quality_check: "各平台的格式是否正确？是否有平台遗漏？"
+
+  - id: bidirectional-linking
+    name: 双向链接
+    category: knowledge-tool
+    description: 在笔记之间建立双向引用关系，构建知识网络
+    input: "笔记内容"
+    process:
+      - "使用 [[wikilinks]] 语法创建链接"
+      - "被引用页面自动显示反向链接"
+      - "通过图谱视图可视化链接网络"
+      - "定期检查孤立页面并补充链接"
+    output: "具有双向链接的知识网络"
+    tools: ["obsidian"]
+    quality_check: "链接是否双向可追溯？是否有孤立页面？"
+
+  - id: tag-classification
+    name: 标签分类
+    category: knowledge-tool
+    description: 使用层级化标签体系对知识进行分类和检索
+    input: "知识页面"
+    process:
+      - "从预定义的标签分类中选择标签"
+      - "使用嵌套标签表示层级关系（如 ai/llm）"
+      - "通过 Dataview 按标签聚合和查询"
+      - "定期审查标签体系，合并冗余标签"
+    output: "带有层级标签的知识页面"
+    tools: ["obsidian", "obsidian-dataview"]
+    quality_check: "标签是否在分类体系中？是否有冗余标签？"
+
+  - id: git-sync
+    name: Git 同步
+    category: knowledge-tool
+    description: 使用 Git 实现知识库的多端同步和版本管理
+    input: "知识库变更"
+    process:
+      - "git pull 拉取远程更新"
+      - "解决可能的合并冲突"
+      - "git add + commit 提交本地变更"
+      - "git push 推送到远程"
+    output: "同步到远程的知识库"
+    tools: ["git", "github"]
+    quality_check: "push 是否成功？是否有未解决的冲突？"
+
+  - id: yaml-reverse-check
+    name: YAML 反向校验
+    category: meta
+    description: 每次知识使用后，反向检查元模型中是否有遗漏的概念/实体/场景/关系
+    input: "本次知识使用的完整过程"
+    process:
+      - "检查是否出现了 yaml 中未定义的新场景"
+      - "检查是否使用了 yaml 中未定义的新概念"
+      - "检查是否提及了 yaml 中未定义的新实体"
+      - "检查是否发现了新的关系应补充进现有条目"
+      - "检查是否有死链（引用不存在的 id）"
+      - "将所有发现以 yaml 条目骨架形式输出"
+    output: "待审核的 yaml 条目骨架列表"
+    tools: ["wiki1"]
+    quality_check: "是否覆盖了所有 5 个检查维度？骨架格式是否正确？"
+
+  - id: scene-matching
+    name: 场景匹配
+    category: meta
+    description: 根据用户问题匹配最合适的场景（scenario），确定组装规则
+    input: "用户问题或需求"
+    process:
+      - "解析问题，提取关键意图和约束"
+      - "遍历场景库，按 trigger 字段匹配"
+      - "如无精确匹配，沿 related_scenarios 扩展搜索"
+      - "返回最佳匹配场景及其 composition 规则"
+    output: "匹配的场景 + 组装规则"
+    tools: ["wiki1-scenarios"]
+    quality_check: "场景匹配是否准确？是否考虑了 related_scenarios？"
+
+  - id: source-deep-dive
+    name: 原文深挖
+    category: knowledge-management
+    description: 根据组装规则定位到原始文章，提取具体细节和案例
+    input: "概念/实体引用 + 原始文章库"
+    process:
+      - "根据概念/实体的 source 字段定位原始文章"
+      - "读取原始文章中相关段落"
+      - "提取具体案例、数据、引用"
+      - "将原文细节注入到当前组装流程"
+    output: "原文中的具体细节和案例"
+    tools: ["llm-wiki", "wiki-raw"]
+    quality_check: "提取的细节是否准确？是否标注了出处？"
+
+  - id: structured-writing
+    name: 结构化写作
+    category: content-creation
+    description: 按照预定义框架进行结构化内容创作
+    input: "组装好的知识素材 + 写作框架"
+    process:
+      - "确定写作框架（总分总/问题-分析-方案/是什么-为什么-怎么办）"
+      - "按框架组织素材，确保逻辑流畅"
+      - "在每个关键论点后附上具体案例或数据"
+      - "添加过渡句确保段落间衔接自然"
+      - "自检：框架是否完整？逻辑是否自洽？"
+    output: "结构化的文章/方案"
+    tools: ["obsidian"]
+    quality_check: "框架是否完整？逻辑是否自洽？是否有具体案例支撑？"
+
+  - id: cron-job-scheduling
+    name: 定时任务调度
+    category: automation
+    description: 设置定时任务实现知识库的自动化维护和进化
+    input: "需要定期执行的知识管理任务"
+    process:
+      - "定义任务的触发时间（cron 表达式）"
+      - "编写任务的自包含 prompt"
+      - "配置任务的交付目标"
+      - "设置任务的错误处理和通知"
+    output: "配置完成的定时任务"
+    tools: ["hermes-agent", "cronjob"]
+    quality_check: "cron 表达式是否正确？prompt 是否自包含？错误处理是否完善？"
+
+  - id: feedback-loop
+    name: 反馈闭环
+    category: meta
+    description: 建立"使用→发现→更新→再使用"的持续改进循环
+    input: "系统使用过程中产生的反馈"
+    process:
+      - "收集使用过程中的问题和发现"
+      - "将发现转化为结构化的改进项"
+      - "更新元模型（概念/实体/场景/关系）"
+      - "验证更新后的系统是否解决了原问题"
+    output: "持续进化的知识系统"
+    tools: ["wiki1", "yaml-reverse-check"]
+    quality_check: "反馈是否被转化为具体改进？改进后是否验证了效果？"

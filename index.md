@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-08 | Total pages: 32
+> Last updated: 2026-06-08 | Total pages: 34
 
 ## Entities
 - [[andrej-karpathy]] — AI 研究员，LLM Wiki 模式提出者，前 Tesla AI 总监
@@ -14,7 +14,8 @@
 - [[openclaw]] — 开源 AI Agent 平台，强调跨平台连接与社区技能生态
 
 ## Concepts
-- [[atom-compose-concept-architecture]] — 原子-组合概念双层架构：原子概念（IPO建模）+ 组合概念（decomposition编排），实现知识复用
+- [[atom-compose-concept-architecture]] — 原子-组合概念双层架构：原子概念（IPO建模）+ 组合概念（decomposition编排）
+- [[cognitive-closed-loop]] — 认知闭环操作系统：三层架构 + IPO 闭环，从知识图谱到可执行认知系统
 - [[enterprise-second-brain-architecture]] — 企业级第二大脑架构：Hermes+飞书+Obsidian+llm-wiki+Git 知识闭环
 - [[hermes-knowledge-reference]] — Hermes 知识库参考方式：AGENTS.md / Skill / Memory / Obsidian 四种方式
 - [[hermes-memory-architecture]] — Hermes 四层记忆架构：热记忆/情景回忆/Skills/Honcho，缓存感知设计
@@ -30,10 +31,10 @@
 - [[obsidian-dataview]] — Obsidian Dataview 查询：LIST/TABLE/TASK 语法、图谱视图
 - [[obsidian-headless]] — Obsidian 无头模式，服务器端通过 Obsidian Sync 同步 vault
 - [[obsidian-tag-system]] — Obsidian 标签系统与 Frontmatter：标签层级、元数据规范
-- [[scenario-driven-cognitive-loop]] — 场景驱动认知闭环：三层架构（场景→概念→实体）+ IPO + YAML反向校验，知识库从图书馆升级为工厂
+- [[scenario-driven-cognitive-loop]] — 场景驱动认知闭环：三层架构（场景→概念→实体）+ IPO + YAML反向校验
 - [[second-brain]] — 第二大脑：Tiago Forte 提出，Hermes Agent + Obsidian 构建 AI 驱动的个人知识系统
 - [[skills-authoring-guide]] — Skills 编写指南：agentskills 标准、三阶段加载、Frontmatter 字段、跨工具兼容
-- [[yaml-reverse-validation]] — YAML 反向校验：每次任务后反向检视新场景/概念/实体/关系/死链，让知识库在使用中生长
+- [[yaml-reverse-validation]] — YAML 反向校验：每次任务后反向检视新场景/概念/实体/关系/死链
 
 ## Comparisons
 - [[hermes-vs-other-agents]] — Hermes vs AutoGPT/CrewAI/Claude Code：学习闭环、多平台、模型无关对比
@@ -41,5 +42,6 @@
 - [[rag-vs-wiki]] — RAG 检索增强生成 vs Wiki 知识库：两种 AI 知识管理范式对比
 - [[static-kb-vs-cognitive-os]] — 静态知识库 vs 认知操作系统：图书馆 vs 工厂，从理解驱动到组装驱动
 - [[three-memory-models]] — 三种记忆模型对比：概念设计/工程实现/认知心理学三视角映射
+- [[wiki-vs-wiki1]] — wiki/ vs wiki1/：知识库 vs 认知操作系统，双层架构对比
 
 ## Queries
