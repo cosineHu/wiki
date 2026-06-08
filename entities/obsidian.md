@@ -1,16 +1,26 @@
 ---
 title: Obsidian
 created: 2026-06-03
-updated: 2026-06-03
+updated: 2026-06-08
 type: entity
 tags: [tool, knowledge-base, markdown]
-sources: [raw/articles/hermes-obsidian-core-ops-2026.md]
+sources: [raw/articles/hermes-obsidian-core-ops-2026.md, raw/articles/knowledge-management-llm-skills-2026.md]
 confidence: high
 ---
 
 # Obsidian
 
 基于本地 Markdown 文件的笔记与知识管理工具，是 [[second-brain]] 系统的存储核心。
+
+## 创始人的哲学
+
+[[kepano]]（Steph Ango）是 Obsidian 的创始人兼 CEO，他的产品哲学深刻影响了 Obsidian 的设计：
+
+- **File over app（文件优先于应用）**：「如果你希望你的写作在 2060 年甚至 2160 年的电脑上仍然可读，那它最好在 1960 年代的电脑上也能被读取。」
+- **Don't delegate understanding（不要把理解力外包）**：你可以让 AI 帮你干活，但不能让 AI 替你思考。理解力本身就是你最大的资产。
+- **个人笔记库应该是「你」的思想的体现**，而不是 AI 的。他建议给 Agent 单独的「杂乱仓库」，只在产出有用工件时才手动搬到主仓库。
+
+关于 AI 与人知识边界的讨论，详见 [[ai-human-knowledge-boundary]]。
 
 ## 核心特性
 
@@ -80,3 +90,6 @@ confidence: high
 - [[hermes-agent]]
 - [[obsidian-headless]]
 - [[llm-wiki]]
+- [[kepano]]
+- [[ai-human-knowledge-boundary]]
+- [[knowledge-management-pipeline]]

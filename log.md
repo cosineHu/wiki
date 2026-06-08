@@ -274,3 +274,21 @@
 - 正面: 超大页面 0 / 低置信度 0 / 争议页面 0 / 所有页面有 confidence / 组合概念全合规
 - 自动修复: 将 wiki-vs-wiki1 补入 index.md（Comparisons 部分），更新总页数为 36
 - 审计报告: meta/_pending/audit-20260608.md
+
+## [2026-06-08] ingest | 基于大模型、Skills 的知识管理 — 三位巨佬的知识管理哲学
+- 来源: https://mp.weixin.qq.com/s/iRVOlhGZlirVRIilYiR8vg
+- 作者: 老章（公众号「老章」）
+- 核心主题: Karpathy/Lex Fridman/kepano 三人知识管理哲学对比 + 内容生产流水线
+- 创建文件:
+  - raw/articles/knowledge-management-llm-skills-2026.md (原始来源)
+  - entities/lex-fridman.md (Lex Fridman 实体页)
+  - entities/kepano.md (kepano/Steph Ango 实体页)
+  - concepts/knowledge-management-pipeline.md (知识管理全链路：五环闭环模型)
+  - concepts/content-production-pipeline.md (内容生产流水线：下游生产)
+  - concepts/ai-human-knowledge-boundary.md (AI 与人知识边界：物理隔离 vs 溯源标记)
+- 更新文件:
+  - concepts/karpathy-knowledge-base-method.md (补充五大模块详解 + 三人对比表 + 终局愿景)
+  - entities/obsidian.md (补充 kepano 创始哲学 + 交叉引用)
+  - entities/andrej-karpathy.md (大幅扩充：五大模块 + 终局愿景 + 全链路定位)
+  - concepts/second-brain.md (新增全链路/生产流水线/边界交叉引用)
+  - index.md (新增 5 个页面条目，总页数 36→41)

@@ -4,7 +4,7 @@ created: 2026-06-02
 updated: 2026-06-08
 type: concept
 tags: [knowledge-base, llm, reference]
-sources: [raw/articles/hermes-obsidian-second-brain-2026.md, raw/articles/hermes-second-brain-part1-2026.md, raw/articles/hermes-second-brain-part2-2026.md, raw/articles/hermes-vs-openclaw-features-2026.md]
+sources: [raw/articles/hermes-obsidian-second-brain-2026.md, raw/articles/hermes-second-brain-part1-2026.md, raw/articles/hermes-second-brain-part2-2026.md, raw/articles/hermes-vs-openclaw-features-2026.md, raw/articles/knowledge-management-llm-skills-2026.md]
 confidence: high
 ---
 
@@ -131,3 +131,8 @@ Hermes Agent = 智能收集 + 自动整理 + 分层记忆
 - [[obsidian-dataview]]
 - [[enterprise-second-brain-architecture]]
 - [[memory-agent-vs-workflow-agent]]
+- [[knowledge-management-pipeline]]
+- [[content-production-pipeline]]
+- [[ai-human-knowledge-boundary]]
+- [[kepano]]
+- [[lex-fridman]]

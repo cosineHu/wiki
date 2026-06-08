@@ -2,20 +2,24 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-08 | Total pages: 36 | IPO coverage: 21/21 (100%)
+> Last updated: 2026-06-08 | Total pages: 41 | IPO coverage: 21/21 (100%)
 
 ## Entities
 - [[andrej-karpathy]] — AI 研究员，LLM Wiki 模式提出者，前 Tesla AI 总监
 - [[dify]] — 开源 LLM 应用开发平台，可视化编排 AI 工作流
 - [[hermes-agent]] — Nous Research 的 MIT 开源 AI Agent 平台，学习闭环 + 技能系统 + 多平台
+- [[kepano]] — Obsidian 创始人兼 CEO，提出 File over app 和 Don't delegate understanding 哲学
+- [[lex-fridman]] — 全球最火 AI 播客主持人，提出跑步语音播客式知识消费
 - [[n8n]] — 开源工作流自动化平台，400+ 集成
 - [[obsidian]] — 基于本地 Markdown 的笔记与知识管理工具，第二大脑存储核心
 - [[ollama]] — 本地 LLM 运行工具，一键部署开源模型
 - [[openclaw]] — 开源 AI Agent 平台，强调跨平台连接与社区技能生态
 
 ## Concepts
+- [[ai-human-knowledge-boundary]] — AI 与人知识边界：物理隔离 vs 溯源标记，kepano 的 Don't delegate understanding
 - [[atom-compose-concept-architecture]] — 原子-组合概念双层架构：原子概念（IPO建模）+ 组合概念（decomposition编排）
 - [[cognitive-closed-loop]] — 认知闭环操作系统：三层架构 + IPO 闭环，从知识图谱到可执行认知系统
+- [[content-production-pipeline]] — 内容生产流水线：素材→Skills→文章→视频→社交媒体，知识管理下游
 - [[enterprise-second-brain-architecture]] — 企业级第二大脑架构：Hermes+飞书+Obsidian+llm-wiki+Git 知识闭环
 - [[hermes-knowledge-reference]] — Hermes 知识库参考方式：AGENTS.md / Skill / Memory / Obsidian 四种方式
 - [[hermes-memory-architecture]] — Hermes 四层记忆架构：热记忆/情景回忆/Skills/Honcho，缓存感知设计
@@ -23,7 +27,8 @@
 - [[hermes-skills-system]] — Hermes 技能系统：自动生成+改进+Reflection+Skill Evolution
 - [[hermes-terminal-backends]] — Hermes 六种终端后端：Local/Docker/SSH/Daytona/Singularity/Modal
 - [[ipo-closed-loop]] — IPO 闭环：输入→处理→输出→工具，将方法从描述性知识转为可执行规范
-- [[karpathy-knowledge-base-method]] — Karpathy 式知识库方法：四阶段流程、三层目录、Claude Code+Claudian 工具链
+- [[karpathy-knowledge-base-method]] — Karpathy 式知识库方法：五模块、四阶段流程、三层目录、Claude Code+Claudian 工具链
+- [[knowledge-management-pipeline]] — 知识管理全链路：积累→消费→守护→生产→反哺，五环闭环模型
 - [[layered-memory-system]] — 分层记忆系统：L0-L3 四层 AI 记忆架构
 - [[llm-wiki]] — Karpathy 的 LLM Wiki 模式：互联 Markdown 知识库，持续积累复利增长
 - [[memory-agent-vs-workflow-agent]] — Memory Agent vs Workflow Agent：任务后经验消失还是积累？
