@@ -235,3 +235,22 @@
 - 修复: concepts/cognitive-closed-loop.md 中 3 处 wiki1/ 引用 → wiki/meta/
 - 更新: SCHEMA.md 新增概念页 IPO 建模要求
 - 删除: wiki1/ 目录（内容已移入 wiki/meta/）
+
+## [2026-06-08] update | 三个 cron 任务投递方式改为 local
+- 每日知识审计 (7e7b8f34c165): deliver=origin → local
+- 每周知识再进化 (431e61cc81b5): deliver=origin → local
+- 每日反向校验 (962848e46455): deliver=origin → local
+- 原因: origin 模式下飞书投递目标无法解析，改为本地记录
+
+## [2026-06-08] update | 全部 21 个概念页补充 IPO 建模段
+- 新增 IPO 段的概念页（15个）:
+  second-brain, enterprise-second-brain-architecture, hermes-memory-architecture,
+  layered-memory-system, karpathy-knowledge-base-method, skills-authoring-guide,
+  cognitive-closed-loop, memory-agent-vs-workflow-agent, hermes-terminal-backends,
+  hermes-knowledge-reference, hermes-session-isolation, obsidian-headless,
+  obsidian-dataview, obsidian-tag-system, obsidian-bidirectional-links
+- 此前已有 IPO 段的概念页（6个）:
+  hermes-skills-system, llm-wiki, scenario-driven-cognitive-loop,
+  atom-compose-concept-architecture, yaml-reverse-validation, ipo-closed-loop
+- IPO 覆盖率: 21/21 (100%)
+- 每个 IPO 段包含: Input / Process / Output / Tools / Quality Check 五列

@@ -1,7 +1,7 @@
 ---
 title: Skills 编写指南（Skills Authoring Guide）
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-06-08
 type: concept
 tags: [agent, skill, tutorial, agentskills]
 sources: [raw/articles/skills-creation-tutorial-2026.md]
@@ -125,6 +125,16 @@ hermes agent --message "give me a greeting"
 ## 跨工具兼容性
 
 Skills 遵循 agentskills.io 开放标准，在 Claude Code、OpenClaw、Hermes Agent 之间基本互通。差异主要在扩展字段和加载机制（Claude Code 支持 Live Change Detection，OpenClaw/Hermes 需重启）。
+
+## IPO 建模
+
+| 阶段 | 内容 |
+|------|------|
+| **Input** | 用户反复粘贴的同一段指令、checklist、多步流程（即"该写成 Skill 的信号"） |
+| **Process** | ① 创建目录 ~/.hermes/skills/user/<name>/ → ② 编写 SKILL.md（name + description + 指令体） → ③ 按需添加 scripts/references/assets → ④ 重启 gateway 加载 → ⑤ 测试验证 |
+| **Output** | 符合 agentskills.io 标准的可复用技能文件，支持三阶段渐进加载（Discovery → Activation → Execution） |
+| **Tools** | skill_manage, skill_view, terminal, hermes gateway restart |
+| **Quality Check** | description 是否写清了"什么时候用"而非"这是什么"？Skill 是否保持原子化？是否包含验证步骤？ |
 
 ## 相关
 

@@ -1,7 +1,7 @@
 ---
 title: Hermes 会话隔离机制
 created: 2026-06-03
-updated: 2026-06-03
+updated: 2026-06-08
 type: concept
 tags: [llm, agent, security, multi-tenant]
 sources: [raw/articles/hermes-vs-openclaw-features-2026.md]
@@ -73,6 +73,16 @@ hermes pairing revoke    # 撤销授权
 │   子代理独立终端，cronjob 限制 workdir    │
 └─────────────────────────────────────────┘
 ```
+
+## IPO 建模
+
+| 阶段 | 内容 |
+|------|------|
+| **Input** | 多用户/多群组/多场景的 Agent 交互请求 |
+| **Process** | ① Profile 隔离：为不同用户/场景创建独立 profile（独立 config/sessions/skills/memory） → ② Gateway 平台级隔离：每个用户/群组自动独立 session → ③ Pairing 准入控制：审批谁能与 Agent 交互 → ④ 终端/文件隔离：子 Agent 独立终端，cronjob 限制 workdir |
+| **Output** | 四层隔离的 Agent 服务，不同用户/群组/场景的对话上下文互不干扰 |
+| **Tools** | hermes profile create, hermes pairing list/approve/revoke, delegate_task, cronjob workdir |
+| **Quality Check** | 不同 profile 的 session 是否完全隔离？Pairing 是否控制了未授权访问？子 Agent 是否不会污染主会话？ |
 
 ## 相关
 

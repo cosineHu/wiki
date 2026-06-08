@@ -1,7 +1,7 @@
 ---
 title: Karpathy 式知识库方法（Karpathy Knowledge Base Method）
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-06-08
 type: concept
 tags: [knowledge-base, llm, markdown, tutorial]
 sources: [raw/articles/karpathy-knowledge-base-guide-2026.md]
@@ -77,6 +77,16 @@ knowledge-vault/
 | 适用场景 | 个人知识库 | 个人+企业级 |
 
 两者核心理念一致：**LLM 直接读写 Markdown，不依赖向量数据库**。Hermes 在此基础上增加了自动化、多平台和记忆系统。
+
+## IPO 建模
+
+| 阶段 | 内容 |
+|------|------|
+| **Input** | 原始资料（网页文章、播客转录、论文 PDF） |
+| **Process** | ① Phase 1 Ingest：收集原始资料存入 raw/ → ② Phase 2 Compile：LLM 自动生成摘要、提取概念、建立索引 → ③ Phase 3 Query：自然语言或搜索问答 → ④ Phase 4 Lint：定期检查和更新知识库 |
+| **Output** | 三层目录的知识库（raw/ + wiki/ + README.md），LLM 直接读写 Markdown，不依赖向量数据库 |
+| **Tools** | Claude Code / Hermes Agent, Obsidian, Claudian 插件, Web Clipper |
+| **Quality Check** | raw/ 是否只进不改？wiki/ 索引是否覆盖所有概念？定期 lint 是否发现死链/过期内容？ |
 
 ## 相关
 

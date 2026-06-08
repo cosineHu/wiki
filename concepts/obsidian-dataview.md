@@ -1,7 +1,7 @@
 ---
 title: Obsidian Dataview 查询
 created: 2026-06-03
-updated: 2026-06-03
+updated: 2026-06-08
 type: concept
 tags: [knowledge-base, query, plugin]
 sources: [raw/articles/hermes-obsidian-core-ops-2026.md]
@@ -142,6 +142,16 @@ GROUP BY file.link
 - **密集区域** = 知识聚类 = 一个领域
 - **孤立节点** = 需要关联的笔记
 - **长连线** = 跨领域连接 = 创新点
+
+## IPO 建模
+
+| 阶段 | 内容 |
+|------|------|
+| **Input** | 对 Obsidian Vault 中笔记的结构化查询需求（按状态/标签/日期/关联数筛选） |
+| **Process** | ① 确定查询类型：LIST（列表）/ TABLE（表格）/ TASK（任务） → ② 指定数据源：FROM 文件夹或标签 → ③ 添加过滤条件：WHERE 子句 → ④ 排序和限制：SORT + LIMIT → ⑤ 嵌入笔记中用 dataview 代码块执行 |
+| **Output** | 动态生成的结构化视图（项目仪表盘、知识图谱统计、待办汇总、孤立笔记检测） |
+| **Tools** | Obsidian Dataview 插件, Dataview 查询语法（LIST/TABLE/TASK） |
+| **Quality Check** | 查询是否返回预期结果？是否发现了知识孤岛（无标签+无链接的笔记）？图谱枢纽节点是否被正确识别？ |
 
 ## 相关
 

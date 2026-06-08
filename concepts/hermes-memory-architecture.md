@@ -1,7 +1,7 @@
 ---
 title: Hermes 记忆架构（Memory Architecture）
 created: 2026-06-04
-updated: 2026-06-05
+updated: 2026-06-08
 type: concept
 tags: [llm, agent, memory, architecture]
 sources: [raw/articles/hermes-memory-system-2026.md]
@@ -146,6 +146,16 @@ Skills 存储可复用工作流。不会全部注入 prompt，只注入紧凑索
 | **技能记忆** | 如何完成任务 | 持续进化 |
 
 详见 [[Memory Agent vs Workflow Agent]]
+
+## IPO 建模
+
+| 阶段 | 内容 |
+|------|------|
+| **Input** | 会话中的用户偏好、环境事实、反复纠正、任务经验、稳定约定 |
+| **Process** | ① 热记忆（MEMORY.md + USER.md）冻结快照，每轮自动注入 ~1,300 tokens → ② 情景回忆（session_search）SQLite + FTS5 按需搜索 → ③ 长对话压缩前 flush 耐久事实到 memory → ④ Skills 作为程序性记忆按需加载 → ⑤ Honcho 可选深层用户建模 |
+| **Output** | 分层持久化的 Agent 记忆系统：热工作集（缓存友好）+ 冷检索层（按需召回） |
+| **Tools** | memory 工具（add/replace/remove）, session_search, skill_manage, Honcho |
+| **Quality Check** | 热记忆是否保持在字符限制内？是否只存持久事实而非任务进度？新会话是否能正确召回历史上下文？ |
 
 ## 相关
 

@@ -42,6 +42,16 @@ confidence: high
 - wiki/meta/ = 模式库（元信息：结构、关系、组装规则）
 - wiki/meta/ 通过 `source:` 字段反向指回 wiki/ 中的原始页面
 
+## IPO 建模
+
+| 阶段 | 内容 |
+|------|------|
+| **Input** | 用户的知识管理需求（查询、写作、分析、决策） |
+| **Process** | ① 场景匹配：从 meta/scenarios/ 匹配当前任务场景 → ② 概念组装：按场景的 composition 规则编排原子概念和组合概念 → ③ 实体调取：按场景的 entities 字段加载所需工具/对象 → ④ 原文深挖：通过 source 字段回溯 wiki/ 原始页面 → ⑤ 结构化执行：按 IPO 规范逐步执行 → ⑥ 反向校验：任务完成后执行 yaml 反向校验，发现缺口 |
+| **Output** | 可执行的认知方案 + 自动发现的知识缺口（写入 _pending/） |
+| **Tools** | meta/scenarios/scenarios.yaml, meta/meta-concepts.yaml, meta/compose-concepts.yaml, meta/entities/*.yaml, wiki/ 原始页面 |
+| **Quality Check** | 场景是否被正确匹配？组装规则是否完整执行？反向校验是否发现了新场景/概念/实体/关系？ |
+
 ## 参考
 
 - [[llm-wiki]] — LLM Wiki 基础模式

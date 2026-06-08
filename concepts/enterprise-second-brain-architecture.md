@@ -1,7 +1,7 @@
 ---
 title: 企业级第二大脑架构（Enterprise Second Brain）
 created: 2026-06-04
-updated: 2026-06-05
+updated: 2026-06-08
 type: concept
 tags: [knowledge-base, enterprise, architecture, second-brain]
 sources: [raw/articles/enterprise-second-brain-2026.md]
@@ -79,6 +79,16 @@ confidence: high
 3. 长期记忆污染（错误/幻觉/过期知识）
 4. 安全风险（Prompt Injection/数据污染/错误执行）
 5. 知识质量控制（需建立审核/评分/淘汰机制）
+
+## IPO 建模
+
+| 阶段 | 内容 |
+|------|------|
+| **Input** | 企业多源知识流（飞书群聊/文档、Git 仓库、项目管理系统、个人笔记、离线文档） |
+| **Process** | ① 飞书等平台捕获原始知识 → ② Hermes Agent 作为知识中枢进行提炼分析 → ③ llm-wiki 将非结构化内容转为结构化 Markdown → ④ Obsidian 作为知识资产管理（双向链接、标签、图谱） → ⑤ Git 版本管理 + 自动同步 → ⑥ RAG 检索供 Hermes 应用 |
+| **Output** | 企业知识资产仓库（可持续增长的 CODE 闭环：Capture → Organize → Distill → Express） |
+| **Tools** | Hermes Agent, llm-wiki, Obsidian, Git, 飞书 Gateway, RAG |
+| **Quality Check** | 知识飞轮是否在运转？新知识是否被捕获→组织→提炼→表达？是否存在知识孤岛？ |
 
 ## 相关
 

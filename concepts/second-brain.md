@@ -1,7 +1,7 @@
 ---
 title: 第二大脑（Second Brain）
 created: 2026-06-02
-updated: 2026-06-05
+updated: 2026-06-08
 type: concept
 tags: [knowledge-base, llm, reference]
 sources: [raw/articles/hermes-obsidian-second-brain-2026.md, raw/articles/hermes-second-brain-part1-2026.md, raw/articles/hermes-second-brain-part2-2026.md, raw/articles/hermes-vs-openclaw-features-2026.md]
@@ -109,6 +109,16 @@ Hermes Agent = 智能收集 + 自动整理 + 分层记忆
 12. [[Dify]]/[[n8n]] 集成
 13. 开发者工具联动 — Git、Vim、IDE
 14. [[Ollama]] 本地部署 — 完全私有化
+
+## IPO 建模
+
+| 阶段 | 内容 |
+|------|------|
+| **Input** | 用户的信息碎片（飞书消息、网页文章、论文、代码片段、聊天记录） |
+| **Process** | ① 统一收件箱收集所有来源 → ② Hermes Agent 自动摘要 + 提取关键概念 → ③ llm-wiki 生成结构化 Markdown 知识卡片 → ④ Obsidian 双向链接建立知识网络 → ⑤ 分层记忆系统 L0-L3 渐进积累 |
+| **Output** | Obsidian Vault 中持久化、可检索、可关联的个人知识图谱 |
+| **Tools** | Hermes Agent, llm-wiki skill, Obsidian, Git, 分层记忆系统 |
+| **Quality Check** | 新知识是否建立了至少一个双向链接？是否被 index.md 收录？是否可被自然语言检索到？ |
 
 ## 相关
 

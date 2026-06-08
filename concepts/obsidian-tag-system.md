@@ -1,7 +1,7 @@
 ---
 title: Obsidian 标签系统与 Frontmatter
 created: 2026-06-03
-updated: 2026-06-03
+updated: 2026-06-08
 type: concept
 tags: [knowledge-base, markdown, metadata]
 sources: [raw/articles/hermes-obsidian-core-ops-2026.md]
@@ -124,6 +124,16 @@ deadline: 2026-05-01
 - **统一格式**：全小写、`/` 分层，不混用中英文
 - **批量修改标签**：使用 Tag Wrangler 插件或全局搜索替换
 - **标签和文件夹不冲突**：文件夹决定物理位置，标签决定逻辑分类
+
+## IPO 建模
+
+| 阶段 | 内容 |
+|------|------|
+| **Input** | 需要分类和标记的 Obsidian 笔记 |
+| **Process** | ① 设计标签层级：领域/子领域/具体类型（全小写，/ 分层） → ② 在笔记 Frontmatter 中声明 tags 字段 → ③ 按状态标签管理笔记生命周期（种子→幼苗→成长中→常青→枯萎） → ④ 用 Dataview 按标签查询和统计 |
+| **Output** | 结构化的笔记元数据层，支持按标签检索、分组、统计 |
+| **Tools** | Obsidian Frontmatter (YAML), Obsidian 标签系统, Dataview 插件, Tag Wrangler 插件 |
+| **Quality Check** | 标签层级是否不超过 3-4 层？格式是否统一（全小写、/ 分层）？标签和文件夹是否各司其职？ |
 
 ## 相关
 

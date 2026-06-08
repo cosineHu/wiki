@@ -1,7 +1,7 @@
 ---
 title: obsidian-headless
 created: 2026-06-02
-updated: 2026-06-05
+updated: 2026-06-08
 type: concept
 tags: [devops, tool, sync]
 sources: [raw/articles/hermes-llm-wiki-skill-2026.md]
@@ -60,6 +60,16 @@ Obsidian Sync 需付费订阅。免费替代：
 - **Git + Obsidian Git 插件**：通过 GitHub 私有仓库同步
 - **Syncthing**：P2P 实时同步
 - **rsync + cron**：定时 SSH 同步
+
+## IPO 建模
+
+| 阶段 | 内容 |
+|------|------|
+| **Input** | 需要在无显示器服务器上同步 Obsidian vault 的需求 |
+| **Process** | ① 安装 Node.js 22+ 和 obsidian-headless → ② ob login 登录 Obsidian 账号 → ③ ob sync-create-remote 创建远程 vault → ④ ob sync-setup 关联本地目录 → ⑤ ob sync --continuous 持续同步（或配置 systemd 后台运行） |
+| **Output** | 服务器端 vault 与 Obsidian 桌面端/移动端实时同步 |
+| **Tools** | obsidian-headless (npm), systemd, Obsidian Sync（付费） |
+| **Quality Check** | 同步是否持续运行（systemd status）？免费替代方案（Git/Syncthing/rsync）是否更适合当前场景？ |
 
 ## 相关
 
