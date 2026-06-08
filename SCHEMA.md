@@ -78,6 +78,26 @@ Side-by-side analyses. Include:
 - Verdict or synthesis
 - Sources
 
+## supplements/ Directory
+
+`supplements/` 存放 web-pack 采集时生成的元数据文件，作为 ingest 的辅助参考：
+
+```
+supplements/
+└── YYYY-MM-DD-主题名/
+    ├── research-brief.md     # 采集概览（入口URL、页面数、失败项）
+    ├── link-inventory.md     # URL → 文件映射表
+    ├── image-inventory.md    # 图片下载状态清单
+    └── reading-map.md        # 阅读地图（入口→关联页面关系）
+```
+
+关键规则：
+
+- supplements/ 中的文件是**元数据**，不是知识来源。ingest 时可以参考 reading-map.md 理解素材关联，但提取知识的来源必须是 raw/ 中的原始文件
+- supplements/ 文件不参与 wikilink 交叉引用，不列入 index.md
+- 与 raw/ 不同，supplements/ 不是 immutable——可以在 ingest 完成后删除或归档
+- 保持 LLM Wiki 语义纯净：raw/ 只有纯原始正文 + 本地化图片
+
 ## Update Policy
 When new information conflicts with existing content:
 1. Check the dates — newer sources generally supersede older ones
