@@ -1,6 +1,6 @@
 # entity-people.yaml — 人物相关实体
 # 分类: 关键人物
-# 版本: 1.0 | 创建: 2026-06-08 | 条目数: 8
+# 版本: 1.1 | 更新: 2026-06-08 | 条目数: 10
 
 entities:
 
@@ -80,4 +80,26 @@ entities:
       - target: cognitive-closed-loop
         type: related_to
       - target: llm-wiki
+        type: related_to
+
+  - id: kepano
+    name: kepano (Steph Ango)
+    level: 1
+    type: person
+    description: "Obsidian CEO，知识管理工具 Obsidian 的创始人和领导者"
+    source: wiki/entities/kepano.md
+    relations:
+      - target: obsidian
+        type: related_to
+      - target: second-brain
+        type: related_to
+
+  - id: lex-fridman
+    name: Lex Fridman
+    level: 1
+    type: person
+    description: "AI 领域知名播客主持人，Lex Fridman Podcast 创作者，访谈过众多 AI 研究者"
+    source: wiki/entities/lex-fridman.md
+    relations:
+      - target: andrej-karpathy
         type: related_to

@@ -309,3 +309,14 @@
 - 场景覆盖: 20 个场景覆盖本周所有使用模式，无需新增场景
 - 创建文件: meta/_pending/evolve-20260608.md
 - 更新文件: meta/scenarios/scenarios.yaml, meta/entities/ai-agent.yaml, meta/entities/knowledge-management.yaml, meta/entities/infrastructure.yaml
+
+## [2026-06-08] check | 每日 YAML 反向校验
+- 五维反向校验完成
+- 🔴 meta/ 死链 (1): llm-wiki 实体引用的 rag-vs-wiki → 修正为 rag
+- 🔴 wiki/ [[wikilinks]] 死链 (23): 主要为示例性 wikilink（笔记名/note/项目A 等），不影响实际导航
+- 🟡 新原子概念 (1): ai-human-knowledge-boundary（AI与人知识边界划分）→ 已添加到 meta-concepts.yaml
+- 🟡 新组合概念 (3): content-production-pipeline, knowledge-management-pipeline, skills-authoring-guide → 已添加到 compose-concepts.yaml
+- 🟡 新实体 (2): kepano, lex-fridman → 已添加到 meta/entities/people.yaml
+- 🟡 新关系 (4): cognitive-closed-loop→hermes-agent, web-pack→hermes-agent, kepano→obsidian, lex-fridman→andrej-karpathy → 已添加
+- 创建文件: meta/_pending/reverse-check-20260608.yaml
+- 更新文件: meta/meta-concepts.yaml (v1.0→v1.1, 35→36), meta/compose-concepts.yaml (v1.0→v1.1, 20→23), meta/entities/people.yaml (v1.0→v1.1, 8→10), meta/entities/knowledge-management.yaml (v1.0→v1.1)

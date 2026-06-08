@@ -1,6 +1,6 @@
 # entity-knowledge-management.yaml — 知识库与知识管理相关实体
 # 分类: 知识管理工具、方法、平台
-# 版本: 1.0 | 创建: 2026-06-08 | 条目数: 20
+# 版本: 1.1 | 更新: 2026-06-08 | 条目数: 20
 
 entities:
 
@@ -28,7 +28,7 @@ entities:
         type: uses
       - target: karpathy-knowledge-base-method
         type: is_a
-      - target: rag-vs-wiki
+      - target: rag
         type: related_to
 
   - id: obsidian
@@ -257,6 +257,8 @@ entities:
         type: depends_on
       - target: meta-meta-layer
         type: is_a
+      - target: hermes-agent
+        type: uses
 
   - id: meta-meta-layer
     name: meta 元模型层
@@ -321,6 +323,8 @@ entities:
       - target: llm-wiki
         type: uses
       - target: trafilatura
+        type: uses
+      - target: hermes-agent
         type: uses
 
   - id: trafilatura

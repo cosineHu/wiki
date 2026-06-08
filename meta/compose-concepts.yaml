@@ -1,6 +1,6 @@
 # compose-concepts.yaml — 组合概念（由原子概念串接而成的复合方法）
 # 每个组合概念必须包含至少两步的 decomposition，每一步引用一个 meta 概念
-# 版本: 1.0 | 创建: 2026-06-08 | 条目数: 20
+# 版本: 1.1 | 更新: 2026-06-08 | 条目数: 23
 
 compose_concepts:
 
@@ -440,3 +440,69 @@ compose_concepts:
         purpose: "将发现反馈到任务优化"
     triggers: "定时任务执行后或出现异常时"
     output: "健康监控报告 + 优化建议"
+
+  - id: content-production-pipeline
+    name: 内容生产流水线
+    category: content-creation
+    description: 将结构化知识高效转化为多形态内容产品的自动化流水线
+    decomposition:
+      - step: 1
+        meta: knowledge-extraction
+        purpose: "从知识库中提取可用的内容素材"
+      - step: 2
+        meta: task-decomposition
+        purpose: "将内容生产任务分解为可执行的子任务"
+      - step: 3
+        meta: structured-writing
+        purpose: "按目标平台格式进行结构化写作"
+      - step: 4
+        meta: multi-platform-delivery
+        purpose: "适配多平台格式并分发"
+      - step: 5
+        meta: feedback-loop
+        purpose: "收集发布后的反馈，反哺知识库"
+    triggers: "需要将知识库中的内容转化为文章/视频/社交媒体内容"
+    output: "多形态内容产品 + 反馈数据"
+
+  - id: knowledge-management-pipeline
+    name: 知识管理全链路
+    category: knowledge-management
+    description: 整合 Karpathy/Lex/kepano/老章 四位知识管理实践者的方法论，形成从积累到反哺的完整闭环
+    decomposition:
+      - step: 1
+        meta: knowledge-extraction
+        purpose: "积累阶段：将散碎信息编译为结构化知识"
+      - step: 2
+        meta: information-retrieval
+        purpose: "消费阶段：多模态交互式知识检索与消费"
+      - step: 3
+        meta: ai-human-knowledge-boundary
+        purpose: "守护阶段：划分人机知识边界，确保知识主权"
+      - step: 4
+        meta: structured-writing
+        purpose: "生产阶段：将知识转化为多形态内容产品"
+      - step: 5
+        meta: feedback-loop
+        purpose: "反哺阶段：发布后的反馈回流到知识库形成闭环"
+    triggers: "需要建立或优化端到端的知识管理流程"
+    output: "完整的知识管理链路方案"
+
+  - id: skills-authoring-guide
+    name: Skills 编写指南
+    category: ai-agent
+    description: 将可复用的工作流程编写为符合 agentskills.io 标准的 Skill 文件
+    decomposition:
+      - step: 1
+        meta: task-decomposition
+        purpose: "分析工作流程，确定 Skill 的触发条件和核心步骤"
+      - step: 2
+        meta: knowledge-structuring
+        purpose: "按 SKILL.md 标准结构组织内容（metadata + 指令 + pitfalls）"
+      - step: 3
+        meta: skill-registration
+        purpose: "注册到技能系统并验证可加载"
+      - step: 4
+        meta: feedback-loop
+        purpose: "使用后收集反馈，持续改进 Skill"
+    triggers: "发现可复用的工作流程需要固化为 Skill"
+    output: "符合标准的 SKILL.md 文件"

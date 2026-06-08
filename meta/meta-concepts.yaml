@@ -1,6 +1,6 @@
 # meta-concepts.yaml — 原子概念（不可再分的最小方法单元）
 # 每个原子概念必须有完整的 IPO 四元组
-# 版本: 1.0 | 创建: 2026-06-08 | 条目数: 35
+# 版本: 1.1 | 更新: 2026-06-08 | 条目数: 36
 
 meta_concepts:
 
@@ -482,3 +482,17 @@ meta_concepts:
     output: "持续进化的知识系统"
     tools: ["meta", "yaml-reverse-check"]
     quality_check: "反馈是否被转化为具体改进？改进后是否验证了效果？"
+
+  - id: ai-human-knowledge-boundary
+    name: AI与人知识边界划分
+    category: knowledge-management
+    description: 在AI深度参与知识管理时，系统性地划分人类思考与机器生成之间的边界，确保知识主权和信号噪声比
+    input: "AI参与的知识管理流程"
+    process:
+      - "识别知识来源（人类原创 vs AI生成 vs 混合）"
+      - "选择隔离策略（物理隔离/标记隔离/分层隔离）"
+      - "建立溯源机制，确保每条知识可追溯到原始来源"
+      - "定期审计知识库的AI生成内容比例"
+    output: "清晰的知识主权边界 + 溯源体系"
+    tools: [obsidian, llm-wiki]
+    quality_check: "是否可追溯每条知识的来源？AI生成内容比例是否可控？"
