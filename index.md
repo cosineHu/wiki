@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-08 | Total pages: 35 | IPO coverage: 21/21 (100%)
+> Last updated: 2026-06-08 | Total pages: 36 | IPO coverage: 21/21 (100%)
 
 ## Entities
 - [[andrej-karpathy]] — AI 研究员，LLM Wiki 模式提出者，前 Tesla AI 总监
@@ -42,6 +42,7 @@
 - [[rag-vs-wiki]] — RAG 检索增强生成 vs Wiki 知识库：两种 AI 知识管理范式对比
 - [[static-kb-vs-cognitive-os]] — 静态知识库 vs 认知操作系统：图书馆 vs 工厂，从理解驱动到组装驱动
 - [[three-memory-models]] — 三种记忆模型对比：概念设计/工程实现/认知心理学三视角映射
+- [[wiki-vs-wiki1]] — wiki/ 知识层 vs meta/ 模式库：双层架构的设计理念与分工
 
 ## Meta (认知操作系统)
 - [[meta/README]] — 模式库总览：三层架构 + IPO 闭环 + YAML 反向校验

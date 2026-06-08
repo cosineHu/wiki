@@ -264,3 +264,13 @@
 - 更新 SKILL.md 文档，版本号升至 2.0.0
 - 更新 SCHEMA.md 增加 supplements/ 目录说明和关键规则
 - 测试通过：CSDN 文章成功采集，raw/ 1 个 md + supplements/ 4 个元数据文件
+
+## [2026-06-08] lint | 每日知识审计
+- 审计范围: wiki/ 知识层 + wiki/meta/ 元信息层 + 交叉一致性
+- 发现问题: 266 处（严重 31 / 警告 70 / 建议 165）
+- 严重: 死链 23 处（wikilinks 占位符）+ 场景死链 8 处
+- 警告: 标签不合规 64 处 + 孤立页面 2 个 + 索引缺失 1 个 + IPO 不完整 3 处
+- 建议: meta 实体→wiki 缺失 86 处 + meta 概念→wiki 缺失 53 处 + wiki→meta 缺失 21 处
+- 正面: 超大页面 0 / 低置信度 0 / 争议页面 0 / 所有页面有 confidence / 组合概念全合规
+- 自动修复: 将 wiki-vs-wiki1 补入 index.md（Comparisons 部分），更新总页数为 36
+- 审计报告: meta/_pending/audit-20260608.md
