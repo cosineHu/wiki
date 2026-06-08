@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-05 | Total pages: 27
+> Last updated: 2026-06-08 | Total pages: 32
 
 ## Entities
 - [[andrej-karpathy]] — AI 研究员，LLM Wiki 模式提出者，前 Tesla AI 总监
@@ -14,12 +14,14 @@
 - [[openclaw]] — 开源 AI Agent 平台，强调跨平台连接与社区技能生态
 
 ## Concepts
+- [[atom-compose-concept-architecture]] — 原子-组合概念双层架构：原子概念（IPO建模）+ 组合概念（decomposition编排），实现知识复用
 - [[enterprise-second-brain-architecture]] — 企业级第二大脑架构：Hermes+飞书+Obsidian+llm-wiki+Git 知识闭环
 - [[hermes-knowledge-reference]] — Hermes 知识库参考方式：AGENTS.md / Skill / Memory / Obsidian 四种方式
 - [[hermes-memory-architecture]] — Hermes 四层记忆架构：热记忆/情景回忆/Skills/Honcho，缓存感知设计
 - [[hermes-session-isolation]] — Hermes 会话隔离机制：Profile / Gateway / Pairing / 终端四层隔离
 - [[hermes-skills-system]] — Hermes 技能系统：自动生成+改进+Reflection+Skill Evolution
 - [[hermes-terminal-backends]] — Hermes 六种终端后端：Local/Docker/SSH/Daytona/Singularity/Modal
+- [[ipo-closed-loop]] — IPO 闭环：输入→处理→输出→工具，将方法从描述性知识转为可执行规范
 - [[karpathy-knowledge-base-method]] — Karpathy 式知识库方法：四阶段流程、三层目录、Claude Code+Claudian 工具链
 - [[layered-memory-system]] — 分层记忆系统：L0-L3 四层 AI 记忆架构
 - [[llm-wiki]] — Karpathy 的 LLM Wiki 模式：互联 Markdown 知识库，持续积累复利增长
@@ -28,13 +30,16 @@
 - [[obsidian-dataview]] — Obsidian Dataview 查询：LIST/TABLE/TASK 语法、图谱视图
 - [[obsidian-headless]] — Obsidian 无头模式，服务器端通过 Obsidian Sync 同步 vault
 - [[obsidian-tag-system]] — Obsidian 标签系统与 Frontmatter：标签层级、元数据规范
+- [[scenario-driven-cognitive-loop]] — 场景驱动认知闭环：三层架构（场景→概念→实体）+ IPO + YAML反向校验，知识库从图书馆升级为工厂
 - [[second-brain]] — 第二大脑：Tiago Forte 提出，Hermes Agent + Obsidian 构建 AI 驱动的个人知识系统
 - [[skills-authoring-guide]] — Skills 编写指南：agentskills 标准、三阶段加载、Frontmatter 字段、跨工具兼容
+- [[yaml-reverse-validation]] — YAML 反向校验：每次任务后反向检视新场景/概念/实体/关系/死链，让知识库在使用中生长
 
 ## Comparisons
 - [[hermes-vs-other-agents]] — Hermes vs AutoGPT/CrewAI/Claude Code：学习闭环、多平台、模型无关对比
 - [[openclaw-vs-hermes]] — OpenClaw vs Hermes Agent：平台 vs 伙伴，企业第二大脑场景适配对比
 - [[rag-vs-wiki]] — RAG 检索增强生成 vs Wiki 知识库：两种 AI 知识管理范式对比
+- [[static-kb-vs-cognitive-os]] — 静态知识库 vs 认知操作系统：图书馆 vs 工厂，从理解驱动到组装驱动
 - [[three-memory-models]] — 三种记忆模型对比：概念设计/工程实现/认知心理学三视角映射
 
 ## Queries

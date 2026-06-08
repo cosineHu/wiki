@@ -177,3 +177,15 @@
 - 提示 (0): 无过期内容、无矛盾标记、无低置信度页面、无超大页面
 - 正常: frontmatter 完整（27/27）、索引无遗漏/僵尸（27/27 匹配）、日志无需轮转（18 条）
 - 趋势: 断链数从 184→184→159（减少 25 个，因部分页面出链去重后计数变化），根因未变。已连续 3 天报告同一问题，建议尽快执行方案 A 批量修复。
+
+## [2026-06-08] ingest | 场景驱动认知闭环 — LLM-Wiki 从知识萃取到认知操作系统
+- 来源: https://blog.csdn.net/m0_59235945/article/details/161753234
+- 核心主题: 将 LLM-Wiki 从静态知识库升级为场景驱动的认知闭环操作系统
+- 创建文件:
+  - raw/articles/scenario-driven-cognitive-loop-2026.md (原始来源)
+  - concepts/scenario-driven-cognitive-loop.md (场景驱动认知闭环：三层架构 + IPO + 自我迭代)
+  - concepts/atom-compose-concept-architecture.md (原子-组合概念双层架构)
+  - concepts/ipo-closed-loop.md (IPO 闭环：输入→处理→输出→工具)
+  - concepts/yaml-reverse-validation.md (YAML 反向校验：知识库自我迭代机制)
+  - comparisons/static-kb-vs-cognitive-os.md (静态知识库 vs 认知操作系统)
+- 更新文件: index.md (新增 5 个页面条目，总页数 27→32)
