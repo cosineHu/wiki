@@ -254,3 +254,13 @@
   atom-compose-concept-architecture, yaml-reverse-validation, ipo-closed-loop
 - IPO 覆盖率: 21/21 (100%)
 - 每个 IPO 段包含: Input / Process / Output / Tools / Quality Check 五列
+
+## [2026-06-08] update | web-pack v2.0 — 拆分输出到 raw/ + supplements/
+- 改造 collect_web_pack.py：输出从单一目录拆分为 raw/（纯原始素材）+ supplements/（元数据参考）
+- raw/ 只存正文 markdown + 本地化图片，保持 LLM Wiki 语义纯净
+- supplements/ 存 research-brief.md、link-inventory.md、image-inventory.md、reading-map.md
+- 文件名改用文章标题（不再使用 MAIN/LINKED 前缀）
+- --out-root 改为 --base-dir，自动检测 $WIKI_PATH 或 ~/wiki
+- 更新 SKILL.md 文档，版本号升至 2.0.0
+- 更新 SCHEMA.md 增加 supplements/ 目录说明和关键规则
+- 测试通过：CSDN 文章成功采集，raw/ 1 个 md + supplements/ 4 个元数据文件

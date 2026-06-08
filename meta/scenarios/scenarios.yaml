@@ -734,3 +734,53 @@ scenarios:
     related_scenarios:
       - wiki-health-check
       - knowledge-evolution-cycle
+
+  - id: web-pack-multi-source-research
+    name: 多源研究包采集与摄入
+    trigger: "用户提供多个同主题链接，要求采集、打包、或深度研究某个主题"
+    goal: "采集多源网页素材，生成结构化研究包，自动衔接 llm-wiki ingest 和场景驱动认知闭环"
+    composition:
+      - phase: 1
+        name: 素材采集
+        concepts: ["information-retrieval"]
+        entities: ["web-pack", "trafilatura"]
+        rule: "运行 web-pack 脚本采集所有 URL，输出到 raw/<date>-<topic>/ + meta/supplements/<date>-<topic>/"
+      - phase: 2
+        name: 阅读地图解读
+        concepts: ["scene-matching"]
+        entities: ["meta-supplements-layer"]
+        rule: "读取 meta/supplements/<date>-<topic>/reading-map.md，理解素材间的关联关系"
+      - phase: 3
+        name: 知识萃取
+        concepts: ["knowledge-extraction", "metadata-annotation"]
+        entities: ["llm-wiki", "meta-concept-layer", "meta-entity-layer"]
+        rule: "按 reading-map 建议的阅读顺序依次处理 raw/ 中的原始文件，萃取实体和概念"
+      - phase: 4
+        name: 概念建模
+        concepts: ["abstract-modeling", "mece-decomposition"]
+        entities: ["meta-concept-layer", "ipo-model"]
+        rule: "将萃取的概念按原子/组合分类，填充 IPO 四元组或 decomposition"
+      - phase: 5
+        name: 实体注册
+        concepts: ["knowledge-structuring"]
+        entities: ["meta-entity-layer"]
+        rule: "将发现的实体注册到 meta/entities/ 对应的 yaml 文件，建立 is_a/uses/depends_on/related_to 关系"
+      - phase: 6
+        name: 交叉引用
+        concepts: ["cross-referencing"]
+        entities: ["llm-wiki", "obsidian-bidirectional-links"]
+        rule: "创建/更新 wiki 页面，建立与已有知识的 [[wikilinks]] 交叉引用"
+      - phase: 7
+        name: 反向校验
+        concepts: ["yaml-reverse-check"]
+        entities: ["meta-meta-layer"]
+        rule: "检查：是否有新场景、新概念、新实体、新关系需要补充到 meta/？"
+      - phase: 8
+        name: 索引与提交
+        concepts: ["knowledge-structuring", "version-control"]
+        entities: ["llm-wiki", "git"]
+        rule: "更新 index.md 和 log.md，git commit 提交"
+    related_scenarios:
+      - ingest-article-to-wiki
+      - knowledge-evolution-cycle
+      - new-domain-exploration

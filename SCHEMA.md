@@ -78,12 +78,34 @@ Side-by-side analyses. Include:
 - Verdict or synthesis
 - Sources
 
-## supplements/ Directory
+## raw/ 目录的两种模式
 
-`supplements/` 存放 web-pack 采集时生成的元数据文件，作为 ingest 的辅助参考：
+raw/ 支持两种素材组织模式共存：
+
+### 单篇文章模式（raw/articles/）
+扁平结构，每篇独立文章一个 .md 文件。适用于零散摄入。
+
+### 多源研究包模式（raw/<date>-<topic>/）
+web-pack 采集产出的研究包目录。适用于围绕同一主题的多源深度研究。
 
 ```
-supplements/
+raw/
+├── articles/                           # 单篇文章（扁平）
+│   └── hermes-llm-wiki-skill-2026.md
+└── 2026-06-08-transformer/             # 多源研究包（目录）
+    ├── attention-is-all-you-need.md    # 语义化文件名
+    ├── flash-attention-blog.md
+    └── assets/                         # 本地化图片
+```
+
+每个 .md 文件带 llm-wiki 标准 raw frontmatter（source_url/ingested/sha256）。
+
+## meta/supplements/ 目录
+
+`meta/supplements/` 存放 web-pack 采集时生成的元数据文件，作为 ingest 的辅助参考：
+
+```
+meta/supplements/
 └── YYYY-MM-DD-主题名/
     ├── research-brief.md     # 采集概览（入口URL、页面数、失败项）
     ├── link-inventory.md     # URL → 文件映射表
@@ -97,6 +119,22 @@ supplements/
 - supplements/ 文件不参与 wikilink 交叉引用，不列入 index.md
 - 与 raw/ 不同，supplements/ 不是 immutable——可以在 ingest 完成后删除或归档
 - 保持 LLM Wiki 语义纯净：raw/ 只有纯原始正文 + 本地化图片
+- supplements/ 放在 meta/ 下，与 meta-concepts.yaml、scenarios/ 等元模型文件属于同一层——都是"关于知识的知识"
+
+## web-pack → llm-wiki 工作流
+
+web-pack 采集与 llm-wiki ingest 的衔接流程：
+
+```
+1. web-pack 采集 → raw/<date>-<topic>/（纯正文）+ meta/supplements/<date>-<topic>/（元数据）
+2. llm-wiki ingest 读取 raw/ 中的原始文件，参考 supplements/ 中的阅读地图理解关联
+3. 场景驱动认知闭环介入：按 scenarios.yaml 中的 composition 规则组装知识
+4. 创建/更新 wiki 页面，建立交叉引用
+5. YAML 反向校验：检查是否有新概念/实体/关系需要补充到 meta/
+6. 更新 index.md 和 log.md，git 提交
+```
+
+raw frontmatter 中的 sha256 让后续 re-ingest 可以跳过未变化的源文件。
 
 ## Update Policy
 When new information conflicts with existing content:
