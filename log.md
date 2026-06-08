@@ -292,3 +292,20 @@
   - entities/andrej-karpathy.md (大幅扩充：五大模块 + 终局愿景 + 全链路定位)
   - concepts/second-brain.md (新增全链路/生产流水线/边界交叉引用)
   - index.md (新增 5 个页面条目，总页数 36→41)
+
+## [2026-06-08] evolve | 每周知识再进化 — 基于 meta/ 认知闭环深度分析
+- 跨页面合成: 认知闭环五件套（cognitive-closed-loop/scenario-driven-cognitive-loop/atom-compose-concept-architecture/ipo-closed-loop/yaml-reverse-validation）形成紧密知识簇，建议创建导航枢纽页 cognitive-closed-loop-system
+- 矛盾检测: 无矛盾发现（全部 24 个概念页 contested=false，跨页内容互补无冲突）
+- 置信度: 全部 high，无需提升（22/24 单源但内容为定义性知识，通过 wikilinks 交叉验证）
+- 场景死链修复 (8 处):
+  - raw-layer → wiki-raw-layer（ingest-article-to-wiki 场景）
+  - delegation → task-decomposition + tool-calling（multi-agent-orchestration 场景，delegation 是实体非概念）
+  - subagent → delegation（multi-agent-orchestration 场景，subagent 实体已新增）
+  - second-order-thinking → system-thinking（decision-analysis 场景，second-order-thinking 是实体非概念）
+  - architecture-diagram → 移除（system-architecture-design 场景，实体已新增到 infrastructure.yaml）
+  - web-pack / trafilatura / meta-supplements-layer → 新增实体到 knowledge-management.yaml
+- 新增实体 (5): subagent (ai-agent.yaml), web-pack/trafilatura/meta-supplements-layer (knowledge-management.yaml), architecture-diagram (infrastructure.yaml)
+- 缺口发现: 35 个原子概念 + 20 个组合概念无对应 wiki 页面（设计预期），建议为 5 个高价值原子概念 + 3 个组合概念创建 wiki 页面
+- 场景覆盖: 20 个场景覆盖本周所有使用模式，无需新增场景
+- 创建文件: meta/_pending/evolve-20260608.md
+- 更新文件: meta/scenarios/scenarios.yaml, meta/entities/ai-agent.yaml, meta/entities/knowledge-management.yaml, meta/entities/infrastructure.yaml

@@ -245,3 +245,14 @@ entities:
         type: uses
       - target: hermes-agent
         type: depends_on
+
+  - id: subagent
+    name: 子 Agent
+    level: 1
+    type: concept
+    description: "被主 Agent 委派执行独立子任务的 Agent 实例，拥有隔离的上下文和终端会话"
+    relations:
+      - target: delegation
+        type: is_a
+      - target: hermes-agent
+        type: depends_on

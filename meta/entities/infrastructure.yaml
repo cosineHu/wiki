@@ -124,3 +124,12 @@ entities:
     relations:
       - target: andrej-karpathy
         type: related_to
+
+  - id: architecture-diagram
+    name: 架构图
+    level: 1
+    type: tool
+    description: "Dark-themed SVG 架构/云/基础设施图生成工具，用于可视化系统设计"
+    relations:
+      - target: abstract-modeling
+        type: uses

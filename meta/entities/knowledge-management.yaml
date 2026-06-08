@@ -311,3 +311,34 @@ entities:
         type: depends_on
       - target: cognitive-closed-loop
         type: uses
+
+  - id: web-pack
+    name: Web-Pack
+    level: 1
+    type: tool
+    description: "网页素材采集工具，将同主题链接整理为 raw/（纯原始素材）+ meta/supplements/（元数据参考）的结构化研究包"
+    relations:
+      - target: llm-wiki
+        type: uses
+      - target: trafilatura
+        type: uses
+
+  - id: trafilatura
+    name: Trafilatura
+    level: 1
+    type: tool
+    description: "Python 网页正文提取库，web-pack 的主要提取引擎，支持 CSDN/博客园/微信公众号等平台"
+    relations:
+      - target: web-pack
+        type: depends_on
+
+  - id: meta-supplements-layer
+    name: Supplements 层
+    level: 1
+    type: architecture
+    description: "web-pack 采集时生成的元数据层，存放 research-brief/reading-map/link-inventory/image-inventory，作为 ingest 的辅助参考"
+    relations:
+      - target: meta-meta-layer
+        type: is_a
+      - target: web-pack
+        type: depends_on

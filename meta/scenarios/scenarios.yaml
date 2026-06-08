@@ -18,7 +18,7 @@ scenarios:
       - phase: 2
         name: 原始资料保存
         concepts: ["knowledge-extraction"]
-        entities: ["llm-wiki", "raw-layer"]
+        entities: ["llm-wiki", "wiki-raw-layer"]
         rule: "保存到 raw/articles/，添加 frontmatter（source_url/ingested/sha256）"
       - phase: 3
         name: 知识萃取
@@ -38,7 +38,7 @@ scenarios:
       - phase: 6
         name: 版本提交
         concepts: ["version-control"]
-        entities: ["git", "github", "git-post-commit-hook"]
+        entities: ["git", "github", "git-post-commit-hook", "wiki-raw-layer"]
         rule: "git add -A && git commit；post-commit hook 自动 push"
       - phase: 7
         name: 反向校验
@@ -329,8 +329,8 @@ scenarios:
         rule: "分析任务是否可并行分解，识别子任务间的依赖关系"
       - phase: 2
         name: Agent 分配
-        concepts: ["delegation"]
-        entities: ["hermes-agent", "subagent"]
+        concepts: ["task-decomposition", "tool-calling"]
+        entities: ["hermes-agent", "delegation"]
         rule: "为每个子任务分配合适的 Agent（leaf/orchestrator）"
       - phase: 3
         name: 上下文隔离
@@ -553,7 +553,7 @@ scenarios:
         rule: "多维度对比各选项（可行性/成本/风险/长期价值）"
       - phase: 4
         name: 后果推演
-        concepts: ["causal-chain-analysis", "second-order-thinking"]
+        concepts: ["causal-chain-analysis", "system-thinking"]
         entities: []
         rule: "推演各选项的一阶和二阶后果"
       - phase: 5
@@ -578,7 +578,7 @@ scenarios:
       - phase: 2
         name: 概念建模
         concepts: ["abstract-modeling"]
-        entities: ["architecture-diagram"]
+        entities: []
         rule: "构建系统的概念架构模型（层次/组件/接口）"
       - phase: 3
         name: 方案对比
