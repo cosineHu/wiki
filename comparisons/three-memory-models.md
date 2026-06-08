@@ -55,15 +55,15 @@ Wiki 中出现了三种不同的「四层记忆」模型，它们从不同视角
 
 ## 阅读建议
 
-- 先读 [[分层记忆系统]] — 建立概念框架
-- 再读 [[Hermes 记忆架构（Memory Architecture）]] — 理解工程实现
-- 最后读 [[Memory Agent vs Workflow Agent]] — 理解为什么这很重要
+- 先读 [[layered-memory-system]] — 建立概念框架
+- 再读 [[hermes-memory-architecture]] — 理解工程实现
+- 最后读 [[memory-agent-vs-workflow-agent]] — 理解为什么这很重要
 
 ## 相关
 
-- [[分层记忆系统]]
-- [[Hermes 记忆架构（Memory Architecture）]]
-- [[Memory Agent vs Workflow Agent]]
-- [[第二大脑（Second Brain）]]
-- [[Hermes Agent]]
-- [[OpenClaw vs Hermes Agent]]
+- [[layered-memory-system]]
+- [[hermes-memory-architecture]]
+- [[memory-agent-vs-workflow-agent]]
+- [[second-brain]]
+- [[hermes-agent]]
+- [[openclaw-vs-hermes]]

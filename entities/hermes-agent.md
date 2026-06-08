@@ -24,7 +24,7 @@ confidence: high
 Hermes 拥有丰富的内置 skill 生态，涵盖研究、笔记、开发、媒体等多个领域。
 
 ### research 类别
-- [[LLM Wiki（Karpathy 模式）]]（`research/llm-wiki` v2.1.0）— 互联 Markdown 知识库
+- [[llm-wiki]]（`research/llm-wiki` v2.1.0）— 互联 Markdown 知识库
 - Arxiv — 论文检索
 - Blogwatcher — 博客监控
 - Polymarket — 预测市场
@@ -36,10 +36,10 @@ Hermes 拥有丰富的内置 skill 生态，涵盖研究、笔记、开发、媒
 
 ## 第二大脑集成
 
-[[Hermes Agent]] + [[Obsidian]] 可构建 [[第二大脑（Second Brain）]]，核心包括：
-- [[分层记忆系统]]（L0-L3）
-- [[LLM Wiki（Karpathy 模式）]] 知识摄入
-- 与 [[Dify]]、[[n8n]]、[[Ollama]] 等工具集成
+[[hermes-agent]] + [[obsidian]] 可构建 [[second-brain]]，核心包括：
+- [[layered-memory-system]]（L0-L3）
+- [[llm-wiki]] 知识摄入
+- 与 [[dify]]、[[n8n]]、[[ollama]] 等工具集成
 
 
 ## 部署架构
@@ -57,12 +57,12 @@ Hermes 拥有丰富的内置 skill 生态，涵盖研究、笔记、开发、媒
 ## 核心特性
 
 ### 学习闭环
-- [[Hermes 技能系统（Skills System）]] — 自动生成+改进的 Skill 机制，程序性记忆
+- [[hermes-skills-system]] — 自动生成+改进的 Skill 机制，程序性记忆
 - 持久记忆 + 用户建模（Honcho）+ 会话搜索（SQLite FTS5）
 
 ### 工具系统
 - 40+ 内置工具，支持 MCP 协议接入外部工具
-- [[Hermes 终端后端（Terminal Backends）]] — 六种执行后端（Local/Docker/SSH/Daytona/Singularity/Modal）
+- [[hermes-terminal-backends]] — 六种执行后端（Local/Docker/SSH/Daytona/Singularity/Modal）
 - 并行子 Agent，独立上下文窗口
 
 ### 多平台
@@ -84,25 +84,25 @@ Hermes 拥有丰富的内置 skill 生态，涵盖研究、笔记、开发、媒
 
 ## 与其他框架对比
 
-参见 [[Hermes Agent vs 其他 Agent 框架]]
+参见 [[hermes-vs-other-agents]]
 
 ## 相关
 
-- [[LLM Wiki（Karpathy 模式）]]
-- [[Andrej Karpathy]]
-- [[Karpathy 式知识库方法（Karpathy Knowledge Base Method）]]
+- [[llm-wiki]]
+- [[andrej-karpathy]]
+- [[karpathy-knowledge-base-method]]
 - [[obsidian-headless]]
-- [[第二大脑（Second Brain）]]
-- [[分层记忆系统]]
-- [[Obsidian]]
-- [[双向链接（Obsidian）]]
-- [[Obsidian 标签系统与 Frontmatter]]
-- [[Obsidian Dataview 查询]]
-- [[OpenClaw]]
-- [[OpenClaw vs Hermes Agent]]
-- [[Hermes 知识库参考方式]]
-- [[Hermes 会话隔离机制]]
-- [[Hermes 技能系统（Skills System）]]
-- [[Hermes 终端后端（Terminal Backends）]]
-- [[Hermes Agent vs 其他 Agent 框架]]
-- [[Hermes 记忆架构（Memory Architecture）]]
+- [[second-brain]]
+- [[layered-memory-system]]
+- [[obsidian]]
+- [[obsidian-bidirectional-links]]
+- [[obsidian-tag-system]]
+- [[obsidian-dataview]]
+- [[openclaw]]
+- [[openclaw-vs-hermes]]
+- [[hermes-knowledge-reference]]
+- [[hermes-session-isolation]]
+- [[hermes-skills-system]]
+- [[hermes-terminal-backends]]
+- [[hermes-vs-other-agents]]
+- [[hermes-memory-architecture]]

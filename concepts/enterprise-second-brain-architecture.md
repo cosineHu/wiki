@@ -92,8 +92,8 @@ confidence: high
 
 ## 相关
 
-- [[第二大脑（Second Brain）]]
-- [[Hermes Agent]]
-- [[LLM Wiki（Karpathy 模式）]]
-- [[Hermes 记忆架构（Memory Architecture）]]
-- [[Memory Agent vs Workflow Agent]]
+- [[second-brain]]
+- [[hermes-agent]]
+- [[llm-wiki]]
+- [[hermes-memory-architecture]]
+- [[memory-agent-vs-workflow-agent]]

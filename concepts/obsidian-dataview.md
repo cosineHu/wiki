@@ -155,7 +155,7 @@ GROUP BY file.link
 
 ## 相关
 
-- [[Obsidian]]
-- [[双向链接（Obsidian）]]
-- [[Obsidian 标签系统与 Frontmatter]]
-- [[第二大脑（Second Brain）]]
+- [[obsidian]]
+- [[obsidian-bidirectional-links]]
+- [[obsidian-tag-system]]
+- [[second-brain]]

@@ -53,6 +53,6 @@ Hermes 支持派生隔离的子 Agent 并行处理多个工作流：
 
 ## 相关
 
-- [[Hermes Agent]]
-- [[Hermes 技能系统（Skills System）]]
-- [[Hermes 会话隔离机制]]
+- [[hermes-agent]]
+- [[hermes-skills-system]]
+- [[hermes-session-isolation]]

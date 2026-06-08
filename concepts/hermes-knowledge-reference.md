@@ -83,7 +83,7 @@ hermes skill create --name "react-patterns" --category "frontend"
 
 ## 相关
 
-- [[Hermes Agent]]
-- [[第二大脑（Second Brain）]]
-- [[LLM Wiki（Karpathy 模式）]]
-- [[Obsidian]]
+- [[hermes-agent]]
+- [[second-brain]]
+- [[llm-wiki]]
+- [[obsidian]]

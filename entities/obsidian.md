@@ -10,7 +10,7 @@ confidence: high
 
 # Obsidian
 
-基于本地 Markdown 文件的笔记与知识管理工具，是 [[第二大脑（Second Brain）]] 系统的存储核心。
+基于本地 Markdown 文件的笔记与知识管理工具，是 [[second-brain]] 系统的存储核心。
 
 ## 核心特性
 
@@ -50,9 +50,9 @@ confidence: high
 
 ## 核心概念
 
-- [[双向链接（Obsidian）]] — 笔记间相互引用，构建知识网络
-- [[Obsidian 标签系统与 Frontmatter]] — 标签层级设计、Frontmatter 元数据
-- [[Obsidian Dataview 查询]] — Dataview 插件进行高级查询
+- [[obsidian-bidirectional-links]] — 笔记间相互引用，构建知识网络
+- [[obsidian-tag-system]] — 标签层级设计、Frontmatter 元数据
+- [[obsidian-dataview]] — Dataview 插件进行高级查询
 - [[obsidian-headless]] — 服务器端无头同步
 
 ## 常见踩坑
@@ -76,7 +76,7 @@ confidence: high
 
 ## 相关
 
-- [[第二大脑（Second Brain）]]
-- [[Hermes Agent]]
+- [[second-brain]]
+- [[hermes-agent]]
 - [[obsidian-headless]]
-- [[LLM Wiki（Karpathy 模式）]]
+- [[llm-wiki]]

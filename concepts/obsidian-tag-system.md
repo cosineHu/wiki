@@ -137,7 +137,7 @@ deadline: 2026-05-01
 
 ## 相关
 
-- [[Obsidian]]
-- [[双向链接（Obsidian）]]
-- [[Obsidian Dataview 查询]]
-- [[第二大脑（Second Brain）]]
+- [[obsidian]]
+- [[obsidian-bidirectional-links]]
+- [[obsidian-dataview]]
+- [[second-brain]]

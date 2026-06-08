@@ -20,9 +20,9 @@ confidence: medium
 
 ## 与 Hermes Agent 集成
 
-[[Hermes Agent]] 可搭配 Ollama 实现完全私有化部署，所有数据留在本地。结合 OpenWebUI 可提供类 ChatGPT 的交互界面。
+[[hermes-agent]] 可搭配 Ollama 实现完全私有化部署，所有数据留在本地。结合 OpenWebUI 可提供类 ChatGPT 的交互界面。
 
 ## 相关
 
-- [[第二大脑（Second Brain）]]
-- [[Hermes Agent]]
+- [[second-brain]]
+- [[hermes-agent]]

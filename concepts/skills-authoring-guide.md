@@ -138,6 +138,6 @@ Skills 遵循 agentskills.io 开放标准，在 Claude Code、OpenClaw、Hermes 
 
 ## 相关
 
-- [[Hermes 技能系统（Skills System）]]
-- [[Hermes Agent]]
-- [[OpenClaw vs Hermes Agent]]
+- [[hermes-skills-system]]
+- [[hermes-agent]]
+- [[openclaw-vs-hermes]]

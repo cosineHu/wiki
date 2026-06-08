@@ -73,9 +73,9 @@ Obsidian Sync 需付费订阅。免费替代：
 
 ## 相关
 
-- [[LLM Wiki（Karpathy 模式）]]
-- [[Hermes Agent]]
-- [[Obsidian]]
-- [[双向链接（Obsidian）]]
-- [[Obsidian 标签系统与 Frontmatter]]
-- [[Obsidian Dataview 查询]]
+- [[llm-wiki]]
+- [[hermes-agent]]
+- [[obsidian]]
+- [[obsidian-bidirectional-links]]
+- [[obsidian-tag-system]]
+- [[obsidian-dataview]]

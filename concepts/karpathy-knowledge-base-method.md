@@ -90,8 +90,8 @@ knowledge-vault/
 
 ## 相关
 
-- [[LLM Wiki（Karpathy 模式）]]
-- [[第二大脑（Second Brain）]]
-- [[Obsidian]]
-- [[Hermes Agent]]
-- [[Andrej Karpathy]]
+- [[llm-wiki]]
+- [[second-brain]]
+- [[obsidian]]
+- [[hermes-agent]]
+- [[andrej-karpathy]]

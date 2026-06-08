@@ -14,7 +14,7 @@ confidence: high
 
 ## 核心分歧
 
-| | [[OpenClaw]] | [[Hermes Agent]] |
+| | [[openclaw]] | [[hermes-agent]] |
 |---|---|---|
 | **核心问题** | 我能连接多少东西？ | 我能多快变得更懂你？ |
 | **路线** | 平台（广度优先） | 伙伴（深度优先） |
@@ -102,7 +102,7 @@ Hermes的核心理念是**按需注入而非全量加载**：
 | **用户建模** | 无 | Honcho（可选） |
 | **缓存感知** | 弱 | 强（冻结快照、延迟更新、轮次级注入） |
 
-详见 [[Hermes 记忆架构（Memory Architecture）]]
+详见 [[hermes-memory-architecture]]
 
 ## 适合人群
 
@@ -138,7 +138,7 @@ Hermes的核心理念是**按需注入而非全量加载**：
 
 如果目标是企业第二大脑/知识库/数字员工/组织记忆，推荐 Hermes——核心价值是 **Knowledge Growth（知识成长）**。
 
-详见 [[企业级第二大脑架构（Enterprise Second Brain）]]
+详见 [[enterprise-second-brain-architecture]]
 
 ## 深层意义
 
@@ -151,7 +151,7 @@ Hermes的核心理念是**按需注入而非全量加载**：
 
 ## 相关
 
-- [[OpenClaw]]
-- [[Hermes Agent]]
-- [[第二大脑（Second Brain）]]
-- [[LLM Wiki（Karpathy 模式）]]
+- [[openclaw]]
+- [[hermes-agent]]
+- [[second-brain]]
+- [[llm-wiki]]

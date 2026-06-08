@@ -20,10 +20,10 @@ confidence: medium
 
 ## 与 Hermes Agent 集成
 
-[[Hermes Agent]] 可通过 API 与 Dify 集成，将第二大脑接入专业工作流平台，实现复杂自动化编排。
+[[hermes-agent]] 可通过 API 与 Dify 集成，将第二大脑接入专业工作流平台，实现复杂自动化编排。
 
 ## 相关
 
-- [[第二大脑（Second Brain）]]
-- [[Hermes Agent]]
+- [[second-brain]]
+- [[hermes-agent]]
 - [[n8n]]

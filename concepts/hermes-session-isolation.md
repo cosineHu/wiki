@@ -86,6 +86,6 @@ hermes pairing revoke    # 撤销授权
 
 ## 相关
 
-- [[Hermes Agent]]
-- [[OpenClaw vs Hermes Agent]]
-- [[第二大脑（Second Brain）]]
+- [[hermes-agent]]
+- [[openclaw-vs-hermes]]
+- [[second-brain]]

@@ -98,7 +98,7 @@ FTS5 搜索 → 按 session 分组 → 解析 lineage
 
 ## 第四层：Skills 作为程序性记忆
 
-参见 [[Hermes 技能系统（Skills System）]]
+参见 [[hermes-skills-system]]
 
 Skills 存储可复用工作流。不会全部注入 prompt，只注入紧凑索引，需要时加载完整内容——程序性记忆随时可用但不消耗每轮 token。
 
@@ -145,7 +145,7 @@ Skills 存储可复用工作流。不会全部注入 prompt，只注入紧凑索
 | **语义记忆** | 沉淀的稳定知识 | 长期积累 |
 | **技能记忆** | 如何完成任务 | 持续进化 |
 
-详见 [[Memory Agent vs Workflow Agent]]
+详见 [[memory-agent-vs-workflow-agent]]
 
 ## IPO 建模
 
@@ -159,10 +159,10 @@ Skills 存储可复用工作流。不会全部注入 prompt，只注入紧凑索
 
 ## 相关
 
-- [[Hermes Agent]]
-- [[Hermes 技能系统（Skills System）]]
-- [[OpenClaw vs Hermes Agent]]
-- [[Hermes 知识库参考方式]]
-- [[分层记忆系统]] — 概念层面的 L0-L3 四层模型
-- [[Memory Agent vs Workflow Agent]] — 认知心理学视角的四层记忆
-- [[三种记忆模型对比（Three Memory Models）]] — 三模型映射关系与综合对比
+- [[hermes-agent]]
+- [[hermes-skills-system]]
+- [[openclaw-vs-hermes]]
+- [[hermes-knowledge-reference]]
+- [[layered-memory-system]] — 概念层面的 L0-L3 四层模型
+- [[memory-agent-vs-workflow-agent]] — 认知心理学视角的四层记忆
+- [[three-memory-models]] — 三模型映射关系与综合对比

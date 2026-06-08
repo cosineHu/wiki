@@ -10,11 +10,11 @@ confidence: high
 
 # LLM Wiki（Karpathy 模式）
 
-由 [[Andrej Karpathy]] 提出的一种知识管理方法：将知识库构建为互联的 Markdown 文件，持续积累、复利增长。
+由 [[andrej-karpathy]] 提出的一种知识管理方法：将知识库构建为互联的 Markdown 文件，持续积累、复利增长。
 
 ## 核心理念
 
-与传统 [[RAG vs Wiki]] 不同，wiki **只编译一次知识并保持更新**，而非每次查询都从头重新发现。
+与传统 [[rag-vs-wiki]] 不同，wiki **只编译一次知识并保持更新**，而非每次查询都从头重新发现。
 
 - 交叉引用已就位
 - 矛盾已被标记
@@ -72,7 +72,7 @@ wiki/
 
 ## 与 Obsidian 集成
 
-Wiki 目录天然兼容 [[Obsidian]]，`[[wikilinks]]` 可点击，图谱视图可视化知识网络，YAML frontmatter 支持 Dataview 查询。
+Wiki 目录天然兼容 [[obsidian]]，`[[wikilinks]]` 可点击，图谱视图可视化知识网络，YAML frontmatter 支持 Dataview 查询。
 
 服务器端可通过 [[obsidian-headless]] 实现无 GUI 同步。
 

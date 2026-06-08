@@ -31,4 +31,4 @@ confidence: high
 
 ## 相关
 
-- [[LLM Wiki（Karpathy 模式）]]
+- [[llm-wiki]]

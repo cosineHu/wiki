@@ -47,7 +47,7 @@ Claude Code 通过 CLAUDE.md 实现了类似的学习机制，但：
 
 ## 相关
 
-- [[Hermes Agent]]
-- [[OpenClaw vs Hermes Agent]]
-- [[Hermes 技能系统（Skills System）]]
-- [[Hermes 终端后端（Terminal Backends）]]
+- [[hermes-agent]]
+- [[openclaw-vs-hermes]]
+- [[hermes-skills-system]]
+- [[hermes-terminal-backends]]

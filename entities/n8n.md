@@ -20,10 +20,10 @@ confidence: medium
 
 ## 与 Hermes Agent 集成
 
-[[Hermes Agent]] 可与 n8n 集成，将 AI 能力嵌入复杂自动化工作流中。
+[[hermes-agent]] 可与 n8n 集成，将 AI 能力嵌入复杂自动化工作流中。
 
 ## 相关
 
-- [[第二大脑（Second Brain）]]
-- [[Hermes Agent]]
-- [[Dify]]
+- [[second-brain]]
+- [[hermes-agent]]
+- [[dify]]
