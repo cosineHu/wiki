@@ -382,6 +382,12 @@
 - 修复: concepts/knowledge-ontology-three-layer-model.md source 引用更新为新路径
 
 ## [2026-06-05] update | DataMax 定位更新 — 从库存管理平台升级为数据中台
+
+## [2026-06-05] update | DataMax 商品智能体 — 重点建设商品运营
+- 新增"商品智能体（Merchandise Agent）"：围绕智能配补调场景
+- 三层能力：业务运营 → 智能问答 → 数据分析
+- 从"被动执行规则"升级为"主动分析建议"
+- 更新 entities/datamax.md、index.md
 - 补充 DataMax 产品概述：轻量级数仓 + 人货场标签 + 数据低代码 + 亿级秒查
 - 配补调退定位为 DataMax 数据中台上的核心应用之一
 - 更新 entities/datamax.md、index.md
