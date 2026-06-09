@@ -97,3 +97,4 @@ DataMax 当前重点建设**商品运营**领域，围绕"智能配补调"场景
 ## 相关
 
 - [[replenishment-allocation-transfer-return|配补调退业务]]
+- [[datamax-business-metrics|配补调退业务指标体系]]

@@ -383,6 +383,11 @@
 
 ## [2026-06-05] update | DataMax 定位更新 — 从库存管理平台升级为数据中台
 
+## [2026-06-05] create | DataMax 配补调退业务指标体系
+- 创建 concepts/datamax-business-metrics.md：30+ 指标覆盖库存/销量/周转/满足率
+- 更新 entities/datamax.md、concepts/replenishment-allocation-transfer-return.md 交叉引用
+- index.md (45页)
+
 ## [2026-06-05] update | DataMax 商品智能体 — 重点建设商品运营
 - 新增"商品智能体（Merchandise Agent）"：围绕智能配补调场景
 - 三层能力：业务运营 → 智能问数 → 数据分析

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-05 | Total pages: 44 | IPO coverage: 21/21 (100%)
+> Last updated: 2026-06-05 | Total pages: 45 | IPO coverage: 21/21 (100%)
 
 ## Entities
 - [[andrej-karpathy]] — AI 研究员，LLM Wiki 模式提出者，前 Tesla AI 总监
@@ -21,6 +21,7 @@
 - [[atom-compose-concept-architecture]] — 原子-组合概念双层架构：原子概念（IPO建模）+ 组合概念（decomposition编排）
 - [[cognitive-closed-loop]] — 认知闭环操作系统：三层架构 + IPO 闭环，从知识图谱到可执行认知系统
 - [[content-production-pipeline]] — 内容生产流水线：素材→Skills→文章→视频→社交媒体，知识管理下游
+- [[datamax-business-metrics]] — DataMax 配补调退业务指标体系：30+ 指标覆盖库存/销量/周转/满足率
 - [[enterprise-second-brain-architecture]] — 企业级第二大脑架构：Hermes+飞书+Obsidian+llm-wiki+Git 知识闭环
 - [[hermes-knowledge-reference]] — Hermes 知识库参考方式：AGENTS.md / Skill / Memory / Obsidian 四种方式
 - [[hermes-memory-architecture]] — Hermes 四层记忆架构：热记忆/情景回忆/Skills/Honcho，缓存感知设计
