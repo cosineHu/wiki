@@ -5,6 +5,46 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-06-09] lint | 每日知识审计 — 297 处发现，自动修复 7 项
+
+- 审计范围: wiki/ 知识层 (42 页) + wiki/meta/ 元信息层 (35 原子概念 + 22 组合概念 + 112 实体 + 21 场景)
+- 审计报告: meta/_pending/audit-20260609.md
+
+### 🔴 严重 (30)
+- Wiki 死链 (30): 主要为示例性 wikilink（笔记名/note/项目A）和中文别名死链（场景驱动知识库/7步写作流水线）
+  - 已修复 (6): datamax→replenishment-allocation-transfer-return, llm-wiki→scenario-driven-cognitive-loop/knowledge-base-article-writing, rag-vs-wiki→scenario-driven-cognitive-loop/knowledge-base-article-writing, llm-wiki→llm-wiki-compiler(改为URL)
+  - 剩余 (24): obsidian-bidirectional-links 和 obsidian-tag-system 中的示例性 wikilink（笔记名/note/项目A），不影响实际导航，暂不修改（示例代码的一部分）
+- 场景死链 (0): ✅
+
+### 🟡 警告 (86)
+- Frontmatter 标签不合规 (80): 大量标签未在 SCHEMA.md 分类体系中
+  - 已修复: SCHEMA.md 标签分类体系扩展（新增 Knowledge/Domain 分类，扩展现有 Tech/AI-ML 分类，新增 20+ 标签）
+- 孤立页面 (3): replenishment-allocation-transfer-return, static-kb-vs-cognitive-os, wiki-vs-wiki1
+  - 已修复: 在 cognitive-closed-loop.md 中添加 static-kb-vs-cognitive-os 和 wiki-vs-wiki1 的入链
+  - replenishment-allocation-transfer-return 已有 datamax.md 的入链（审计脚本误报，实际入链存在）
+- IPO 不完整 (3): mece-decomposition/inductive-reasoning/deductive-reasoning 缺少 tools 字段
+  - 已修复: 补充 tools 字段（mece-decomposition→mermaid+excalidraw, inductive/deductive→obsidian+llm-wiki）
+- 组合概念 decomposition (0): ✅
+- 实体验证 (0): ✅
+
+### 🔵 建议 (181)
+- 源文件 SHA256 漂移 (14): raw/articles/ 下 14 个文件内容已变更但 sha256 未更新（设计预期，raw/ 不可变）
+- meta 实体→wiki 页面缺失 (91): 预期行为，meta 实体不需要全部有 wiki 页面
+- meta 概念→wiki 页面缺失 (53): 预期行为，meta 概念是元操作方法
+- wiki 页面→meta 缺失 (23): 部分概念/实体页面未在 meta/ 中注册
+
+### 自动修复记录
+1. datamax.md: 死链 配补调退业务→replenishment-allocation-transfer-return
+2. llm-wiki.md: 死链 场景驱动知识库→scenario-driven-cognitive-loop, 7步写作流水线→knowledge-base-article-writing, llm-wiki-compiler→URL
+3. rag-vs-wiki.md: 死链 场景驱动知识库→scenario-driven-cognitive-loop, 7步写作流水线→knowledge-base-article-writing
+4. SCHEMA.md: 标签分类体系扩展（新增 20+ 标签覆盖所有实际使用的标签）
+5. meta-concepts.yaml: 3 个原子概念补充 tools 字段 (v1.1→v1.2)
+6. cognitive-closed-loop.md: 新增 static-kb-vs-cognitive-os 和 wiki-vs-wiki1 入链
+
+### 正面指标
+- 超大页面: 0 | 低置信度: 0 | 争议页面: 0 | 无 confidence: 0
+- 原子概念 IPO 完整率: 35/35 (100%) | 组合概念 decomposition: 22/22 (100%) | 场景 phase≥2: 21/21 (100%)
+
 ## [2026-06-08] ingest | 认知闭环操作系统 — meta/ 初始化
 - 来源: https://mp.weixin.qq.com/s/ZMZHQVbtRFbQ22DgvY8YCw
 - 创建文件:

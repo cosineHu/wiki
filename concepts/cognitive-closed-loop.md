@@ -58,3 +58,5 @@ confidence: high
 - [[enterprise-second-brain-architecture]] — 企业级第二大脑架构
 - [[hermes-skills-system]] — Hermes 技能系统（类比：概念 = 技能，场景 = 编排）
 - [[rag-vs-wiki]] — RAG vs Wiki 对比（meta/ 是 Wiki 的下一阶段进化）
+- [[static-kb-vs-cognitive-os]] — 静态知识库 vs 认知操作系统对比
+- [[wiki-vs-wiki1]] — wiki/ 知识层 vs meta/ 模式库双层架构
