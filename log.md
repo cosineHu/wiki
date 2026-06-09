@@ -340,3 +340,13 @@
 - Phase 7 YAML 反向校验:
   - meta/_pending/reverse-check-20260605.md (5 维检查: 1 新场景/2 新概念/2 新实体/4 关系补全/1 死链)
 - 修复: concepts/knowledge-ontology-three-layer-model.md source 引用更新为新路径
+
+## [2026-06-05] ingest | DataMax 商品配补调业务蓝图需求规格说明书
+- 来源: 用户提供 .docx 文档（广州尚睿服装）
+- 创建文件:
+  - raw/2026-06-05-datamax-replenishment/datamax-replenishment-requirements.md (原始来源)
+  - entities/datamax.md (DataMax 系统实体页)
+  - concepts/replenishment-allocation-transfer-return.md (配补调退业务概念页)
+  - meta/supplements/2026-06-05-datamax-replenishment/ (四件套元数据)
+- 更新文件:
+  - index.md (新增 2 个页面条目，总页数 44)

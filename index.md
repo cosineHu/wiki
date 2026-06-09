@@ -2,10 +2,11 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-05 | Total pages: 42 | IPO coverage: 21/21 (100%)
+> Last updated: 2026-06-05 | Total pages: 44 | IPO coverage: 21/21 (100%)
 
 ## Entities
 - [[andrej-karpathy]] — AI 研究员，LLM Wiki 模式提出者，前 Tesla AI 总监
+- [[datamax]] — 服装零售 ERP 系统，配补调退（配货/补货/调拨/退货）全流程管理
 - [[dify]] — 开源 LLM 应用开发平台，可视化编排 AI 工作流
 - [[hermes-agent]] — Nous Research 的 MIT 开源 AI Agent 平台，学习闭环 + 技能系统 + 多平台
 - [[kepano]] — Obsidian 创始人兼 CEO，提出 File over app 和 Don't delegate understanding 哲学
@@ -37,6 +38,7 @@
 - [[obsidian-dataview]] — Obsidian Dataview 查询：LIST/TABLE/TASK 语法、图谱视图
 - [[obsidian-headless]] — Obsidian 无头模式，服务器端通过 Obsidian Sync 同步 vault
 - [[obsidian-tag-system]] — Obsidian 标签系统与 Frontmatter：标签层级、元数据规范
+- [[replenishment-allocation-transfer-return]] — 配补调退业务：服装零售四大核心流程（补货/调拨/配货/退货）的规则体系
 - [[scenario-driven-cognitive-loop]] — 场景驱动认知闭环：三层架构（场景→概念→实体）+ IPO + YAML反向校验
 - [[second-brain]] — 第二大脑：Tiago Forte 提出，Hermes Agent + Obsidian 构建 AI 驱动的个人知识系统
 - [[skills-authoring-guide]] — Skills 编写指南：agentskills 标准、三阶段加载、Frontmatter 字段、跨工具兼容
