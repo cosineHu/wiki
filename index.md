@@ -6,7 +6,7 @@
 
 ## Entities
 - [[andrej-karpathy]] — AI 研究员，LLM Wiki 模式提出者，前 Tesla AI 总监
-- [[datamax]] — DataMax 数据中台：轻量级数仓 + 商品智能体（配补调 + 智能问答 + 数据分析）
+- [[datamax]] — DataMax 数据中台：轻量级数仓 + 商品智能体（配补调 + 智能问数 + 数据分析）
 - [[dify]] — 开源 LLM 应用开发平台，可视化编排 AI 工作流
 - [[hermes-agent]] — Nous Research 的 MIT 开源 AI Agent 平台，学习闭环 + 技能系统 + 多平台
 - [[kepano]] — Obsidian 创始人兼 CEO，提出 File over app 和 Don't delegate understanding 哲学
