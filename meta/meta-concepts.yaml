@@ -141,7 +141,7 @@ meta_concepts:
       - "确保所有子项之和覆盖全貌（Collectively Exhaustive）"
       - "验证分解结果是否满足 MECE 条件"
     output: "MECE 分解后的子项列表"
-    tools: []
+    tools: ["mermaid", "excalidraw"]
     quality_check: "子项之间是否有重叠？是否遗漏了重要维度？"
 
   - id: first-principles
@@ -211,7 +211,7 @@ meta_concepts:
       - "抽象出一般性规律或原则"
       - "用反例验证规律的边界条件"
     output: "一般性规律/原则 + 适用范围"
-    tools: []
+    tools: ["obsidian", "llm-wiki"]
     quality_check: "样本量是否足够？是否有反例？规律的边界是否清晰？"
 
   - id: deductive-reasoning
@@ -225,7 +225,7 @@ meta_concepts:
       - "逻辑推导出具体结论"
       - "检查推导过程是否存在逻辑跳跃"
     output: "具体结论 + 推导链条"
-    tools: []
+    tools: ["obsidian", "llm-wiki"]
     quality_check: "前提是否成立？推导过程是否严密？"
 
   - id: abstract-modeling

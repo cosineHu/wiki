@@ -341,6 +341,11 @@
   - meta/_pending/reverse-check-20260605.md (5 维检查: 1 新场景/2 新概念/2 新实体/4 关系补全/1 死链)
 - 修复: concepts/knowledge-ontology-three-layer-model.md source 引用更新为新路径
 
+## [2026-06-05] update | DataMax 定位更新 — 从库存管理平台升级为数据中台
+- 补充 DataMax 产品概述：轻量级数仓 + 人货场标签 + 数据低代码 + 亿级秒查
+- 配补调退定位为 DataMax 数据中台上的核心应用之一
+- 更新 entities/datamax.md、index.md
+
 ## [2026-06-05] ingest | DataMax 商品配补调业务蓝图需求规格说明书
 - 来源: 用户提供 .docx 文档（广州尚睿服装）
 - 创建文件:

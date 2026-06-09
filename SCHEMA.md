@@ -42,9 +42,11 @@ contradictions: [other-page-slug]
 ```
 
 ## Tag Taxonomy
-- **Tech:** programming, devops, architecture, security, database, cloud
-- **AI/ML:** model, benchmark, training, inference, alignment, llm
+- **Tech:** programming, devops, architecture, security, database, cloud, serverless, markdown, automation, tool, platform, sync, plugin, query
+- **AI/ML:** model, benchmark, training, inference, alignment, llm, ai, agent, memory, skill, self-improving, multi-tenant, agentskills
 - **People/Orgs:** person, company, lab, open-source
+- **Knowledge:** knowledge-base, knowledge-management, methodology, ontology, metadata, second-brain, enterprise, content-creation, business-process
+- **Domain:** retail, inventory, erp, fashion, podcast, philosophy
 - **Meta:** comparison, timeline, tutorial, reference, opinion
 
 Rule: every tag on a page must appear in this taxonomy. Add new tags here BEFORE using them.
