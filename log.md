@@ -320,3 +320,14 @@
 - 🟡 新关系 (4): cognitive-closed-loop→hermes-agent, web-pack→hermes-agent, kepano→obsidian, lex-fridman→andrej-karpathy → 已添加
 - 创建文件: meta/_pending/reverse-check-20260608.yaml
 - 更新文件: meta/meta-concepts.yaml (v1.0→v1.1, 35→36), meta/compose-concepts.yaml (v1.0→v1.1, 20→23), meta/entities/people.yaml (v1.0→v1.1, 8→10), meta/entities/knowledge-management.yaml (v1.0→v1.1)
+
+## [2026-06-05] ingest | 知识本体构建：基于 LLM Wiki 的大模型知识库
+- 来源: https://mp.weixin.qq.com/s/QEjbPUDFXY3lewPvoLDuQg（用户提供文档）
+- 创建文件:
+  - raw/articles/knowledge-ontology-llm-wiki-2026.md (原始来源)
+  - concepts/knowledge-ontology-three-layer-model.md (知识本体三层模型)
+- 更新文件:
+  - concepts/llm-wiki.md (新增进阶应用交叉引用)
+  - comparisons/rag-vs-wiki.md (新增场景驱动知识库对比)
+  - index.md (新增 1 个页面条目，总页数 42)
+- 备注: 删除 2 个重复页面（scenario-driven-knowledge-base/writing-pipeline-7-steps），内容已由 meta/ 层覆盖
