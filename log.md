@@ -5,6 +5,15 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-06-09] check | 每日反向校验 — meta 层引用完整性 100% 通过，1 新实体 + 3 新关系
+
+- 5 维检查：场景/概念/实体/关系/死链
+- 🔴 严重: 0 项 — 所有 scenario/compose_concept/entity 引用均有效
+- 🟡 警告: 1 项 — datamax 实体未在 meta/entities/ 中注册
+- 🔵 建议: 7 项 — 4 个概念注册建议 + 3 个新关系
+- 输出: meta/_pending/reverse-check-20260609.yaml + reverse-check-20260609.md
+- 最近 24h 变更: DataMax 密集摄入（配补调退指标体系 + 商品智能体 + 定位升级）
+
 ## [2026-06-09] lint | 每日知识审计 — 297 处发现，自动修复 7 项
 
 - 审计范围: wiki/ 知识层 (42 页) + wiki/meta/ 元信息层 (35 原子概念 + 22 组合概念 + 112 实体 + 21 场景)

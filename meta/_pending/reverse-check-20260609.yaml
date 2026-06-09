@@ -1,0 +1,86 @@
+# reverse-check-20260609.yaml — 每日反向校验发现
+# 自动生成 | 2026-06-09 20:04 UTC
+# 状态: pending (待人工审核)
+
+reverse_check_result:
+  timestamp: "2026-06-09 20:04"
+  scenario_used: knowledge-evolution-cycle
+  new_scenarios_count: 0
+  new_meta_concepts_count: 0
+  new_compose_concepts_count: 0
+  new_entities_count: 1
+  new_relations_count: 3
+  dead_links_count: 0
+  summary: "meta 层引用完整性 100% 通过；发现 1 个新实体 (datamax) 和 3 个新关系待注册"
+
+# ============================================================
+# 新实体
+# ============================================================
+new_entities:
+  - id: datamax
+    name: DataMax
+    level: 1
+    type: platform
+    description: "数据中台/商品智能体平台，覆盖配补调退全链路业务指标体系，通过 Hermes Agent 进行知识管理"
+    category_file: knowledge-management
+    reason: "wiki/entities/datamax.md 存在但 meta/entities/ 中无对应条目；过去 24 小时密集摄入 DataMax 相关内容"
+    relations:
+      - target: hermes-agent
+        type: uses
+      - target: feishu
+        type: uses
+      - target: enterprise-second-brain
+        type: related_to
+      - target: llm-wiki
+        type: uses
+
+# ============================================================
+# 新关系
+# ============================================================
+new_relations:
+  - source: datamax
+    target: hermes-agent
+    type: uses
+    reason: "DataMax 通过 Hermes Agent 进行知识管理和自动化"
+  - source: datamax
+    target: feishu
+    type: uses
+    reason: "DataMax 使用飞书作为交互通道"
+  - source: datamax
+    target: enterprise-second-brain
+    type: related_to
+    reason: "DataMax 是企业级第二大脑架构的业务数据层"
+
+# ============================================================
+# 建议注册的组合概念（低优先级）
+# ============================================================
+suggested_compose_concepts:
+  - id: scenario-driven-cognitive-loop
+    name: 场景驱动认知闭环
+    category: meta
+    description: "场景匹配→概念组装→实体调取→原文深挖→结构化执行→反向校验的完整闭环"
+    reason: "核心方法论，已在 scenarios 中大量引用，但未在 compose-concepts 中注册"
+  - id: ipo-closed-loop
+    name: IPO 闭环
+    category: meta
+    description: "Input→Process→Output→Tools 四元组建模的闭环流程"
+    reason: "IPO 闭环是 abstract-modeling 的具体化，可作为组合概念"
+  - id: atom-compose-concept-architecture
+    name: 原子+组合双层架构
+    category: meta
+    description: "将方法论分为原子概念（不可再分）和组合概念（原子串接）的双层架构"
+    reason: "meta/ 的核心设计模式，应注册为组合概念"
+  - id: yaml-reverse-validation
+    name: YAML 反向校验
+    category: meta
+    description: "每次知识使用后反向检查元模型中的遗漏和缺口"
+    reason: "yaml-reverse-check 的 wiki 页面，可注册为组合概念"
+
+# ============================================================
+# 死链
+# ============================================================
+dead_links: []
+# 所有检测到的 "死链" 均为 Obsidian 文档中的语法示例代码
+# ([[wikilinks]], [[note]], [[笔记名]], [[项目A]])
+# 以及 compose_concept ID 引用 ([[knowledge-base-article-writing]])
+# 无真实断链
