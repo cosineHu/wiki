@@ -4,7 +4,7 @@ created: 2026-06-05
 updated: 2026-06-05
 type: concept
 tags: [knowledge-base, ontology, llm-wiki, methodology]
-sources: [raw/articles/knowledge-ontology-llm-wiki-2026.md]
+sources: [raw/2026-06-05-knowledge-ontology/knowledge-ontology-llm-wiki.md]
 confidence: high
 ---
 

@@ -331,3 +331,12 @@
   - comparisons/rag-vs-wiki.md (新增场景驱动知识库对比)
   - index.md (新增 1 个页面条目，总页数 42)
 - 备注: 删除 2 个重复页面（scenario-driven-knowledge-base/writing-pipeline-7-steps），内容已由 meta/ 层覆盖
+
+## [2026-06-05] web-pack | 知识本体构建 — Web Pack 规范补全
+- 按 web-pack skill 规范重建目录结构:
+  - raw/2026-06-05-knowledge-ontology/knowledge-ontology-llm-wiki.md (语义化目录 + 本地图片)
+  - raw/2026-06-05-knowledge-ontology/assets/ (14 张图片全部本地化)
+  - meta/supplements/2026-06-05-knowledge-ontology/ (四件套: research-brief/link-inventory/image-inventory/reading-map)
+- Phase 7 YAML 反向校验:
+  - meta/_pending/reverse-check-20260605.md (5 维检查: 1 新场景/2 新概念/2 新实体/4 关系补全/1 死链)
+- 修复: concepts/knowledge-ontology-three-layer-model.md source 引用更新为新路径
