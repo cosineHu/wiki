@@ -48,6 +48,7 @@ scenarios:
     related_scenarios:
       - query-wiki-knowledge
       - wiki-health-check
+      - knowledge-evolution-cycle
 
   - id: query-wiki-knowledge
     name: 基于知识库回答问题

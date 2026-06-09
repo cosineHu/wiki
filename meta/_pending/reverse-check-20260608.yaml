@@ -1,65 +1,12 @@
 # Reverse Check Result — 每日 YAML 反向校验
-# 生成时间: 2026-06-08 20:06
+# 生成时间: 2026-06-08 20:09
 # 校验维度: 新场景 / 新概念 / 新实体 / 新关系 / 死链
 
 reverse_check_result:
-  timestamp: 2026-06-08 20:06
+  timestamp: 2026-06-08 20:09
   new_scenarios_count: 0
-  new_concepts_count: 4
-  new_entities_count: 2
-  new_relations_count: 4
-  dead_links_count: 24
-  summary: 发现 1 条meta死链, 23 条wiki死链, 2 个新实体, 4 条新关系
-new_meta_concepts:
-- id: ai-human-knowledge-boundary
-  name: AI 与人知识边界（AI-Human Knowledge Boundary）
-  reason: 'Wiki concept page exists but no meta_concept entry: AI与人类知识边界 - concept/topic'
-new_compose_concepts:
-- id: content-production-pipeline
-  name: 内容生产流水线（Content Production Pipeline）
-  reason: 'Wiki concept page exists but no compose_concept entry: 内容生产流水线 - multi-step
-    process'
-- id: knowledge-management-pipeline
-  name: 知识管理全链路（Knowledge Management Pipeline）
-  reason: 'Wiki concept page exists but no compose_concept entry: 知识管理流水线 - multi-step
-    process'
-- id: skills-authoring-guide
-  name: Skills 编写指南（Skills Authoring Guide）
-  reason: 'Wiki concept page exists but no compose_concept entry: 技能编写指南 - method'
-new_entities:
-- id: lex-fridman
-  name: Lex Fridman
-  level: 1
-  type: entity
-  description: Wiki entity page exists at entities/lex-fridman.md but not in meta/entities/
-  category_file: people.yaml
-  reason: Wiki entity page 'lex-fridman' has no corresponding entry in meta/entities/*.yaml
-- id: kepano
-  name: kepano (Steph Ango)
-  level: 1
-  type: entity
-  description: Wiki entity page exists at entities/kepano.md but not in meta/entities/
-  category_file: people.yaml
-  reason: Wiki entity page 'kepano' has no corresponding entry in meta/entities/*.yaml
-new_relations:
-- source: lex-fridman
-  target: andrej-karpathy
-  type: related_to
-  reason: Lex Fridman interviewed Karpathy; both are AI community figures
-- source: kepano
-  target: obsidian
-  type: related_to
-  reason: Kepano is Obsidian's CEO, should be linked to obsidian entity
-- source: cognitive-closed-loop
-  target: hermes-agent
-  type: uses
-  reason: Cognitive closed-loop is implemented via Hermes Agent cron jobs
-- source: web-pack
-  target: hermes-agent
-  type: uses
-  reason: web-pack is used as a Hermes skill, should link to hermes-agent
-dead_links:
-- reference: rag-vs-wiki
-  context: entity 'llm-wiki', relation type 'related_to'
-  suggestion: Add 'rag-vs-wiki' to meta/entities/*.yaml or meta-concepts.yaml, or
-    fix the reference
+  new_concepts_count: 0
+  new_entities_count: 0
+  new_relations_count: 0
+  dead_links_count: 23
+  summary: 发现 0 条meta死链, 23 条wiki死链, 0 个新实体, 0 条新关系
