@@ -1,0 +1,21 @@
+---
+title: E3 AI 工作台 — 摄入元数据
+date: 2026-06-05
+topic: e3-ai-workbench
+source_type: pdf
+source_files:
+  - E3 自动创建套餐规则整理.pdf
+  - 预售审单规则.pdf
+  - 渠道捡漏.pdf
+created_pages:
+  - entities/e3-ai-workbench.md
+  - entities/e3-auto-package-rules.md
+  - entities/e3-presale-review-rules.md
+  - entities/e3-channel-inventory-pickup.md
+  - concepts/e3-ai-workbench-analysis.md
+  - entities/e3-ai-workbench-survey-outline.md
+  - entities/e3-ai-workbench-blueprint-outline.md
+  - entities/e3-ai-workbench-sit-test-cases.md
+page_count: 8
+scenario_count: 3.5
+test_case_count: 32

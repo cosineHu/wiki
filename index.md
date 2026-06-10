@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-05 | Total pages: 61 | IPO coverage: 21/21 (100%)
+> Last updated: 2026-06-05 | Total pages: 69 | IPO coverage: 21/21 (100%)
 
 ## Entities
 - [[andrej-karpathy]] — AI 研究员，LLM Wiki 模式提出者，前 Tesla AI 总监
@@ -17,6 +17,13 @@
 - [[obsidian]] — 基于本地 Markdown 的笔记与知识管理工具，第二大脑存储核心
 - [[ollama]] — 本地 LLM 运行工具，一键部署开源模型
 - [[openclaw]] — 开源 AI Agent 平台，强调跨平台连接与社区技能生态
+- [[e3-ai-workbench]] — E3 AI 工作台项目：AI 改造 E3OMS，专岗专治降本提效，3.5 个一期场景
+- [[e3-ai-workbench-blueprint-outline]] — E3 AI 工作台业务蓝图大纲：双端协同架构，7 大模块
+- [[e3-ai-workbench-sit-test-cases]] — E3 AI 工作台 SIT 测试用例：32 个用例，10 大模块
+- [[e3-ai-workbench-survey-outline]] — E3 AI 工作台调研大纲：岗位痛点深度调研，4 大模块
+- [[e3-auto-package-rules]] — E3 自动创建套餐规则：ZH/LG/DYCH 三类套餐自动生成
+- [[e3-channel-inventory-pickup]] — 渠道捡漏规则：当天/次日捡漏，微信小店/抽盒机/天猫差异化
+- [[e3-presale-review-rules]] — 预售审单规则：自动汇总/筛选/占库存/审核全链路
 - [[delivery-document-templates]] — 交付中心文档模板库：调研报告模板 + 调研大纲模板，三段式结构
 - [[sit-test-case-library]] — SIT 测试用例标准方案库：7 Sheet，~50 个用例，16 平台覆盖
 - [[youngor-e3-blueprint-outline]] — 雅戈尔 E3+ 业务蓝图大纲：6 大分类，四级树形，标注标准方案库 vs 雅戈尔定制
@@ -35,6 +42,7 @@
 - [[datamax-business-metrics]] — DataMax 配补调退业务指标体系：30+ 指标覆盖库存/销量/周转/满足率
 - [[delivery-knowledge-scenarios]] — 交付中心知识库三大核心场景：调研大纲→调研日志→蓝图大纲，依赖链全景
 - [[delivery-template-structure]] — 交付文档模板结构分析：三段式调研结构、流程分析四维模型、模板与标准方案库关系
+- [[e3-ai-workbench-analysis]] — E3 AI 工作台场景分析：专岗专治方法论、双端协同架构、效果度量模型
 - [[enterprise-second-brain-architecture]] — 企业级第二大脑架构：Hermes+飞书+Obsidian+llm-wiki+Git 知识闭环
 - [[hermes-knowledge-reference]] — Hermes 知识库参考方式：AGENTS.md / Skill / Memory / Obsidian 四种方式
 - [[hermes-memory-architecture]] — Hermes 四层记忆架构：热记忆/情景回忆/Skills/Honcho，缓存感知设计

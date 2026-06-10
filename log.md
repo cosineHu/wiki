@@ -392,6 +392,24 @@
 
 ## [2026-06-05] update | DataMax 定位更新 — 从库存管理平台升级为数据中台
 
+## [2026-06-05] ingest | E3 AI 工作台项目 — 8 页 wiki + 3 份交付物
+
+- 来源: 用户提供 3 个 PDF（套餐规则/预售审单/渠道捡漏）+ 需求背景
+- 存档: raw/2026-06-05-e3-ai-workbench/（3 个 PDF）
+- 创建实体页:
+  - entities/e3-ai-workbench.md — 项目总览（3.5 场景/双端使用/专岗专治）
+  - entities/e3-auto-package-rules.md — 套餐规则（ZH/LG/DYCH 三类）
+  - entities/e3-presale-review-rules.md — 预售审单规则（6 步人工链路→自动化）
+  - entities/e3-channel-inventory-pickup.md — 渠道捡漏规则（当天/次日差异化）
+- 创建概念页:
+  - concepts/e3-ai-workbench-analysis.md — 场景分析（专岗专治方法论/双端协同/效果度量）
+- 生成交付物:
+  - entities/e3-ai-workbench-survey-outline.md — 调研大纲（4 大模块，岗位痛点深度调研）
+  - entities/e3-ai-workbench-blueprint-outline.md — 蓝图大纲（7 大模块，双端协同架构）
+  - entities/e3-ai-workbench-sit-test-cases.md — 测试用例（32 个用例，10 大模块）
+- 更新 index.md（61→69 页）
+- 元数据: meta/supplements/2026-06-05-e3-ai-workbench/ingest-meta.yaml
+
 ## [2026-06-05] ingest | 雅戈尔 E3+ SIT 测试用例（56 个用例，6 大模块）
 
 - 基于蓝图大纲 + SIT 测试用例标准方案库生成
