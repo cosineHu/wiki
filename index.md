@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-05 | Total pages: 53 | IPO coverage: 21/21 (100%)
+> Last updated: 2026-06-05 | Total pages: 56 | IPO coverage: 21/21 (100%)
 
 ## Entities
 - [[andrej-karpathy]] — AI 研究员，LLM Wiki 模式提出者，前 Tesla AI 总监
@@ -17,8 +17,10 @@
 - [[obsidian]] — 基于本地 Markdown 的笔记与知识管理工具，第二大脑存储核心
 - [[ollama]] — 本地 LLM 运行工具，一键部署开源模型
 - [[openclaw]] — 开源 AI Agent 平台，强调跨平台连接与社区技能生态
+- [[youngor-e3-blueprint-outline]] — 雅戈尔 E3+ 业务蓝图大纲：6 大分类，四级树形，标注标准方案库 vs 雅戈尔定制
 - [[youngor-e3-presale]] — 雅戈尔 E3+ 售前方案：68 页 PPT，四段式结构，四大提升方向
 - [[youngor-e3-survey-log]] — 雅戈尔 E3+ 调研日志：5 大领域 + 11 Sheet，1055 条需求
+- [[youngor-e3-survey-outline]] — 雅戈尔 E3+ 调研大纲：6 大模块，三段式结构，基于售前方案 + 标准方案库生成
 
 ## Concepts
 - [[ai-human-knowledge-boundary]] — AI 与人知识边界：物理隔离 vs 溯源标记，kepano 的 Don't delegate understanding
@@ -28,6 +30,7 @@
 - [[cognitive-closed-loop]] — 认知闭环操作系统：三层架构 + IPO 闭环，从知识图谱到可执行认知系统
 - [[content-production-pipeline]] — 内容生产流水线：素材→Skills→文章→视频→社交媒体，知识管理下游
 - [[datamax-business-metrics]] — DataMax 配补调退业务指标体系：30+ 指标覆盖库存/销量/周转/满足率
+- [[delivery-knowledge-scenarios]] — 交付中心知识库三大核心场景：调研大纲→调研日志→蓝图大纲，依赖链全景
 - [[enterprise-second-brain-architecture]] — 企业级第二大脑架构：Hermes+飞书+Obsidian+llm-wiki+Git 知识闭环
 - [[hermes-knowledge-reference]] — Hermes 知识库参考方式：AGENTS.md / Skill / Memory / Obsidian 四种方式
 - [[hermes-memory-architecture]] — Hermes 四层记忆架构：热记忆/情景回忆/Skills/Honcho，缓存感知设计
