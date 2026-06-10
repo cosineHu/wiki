@@ -392,6 +392,18 @@
 
 ## [2026-06-05] update | DataMax 定位更新 — 从库存管理平台升级为数据中台
 
+## [2026-06-05] ingest | 雅戈尔 E3+ 售前方案 + 调研大纲模板
+- 来源: 用户提供 .pptx（雅戈尔售前方案）+ .docx（调研大纲模板）
+- 创建文件:
+  - raw/2026-06-05-youngor-e3-presale/youngor-e3-presale-presentation.md (68页PPT文本)
+  - entities/youngor-e3-presale.md (雅戈尔 E3+ 售前方案)
+  - concepts/youngor-e3-solution-analysis.md (方案分析 + 可复用模式)
+  - meta/supplements/2026-06-05-youngor-e3-presale/ (四件套)
+- 更新文件:
+  - index.md (新增 2 个页面条目，总页数 49)
+- 场景: 交付中心提效 — 售前资料（按项目导入）
+- 备注: 调研大纲模板与已摄入的 IT 部门调研内容一致，不再重复保存
+
 ## [2026-06-05] ingest | 百胜交付方法论 — 电商业务调研大纲（标准方案库）
 - 来源: 用户提供 6 份 .docx 文档（百胜价值交付方法论 V3.0 工程包）
 - 创建文件:
