@@ -392,6 +392,18 @@
 
 ## [2026-06-05] update | DataMax 定位更新 — 从库存管理平台升级为数据中台
 
+## [2026-06-05] ingest | 雅戈尔 E3+ 业务调研日志 + 调研报告模板
+- 来源: 用户提供 .xlsx（雅戈尔调研日志）+ .docx（调研报告模板）
+- 创建文件:
+  - raw/2026-06-05-youngor-survey-log/ (11 Sheet 原始数据)
+  - entities/youngor-e3-survey-log.md (雅戈尔 E3+ 调研日志)
+  - concepts/youngor-e3-survey-analysis.md (调研分析 + 可复用模式)
+  - meta/supplements/2026-06-05-youngor-survey-log/ (四件套)
+- 更新文件:
+  - index.md (新增 2 个页面条目，总页数 51)
+- 场景: 交付中心提效 — 调研日志（按项目导入）
+- 备注: 调研报告模板与已有内容模式一致，不再重复保存
+
 ## [2026-06-05] ingest | 雅戈尔 E3+ 售前方案 + 调研大纲模板
 - 来源: 用户提供 .pptx（雅戈尔售前方案）+ .docx（调研大纲模板）
 - 创建文件:
