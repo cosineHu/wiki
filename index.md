@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-05 | Total pages: 60 | IPO coverage: 21/21 (100%)
+> Last updated: 2026-06-05 | Total pages: 61 | IPO coverage: 21/21 (100%)
 
 ## Entities
 - [[andrej-karpathy]] — AI 研究员，LLM Wiki 模式提出者，前 Tesla AI 总监
@@ -22,6 +22,7 @@
 - [[youngor-e3-blueprint-outline]] — 雅戈尔 E3+ 业务蓝图大纲：6 大分类，四级树形，标注标准方案库 vs 雅戈尔定制
 - [[youngor-e3-presale]] — 雅戈尔 E3+ 售前方案：68 页 PPT，四段式结构，四大提升方向
 - [[youngor-e3-survey-log]] — 雅戈尔 E3+ 调研日志：5 大领域 + 11 Sheet，1055 条需求
+- [[youngor-e3-sit-test-cases]] — 雅戈尔 E3+ SIT 测试用例：56 个用例，6 大模块，标准+定制标注
 - [[youngor-e3-survey-outline]] — 雅戈尔 E3+ 调研大纲：6 大模块，三段式结构，基于售前方案 + 标准方案库生成
 
 ## Concepts

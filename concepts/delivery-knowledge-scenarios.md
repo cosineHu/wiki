@@ -129,7 +129,7 @@ confidence: high
 
 ### 输出
 
-项目 SIT 测试用例，参见 [[youngor-e3-sit-test-cases|雅戈尔 E3+ SIT 测试用例]]。
+项目 SIT 测试用例，参见 [[youngor-e3-sit-test-cases|雅戈尔 E3+ SIT 测试用例]]（56 个用例，6 大模块）。
 
 ## 知识库依赖全景
 
