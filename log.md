@@ -392,6 +392,16 @@
 
 ## [2026-06-05] update | DataMax 定位更新 — 从库存管理平台升级为数据中台
 
+## [2026-06-05] ingest | SIT 测试用例标准方案库 + 结构分析 + 场景四建模
+
+- 来源: 用户提供 .xlsx（标准方案库 + 模板，结构一致）
+- 存档: raw/2026-06-05-sit-test-case-library/（2 个 .xlsx）
+- 创建 entities/sit-test-case-library.md — 7 Sheet，~50 个用例，16 平台覆盖，13 字段标准结构
+- 创建 concepts/sit-test-case-structure.md — 五维覆盖模型、5 种设计模式、裁剪原则、蓝图反向校验
+- 更新 concepts/delivery-knowledge-scenarios.md — 新增场景四：生成测试用例
+- 更新 index.md（56→58 页）
+- 元数据: meta/supplements/2026-06-05-sit-test-case-library/ingest-meta.yaml
+
 ## [2026-06-05] ingest | 交付中心知识库三大核心场景 + 雅戈尔 E3+ 调研大纲 + 业务蓝图大纲
 
 - 创建 concepts/delivery-knowledge-scenarios.md — 三大场景依赖链：调研大纲→调研日志→蓝图大纲

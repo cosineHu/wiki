@@ -104,21 +104,51 @@ confidence: high
 
 项目业务蓝图大纲，参见 [[youngor-e3-blueprint-outline|雅戈尔 E3+ 业务蓝图大纲]]。
 
+---
+
+## 场景四：生成测试用例
+
+### 输入
+
+| 输入项 | 说明 | 示例 |
+|--------|------|------|
+| 标准方案库 | 交付中心知识库中的 SIT 测试用例体系 | [[sit-test-case-library\|SIT 测试用例标准方案库]]（7 Sheet，~50 个用例） |
+| 业务蓝图大纲 | 场景三输出的项目业务蓝图方案 | 雅戈尔 E3+ 业务蓝图大纲（6大分类） |
+
+### 处理逻辑
+
+```
+业务蓝图大纲分析（识别需测试的功能模块）
+    ↓
+匹配标准测试用例（5大模块：2C订单/2B订单/全渠道/库存/对账）
+    ↓
+裁剪 + 定制化（按项目平台/系统/业务场景裁剪）
+    ↓
+输出项目专属 SIT 测试用例（13 字段标准结构）
+```
+
+### 输出
+
+项目 SIT 测试用例，参见 [[youngor-e3-sit-test-cases|雅戈尔 E3+ SIT 测试用例]]。
+
 ## 知识库依赖全景
 
 ```
 交付中心知识库
 ├── 标准方案库
-│   ├── [[baisheng-survey-outline-system|调研大纲体系]]（6大模块）  ← 场景一依赖
-│   └── [[blueprint-standard-library|蓝图大纲标准方案库]]（6大分类） ← 场景三依赖
+│   ├── [[baisheng-survey-outline-system|调研大纲体系]]（6大模块）    ← 场景一依赖
+│   ├── [[blueprint-standard-library|蓝图大纲标准方案库]]（6大分类）   ← 场景三依赖
+│   └── [[sit-test-case-library|SIT测试用例标准方案库]]（7 Sheet）    ← 场景四依赖
 ├── 售前资料（按项目）
-│   └── [[youngor-e3-presale|雅戈尔 E3+ 售前方案]]              ← 场景一输入
+│   └── [[youngor-e3-presale|雅戈尔 E3+ 售前方案]]                ← 场景一输入
 ├── 调研大纲（按项目）
-│   └── [[youngor-e3-survey-outline|雅戈尔 E3+ 调研大纲]]       ← 场景一输出 → 场景二输入
+│   └── [[youngor-e3-survey-outline|雅戈尔 E3+ 调研大纲]]         ← 场景一输出 → 场景二输入
 ├── 调研日志（按项目）
-│   └── [[youngor-e3-survey-log|雅戈尔 E3+ 调研日志]]           ← 场景二输出 → 场景三输入
-└── 业务蓝图（按项目）
-    └── [[youngor-e3-blueprint-outline|雅戈尔 E3+ 业务蓝图大纲]] ← 场景三输出
+│   └── [[youngor-e3-survey-log|雅戈尔 E3+ 调研日志]]             ← 场景二输出 → 场景三输入
+├── 业务蓝图（按项目）
+│   └── [[youngor-e3-blueprint-outline|雅戈尔 E3+ 业务蓝图大纲]]   ← 场景三输出 → 场景四输入
+└── 测试用例（按项目）
+    └── [[youngor-e3-sit-test-cases|雅戈尔 E3+ SIT 测试用例]]     ← 场景四输出
 ```
 
 ## 相关

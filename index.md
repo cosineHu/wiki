@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-05 | Total pages: 56 | IPO coverage: 21/21 (100%)
+> Last updated: 2026-06-05 | Total pages: 58 | IPO coverage: 21/21 (100%)
 
 ## Entities
 - [[andrej-karpathy]] — AI 研究员，LLM Wiki 模式提出者，前 Tesla AI 总监
@@ -17,6 +17,7 @@
 - [[obsidian]] — 基于本地 Markdown 的笔记与知识管理工具，第二大脑存储核心
 - [[ollama]] — 本地 LLM 运行工具，一键部署开源模型
 - [[openclaw]] — 开源 AI Agent 平台，强调跨平台连接与社区技能生态
+- [[sit-test-case-library]] — SIT 测试用例标准方案库：7 Sheet，~50 个用例，16 平台覆盖
 - [[youngor-e3-blueprint-outline]] — 雅戈尔 E3+ 业务蓝图大纲：6 大分类，四级树形，标注标准方案库 vs 雅戈尔定制
 - [[youngor-e3-presale]] — 雅戈尔 E3+ 售前方案：68 页 PPT，四段式结构，四大提升方向
 - [[youngor-e3-survey-log]] — 雅戈尔 E3+ 调研日志：5 大领域 + 11 Sheet，1055 条需求
@@ -51,6 +52,7 @@
 - [[replenishment-allocation-transfer-return]] — 配补调退业务：服装零售四大核心流程（补货/调拨/配货/退货）的规则体系
 - [[scenario-driven-cognitive-loop]] — 场景驱动认知闭环：三层架构（场景→概念→实体）+ IPO + YAML反向校验
 - [[second-brain]] — 第二大脑：Tiago Forte 提出，Hermes Agent + Obsidian 构建 AI 驱动的个人知识系统
+- [[sit-test-case-structure]] — SIT 测试用例结构分析：五维覆盖模型、5 种设计模式、裁剪原则
 - [[skills-authoring-guide]] — Skills 编写指南：agentskills 标准、三阶段加载、Frontmatter 字段、跨工具兼容
 - [[yaml-reverse-validation]] — YAML 反向校验：每次任务后反向检视新场景/概念/实体/关系/死链
 - [[youngor-e3-solution-analysis]] — 雅戈尔 E3+ 方案分析：四段式售前结构、可复用方案模式、售前方法论提炼

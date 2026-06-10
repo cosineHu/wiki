@@ -1,0 +1,22 @@
+---
+title: SIT 测试用例标准方案库 — 摄入元数据
+date: 2026-06-05
+topic: sit-test-case-library
+source_type: xlsx
+source_files:
+  - SIT测试用例_标准方案库.xlsx
+  - SIT测试用例_模板.xlsx
+sheets:
+  - SIT测试用例提纲
+  - 线上平台功能测试情况
+  - 2C电商订单管理
+  - 2B电商订单管理
+  - 全渠道业务
+  - 库存管理
+  - 电商对账
+created_pages:
+  - entities/sit-test-case-library.md
+  - concepts/sit-test-case-structure.md
+test_case_count: ~50
+platform_count: 16
+module_count: 5
