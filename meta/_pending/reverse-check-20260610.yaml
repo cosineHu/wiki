@@ -1,0 +1,272 @@
+# Reverse Check Result — 每日 YAML 反向校验
+# 生成时间: 2026-06-10 20:07
+# 校验维度: 新场景 / 新概念 / 新实体 / 新关系 / 死链
+
+reverse_check_result:
+  timestamp: "2026-06-10 20:07"
+  scenario_used: knowledge-evolution-cycle
+  new_scenarios_count: 0
+  new_concepts_count: 0
+  new_entities_count: 17
+  new_relations_count: 14
+  dead_links_count: 0
+  summary: "meta/ 层引用完整性 100%，0 死链。wiki 新增交付中心领域 17 个实体待注册到 meta/entities/。建议新建 delivery-center.yaml 分类文件。"
+
+# ============================================================
+# 维度 1: 新场景 — 0 个
+# ============================================================
+# 最近 24h 的 wiki 活动集中在交付中心领域（E3 AI 工作台 + 雅戈尔 E3+ 项目），
+# 已有场景 ingest-article-to-wiki 和 web-pack-multi-source-research 覆盖了摄入流程。
+# 交付中心的知识场景（调研→蓝图→测试）已在 concepts/delivery-knowledge-scenarios.md 中建模，
+# 属于领域知识而非新场景模式，无需新增 scenario。
+
+# ============================================================
+# 维度 2: 新概念 — 0 个
+# ============================================================
+# 9 个交付中心概念页面（blueprint-outline-structure, delivery-knowledge-scenarios 等）
+# 均为领域知识（描述特定业务结构），非可复用的方法/动作概念，已加入 DOMAIN_KNOWLEDGE 过滤列表。
+# 3 个认知闭环概念页面（atom-compose-concept-architecture, ipo-closed-loop,
+# scenario-driven-cognitive-loop, yaml-reverse-validation）已被已有 meta 条目覆盖，
+# 已加入 ENTITY_COVERED 过滤列表。
+
+# ============================================================
+# 维度 3: 新实体 — 17 个（建议新建 meta/entities/delivery-center.yaml）
+# ============================================================
+# 最近 24h 密集摄入交付中心领域内容，wiki/entities/ 新增 17 个页面，
+# 均未在 meta/entities/ 中注册。建议新建 delivery-center.yaml 分类文件。
+
+new_entities:
+  # --- E3 AI 工作台项目群 ---
+  - id: e3-ai-workbench
+    name: "E3 AI 工作台项目"
+    level: 1
+    type: project
+    description: "E3 AI 工作台交付项目，包含自动套餐创建、渠道捡漏、预售审单三大核心功能模块"
+    category_file: delivery-center.yaml
+    reason: "交付中心核心项目实体，wiki 已有完整页面"
+
+  - id: e3-auto-package-rules
+    name: "E3 自动创建套餐规则"
+    level: 1
+    type: business-rule
+    description: "E3 AI 工作台自动创建套餐的业务规则，简化商品运营建新品套餐压力"
+    category_file: delivery-center.yaml
+    reason: "E3 项目核心业务规则，被多个页面引用"
+
+  - id: e3-channel-inventory-pickup
+    name: "渠道捡漏规则"
+    level: 1
+    type: business-rule
+    description: "E3 AI 工作台渠道库存捡漏规则，实现快速准确的库存数据和预售方案"
+    category_file: delivery-center.yaml
+    reason: "E3 项目核心业务规则，被多个页面引用"
+
+  - id: e3-presale-review-rules
+    name: "预售审单规则"
+    level: 1
+    type: business-rule
+    description: "E3 AI 工作台预售审单自动化规则，实现预售订单处理智能化"
+    category_file: delivery-center.yaml
+    reason: "E3 项目核心业务规则，被多个页面引用"
+
+  - id: e3-ai-workbench-survey-outline
+    name: "E3 AI 工作台调研大纲"
+    level: 1
+    type: deliverable
+    description: "E3 AI 工作台项目的业务调研大纲交付物"
+    category_file: delivery-center.yaml
+    reason: "E3 项目交付物，wiki 已有完整页面"
+
+  - id: e3-ai-workbench-blueprint-outline
+    name: "E3 AI 工作台业务蓝图大纲"
+    level: 1
+    type: deliverable
+    description: "E3 AI 工作台项目的业务蓝图大纲交付物"
+    category_file: delivery-center.yaml
+    reason: "E3 项目交付物，wiki 已有完整页面"
+
+  - id: e3-ai-workbench-sit-test-cases
+    name: "E3 AI 工作台 SIT 测试用例"
+    level: 1
+    type: deliverable
+    description: "E3 AI 工作台项目的 SIT 测试用例交付物"
+    category_file: delivery-center.yaml
+    reason: "E3 项目交付物，wiki 已有完整页面"
+
+  # --- 雅戈尔 E3+ 项目群 ---
+  - id: youngor-e3-presale
+    name: "雅戈尔 E3+ 售前方案"
+    level: 1
+    type: presale-document
+    description: "雅戈尔 E3+ 项目的售前资料，按项目导入"
+    category_file: delivery-center.yaml
+    reason: "雅戈尔 E3+ 项目售前资料"
+
+  - id: youngor-e3-survey-log
+    name: "雅戈尔 E3+ 业务调研日志"
+    level: 1
+    type: project-document
+    description: "雅戈尔 E3+ 项目的业务调研日志，按项目导入"
+    category_file: delivery-center.yaml
+    reason: "雅戈尔 E3+ 项目调研记录"
+
+  - id: youngor-e3-survey-outline
+    name: "雅戈尔 E3+ 调研大纲"
+    level: 1
+    type: deliverable
+    description: "雅戈尔 E3+ 项目的业务调研大纲交付物"
+    category_file: delivery-center.yaml
+    reason: "雅戈尔 E3+ 项目交付物"
+
+  - id: youngor-e3-blueprint-outline
+    name: "雅戈尔 E3+ 业务蓝图大纲"
+    level: 1
+    type: deliverable
+    description: "雅戈尔 E3+ 项目的业务蓝图大纲交付物"
+    category_file: delivery-center.yaml
+    reason: "雅戈尔 E3+ 项目交付物"
+
+  - id: youngor-e3-sit-test-cases
+    name: "雅戈尔 E3+ SIT 测试用例"
+    level: 1
+    type: deliverable
+    description: "雅戈尔 E3+ 项目的 SIT 测试用例交付物，56 个用例，6 大模块"
+    category_file: delivery-center.yaml
+    reason: "雅戈尔 E3+ 项目交付物"
+
+  # --- 标准方案库 / 方法论 ---
+  - id: baisheng-delivery-methodology
+    name: "百胜价值交付方法论"
+    level: 1
+    type: methodology
+    description: "百胜（Baisheng）价值交付方法论，电商业务调研大纲标准方案库的基础"
+    category_file: delivery-center.yaml
+    reason: "交付中心核心方法论，标准方案库的基石"
+
+  - id: blueprint-standard-library
+    name: "电商领域项目蓝图大纲标准方案库"
+    level: 1
+    type: standard-library
+    description: "电商领域项目蓝图大纲标准方案库，6 大分类，场景三（蓝图设计）的核心依赖"
+    category_file: delivery-center.yaml
+    reason: "交付中心标准方案库，被多个场景引用"
+
+  - id: sit-test-case-library
+    name: "SIT 测试用例标准方案库"
+    level: 1
+    type: standard-library
+    description: "SIT 测试用例标准方案库，7 Sheet，~50 个用例，场景四（测试设计）的核心依赖"
+    category_file: delivery-center.yaml
+    reason: "交付中心标准方案库，被多个场景引用"
+
+  - id: delivery-document-templates
+    name: "交付中心文档模板库"
+    level: 1
+    type: template-library
+    description: "交付中心文档模板库，包含调研大纲/蓝图大纲/测试用例等标准模板"
+    category_file: delivery-center.yaml
+    reason: "交付中心模板库，支撑三大核心场景的文档产出"
+
+  # --- 产品 ---
+  - id: datamax
+    name: "DataMax"
+    level: 1
+    type: product
+    description: "DataMax 产品，E3 AI 工作台的数据基础平台"
+    category_file: delivery-center.yaml
+    reason: "交付中心相关产品，wiki 已有页面"
+
+# ============================================================
+# 维度 4: 新关系 — 14 条
+# ============================================================
+
+new_relations:
+  # E3 AI 工作台内部关系
+  - source: e3-ai-workbench
+    target: e3-auto-package-rules
+    type: depends_on
+    reason: "E3 AI 工作台项目依赖自动创建套餐规则"
+
+  - source: e3-ai-workbench
+    target: e3-channel-inventory-pickup
+    type: depends_on
+    reason: "E3 AI 工作台项目依赖渠道捡漏规则"
+
+  - source: e3-ai-workbench
+    target: e3-presale-review-rules
+    type: depends_on
+    reason: "E3 AI 工作台项目依赖预售审单规则"
+
+  # E3 交付物关系
+  - source: e3-ai-workbench-survey-outline
+    target: e3-ai-workbench
+    type: depends_on
+    reason: "调研大纲是 E3 AI 工作台项目的交付物"
+
+  - source: e3-ai-workbench-blueprint-outline
+    target: e3-ai-workbench
+    type: depends_on
+    reason: "蓝图大纲是 E3 AI 工作台项目的交付物"
+
+  - source: e3-ai-workbench-sit-test-cases
+    target: e3-ai-workbench
+    type: depends_on
+    reason: "SIT 测试用例是 E3 AI 工作台项目的交付物"
+
+  # 雅戈尔 E3+ 项目与 E3 项目关联
+  - source: youngor-e3-survey-outline
+    target: e3-ai-workbench-survey-outline
+    type: related_to
+    reason: "雅戈尔 E3+ 调研大纲与 E3 AI 工作台调研大纲共享标准方案库"
+
+  - source: youngor-e3-blueprint-outline
+    target: e3-ai-workbench-blueprint-outline
+    type: related_to
+    reason: "雅戈尔 E3+ 蓝图大纲与 E3 AI 工作台蓝图大纲共享标准方案库"
+
+  - source: youngor-e3-sit-test-cases
+    target: e3-ai-workbench-sit-test-cases
+    type: related_to
+    reason: "雅戈尔 E3+ 测试用例与 E3 AI 工作台测试用例共享标准方案库"
+
+  # 标准方案库依赖方法论
+  - source: blueprint-standard-library
+    target: baisheng-delivery-methodology
+    type: uses
+    reason: "蓝图大纲标准方案库基于百胜交付方法论构建"
+
+  - source: sit-test-case-library
+    target: baisheng-delivery-methodology
+    type: uses
+    reason: "SIT 测试用例标准方案库基于百胜交付方法论构建"
+
+  - source: delivery-document-templates
+    target: baisheng-delivery-methodology
+    type: uses
+    reason: "文档模板库基于百胜交付方法论设计"
+
+  # 产品关联
+  - source: datamax
+    target: e3-ai-workbench
+    type: related_to
+    reason: "DataMax 是 E3 AI 工作台的数据基础平台"
+
+  # 标准方案库与项目交付物关系
+  - source: e3-ai-workbench-survey-outline
+    target: baisheng-delivery-methodology
+    type: uses
+    reason: "E3 调研大纲基于百胜交付方法论编写"
+
+# ============================================================
+# 维度 5: 死链 — 0 个
+# ============================================================
+# meta/ YAML 引用完整性: 100%（36 原子概念 + 23 组合概念 + 20 场景 + 72 实体 全部互相引用有效）
+# wiki/ [[wikilinks]] 完整性: 100%（修复了正则表达式对 \| 转义管道符的处理后，0 死链）
+
+# ============================================================
+# 脚本修复记录
+# ============================================================
+# 1. 修复 check_dead_links_meta() 函数签名缺少 compose_concepts_list 参数导致的 NameError
+# 2. 修复 wikilink 正则表达式不支持 Obsidian \| 转义管道符别名语法的问题
+# 3. 新增 8 个交付中心领域知识页面到 DOMAIN_KNOWLEDGE 过滤列表
+# 4. 新增 4 个认知闭环概念页面到 ENTITY_COVERED 过滤列表

@@ -548,3 +548,16 @@
   - meta/supplements/2026-06-05-datamax-replenishment/ (四件套元数据)
 - 更新文件:
   - index.md (新增 2 个页面条目，总页数 44)
+
+## [2026-06-10] check | 每日反向校验 — meta 层引用完整性 100%，17 新实体 + 14 新关系
+- 运行 scripts/reverse-check.py 完成 5 维反向校验
+- 🔴 meta/ 死链: 0（36 原子概念 + 23 组合概念 + 20 场景 + 72 实体 全部互相引用有效）
+- 🔴 wiki/ 死链: 0（修复正则表达式对 \| 转义管道符的支持后）
+- 🟡 新实体: 17 个（交付中心领域：E3 AI 工作台 7 + 雅戈尔 E3+ 5 + 标准方案库/方法论 4 + 产品 1）
+- 🟡 新关系: 14 条（E3 内部依赖 3 + 交付物关联 3 + 雅戈尔↔E3 3 + 标准方案库↔方法论 3 + 产品关联 1 + 交付物↔方法论 1）
+- 🟡 新概念: 0（9 个交付中心概念页面均为领域知识，非可复用方法；4 个认知闭环概念已被已有 meta 条目覆盖）
+- 🟡 新场景: 0（交付中心摄入流程已被 ingest-article-to-wiki 和 web-pack-multi-source-research 覆盖）
+- 脚本修复: check_dead_links_meta() 函数签名 Bug + wikilink 正则表达式不支持 \| 转义
+- 过滤列表更新: +8 交付中心领域知识 → DOMAIN_KNOWLEDGE, +4 认知闭环概念 → ENTITY_COVERED
+- 建议: 新建 meta/entities/delivery-center.yaml 分类文件存放 17 个交付中心实体
+- 写入: meta/_pending/reverse-check-20260610.yaml（含完整 YAML 骨架）
