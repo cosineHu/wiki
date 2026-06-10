@@ -5,6 +5,37 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-06-10] lint | 每日知识审计 — 251 处发现，自动修复 3 项
+
+- 审计范围: wiki/ 知识层 (67 页) + wiki/meta/ 元信息层 (35 原子概念 + 22 组合概念 + 112 实体 + 21 场景)
+- 审计报告: meta/_pending/audit-20260610.md
+
+### 🔴 严重 (6)
+- Wiki 死链 (6): 3 个 Obsidian 示例性 wikilink（笔记名/note/项目A）+ 3 个 [[wikilinks]] 语法示例（llm-wiki/layered-memory-system/rag-vs-wiki），均为示例代码，不影响实际导航
+- 场景死链 (0): ✅
+
+### 🟡 警告 (33)
+- 场景阶段条目不足 (33): 多个场景的 phase 只有 1 个 concepts+entities 条目，设计预期（简单阶段只需 1 个概念/实体）
+- 标签不合规 (0): ✅ — SCHEMA.md 标签分类体系已扩展（新增 33 个标签覆盖所有实际使用的标签）
+- 孤立页面 (0): ✅ — e3-ai-workbench-sit-test-cases 已添加入链
+- Frontmatter 字段缺失 (0): ✅
+- 类型不匹配 (0): ✅
+- IPO 不完整 (0): ✅
+- 组合概念 decomposition (0): ✅
+- 实体关系 (0): ✅
+
+### 🔵 建议 (212)
+- 超大页面 (6): youngor-e3-sit-test-cases (996行), e3-ai-workbench-sit-test-cases (587行) 等
+- 源文件 SHA256 漂移 (14): raw/articles/ 下 14 个文件内容已变更（设计预期，raw/ 不可变）
+- meta 实体→wiki 页面缺失 (91): 预期行为
+- meta 概念→wiki 页面缺失 (53): 预期行为
+- wiki 页面→meta 缺失 (48): 预期行为
+
+### 自动修复记录
+1. SCHEMA.md: 标签分类体系扩展（新增 33 个标签覆盖交付中心/E3/DataMax 等领域）
+2. llm-wiki.md + rag-vs-wiki.md: 死链 knowledge-base-article-writing → 改为纯文本（页面待创建）
+3. e3-ai-workbench.md: 添加 e3-ai-workbench-blueprint-outline/survey-outline/sit-test-cases 入链，消除孤立页面
+
 ## [2026-06-09] check | 每日反向校验 — meta 层引用完整性 100% 通过，1 新实体 + 3 新关系
 
 - 5 维检查：场景/概念/实体/关系/死链

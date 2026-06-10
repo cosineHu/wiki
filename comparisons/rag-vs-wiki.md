@@ -28,11 +28,10 @@ confidence: high
 
 - **RAG 更适合**：海量非结构化文档、需要快速检索、知识更新频繁
 - **Wiki 更适合**：精选来源、需要深度分析、长期积累的知识体系
-- **场景驱动知识库**：基于 [[knowledge-ontology-three-layer-model|知识本体三层模型]]，通过 [[scenario-driven-cognitive-loop|场景匹配+概念组装]] 解决复杂方案写作，参见 [[knowledge-base-article-writing]]
+- **场景驱动知识库**：基于 [[knowledge-ontology-three-layer-model|知识本体三层模型]]，通过 [[scenario-driven-cognitive-loop|场景匹配+概念组装]] 解决复杂方案写作
 
 ## 相关
 
 - [[llm-wiki]]
 - [[knowledge-ontology-three-layer-model|知识本体三层模型]]
 - [[scenario-driven-cognitive-loop]]
-- [[knowledge-base-article-writing]]

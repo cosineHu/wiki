@@ -54,3 +54,6 @@ AI 工作台在**两边同时使用**：
 - [[e3-presale-review-rules|预售审单规则]]
 - [[e3-channel-inventory-pickup|渠道捡漏规则]]
 - [[baisheng-delivery-methodology|百胜价值交付方法论]]
+- [[e3-ai-workbench-blueprint-outline|E3 AI 工作台业务蓝图大纲]]
+- [[e3-ai-workbench-survey-outline|E3 AI 工作台调研大纲]]
+- [[e3-ai-workbench-sit-test-cases|E3 AI 工作台 SIT 测试用例]]
