@@ -392,6 +392,17 @@
 
 ## [2026-06-05] update | DataMax 定位更新 — 从库存管理平台升级为数据中台
 
+## [2026-06-05] ingest | 百胜交付方法论 — 电商业务调研大纲（标准方案库）
+- 来源: 用户提供 6 份 .docx 文档（百胜价值交付方法论 V3.0 工程包）
+- 创建文件:
+  - raw/2026-06-05-baisheng-delivery-methodology/ (6 份调研大纲原始文档)
+  - entities/baisheng-delivery-methodology.md (百胜价值交付方法论)
+  - concepts/baisheng-survey-outline-system.md (电商业务调研大纲体系)
+  - meta/supplements/2026-06-05-baisheng-delivery-methodology/ (四件套)
+- 更新文件:
+  - index.md (新增 2 个页面条目，总页数 47)
+- 场景: 交付中心提效 — 标准方案库（公共基础依赖）
+
 ## [2026-06-05] create | DataMax 配补调退业务指标体系
 - 创建 concepts/datamax-business-metrics.md：30+ 指标覆盖库存/销量/周转/满足率
 - 更新 entities/datamax.md、concepts/replenishment-allocation-transfer-return.md 交叉引用
