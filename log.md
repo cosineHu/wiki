@@ -392,6 +392,15 @@
 
 ## [2026-06-05] update | DataMax 定位更新 — 从库存管理平台升级为数据中台
 
+## [2026-06-05] ingest | 交付文档模板库 + 模板结构分析
+
+- 来源: 用户提供 2 个 .docx（业务调研报告模板 + 调研大纲模板）
+- 存档: raw/2026-06-05-delivery-templates/（2 个 .docx）
+- 创建 entities/delivery-document-templates.md — 调研报告模板（流程分析四维模型）+ 调研大纲模板（三段式结构）
+- 创建 concepts/delivery-template-structure.md — 模板设计模式、模板与标准方案库关系、按项目类型/阶段裁剪原则
+- 更新 index.md（58→60 页）
+- 元数据: meta/supplements/2026-06-05-delivery-templates/ingest-meta.yaml
+
 ## [2026-06-05] ingest | SIT 测试用例标准方案库 + 结构分析 + 场景四建模
 
 - 来源: 用户提供 .xlsx（标准方案库 + 模板，结构一致）

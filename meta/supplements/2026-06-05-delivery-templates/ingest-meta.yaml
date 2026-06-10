@@ -1,0 +1,15 @@
+---
+title: 交付文档模板库 — 摄入元数据
+date: 2026-06-05
+topic: delivery-templates
+source_type: docx
+source_files:
+  - XX项目_业务调研报告_YYYYMMDD_模板.docx
+  - 调研大纲-XX业务调研_模板.docx
+created_pages:
+  - entities/delivery-document-templates.md
+  - concepts/delivery-template-structure.md
+template_count: 2
+template_types:
+  - 业务调研报告模板
+  - 调研大纲模板
