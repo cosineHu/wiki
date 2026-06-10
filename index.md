@@ -2,11 +2,12 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-05 | Total pages: 51 | IPO coverage: 21/21 (100%)
+> Last updated: 2026-06-05 | Total pages: 53 | IPO coverage: 21/21 (100%)
 
 ## Entities
 - [[andrej-karpathy]] — AI 研究员，LLM Wiki 模式提出者，前 Tesla AI 总监
 - [[baisheng-delivery-methodology]] — 百胜价值交付方法论 V3.0：6 大电商调研模块，交付中心标准方案库
+- [[blueprint-standard-library]] — 电商蓝图大纲标准方案库：6 大分类，四级树形结构，51 个三级大纲
 - [[datamax]] — DataMax 数据中台：轻量级数仓 + 商品智能体（配补调 + 智能问数 + 数据分析）
 - [[dify]] — 开源 LLM 应用开发平台，可视化编排 AI 工作流
 - [[hermes-agent]] — Nous Research 的 MIT 开源 AI Agent 平台，学习闭环 + 技能系统 + 多平台
@@ -23,6 +24,7 @@
 - [[ai-human-knowledge-boundary]] — AI 与人知识边界：物理隔离 vs 溯源标记，kepano 的 Don't delegate understanding
 - [[atom-compose-concept-architecture]] — 原子-组合概念双层架构：原子概念（IPO建模）+ 组合概念（decomposition编排）
 - [[baisheng-survey-outline-system]] — 电商业务调研大纲体系：6 大模块，三段式结构（目的→重点→影响提示）
+- [[blueprint-outline-structure]] — 蓝图大纲结构分析：四级树形结构、调研→蓝图映射、裁剪原则
 - [[cognitive-closed-loop]] — 认知闭环操作系统：三层架构 + IPO 闭环，从知识图谱到可执行认知系统
 - [[content-production-pipeline]] — 内容生产流水线：素材→Skills→文章→视频→社交媒体，知识管理下游
 - [[datamax-business-metrics]] — DataMax 配补调退业务指标体系：30+ 指标覆盖库存/销量/周转/满足率

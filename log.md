@@ -392,6 +392,17 @@
 
 ## [2026-06-05] update | DataMax 定位更新 — 从库存管理平台升级为数据中台
 
+## [2026-06-05] ingest | 电商领域项目蓝图大纲标准方案库
+- 来源: 用户提供 .xlsx（标准方案库 + 模板，内容相同）
+- 创建文件:
+  - raw/2026-06-05-blueprint-standard-library/blueprint-standard-library.md (79行四级树形结构)
+  - entities/blueprint-standard-library.md (蓝图大纲标准方案库)
+  - concepts/blueprint-outline-structure.md (蓝图结构分析 + 裁剪原则)
+  - meta/supplements/2026-06-05-blueprint-standard-library/ (四件套)
+- 更新文件:
+  - index.md (新增 2 个页面条目，总页数 53)
+- 场景: 交付中心提效 — 生成蓝图大纲（标准方案库）
+
 ## [2026-06-05] ingest | 雅戈尔 E3+ 业务调研日志 + 调研报告模板
 - 来源: 用户提供 .xlsx（雅戈尔调研日志）+ .docx（调研报告模板）
 - 创建文件:
