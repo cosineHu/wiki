@@ -1,7 +1,7 @@
 # scenarios.yaml — 场景驱动的组装规则
 # 每个场景对应一个真实的 "How 类" 问题
 # 核心字段: trigger / goal / composition / related_scenarios
-# 版本: 1.0 | 创建: 2026-06-08 | 条目数: 20
+# 版本: 1.1 | 更新: 2026-06-12 | 条目数: 24
 
 scenarios:
 
@@ -785,3 +785,139 @@ scenarios:
       - ingest-article-to-wiki
       - knowledge-evolution-cycle
       - new-domain-exploration
+
+  - id: delivery-generate-survey-outline
+    name: 交付中心生成调研大纲
+    trigger: "用户提供售前方案文档，要求生成项目专属调研大纲"
+    goal: "基于售前方案分析和标准调研大纲体系，生成项目专属的调研大纲"
+    composition:
+      - phase: 1
+        name: 售前方案分析
+        concepts: ["knowledge-extraction", "task-decomposition"]
+        entities: ["baisheng-delivery-methodology", "llm-wiki"]
+        rule: "分析售前方案，提取 AS-IS/TO-BE/痛点/机会点"
+      - phase: 2
+        name: 标准模块匹配
+        concepts: ["scene-matching", "comparative-analysis"]
+        entities: ["baisheng-delivery-methodology", "delivery-document-templates"]
+        rule: "匹配标准调研模块（6大模块：IT/主数据/商品/库存/电商/对账），按客户现状裁剪"
+      - phase: 3
+        name: 大纲生成
+        concepts: ["structured-writing", "knowledge-assembly"]
+        entities: ["llm-wiki", "obsidian"]
+        rule: "按三段式结构（目的→重点→影响提示）输出项目专属调研大纲"
+      - phase: 4
+        name: 索引与提交
+        concepts: ["knowledge-structuring", "version-control"]
+        entities: ["llm-wiki", "git"]
+        rule: "更新 index.md 和 log.md，git commit 提交"
+      - phase: 5
+        name: 反向校验
+        concepts: ["yaml-reverse-check"]
+        entities: ["meta-meta-layer"]
+        rule: "检查是否有新概念/实体/场景需要补充到 meta/"
+    related_scenarios:
+      - ingest-article-to-wiki
+      - delivery-generate-survey-log
+
+  - id: delivery-generate-survey-log
+    name: 交付中心生成调研日志
+    trigger: "用户提供调研大纲和调研会议纪要，要求生成项目调研日志"
+    goal: "基于调研大纲和会议纪要，生成结构化的项目调研日志"
+    composition:
+      - phase: 1
+        name: 大纲解析
+        concepts: ["information-retrieval", "task-decomposition"]
+        entities: ["llm-wiki"]
+        rule: "解析调研大纲，提取结构化问题列表"
+      - phase: 2
+        name: 纪要分析
+        concepts: ["knowledge-extraction"]
+        entities: ["llm-wiki"]
+        rule: "分析调研会议纪要，逐项记录：业务现状/涉及系统/提升方向/备注"
+      - phase: 3
+        name: 日志结构化
+        concepts: ["structured-writing", "knowledge-structuring"]
+        entities: ["llm-wiki", "obsidian"]
+        rule: "按模块汇总调研结果，输出结构化调研日志"
+      - phase: 4
+        name: 索引与提交
+        concepts: ["knowledge-structuring", "version-control"]
+        entities: ["llm-wiki", "git"]
+        rule: "更新 index.md 和 log.md，git commit 提交"
+      - phase: 5
+        name: 反向校验
+        concepts: ["yaml-reverse-check"]
+        entities: ["meta-meta-layer"]
+        rule: "检查是否有新概念/实体/场景需要补充到 meta/"
+    related_scenarios:
+      - delivery-generate-survey-outline
+      - delivery-generate-blueprint-outline
+
+  - id: delivery-generate-blueprint-outline
+    name: 交付中心生成业务蓝图大纲
+    trigger: "用户提供调研日志和标准蓝图方案库，要求生成项目业务蓝图大纲"
+    goal: "基于调研日志分析和标准蓝图方案库，生成项目专属的业务蓝图大纲"
+    composition:
+      - phase: 1
+        name: 调研日志分析
+        concepts: ["knowledge-extraction", "task-decomposition"]
+        entities: ["llm-wiki"]
+        rule: "分析调研日志，提取 AS-IS 现状和 TO-BE 提升方向"
+      - phase: 2
+        name: 标准蓝图匹配
+        concepts: ["scene-matching", "comparative-analysis"]
+        entities: ["blueprint-standard-library", "delivery-document-templates"]
+        rule: "匹配标准蓝图模块（6大分类），按调研发现裁剪定制"
+      - phase: 3
+        name: 蓝图大纲生成
+        concepts: ["structured-writing", "knowledge-assembly"]
+        entities: ["llm-wiki", "obsidian"]
+        rule: "按四级树形结构输出项目专属业务蓝图大纲"
+      - phase: 4
+        name: 索引与提交
+        concepts: ["knowledge-structuring", "version-control"]
+        entities: ["llm-wiki", "git"]
+        rule: "更新 index.md 和 log.md，git commit 提交"
+      - phase: 5
+        name: 反向校验
+        concepts: ["yaml-reverse-check"]
+        entities: ["meta-meta-layer"]
+        rule: "检查是否有新概念/实体/场景需要补充到 meta/"
+    related_scenarios:
+      - delivery-generate-survey-log
+      - delivery-generate-test-cases
+
+  - id: delivery-generate-test-cases
+    name: 交付中心生成测试用例
+    trigger: "用户提供业务蓝图大纲和标准测试用例库，要求生成项目 SIT 测试用例"
+    goal: "基于业务蓝图大纲分析和标准测试用例库，生成项目专属的 SIT 测试用例"
+    composition:
+      - phase: 1
+        name: 蓝图分析
+        concepts: ["knowledge-extraction", "task-decomposition"]
+        entities: ["llm-wiki"]
+        rule: "分析业务蓝图大纲，识别需测试的功能模块"
+      - phase: 2
+        name: 标准用例匹配
+        concepts: ["scene-matching", "comparative-analysis"]
+        entities: ["sit-test-case-library", "delivery-document-templates"]
+        rule: "匹配标准测试用例（5大模块），按项目平台/系统/业务场景裁剪"
+      - phase: 3
+        name: 测试用例生成
+        concepts: ["structured-writing", "knowledge-assembly"]
+        entities: ["llm-wiki", "obsidian"]
+        rule: "按13字段标准结构输出项目专属 SIT 测试用例"
+      - phase: 4
+        name: 索引与提交
+        concepts: ["knowledge-structuring", "version-control"]
+        entities: ["llm-wiki", "git"]
+        rule: "更新 index.md 和 log.md，git commit 提交"
+      - phase: 5
+        name: 反向校验
+        concepts: ["yaml-reverse-check"]
+        entities: ["meta-meta-layer"]
+        rule: "检查是否有新概念/实体/场景需要补充到 meta/"
+    related_scenarios:
+      - delivery-generate-blueprint-outline
+      - knowledge-evolution-cycle

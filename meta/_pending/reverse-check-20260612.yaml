@@ -1,0 +1,12 @@
+# Reverse Check Result — 每日 YAML 反向校验
+# 生成时间: 2026-06-12 20:11
+# 校验维度: 新场景 / 新概念 / 新实体 / 新关系 / 死链
+
+reverse_check_result:
+  timestamp: 2026-06-12 20:11
+  new_scenarios_count: 0
+  new_concepts_count: 0
+  new_entities_count: 0
+  new_relations_count: 0
+  dead_links_count: 0
+  summary: 发现 0 条meta死链, 0 条wiki死链, 0 个新实体, 0 条新关系

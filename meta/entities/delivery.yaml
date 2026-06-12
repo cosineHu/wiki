@@ -1,0 +1,217 @@
+# entity-delivery.yaml — 交付中心相关实体
+# 分类: 交付项目、文档模板、标准方案库
+# 版本: 1.0 | 创建: 2026-06-12 | 条目数: 17
+
+entities:
+
+  - id: baisheng-delivery-methodology
+    name: 百胜价值交付方法论（Baisheng Value Delivery Methodology）
+    level: 1
+    type: methodology
+    description: "百胜软件的价值交付方法论 V3.0，定义标准化交付流程和文档体系"
+    source: wiki/entities/baisheng-delivery-methodology.md
+    relations:
+      - target: delivery-document-templates
+        type: uses
+      - target: blueprint-standard-library
+        type: uses
+
+  - id: delivery-document-templates
+    name: 交付中心文档模板库（Delivery Document Templates）
+    level: 1
+    type: template
+    description: "交付中心的标准化文档模板集合，包含调研大纲、业务调研报告、蓝图大纲等模板"
+    source: wiki/entities/delivery-document-templates.md
+    relations:
+      - target: baisheng-delivery-methodology
+        type: depends_on
+      - target: blueprint-standard-library
+        type: related_to
+      - target: sit-test-case-library
+        type: related_to
+
+  - id: blueprint-standard-library
+    name: 电商领域项目蓝图大纲标准方案库（Blueprint Standard Library）
+    level: 1
+    type: library
+    description: "电商领域项目蓝图大纲的标准方案库，覆盖6大分类（主数据/库存/电商订单/全渠道/财务对账等），四级树形结构"
+    source: wiki/entities/blueprint-standard-library.md
+    relations:
+      - target: baisheng-delivery-methodology
+        type: depends_on
+      - target: sit-test-case-library
+        type: related_to
+
+  - id: sit-test-case-library
+    name: SIT 测试用例标准方案库（SIT Test Case Standard Library）
+    level: 1
+    type: library
+    description: "SIT 测试用例的标准方案库，7 Sheet ~50 个用例，覆盖5大业务模块 × 7种测试角色 × 8个操作系统"
+    source: wiki/entities/sit-test-case-library.md
+    relations:
+      - target: blueprint-standard-library
+        type: related_to
+      - target: baisheng-delivery-methodology
+        type: depends_on
+
+  - id: datamax
+    name: DataMax
+    level: 1
+    type: product
+    description: "百胜软件的大数据平台产品，提供业务数据分析和报表能力"
+    source: wiki/entities/datamax.md
+    relations:
+      - target: baisheng-delivery-methodology
+        type: related_to
+
+  # === 雅戈尔 E3+ 项目实体 ===
+
+  - id: youngor-e3-presale
+    name: 雅戈尔 E3+ 售前方案（Youngor E3+ Presale）
+    level: 1
+    type: document
+    description: "雅戈尔 E3+ 项目的售前方案文档（68页PPT），定义 AS-IS/TO-BE/痛点/机会点"
+    source: wiki/entities/youngor-e3-presale.md
+    relations:
+      - target: youngor-e3-survey-outline
+        type: related_to
+      - target: baisheng-delivery-methodology
+        type: uses
+
+  - id: youngor-e3-survey-outline
+    name: 雅戈尔 E3+ 调研大纲（Youngor E3+ Survey Outline）
+    level: 1
+    type: document
+    description: "雅戈尔 E3+ 项目的专属调研大纲，基于标准调研大纲体系裁剪定制"
+    source: wiki/entities/youngor-e3-survey-outline.md
+    relations:
+      - target: youngor-e3-presale
+        type: depends_on
+      - target: youngor-e3-survey-log
+        type: related_to
+      - target: baisheng-delivery-methodology
+        type: uses
+
+  - id: youngor-e3-survey-log
+    name: 雅戈尔 E3+ 业务调研日志（Youngor E3+ Survey Log）
+    level: 1
+    type: document
+    description: "雅戈尔 E3+ 项目的业务调研日志，1055条需求记录，五段式调研结构"
+    source: wiki/entities/youngor-e3-survey-log.md
+    relations:
+      - target: youngor-e3-survey-outline
+        type: depends_on
+      - target: youngor-e3-blueprint-outline
+        type: related_to
+
+  - id: youngor-e3-blueprint-outline
+    name: 雅戈尔 E3+ 业务蓝图大纲（Youngor E3+ Blueprint Outline）
+    level: 1
+    type: document
+    description: "雅戈尔 E3+ 项目的业务蓝图大纲，基于标准蓝图方案库裁剪定制，四级树形结构"
+    source: wiki/entities/youngor-e3-blueprint-outline.md
+    relations:
+      - target: youngor-e3-survey-log
+        type: depends_on
+      - target: blueprint-standard-library
+        type: uses
+      - target: youngor-e3-sit-test-cases
+        type: related_to
+
+  - id: youngor-e3-sit-test-cases
+    name: 雅戈尔 E3+ SIT 测试用例（Youngor E3+ SIT Test Cases）
+    level: 1
+    type: document
+    description: "雅戈尔 E3+ 项目的 SIT 测试用例，56 个用例，6 大模块，13 字段标准结构"
+    source: wiki/entities/youngor-e3-sit-test-cases.md
+    relations:
+      - target: youngor-e3-blueprint-outline
+        type: depends_on
+      - target: sit-test-case-library
+        type: uses
+
+  # === E3 AI 工作台项目实体 ===
+
+  - id: e3-ai-workbench
+    name: E3 AI 工作台项目（E3 AI Workbench）
+    level: 1
+    type: project
+    description: "E3 AI 工作台项目，通过 AI 嵌入 E3OMS 实现降本提效，飞书+E3OMS 双端"
+    source: wiki/entities/e3-ai-workbench.md
+    relations:
+      - target: e3-ai-workbench-survey-outline
+        type: related_to
+      - target: e3-ai-workbench-blueprint-outline
+        type: related_to
+      - target: e3-ai-workbench-sit-test-cases
+        type: related_to
+
+  - id: e3-ai-workbench-survey-outline
+    name: E3 AI 工作台调研大纲（E3 AI Workbench Survey Outline）
+    level: 1
+    type: document
+    description: "E3 AI 工作台项目的调研大纲，针对 AI 改造场景定制"
+    source: wiki/entities/e3-ai-workbench-survey-outline.md
+    relations:
+      - target: e3-ai-workbench
+        type: depends_on
+      - target: baisheng-delivery-methodology
+        type: uses
+
+  - id: e3-ai-workbench-blueprint-outline
+    name: E3 AI 工作台业务蓝图大纲（E3 AI Workbench Blueprint Outline）
+    level: 1
+    type: document
+    description: "E3 AI 工作台项目的业务蓝图大纲，针对 AI 工作台场景定制"
+    source: wiki/entities/e3-ai-workbench-blueprint-outline.md
+    relations:
+      - target: e3-ai-workbench
+        type: depends_on
+      - target: blueprint-standard-library
+        type: uses
+
+  - id: e3-ai-workbench-sit-test-cases
+    name: E3 AI 工作台 SIT 测试用例（E3 AI Workbench SIT Test Cases）
+    level: 1
+    type: document
+    description: "E3 AI 工作台项目的 SIT 测试用例，针对 AI 工作台场景定制"
+    source: wiki/entities/e3-ai-workbench-sit-test-cases.md
+    relations:
+      - target: e3-ai-workbench
+        type: depends_on
+      - target: sit-test-case-library
+        type: uses
+
+  # === E3 业务规则实体 ===
+
+  - id: e3-presale-review-rules
+    name: 预售审单规则（Presale Review Rules）
+    level: 1
+    type: specification
+    description: "E3 系统的预售审单业务规则，定义审单流程和条件"
+    source: wiki/entities/e3-presale-review-rules.md
+    relations:
+      - target: e3-auto-package-rules
+        type: related_to
+      - target: e3-channel-inventory-pickup
+        type: related_to
+
+  - id: e3-auto-package-rules
+    name: E3 自动创建套餐规则（E3 Auto Package Rules）
+    level: 1
+    type: specification
+    description: "E3 系统的自动创建套餐业务规则"
+    source: wiki/entities/e3-auto-package-rules.md
+    relations:
+      - target: e3-presale-review-rules
+        type: related_to
+
+  - id: e3-channel-inventory-pickup
+    name: 渠道捡漏规则（Channel Inventory Pickup Rules）
+    level: 1
+    type: specification
+    description: "E3 系统的渠道库存捡漏业务规则"
+    source: wiki/entities/e3-channel-inventory-pickup.md
+    relations:
+      - target: e3-presale-review-rules
+        type: related_to
