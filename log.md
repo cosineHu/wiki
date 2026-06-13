@@ -590,3 +590,33 @@
 
 ### 自动修复
 - 审计脚本 Bug 修复: entities/ section 的 type 匹配逻辑从 `section.rstrip("s")` 修正为显式映射表（entities→entity, concepts→concept 等）
+
+## [2026-06-13] lint | 每日知识审计 — 237 处发现，自动修复 1 项
+
+- 审计范围: wiki/ 知识层 (67 页) + wiki/meta/ 元信息层 (35 原子概念 + 22 组合概念 + 129 实体 + 25 场景)
+- 审计报告: meta/_pending/audit-20260613.md
+- 反向校验: meta/_pending/reverse-check-20260613.yaml（✅ 0 发现）
+
+### 🔴 严重 (15)
+- Wiki 死链 (15): 均为 Obsidian 文档中的语法示例（[[笔记名]]×8 / [[note]]×1 / [[项目A]]×1 / [[wikilinks]]×5），不影响实际导航
+- 实体关系死链 (0): ✅ — 修复了审计脚本 Bug：实体关系验证仅检查 entity_ids，未检查 concept_ids
+- 场景死链 (0): ✅
+
+### 🟡 警告 (47)
+- 场景阶段条目不足 (33): 多个场景的 phase 只有 1 个 concepts+entities 条目，设计预期
+- 源文件 SHA256 漂移 (14): raw/ 下 14 个文件内容已变更（设计预期，raw/ 不可变）
+- Frontmatter 字段缺失 (0): ✅
+- 类型不匹配 (0): ✅
+- 孤立页面 (0): ✅
+- 索引缺失 (0): ✅
+- IPO 不完整 (0): ✅
+- 组合概念 decomposition (0): ✅
+
+### 🔵 建议 (175)
+- meta 实体→wiki 页面缺失 (91): 预期行为
+- meta 概念→wiki 页面缺失 (53): 预期行为
+- wiki 页面→meta 缺失 (31): 预期行为
+- 超大页面 (6): youngor-e3-sit-test-cases (1007行), e3-ai-workbench-sit-test-cases (597行) 等
+
+### 自动修复记录
+1. 审计脚本: 实体关系验证扩展为同时检查 entity_ids 和 concept_ids（修复 13 个误报死链）
