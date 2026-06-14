@@ -1,0 +1,41 @@
+# Reverse Check Result — 每日 YAML 反向校验
+# 生成时间: 2026-06-14 20:01
+# 校验维度: 新场景 / 新概念 / 新实体 / 新关系 / 死链
+
+reverse_check_result:
+  timestamp: "2026-06-14 20:01"
+  new_scenarios_count: 0
+  new_concepts_count: 0
+  new_entities_count: 0
+  new_relations_count: 0
+  dead_links_count: 0
+  summary: "零发现 — meta 层引用完整性 100%。25 场景 × 57 概念 × 129 实体，交叉引用全部有效。"
+
+  details:
+    scenarios:
+      header_count: 24
+      actual_count: 25
+      finding: "header 注释与实际条目数不一致，需更新"
+    meta_concepts:
+      header_count: 36
+      actual_count: 35
+      finding: "header 注释与实际条目数不一致，需更新"
+    compose_concepts:
+      header_count: 23
+      actual_count: 22
+      finding: "header 注释与实际条目数不一致，需更新"
+
+    new_scenarios: []
+    new_meta_concepts: []
+    new_compose_concepts: []
+    new_entities: []
+    new_relations: []
+    dead_links: []
+
+  validation:
+    scenario_concept_refs: "25 scenarios × N phases: all concept refs valid"
+    scenario_entity_refs: "25 scenarios × N phases: all entity refs valid"
+    scenario_related_refs: "25 scenarios: all related_scenario refs valid"
+    compose_meta_refs: "22 compose concepts: all decomposition meta refs valid"
+    entity_relation_refs: "129 entities: all relation targets valid (entities + concepts)"
+    wikilink_dead_links: 0
