@@ -1,7 +1,7 @@
 ---
 title: OpenClaw vs Hermes Agent
 created: 2026-06-03
-updated: 2026-06-05
+updated: 2026-06-08
 type: comparison
 tags: [comparison, agent, llm, open-source]
 sources: [raw/articles/openclaw-vs-hermes-2026.md, raw/articles/hermes-vs-openclaw-features-2026.md]

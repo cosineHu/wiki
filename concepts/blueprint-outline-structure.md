@@ -1,10 +1,10 @@
 ---
 title: 蓝图大纲结构分析（Blueprint Outline Structure Analysis）
-created: 2026-06-05
-updated: 2026-06-05
+created: 2026-06-10
+updated: 2026-06-10
 type: concept
 tags: [blueprint, delivery, methodology, analysis]
-sources: [raw/2026-06-05-blueprint-standard-library/blueprint-standard-library.md]
+sources: [raw/2026-06-10-blueprint-standard-library/blueprint-standard-library.md]
 confidence: high
 ---
 

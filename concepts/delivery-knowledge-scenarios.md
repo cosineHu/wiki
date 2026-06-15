@@ -1,7 +1,7 @@
 ---
 title: 交付中心知识库三大核心场景（Delivery Knowledge Scenarios）
-created: 2026-06-05
-updated: 2026-06-05
+created: 2026-06-10
+updated: 2026-06-10
 type: concept
 tags: [delivery, methodology, knowledge-base, workflow]
 sources: []

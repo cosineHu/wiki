@@ -1,7 +1,7 @@
 ---
 title: E3 AI 工作台场景分析（E3 AI Workbench Scenario Analysis）
-created: 2026-06-05
-updated: 2026-06-05
+created: 2026-06-10
+updated: 2026-06-10
 type: concept
 tags: [ai, e3, oms, workbench, analysis, efficiency]
 sources: [entities/e3-ai-workbench.md]

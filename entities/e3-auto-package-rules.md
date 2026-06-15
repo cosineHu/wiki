@@ -1,10 +1,10 @@
 ---
 title: E3 自动创建套餐规则（E3 Auto Package Rules）
-created: 2026-06-05
-updated: 2026-06-05
+created: 2026-06-10
+updated: 2026-06-10
 type: entity
 tags: [e3, oms, package, automation, product]
-sources: [raw/2026-06-05-e3-ai-workbench/E3 自动创建套餐规则整理.pdf]
+sources: [raw/2026-06-10-e3-ai-workbench/E3 自动创建套餐规则整理.pdf]
 confidence: high
 ---
 

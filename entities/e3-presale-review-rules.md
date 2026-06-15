@@ -1,10 +1,10 @@
 ---
 title: 预售审单规则（Presale Review Rules）
-created: 2026-06-05
-updated: 2026-06-05
+created: 2026-06-10
+updated: 2026-06-10
 type: entity
 tags: [e3, oms, presale, automation, order-review]
-sources: [raw/2026-06-05-e3-ai-workbench/预售审单规则.pdf]
+sources: [raw/2026-06-10-e3-ai-workbench/预售审单规则.pdf]
 confidence: high
 ---
 

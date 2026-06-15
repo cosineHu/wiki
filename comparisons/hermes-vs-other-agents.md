@@ -1,7 +1,7 @@
 ---
 title: Hermes Agent vs 其他 Agent 框架
 created: 2026-06-03
-updated: 2026-06-05
+updated: 2026-06-08
 type: comparison
 tags: [comparison, agent, llm, open-source]
 sources: [raw/articles/hermes-agent-deep-dive-2026.md]

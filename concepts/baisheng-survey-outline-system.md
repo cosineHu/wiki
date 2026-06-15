@@ -1,10 +1,10 @@
 ---
 title: 电商业务调研大纲体系（E-commerce Survey Outline System）
-created: 2026-06-05
-updated: 2026-06-05
+created: 2026-06-10
+updated: 2026-06-10
 type: concept
 tags: [delivery, survey, ecommerce, methodology, implementation]
-sources: [raw/2026-06-05-baisheng-delivery-methodology/]
+sources: [raw/2026-06-10-baisheng-delivery-methodology/]
 confidence: high
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: E3 AI 工作台 SIT 测试用例（E3 AI Workbench SIT Test Cases）
-created: 2026-06-05
-updated: 2026-06-05
+created: 2026-06-10
+updated: 2026-06-10
 type: entity
 tags: [testing, sit, ai, e3, workbench, delivery]
 sources:

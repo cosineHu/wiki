@@ -1,10 +1,10 @@
 ---
 title: 雅戈尔 E3+ 调研分析（Youngor E3+ Survey Analysis）
-created: 2026-06-05
-updated: 2026-06-05
+created: 2026-06-10
+updated: 2026-06-10
 type: concept
 tags: [survey, ecommerce, e3, analysis, delivery]
-sources: [raw/2026-06-05-youngor-survey-log/]
+sources: [raw/2026-06-10-youngor-survey-log/]
 confidence: high
 ---
 

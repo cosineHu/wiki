@@ -1,10 +1,10 @@
 ---
 title: 电商领域项目蓝图大纲标准方案库（Blueprint Standard Library）
-created: 2026-06-05
-updated: 2026-06-05
+created: 2026-06-10
+updated: 2026-06-10
 type: entity
 tags: [blueprint, delivery, ecommerce, standard-library]
-sources: [raw/2026-06-05-blueprint-standard-library/blueprint-standard-library.md]
+sources: [raw/2026-06-10-blueprint-standard-library/blueprint-standard-library.md]
 confidence: high
 ---
 

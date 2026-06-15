@@ -1,10 +1,10 @@
 ---
 title: 渠道捡漏规则（Channel Inventory Pickup Rules）
-created: 2026-06-05
-updated: 2026-06-05
+created: 2026-06-10
+updated: 2026-06-10
 type: entity
 tags: [e3, oms, inventory, channel, pickup]
-sources: [raw/2026-06-05-e3-ai-workbench/渠道捡漏.pdf]
+sources: [raw/2026-06-10-e3-ai-workbench/渠道捡漏.pdf]
 confidence: high
 ---
 

@@ -162,7 +162,7 @@ relations:
 
 ### 5.1 wiki 页面 source 引用过期
 `concepts/knowledge-ontology-three-layer-model.md` 的 sources 字段引用:
-- `raw/articles/knowledge-ontology-llm-wiki-2026.md` → 应更新为 `raw/2026-06-05-knowledge-ontology/knowledge-ontology-llm-wiki.md`
+- `raw/articles/knowledge-ontology-llm-wiki-2026.md` → 应更新为 `raw/2026-06-09-knowledge-ontology/knowledge-ontology-llm-wiki.md`
 
 ### 5.2 无其他死链
 - 所有 [[wikilinks]] 指向的页面均存在

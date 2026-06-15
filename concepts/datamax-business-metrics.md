@@ -1,10 +1,10 @@
 ---
 title: DataMax 配补调退业务指标体系
-created: 2026-06-05
-updated: 2026-06-05
+created: 2026-06-09
+updated: 2026-06-09
 type: concept
 tags: [retail, inventory, metrics, kpi, datamax]
-sources: [raw/2026-06-05-datamax-replenishment/datamax-replenishment-requirements.md]
+sources: [raw/2026-06-09-datamax-replenishment/datamax-replenishment-requirements.md]
 confidence: high
 ---
 

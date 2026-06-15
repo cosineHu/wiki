@@ -433,7 +433,7 @@
 - 创建文件: meta/_pending/reverse-check-20260608.yaml
 - 更新文件: meta/meta-concepts.yaml (v1.0→v1.1, 35→36), meta/compose-concepts.yaml (v1.0→v1.1, 20→23), meta/entities/people.yaml (v1.0→v1.1, 8→10), meta/entities/knowledge-management.yaml (v1.0→v1.1)
 
-## [2026-06-05] ingest | 知识本体构建：基于 LLM Wiki 的大模型知识库
+## [2026-06-09] ingest | 知识本体构建：基于 LLM Wiki 的大模型知识库
 - 来源: https://mp.weixin.qq.com/s/QEjbPUDFXY3lewPvoLDuQg（用户提供文档）
 - 创建文件:
   - raw/articles/knowledge-ontology-llm-wiki-2026.md (原始来源)
@@ -444,21 +444,21 @@
   - index.md (新增 1 个页面条目，总页数 42)
 - 备注: 删除 2 个重复页面（scenario-driven-knowledge-base/writing-pipeline-7-steps），内容已由 meta/ 层覆盖
 
-## [2026-06-05] web-pack | 知识本体构建 — Web Pack 规范补全
+## [2026-06-09] web-pack | 知识本体构建 — Web Pack 规范补全
 - 按 web-pack skill 规范重建目录结构:
-  - raw/2026-06-05-knowledge-ontology/knowledge-ontology-llm-wiki.md (语义化目录 + 本地图片)
-  - raw/2026-06-05-knowledge-ontology/assets/ (14 张图片全部本地化)
-  - meta/supplements/2026-06-05-knowledge-ontology/ (四件套: research-brief/link-inventory/image-inventory/reading-map)
+  - raw/2026-06-09-knowledge-ontology/knowledge-ontology-llm-wiki.md (语义化目录 + 本地图片)
+  - raw/2026-06-09-knowledge-ontology/assets/ (14 张图片全部本地化)
+  - meta/supplements/2026-06-09-knowledge-ontology/ (四件套: research-brief/link-inventory/image-inventory/reading-map)
 - Phase 7 YAML 反向校验:
   - meta/_pending/reverse-check-20260605.md (5 维检查: 1 新场景/2 新概念/2 新实体/4 关系补全/1 死链)
 - 修复: concepts/knowledge-ontology-three-layer-model.md source 引用更新为新路径
 
-## [2026-06-05] update | DataMax 定位更新 — 从库存管理平台升级为数据中台
+## [2026-06-09] update | DataMax 定位更新 — 从库存管理平台升级为数据中台
 
-## [2026-06-05] ingest | E3 AI 工作台项目 — 8 页 wiki + 3 份交付物
+## [2026-06-10] ingest | E3 AI 工作台项目 — 8 页 wiki + 3 份交付物
 
 - 来源: 用户提供 3 个 PDF（套餐规则/预售审单/渠道捡漏）+ 需求背景
-- 存档: raw/2026-06-05-e3-ai-workbench/（3 个 PDF）
+- 存档: raw/2026-06-10-e3-ai-workbench/（3 个 PDF）
 - 创建实体页:
   - entities/e3-ai-workbench.md — 项目总览（3.5 场景/双端使用/专岗专治）
   - entities/e3-auto-package-rules.md — 套餐规则（ZH/LG/DYCH 三类）
@@ -471,9 +471,9 @@
   - entities/e3-ai-workbench-blueprint-outline.md — 蓝图大纲（7 大模块，双端协同架构）
   - entities/e3-ai-workbench-sit-test-cases.md — 测试用例（32 个用例，10 大模块）
 - 更新 index.md（61→69 页）
-- 元数据: meta/supplements/2026-06-05-e3-ai-workbench/ingest-meta.yaml
+- 元数据: meta/supplements/2026-06-10-e3-ai-workbench/ingest-meta.yaml
 
-## [2026-06-05] ingest | 雅戈尔 E3+ SIT 测试用例（56 个用例，6 大模块）
+## [2026-06-10] ingest | 雅戈尔 E3+ SIT 测试用例（56 个用例，6 大模块）
 
 - 基于蓝图大纲 + SIT 测试用例标准方案库生成
 - 创建 entities/youngor-e3-sit-test-cases.md — 56 个用例，13 字段标准结构
@@ -482,26 +482,26 @@
 - 更新 index.md（60→61 页）
 - 场景四验证：蓝图大纲 → SIT 测试用例 ✅
 
-## [2026-06-05] ingest | 交付文档模板库 + 模板结构分析
+## [2026-06-10] ingest | 交付文档模板库 + 模板结构分析
 
 - 来源: 用户提供 2 个 .docx（业务调研报告模板 + 调研大纲模板）
-- 存档: raw/2026-06-05-delivery-templates/（2 个 .docx）
+- 存档: raw/2026-06-10-delivery-templates/（2 个 .docx）
 - 创建 entities/delivery-document-templates.md — 调研报告模板（流程分析四维模型）+ 调研大纲模板（三段式结构）
 - 创建 concepts/delivery-template-structure.md — 模板设计模式、模板与标准方案库关系、按项目类型/阶段裁剪原则
 - 更新 index.md（58→60 页）
-- 元数据: meta/supplements/2026-06-05-delivery-templates/ingest-meta.yaml
+- 元数据: meta/supplements/2026-06-10-delivery-templates/ingest-meta.yaml
 
-## [2026-06-05] ingest | SIT 测试用例标准方案库 + 结构分析 + 场景四建模
+## [2026-06-10] ingest | SIT 测试用例标准方案库 + 结构分析 + 场景四建模
 
 - 来源: 用户提供 .xlsx（标准方案库 + 模板，结构一致）
-- 存档: raw/2026-06-05-sit-test-case-library/（2 个 .xlsx）
+- 存档: raw/2026-06-10-sit-test-case-library/（2 个 .xlsx）
 - 创建 entities/sit-test-case-library.md — 7 Sheet，~50 个用例，16 平台覆盖，13 字段标准结构
 - 创建 concepts/sit-test-case-structure.md — 五维覆盖模型、5 种设计模式、裁剪原则、蓝图反向校验
 - 更新 concepts/delivery-knowledge-scenarios.md — 新增场景四：生成测试用例
 - 更新 index.md（56→58 页）
-- 元数据: meta/supplements/2026-06-05-sit-test-case-library/ingest-meta.yaml
+- 元数据: meta/supplements/2026-06-10-sit-test-case-library/ingest-meta.yaml
 
-## [2026-06-05] ingest | 交付中心知识库三大核心场景 + 雅戈尔 E3+ 调研大纲 + 业务蓝图大纲
+## [2026-06-10] ingest | 交付中心知识库三大核心场景 + 雅戈尔 E3+ 调研大纲 + 业务蓝图大纲
 
 - 创建 concepts/delivery-knowledge-scenarios.md — 三大场景依赖链：调研大纲→调研日志→蓝图大纲
 - 创建 entities/youngor-e3-survey-outline.md — 基于售前方案+标准方案库生成的项目专属调研大纲（6大模块）
@@ -511,58 +511,58 @@
 - 场景三验证：调研日志 → 蓝图大纲 ✅
 - 标注标准方案库已有（✅）vs 雅戈尔定制（🆕），裁剪说明清晰
 
-## [2026-06-05] ingest | 电商领域项目蓝图大纲标准方案库
+## [2026-06-10] ingest | 电商领域项目蓝图大纲标准方案库
 - 来源: 用户提供 .xlsx（标准方案库 + 模板，内容相同）
 - 创建文件:
-  - raw/2026-06-05-blueprint-standard-library/blueprint-standard-library.md (79行四级树形结构)
+  - raw/2026-06-10-blueprint-standard-library/blueprint-standard-library.md (79行四级树形结构)
   - entities/blueprint-standard-library.md (蓝图大纲标准方案库)
   - concepts/blueprint-outline-structure.md (蓝图结构分析 + 裁剪原则)
-  - meta/supplements/2026-06-05-blueprint-standard-library/ (四件套)
+  - meta/supplements/2026-06-10-blueprint-standard-library/ (四件套)
 - 更新文件:
   - index.md (新增 2 个页面条目，总页数 53)
 - 场景: 交付中心提效 — 生成蓝图大纲（标准方案库）
 
-## [2026-06-05] ingest | 雅戈尔 E3+ 业务调研日志 + 调研报告模板
+## [2026-06-10] ingest | 雅戈尔 E3+ 业务调研日志 + 调研报告模板
 - 来源: 用户提供 .xlsx（雅戈尔调研日志）+ .docx（调研报告模板）
 - 创建文件:
-  - raw/2026-06-05-youngor-survey-log/ (11 Sheet 原始数据)
+  - raw/2026-06-10-youngor-survey-log/ (11 Sheet 原始数据)
   - entities/youngor-e3-survey-log.md (雅戈尔 E3+ 调研日志)
   - concepts/youngor-e3-survey-analysis.md (调研分析 + 可复用模式)
-  - meta/supplements/2026-06-05-youngor-survey-log/ (四件套)
+  - meta/supplements/2026-06-10-youngor-survey-log/ (四件套)
 - 更新文件:
   - index.md (新增 2 个页面条目，总页数 51)
 - 场景: 交付中心提效 — 调研日志（按项目导入）
 - 备注: 调研报告模板与已有内容模式一致，不再重复保存
 
-## [2026-06-05] ingest | 雅戈尔 E3+ 售前方案 + 调研大纲模板
+## [2026-06-10] ingest | 雅戈尔 E3+ 售前方案 + 调研大纲模板
 - 来源: 用户提供 .pptx（雅戈尔售前方案）+ .docx（调研大纲模板）
 - 创建文件:
-  - raw/2026-06-05-youngor-e3-presale/youngor-e3-presale-presentation.md (68页PPT文本)
+  - raw/2026-06-10-youngor-e3-presale/youngor-e3-presale-presentation.md (68页PPT文本)
   - entities/youngor-e3-presale.md (雅戈尔 E3+ 售前方案)
   - concepts/youngor-e3-solution-analysis.md (方案分析 + 可复用模式)
-  - meta/supplements/2026-06-05-youngor-e3-presale/ (四件套)
+  - meta/supplements/2026-06-10-youngor-e3-presale/ (四件套)
 - 更新文件:
   - index.md (新增 2 个页面条目，总页数 49)
 - 场景: 交付中心提效 — 售前资料（按项目导入）
 - 备注: 调研大纲模板与已摄入的 IT 部门调研内容一致，不再重复保存
 
-## [2026-06-05] ingest | 百胜交付方法论 — 电商业务调研大纲（标准方案库）
+## [2026-06-10] ingest | 百胜交付方法论 — 电商业务调研大纲（标准方案库）
 - 来源: 用户提供 6 份 .docx 文档（百胜价值交付方法论 V3.0 工程包）
 - 创建文件:
-  - raw/2026-06-05-baisheng-delivery-methodology/ (6 份调研大纲原始文档)
+  - raw/2026-06-10-baisheng-delivery-methodology/ (6 份调研大纲原始文档)
   - entities/baisheng-delivery-methodology.md (百胜价值交付方法论)
   - concepts/baisheng-survey-outline-system.md (电商业务调研大纲体系)
-  - meta/supplements/2026-06-05-baisheng-delivery-methodology/ (四件套)
+  - meta/supplements/2026-06-10-baisheng-delivery-methodology/ (四件套)
 - 更新文件:
   - index.md (新增 2 个页面条目，总页数 47)
 - 场景: 交付中心提效 — 标准方案库（公共基础依赖）
 
-## [2026-06-05] create | DataMax 配补调退业务指标体系
+## [2026-06-09] create | DataMax 配补调退业务指标体系
 - 创建 concepts/datamax-business-metrics.md：30+ 指标覆盖库存/销量/周转/满足率
 - 更新 entities/datamax.md、concepts/replenishment-allocation-transfer-return.md 交叉引用
 - index.md (45页)
 
-## [2026-06-05] update | DataMax 商品智能体 — 重点建设商品运营
+## [2026-06-09] update | DataMax 商品智能体 — 重点建设商品运营
 - 新增"商品智能体（Merchandise Agent）"：围绕智能配补调场景
 - 三层能力：业务运营 → 智能问数 → 数据分析
 - 从"被动执行规则"升级为"主动分析建议"
@@ -571,13 +571,13 @@
 - 配补调退定位为 DataMax 数据中台上的核心应用之一
 - 更新 entities/datamax.md、index.md
 
-## [2026-06-05] ingest | DataMax 商品配补调业务蓝图需求规格说明书
+## [2026-06-09] ingest | DataMax 商品配补调业务蓝图需求规格说明书
 - 来源: 用户提供 .docx 文档（广州尚睿服装）
 - 创建文件:
-  - raw/2026-06-05-datamax-replenishment/datamax-replenishment-requirements.md (原始来源)
+  - raw/2026-06-09-datamax-replenishment/datamax-replenishment-requirements.md (原始来源)
   - entities/datamax.md (DataMax 系统实体页)
   - concepts/replenishment-allocation-transfer-return.md (配补调退业务概念页)
-  - meta/supplements/2026-06-05-datamax-replenishment/ (四件套元数据)
+  - meta/supplements/2026-06-09-datamax-replenishment/ (四件套元数据)
 - 更新文件:
   - index.md (新增 2 个页面条目，总页数 44)
 

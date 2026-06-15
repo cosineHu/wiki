@@ -1,10 +1,10 @@
 ---
 title: SIT 测试用例标准方案库（SIT Test Case Standard Library）
-created: 2026-06-05
-updated: 2026-06-05
+created: 2026-06-10
+updated: 2026-06-10
 type: entity
 tags: [testing, sit, delivery, ecommerce, standard-library]
-sources: [raw/2026-06-05-sit-test-case-library/]
+sources: [raw/2026-06-10-sit-test-case-library/]
 confidence: high
 ---
 

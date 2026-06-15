@@ -1,7 +1,7 @@
 ---
 title: 三种记忆模型对比（Three Memory Models）
 created: 2026-06-05
-updated: 2026-06-05
+updated: 2026-06-08
 type: comparison
 tags: [comparison, llm, agent, memory, architecture]
 sources: [raw/articles/hermes-obsidian-second-brain-2026.md, raw/articles/hermes-memory-system-2026.md, raw/articles/enterprise-second-brain-2026.md]

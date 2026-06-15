@@ -1,7 +1,7 @@
 ---
 title: 交付文档模板结构分析（Delivery Template Structure）
-created: 2026-06-05
-updated: 2026-06-05
+created: 2026-06-10
+updated: 2026-06-10
 type: concept
 tags: [delivery, template, structure, methodology]
 sources: [entities/delivery-document-templates.md]

@@ -1,10 +1,10 @@
 ---
 title: E3 AI 工作台项目（E3 AI Workbench）
-created: 2026-06-05
-updated: 2026-06-05
+created: 2026-06-10
+updated: 2026-06-10
 type: entity
 tags: [ai, e3, oms, workbench, retail, efficiency]
-sources: [raw/2026-06-05-e3-ai-workbench/]
+sources: [raw/2026-06-10-e3-ai-workbench/]
 confidence: high
 ---
 

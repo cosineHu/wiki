@@ -1,7 +1,7 @@
 ---
 title: 雅戈尔 E3+ 业务蓝图大纲（Youngor E3+ Blueprint Outline）
-created: 2026-06-05
-updated: 2026-06-05
+created: 2026-06-10
+updated: 2026-06-10
 type: entity
 tags: [blueprint, ecommerce, e3, delivery, youngor]
 sources:

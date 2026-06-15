@@ -1,10 +1,10 @@
 ---
 title: DataMax
-created: 2026-06-05
-updated: 2026-06-05
+created: 2026-06-09
+updated: 2026-06-09
 type: entity
 tags: [data-platform, retail, data-warehouse, low-code]
-sources: [raw/2026-06-05-datamax-replenishment/datamax-replenishment-requirements.md]
+sources: [raw/2026-06-09-datamax-replenishment/datamax-replenishment-requirements.md]
 confidence: high
 ---
 

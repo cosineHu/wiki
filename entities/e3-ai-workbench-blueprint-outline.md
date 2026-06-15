@@ -1,7 +1,7 @@
 ---
 title: E3 AI 工作台业务蓝图大纲（E3 AI Workbench Blueprint Outline）
-created: 2026-06-05
-updated: 2026-06-05
+created: 2026-06-10
+updated: 2026-06-10
 type: entity
 tags: [blueprint, ai, e3, workbench, delivery]
 sources:

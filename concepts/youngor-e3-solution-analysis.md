@@ -1,10 +1,10 @@
 ---
 title: 雅戈尔 E3+ 方案分析（Youngor E3+ Solution Analysis）
-created: 2026-06-05
-updated: 2026-06-05
+created: 2026-06-10
+updated: 2026-06-10
 type: concept
 tags: [presale, ecommerce, e3, solution, case-study]
-sources: [raw/2026-06-05-youngor-e3-presale/youngor-e3-presale-presentation.md]
+sources: [raw/2026-06-10-youngor-e3-presale/youngor-e3-presale-presentation.md]
 confidence: high
 ---
 

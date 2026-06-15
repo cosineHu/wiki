@@ -1,10 +1,10 @@
 ---
 title: 雅戈尔 E3+ 业务调研日志（Youngor E3+ Survey Log）
-created: 2026-06-05
-updated: 2026-06-05
+created: 2026-06-10
+updated: 2026-06-10
 type: entity
 tags: [survey, ecommerce, e3, implementation, delivery]
-sources: [raw/2026-06-05-youngor-survey-log/]
+sources: [raw/2026-06-10-youngor-survey-log/]
 confidence: high
 ---
 

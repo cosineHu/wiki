@@ -1,10 +1,10 @@
 ---
 title: 知识本体三层模型（Knowledge Ontology Three-Layer Model）
-created: 2026-06-05
-updated: 2026-06-05
+created: 2026-06-09
+updated: 2026-06-09
 type: concept
 tags: [knowledge-base, ontology, llm-wiki, methodology]
-sources: [raw/2026-06-05-knowledge-ontology/knowledge-ontology-llm-wiki.md]
+sources: [raw/2026-06-09-knowledge-ontology/knowledge-ontology-llm-wiki.md]
 confidence: high
 ---
 

@@ -1,10 +1,10 @@
 ---
 title: 百胜价值交付方法论（Baisheng Value Delivery Methodology）
-created: 2026-06-05
-updated: 2026-06-05
+created: 2026-06-10
+updated: 2026-06-10
 type: entity
 tags: [delivery, methodology, ecommerce, implementation, survey]
-sources: [raw/2026-06-05-baisheng-delivery-methodology/]
+sources: [raw/2026-06-10-baisheng-delivery-methodology/]
 confidence: high
 ---
 

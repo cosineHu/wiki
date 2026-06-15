@@ -1,7 +1,7 @@
 ---
 title: SIT 测试用例结构分析（SIT Test Case Structure）
-created: 2026-06-05
-updated: 2026-06-05
+created: 2026-06-10
+updated: 2026-06-10
 type: concept
 tags: [testing, sit, delivery, methodology, structure]
 sources: [entities/sit-test-case-library.md]

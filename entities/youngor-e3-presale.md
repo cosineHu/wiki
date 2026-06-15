@@ -1,10 +1,10 @@
 ---
 title: 雅戈尔 E3+ 售前方案（Youngor E3+ Presale）
-created: 2026-06-05
-updated: 2026-06-05
+created: 2026-06-10
+updated: 2026-06-10
 type: entity
 tags: [presale, ecommerce, e3, retail, case-study]
-sources: [raw/2026-06-05-youngor-e3-presale/youngor-e3-presale-presentation.md]
+sources: [raw/2026-06-10-youngor-e3-presale/youngor-e3-presale-presentation.md]
 confidence: high
 ---
 
