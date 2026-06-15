@@ -1,7 +1,7 @@
 ---
 source_url: https://blog.csdn.net/sgr011215/article/details/160530313
 ingested: 2026-06-02
-sha256: placeholder-sha256
+sha256: 7bdd320ad2e2f96668c01e101ab8d6f04424d5d675af4d41f44a680ac895f633
 ---
 
 # Hermes Agent + Obsidian 打造第二大脑：14篇文章讲透第二大脑搭建

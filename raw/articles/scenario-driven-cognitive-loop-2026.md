@@ -1,7 +1,7 @@
 ---
 source_url: https://blog.csdn.net/m0_59235945/article/details/161753234
 ingested: 2026-06-08
-sha256: 4a8b3c7d1e5f9a2b6c0d8e4f7a9b1c3d5e6f8a0b2c4d7e9f1a3b5c6d8e0f2a
+sha256: 6c7caaae3dfd64b5fc1ce53ec30a334a3c1f18aa45c47a40d011be26e1070dea
 ---
 
 # 进一步优化LLM-Wiki大模型知识库，构建场景驱动的认知闭环

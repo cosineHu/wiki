@@ -1,7 +1,7 @@
 ---
 source_url: https://segmentfault.com/a/1190000047707371
 ingested: 2026-06-04
-sha256: 373cc34571a07caaa945ef64798ea879c55584778a0b5bebd0c09f3a26b4653f
+sha256: a0b74eaa06d53285e9440e0da4ff024acae82edfe0318e1693db53d53617c00e
 ---
 
 # Karpathy 式 AI 知识库搭建指南：让 Claude Code + Obsidian 成为你的第二大脑

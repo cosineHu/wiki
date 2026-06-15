@@ -1,7 +1,7 @@
 ---
 source_url: user-uploaded-document
 ingested: 2026-06-04
-sha256: 8778f2aee4c4f2c4bd769e2644337ece448329a5e3f6cbc0223d02c07e21ee9a
+sha256: 207eb319a7d8387ef23c3e44f52ad8ab520d75b7a614c16fa393ef696cf4dccc
 ---
 
 # 基于 Hermes Agent + Obsidian 的企业级第二大脑知识库体系研究

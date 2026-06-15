@@ -1,7 +1,7 @@
 ---
 source_url: https://ruizhehou.github.io/2026/05/01/Hermes-Agent%E8%A7%A3%E6%9E%90/
 ingested: 2026-06-03
-sha256: c8f6be47528127cd2c4571da41c2f48198b3dcf95450064a8b1f9319c7da9b10
+sha256: e13d435bc07bcc93f2d299bb705280fa3015db9a25cda7a9ed4eb3a8c05d049d
 ---
 
 # Hermes Agent 深度解析：会自我进化的开源 AI Agent

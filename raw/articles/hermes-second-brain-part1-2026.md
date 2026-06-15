@@ -1,7 +1,7 @@
 ---
 source_url: https://blog.csdn.net/sgr011215/article/details/160530542
 ingested: 2026-06-02
-sha256: 5aa01302f3ea78f98db249bb6da88f1c03e85ee291b98751dde36b18095425c1
+sha256: f4c53c462712249c6e885d16da490f9554a91246fc796cc042867147b3d8465f
 ---
 
 # Hermes Agent + Obsidian 打造第二大脑（一）：为什么需要第二大脑？
