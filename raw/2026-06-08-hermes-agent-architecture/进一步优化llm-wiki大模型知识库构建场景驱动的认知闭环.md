@@ -4,7 +4,7 @@ title: "进一步优化LLM-Wiki大模型知识库，构建场景驱动的认知�
 ingested: 2026-06-08T07:07:44Z
 author: "M"
 source_date: "2026-06-06"
-sha256: ac8ef57a2439b9a7506d8637ede653a0e21ad83048c3cb4fb32bfa31ce37cf45
+sha256: 83083e0a92a59af4dc995861b7a933e137d59e2b7983792da1d7963cdfb173dc
 type: raw
 ---
 

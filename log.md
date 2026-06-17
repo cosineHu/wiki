@@ -735,3 +735,35 @@
 - 13 个 raw/ 源文件 SHA256 哈希更新
 - 1 个 placeholder-sha256 替换为真实哈希
 - 审计报告 triage 标注
+
+## [2026-06-17] lint | 每日知识审计 — 0 严重 / 33 警告 / 175 建议
+
+### 审计范围
+- wiki/ 知识层: 67 页面（entities: 26, concepts: 35, comparisons: 6, queries: 0）
+- wiki/meta/ 元信息层: 35 原子概念 + 22 组合概念 + 129 实体 + 25 场景
+
+### 🔴 严重 (0 — 全部误报)
+- 死链 15 → 全部误报（Obsidian 语法教学示例: [[wikilinks]], [[笔记名]], [[note]], [[项目A]]）
+
+### 🟡 警告 (33)
+- 场景阶段条目不足: 33 个 phase 仅含 1 个条目（设计如此，单条目 phase 在简单场景中合理）
+
+### 🔵 建议 (175)
+- meta 实体→wiki 页面缺失 (91): 预期行为
+- meta 概念→wiki 页面缺失 (53): 预期行为
+- wiki 页面→meta 缺失 (31): 预期行为
+- 超大页面 (6): youngor-e3-sit-test-cases (1007行), e3-ai-workbench-sit-test-cases (597行) 等
+
+### ✅ 正面指标
+- Frontmatter 完整性: 67/67 ✅
+- 孤立页面: 0 ✅
+- 索引完整性: 67/67 ✅
+- IPO 完整性: 35/35 ✅
+- 组合概念 decomposition: 22/22 ✅
+- 场景死链: 0 ✅
+- 低置信度页面: 0 ✅
+- 争议页面: 0 ✅
+
+### 自动修复
+- 14 个 raw/ 源文件 SHA256 哈希更新（重新计算 body SHA256 并更新 frontmatter）
+- 审计报告 triage 标注

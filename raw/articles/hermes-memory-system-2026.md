@@ -1,7 +1,7 @@
 ---
 source_url: https://cloud.tencent.com.cn/developer/article/2668217
 ingested: 2026-06-04
-sha256: aec7d232523d83cf8b64e67e16b869b8c92e99f1c278a2de4e3fc8322d26ea90
+sha256: 6d0fe19456bdab87494ab732ed5654e9b4782d41d87f1d637d3f1d4b5aca082f
 ---
 
 # Hermes Agent 的记忆系统：为什么它修正了 OpenClaw 的错误

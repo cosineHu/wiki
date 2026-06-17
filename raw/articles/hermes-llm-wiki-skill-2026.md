@@ -1,7 +1,7 @@
 ---
 source_url: https://hermes-agent.nousresearch.com/docs/zh-Hans/user-guide/skills/bundled/research/research-llm-wiki
 ingested: 2026-06-02
-sha256: af699c54a81bc3348ba7041bcfaf7983ff49d7a2d28561aff629279c7e690763
+sha256: 45fd1337e1f74b8c06ff55aaf70c4a75812ac1a5207eba6aef3b52bb8492a0eb
 ---
 
 # Llm Wiki — Karpathy 的 LLM Wiki

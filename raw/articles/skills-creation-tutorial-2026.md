@@ -1,7 +1,7 @@
 ---
 source_url: https://www.cnblogs.com/qiniushanghai/p/20027864
 ingested: 2026-06-04
-sha256: 3643bddacdd808a1e6c9530ede02cae06c1894e2d650ea8b4a20407c493545dc
+sha256: a731ad265ca923a4df486c3d9fcb0bbde52ca8d80d83071e89f9c247ee48e00d
 ---
 
 # Skills 从 0 到 1 怎么写：AI Agent Skills 完整创建教程（2026）

@@ -1,7 +1,7 @@
 ---
 source_url: https://www.drpang.ai/openclaw-vs-hermes-ai-agent-future/
 ingested: 2026-06-03
-sha256: 54e12aea9c24a38740b3f46ef57260b4cf45b8832652766abfc7bf1f61b83d10
+sha256: e055909aae689b85e7e0540d39300bc8466cc1e872e690913aeeca5169e890ff
 ---
 
 # OpenClaw vs Hermes：AI Agent 未来之争

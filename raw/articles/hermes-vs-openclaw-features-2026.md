@@ -1,7 +1,7 @@
 ---
 source_url: user-uploaded-document
 ingested: 2026-06-03
-sha256: 7a5a1c9ef8ba74b59a5aa44bb36561f1b054594c519ee2fac5a01efac00558d1
+sha256: 98bae13ac5b426969293dd70c7d3407c56f9e37b929fb04fb05d20962d42d2e1
 ---
 
 # Hermes vs OpenClaw — 核心差异、知识库参考、会话隔离、第二大脑

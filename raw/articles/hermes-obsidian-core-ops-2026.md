@@ -1,7 +1,7 @@
 ---
 source_url: https://blog.csdn.net/sgr011215/article/details/160530681
 ingested: 2026-06-03
-sha256: e5b6cdcf856aac6607956921524e4c7beafdaa71f8b24d8080bbf5d6583025f3
+sha256: d4376daf34318cc7be21ba0fe84cada0f84f4251d1e20ccf14e291e46753dd70
 ---
 
 # Hermes Agent + Obsidian 打造第二大脑（四）：Obsidian 核心操作与踩坑

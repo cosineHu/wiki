@@ -1,7 +1,7 @@
 ---
 source_url: https://mp.weixin.qq.com/s/ZMZHQVbtRFbQ22DgvY8YCw
 ingested: 2026-06-08
-sha256: 87fc76a964527ae5ce7af3a72b84a66d6a84be5fb9c0c823c11a18ae8c9fb843
+sha256: a4e5bbd7a1dc42548684f53344b95bfa258a9f91bdde42e46754c7bbfafeac98
 ---
 
 大家好，我是人月聊IT。
