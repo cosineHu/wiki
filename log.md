@@ -479,7 +479,16 @@
 
 ## [2026-06-09] update | DataMax 定位更新 — 从库存管理平台升级为数据中台
 
-## [2026-06-10] ingest | E3 AI 工作台项目 — 8 页 wiki + 3 份交付物
+## [2026-06-10] ingest | 飞书消息卡片 CLI 发卡方案 + 蓝图大纲补充飞书端实现
+
+- 来源: 用户提供公众号文章（万涂幻象 · 飞书 CLI 发卡实践）
+- 存档: raw/2026-06-05-feishu-card-cli/
+- 创建 entities/feishu-card-cli.md — 飞书卡片三件套、变量锚点分离、跨群分发、Skill 封装
+- 创建 concepts/feishu-card-cli-analysis.md — 三层架构、三种路径对比、E3 AI 工作台启示
+- 更新 entities/e3-ai-workbench-blueprint-outline.md — 新增第八章：飞书端卡片实现方案
+- 更新 index.md（69→71 页）
+
+## [2026-06-05] ingest | E3 AI 工作台项目 — 8 页 wiki + 3 份交付物
 
 - 来源: 用户提供 3 个 PDF（套餐规则/预售审单/渠道捡漏）+ 需求背景
 - 存档: raw/2026-06-10-e3-ai-workbench/（3 个 PDF）

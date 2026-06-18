@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-10 | Total pages: 69 | IPO coverage: 21/21 (100%)
+> Last updated: 2026-06-10 | Total pages: 71 | IPO coverage: 21/21 (100%)
 
 ## Entities
 - [[andrej-karpathy]] — AI 研究员，LLM Wiki 模式提出者，前 Tesla AI 总监
@@ -10,6 +10,7 @@
 - [[blueprint-standard-library]] — 电商蓝图大纲标准方案库：6 大分类，四级树形结构，51 个三级大纲
 - [[datamax]] — DataMax 数据中台：轻量级数仓 + 商品智能体（配补调 + 智能问数 + 数据分析）
 - [[dify]] — 开源 LLM 应用开发平台，可视化编排 AI 工作流
+- [[feishu-card-cli]] — 飞书消息卡片与 CLI 发卡方案：JSON 模板 + 变量锚点分离 + 跨群分发
 - [[hermes-agent]] — Nous Research 的 MIT 开源 AI Agent 平台，学习闭环 + 技能系统 + 多平台
 - [[kepano]] — Obsidian 创始人兼 CEO，提出 File over app 和 Don't delegate understanding 哲学
 - [[lex-fridman]] — 全球最火 AI 播客主持人，提出跑步语音播客式知识消费
@@ -44,6 +45,7 @@
 - [[delivery-template-structure]] — 交付文档模板结构分析：三段式调研结构、流程分析四维模型、模板与标准方案库关系
 - [[e3-ai-workbench-analysis]] — E3 AI 工作台场景分析：专岗专治方法论、双端协同架构、效果度量模型
 - [[enterprise-second-brain-architecture]] — 企业级第二大脑架构：Hermes+飞书+Obsidian+llm-wiki+Git 知识闭环
+- [[feishu-card-cli-analysis]] — 飞书卡片 CLI 方案分析：三层架构、变量锚点分离、E3 AI 工作台启示
 - [[hermes-knowledge-reference]] — Hermes 知识库参考方式：AGENTS.md / Skill / Memory / Obsidian 四种方式
 - [[hermes-memory-architecture]] — Hermes 四层记忆架构：热记忆/情景回忆/Skills/Honcho，缓存感知设计
 - [[hermes-session-isolation]] — Hermes 会话隔离机制：Profile / Gateway / Pairing / 终端四层隔离
