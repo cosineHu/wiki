@@ -479,6 +479,13 @@
 
 ## [2026-06-09] update | DataMax 定位更新 — 从库存管理平台升级为数据中台
 
+## [2026-06-10] ingest | 飞书卡片按钮组件（官方文档）
+
+- 来源: 飞书开放平台官方文档（open.feishu.cn）
+- 存档: raw/2026-06-10-feishu-card-components/button.md
+- 创建 entities/feishu-card-button.md — 9 种类型、4 种尺寸、behaviors 交互、回调结构
+- 更新 index.md（74→75 页）
+
 ## [2026-06-10] ingest | 飞书流式更新卡片（官方文档）
 
 - 来源: 飞书开放平台官方文档（open.feishu.cn）

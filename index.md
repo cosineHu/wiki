@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-10 | Total pages: 74 | IPO coverage: 21/21 (100%)
+> Last updated: 2026-06-10 | Total pages: 75 | IPO coverage: 21/21 (100%)
 
 ## Entities
 - [[andrej-karpathy]] — AI 研究员，LLM Wiki 模式提出者，前 Tesla AI 总监
@@ -10,6 +10,7 @@
 - [[blueprint-standard-library]] — 电商蓝图大纲标准方案库：6 大分类，四级树形结构，51 个三级大纲
 - [[datamax]] — DataMax 数据中台：轻量级数仓 + 商品智能体（配补调 + 智能问数 + 数据分析）
 - [[dify]] — 开源 LLM 应用开发平台，可视化编排 AI 工作流
+- [[feishu-card-button]] — 飞书卡片按钮组件（官方文档）：9 种类型、4 种尺寸、behaviors 交互
 - [[feishu-card-cli]] — 飞书消息卡片与 CLI 发卡方案：JSON 模板 + 变量锚点分离 + 跨群分发
 - [[feishu-card-overview]] — 飞书卡片概述（官方文档）：五大特性、三大场景、基础概念
 - [[feishu-streaming-card]] — 飞书流式更新卡片（官方文档）：打字机效果、组件级更新、流式策略
