@@ -479,6 +479,13 @@
 
 ## [2026-06-09] update | DataMax 定位更新 — 从库存管理平台升级为数据中台
 
+## [2026-06-10] ingest | Hermes 飞书流式卡片插件
+
+- 来源: 用户提供公众号文章（AI松鼠派 · Hermes 飞书流式卡片）
+- 存档: raw/2026-06-10-hermes-feishu-streaming-card/
+- 创建 entities/hermes-feishu-streaming-card.md — Sidecar 架构、流式卡片、卡片内交互、故障隔离
+- 更新 index.md（71→72 页）
+
 ## [2026-06-10] ingest | 飞书消息卡片 CLI 发卡方案 + 蓝图大纲补充飞书端实现
 
 - 来源: 用户提供公众号文章（万涂幻象 · 飞书 CLI 发卡实践）

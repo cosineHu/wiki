@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-10 | Total pages: 71 | IPO coverage: 21/21 (100%)
+> Last updated: 2026-06-10 | Total pages: 72 | IPO coverage: 21/21 (100%)
 
 ## Entities
 - [[andrej-karpathy]] — AI 研究员，LLM Wiki 模式提出者，前 Tesla AI 总监
@@ -11,6 +11,7 @@
 - [[datamax]] — DataMax 数据中台：轻量级数仓 + 商品智能体（配补调 + 智能问数 + 数据分析）
 - [[dify]] — 开源 LLM 应用开发平台，可视化编排 AI 工作流
 - [[feishu-card-cli]] — 飞书消息卡片与 CLI 发卡方案：JSON 模板 + 变量锚点分离 + 跨群分发
+- [[hermes-feishu-streaming-card]] — Hermes 飞书流式卡片插件：Sidecar 架构，事件聚合到一张卡片
 - [[hermes-agent]] — Nous Research 的 MIT 开源 AI Agent 平台，学习闭环 + 技能系统 + 多平台
 - [[kepano]] — Obsidian 创始人兼 CEO，提出 File over app 和 Don't delegate understanding 哲学
 - [[lex-fridman]] — 全球最火 AI 播客主持人，提出跑步语音播客式知识消费
