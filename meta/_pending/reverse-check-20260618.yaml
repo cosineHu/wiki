@@ -1,0 +1,214 @@
+# Reverse Check Result — 每日 YAML 反向校验
+# 生成时间: 2026-06-18 20:01
+# 校验维度: 新场景 / 新概念 / 新实体 / 新关系 / 死链
+# 自动脚本: reverse-check.py → 人工 triage → 骨架补全
+
+reverse_check_result:
+  timestamp: 2026-06-18 20:01
+  new_scenarios_count: 0
+  new_concepts_count: 1
+  new_entities_count: 5
+  new_relations_count: 11
+  dead_links_count: 0
+  summary: >
+    飞书卡片生态 5 个新实体 + 1 个概念 + 11 条新关系待注册。
+    最近 24h 密集摄入飞书卡片官方文档和社区方案，meta/ 层尚未覆盖。
+    零死链，引用完整性 100%。
+
+# ============================================================
+# 维度 1: 新场景
+# ============================================================
+new_scenarios: []
+# 说明: 最近 24h 的 wiki 变更集中在飞书卡片知识摄入，未产生新的使用模式。
+# 现有的 ingest-article-to-wiki 和 delivery-generate-* 场景已覆盖当前工作流。
+
+# ============================================================
+# 维度 2: 新概念
+# ============================================================
+new_meta_concepts:
+  - id: feishu-card-cli-analysis
+    name: 飞书卡片 CLI 方案分析
+    category: knowledge-management
+    description: >
+      分析飞书卡片需求，设计三层架构（自然语言触发→模板+变量→CLI），
+      分离变量与锚点，选择实现路径，映射业务场景到卡片类型，设计跨群分发策略。
+    input: "飞书卡片需求 + 业务场景（如 E3 AI 工作台运营/审单/预警场景）"
+    process:
+      - "设计三层架构：自然语言触发层 → 模板+变量层 → 飞书 CLI 层"
+      - "分离变量（每次变化的内容：标题/数据/链接）与锚点（品牌一致性：颜色/布局/按钮文案）"
+      - "选择实现路径：cardkit（一次性复杂卡片）/ CLI（日常高频发卡）/ Skill（自然语言触发）"
+      - "映射业务场景到卡片类型：推送类/交互类/预警类/周报类"
+      - "设计跨群分发策略：按 chat_id 区分目标群，差异化推送内容"
+    output: "卡片设计规范 + 实现方案（含变量-锚点表、卡片类型映射表、跨群分发配置）"
+    tools: ["feishu", "lark-cli", "hermes-agent"]
+    quality_check: "变量与锚点是否清晰分离？实现路径是否匹配场景？跨群分发是否覆盖所有目标群？"
+    source: wiki/concepts/feishu-card-cli-analysis.md
+    reason: >
+      Wiki concept page exists with complete methodology (三层架构/变量锚点分离/三种路径对比/
+      卡片类型映射/跨群分发) but no corresponding meta_concept entry in meta-concepts.yaml.
+
+# ============================================================
+# 维度 3: 新实体
+# ============================================================
+new_entities:
+  - id: feishu-card-overview
+    name: 飞书卡片概述（Feishu Card Overview — Official）
+    level: 1
+    type: documentation
+    description: "飞书开放平台官方文档，介绍飞书卡片的基本概念（五大特性/三大场景/基础概念），卡片系统的入口文档"
+    source: wiki/entities/feishu-card-overview.md
+    category_file: knowledge-management.yaml
+    relations:
+      - target: feishu
+        type: is_a
+      - target: feishu-card-button
+        type: related_to
+      - target: feishu-streaming-card
+        type: related_to
+    reason: Wiki entity page ingested 2026-06-10, not yet registered in meta/entities/.
+
+  - id: feishu-card-button
+    name: 飞书卡片按钮组件（Feishu Card Button Component — Official）
+    level: 1
+    type: documentation
+    description: "飞书开放平台官方文档，按钮组件的 JSON 2.0 结构、9种类型、4种尺寸、behaviors 交互回调"
+    source: wiki/entities/feishu-card-button.md
+    category_file: knowledge-management.yaml
+    relations:
+      - target: feishu
+        type: is_a
+      - target: feishu-card-overview
+        type: depends_on
+    reason: Wiki entity page ingested 2026-06-10, not yet registered in meta/entities/.
+
+  - id: feishu-streaming-card
+    name: 飞书流式更新卡片（Feishu Streaming Card — Official）
+    level: 1
+    type: documentation
+    description: "飞书开放平台官方文档，卡片流式更新能力——打字机效果/组件级更新/流式策略，实现逐步渲染"
+    source: wiki/entities/feishu-streaming-card.md
+    category_file: knowledge-management.yaml
+    relations:
+      - target: feishu
+        type: is_a
+      - target: hermes-feishu-streaming-card
+        type: related_to
+    reason: Wiki entity page ingested 2026-06-10, not yet registered in meta/entities/.
+
+  - id: feishu-card-cli
+    name: 飞书消息卡片与 CLI 发卡方案（Feishu Card + CLI）
+    level: 1
+    type: methodology
+    description: "万涂幻象社区实践，通过飞书 CLI（lark-cli）实现模板化、批量分发、AI 驱动的发卡工作流"
+    source: wiki/entities/feishu-card-cli.md
+    category_file: knowledge-management.yaml
+    relations:
+      - target: feishu
+        type: uses
+      - target: hermes-agent
+        type: uses
+      - target: e3-ai-workbench
+        type: related_to
+    reason: Wiki entity page ingested 2026-06-05, not yet registered in meta/entities/.
+
+  - id: hermes-feishu-streaming-card
+    name: Hermes 飞书流式卡片（Hermes Feishu Streaming Card）
+    level: 1
+    type: plugin
+    description: "Hermes Agent 的飞书流式卡片插件（hermes-feishu-streaming-card），Sidecar 架构，将所有事件聚合到同一张飞书卡片里实时更新，解决 Agent 刷屏问题"
+    source: wiki/entities/hermes-feishu-streaming-card.md
+    category_file: knowledge-management.yaml
+    relations:
+      - target: hermes-agent
+        type: depends_on
+      - target: feishu-streaming-card
+        type: uses
+      - target: feishu
+        type: uses
+    reason: Wiki entity page ingested 2026-06-10, not yet registered in meta/entities/.
+
+# ============================================================
+# 维度 4: 新关系
+# ============================================================
+new_relations:
+  # feishu-card-overview 的关系
+  - source: feishu-card-overview
+    target: feishu
+    type: is_a
+    reason: 飞书卡片概述是飞书开放平台的子模块
+  - source: feishu-card-overview
+    target: feishu-card-button
+    type: related_to
+    reason: 按钮组件是卡片系统的组成部分
+  - source: feishu-card-overview
+    target: feishu-streaming-card
+    type: related_to
+    reason: 流式更新是卡片的高级能力
+
+  # feishu-card-button 的关系
+  - source: feishu-card-button
+    target: feishu
+    type: is_a
+    reason: 按钮组件属于飞书卡片系统
+  - source: feishu-card-button
+    target: feishu-card-overview
+    type: depends_on
+    reason: 按钮组件依赖于卡片基础概念
+
+  # feishu-streaming-card 的关系
+  - source: feishu-streaming-card
+    target: feishu
+    type: is_a
+    reason: 流式更新卡片属于飞书开放平台能力
+  - source: feishu-streaming-card
+    target: hermes-feishu-streaming-card
+    type: related_to
+    reason: Hermes 流式卡片插件基于飞书流式更新能力
+
+  # feishu-card-cli 的关系
+  - source: feishu-card-cli
+    target: feishu
+    type: uses
+    reason: CLI 发卡方案使用飞书开放平台 API
+  - source: feishu-card-cli
+    target: hermes-agent
+    type: uses
+    reason: CLI 发卡方案可被 Hermes Agent 调用实现自动化发卡
+  - source: feishu-card-cli
+    target: e3-ai-workbench
+    type: related_to
+    reason: CLI 发卡方案在 E3 AI 工作台项目中有具体应用场景
+
+  # hermes-feishu-streaming-card 的关系
+  - source: hermes-feishu-streaming-card
+    target: hermes-agent
+    type: depends_on
+    reason: 流式卡片插件是 Hermes Agent 的插件
+  - source: hermes-feishu-streaming-card
+    target: feishu-streaming-card
+    type: uses
+    reason: 插件基于飞书流式更新卡片能力实现
+  - source: hermes-feishu-streaming-card
+    target: feishu
+    type: uses
+    reason: 插件通过飞书开放平台发送卡片
+
+# ============================================================
+# 维度 5: 死链
+# ============================================================
+dead_links: []
+# 说明: meta/ yaml 中所有 concept/entity/scenario 引用均已验证存在。
+# wiki/ 页面中的 [[wikilinks]] 均指向存在的页面。
+# 引用完整性 100%。
+
+# ============================================================
+# 待审核骨架汇总
+# ============================================================
+# 以上所有 new_* 条目均为可直接合入对应 yaml 文件的完整骨架。
+# 合入步骤:
+#   1. 将 new_meta_concepts 条目追加到 meta/meta-concepts.yaml 的 meta_concepts 列表
+#   2. 将 new_entities 条目追加到 meta/entities/knowledge-management.yaml 的 entities 列表
+#   3. 将 new_relations 追加到对应实体的 relations 字段
+#   4. 更新各文件的版本号、更新日期、条目数
+#   5. 记录变更到 meta/CHANGELOG.md
+#   6. git commit
