@@ -804,3 +804,37 @@
 ### 自动修复
 - 14 个 raw/ 源文件 SHA256 哈希更新（重新计算 body SHA256 并更新 frontmatter）
 - 审计报告 triage 标注
+
+## [2026-06-18] lint | 每日知识审计 — 0 严重 / 33 警告 / 181 建议
+
+### 审计范围
+- wiki/ 知识层: 73 页面（entities: 31, concepts: 36, comparisons: 6, queries: 0）
+- wiki/meta/ 元信息层: 35 原子概念 + 22 组合概念 + 129 实体 + 25 场景
+
+### 🔴 严重 (15 — 全部误报)
+- 死链 15 → 全部误报（Obsidian 语法教学示例: [[wikilinks]], [[笔记名]], [[note]], [[项目A]]）
+
+### 🟡 警告 (33)
+- 场景阶段条目不足: 33 个 phase 仅含 1 个条目（设计如此）
+
+### 🔵 建议 (181)
+- meta 实体→wiki 页面缺失 (91): 预期行为
+- meta 概念→wiki 页面缺失 (53): 预期行为
+- wiki 页面→meta 缺失 (37): 预期行为
+- 超大页面 (6): youngor-e3-sit-test-cases (1007行), e3-ai-workbench-sit-test-cases (597行) 等
+
+### ✅ 正面指标
+- Frontmatter 完整性: 73/73 ✅
+- 孤立页面: 0 ✅
+- 索引完整性: 73/73 ✅
+- IPO 完整性: 35/35 ✅
+- 组合概念 decomposition: 22/22 ✅
+- 场景死链: 0 ✅
+- 低置信度页面: 0 ✅
+- 争议页面: 0 ✅
+
+### 自动修复
+- SCHEMA.md 标签分类扩充：新增 12 个标签 (feishu, cli, card, component, button, official-doc, message, open-platform, streaming, openapi, hermes)
+- feishu-card-overview.md 添加 [[feishu-card-button]] 入链，消除孤立
+- index.md 日期更新
+- 审计报告 triage 标注

@@ -85,6 +85,7 @@ confidence: high
 
 ## 相关
 
+- [[feishu-card-button|飞书卡片按钮组件]]
 - [[feishu-card-cli|飞书消息卡片与 CLI 发卡方案]]
 - [[feishu-card-cli-analysis|飞书卡片 CLI 方案分析]]
 - [[hermes-feishu-streaming-card|Hermes 飞书流式卡片]]
