@@ -479,6 +479,13 @@
 
 ## [2026-06-09] update | DataMax 定位更新 — 从库存管理平台升级为数据中台
 
+## [2026-06-10] ingest | 飞书卡片概述（官方文档）
+
+- 来源: 飞书开放平台官方文档（open.feishu.cn）
+- 存档: raw/2026-06-10-feishu-card-overview/feishu-card-overview.md
+- 创建 entities/feishu-card-overview.md — 五大特性、三大场景、基础概念、使用教程路径
+- 更新 index.md（72→73 页）
+
 ## [2026-06-10] ingest | Hermes 飞书流式卡片插件
 
 - 来源: 用户提供公众号文章（AI松鼠派 · Hermes 飞书流式卡片）
