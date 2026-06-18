@@ -479,6 +479,13 @@
 
 ## [2026-06-09] update | DataMax 定位更新 — 从库存管理平台升级为数据中台
 
+## [2026-06-10] ingest | 飞书流式更新卡片（官方文档）
+
+- 来源: 飞书开放平台官方文档（open.feishu.cn）
+- 存档: raw/2026-06-10-feishu-streaming-card/streaming-updates-openapi-overview.md
+- 创建 entities/feishu-streaming-card.md — 打字机效果、组件级更新、流式策略（fast/delay）、操作步骤
+- 更新 index.md（73→74 页）
+
 ## [2026-06-10] ingest | 飞书卡片概述（官方文档）
 
 - 来源: 飞书开放平台官方文档（open.feishu.cn）
