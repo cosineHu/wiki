@@ -838,3 +838,14 @@
 - feishu-card-overview.md 添加 [[feishu-card-button]] 入链，消除孤立
 - index.md 日期更新
 - 审计报告 triage 标注
+
+## [2026-06-19] lint | 每日知识审计 — 0 真实严重问题
+
+- 审计范围：wiki/ 知识层 + wiki/meta/ 元信息层 + 交叉一致性
+- 脚本：wiki-audit.py
+- 结果：73 页面，35 原子概念，22 组合概念，129 实体，25 场景
+- 🔴 严重：0（15 处死链全部为 Obsidian 文档语法示例误报，已甄别排除）
+- 🟡 警告：33（场景阶段条目不足，均为 1 条 entry 的 phase）
+- 🔵 建议：181（meta↔wiki 交叉覆盖，属预期行为）
+- ✅ 正面：frontmatter 完整、无孤立页面、无索引缺失、IPO 完整、decomposition 正常、无源文件漂移
+- 报告：meta/_pending/audit-20260619.md
