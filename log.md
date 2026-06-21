@@ -868,3 +868,12 @@
 - 🔵 建议：181（meta↔wiki 交叉覆盖，属预期行为）
 - ✅ 正面：frontmatter 完整、无孤立页面、无索引缺失、IPO 完整、decomposition 正常、无源文件漂移
 - 报告：meta/_pending/audit-20260621.md
+
+## [2026-06-21] check | 每日反向校验 — 0 新发现（1概念/5实体与昨日相同，待人工审核合入）
+
+- 脚本：reverse-check.py
+- 结果：0 meta死链、0 wiki死链、0 新场景、0 新关系
+- 🟡 1 概念待合入：feishu-card-cli-analysis（飞书卡片 CLI 方案分析）
+- 🟡 5 实体待合入：feishu-streaming-card、feishu-card-overview、feishu-card-cli、hermes-feishu-streaming-card、feishu-card-button
+- 与 2026-06-20 反向校验结果完全一致，无新发现
+- 报告：meta/_pending/reverse-check-20260621.yaml
