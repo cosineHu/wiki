@@ -979,3 +979,32 @@
 - 100% frontmatter 完整 | 0 源文件漂移 | 0 索引缺失
 - 连续第 10 天零真实死链
 - 6 个超大页面（SIT 测试用例/蓝图大纲类，属合理范围）
+
+## [2026-06-25] lint | 每日知识审计 — 0 严重 / 33 警告 / 181 建议
+
+- 审计范围: wiki/ 知识层 (73 页) + wiki/meta/ 元信息层 (35 原子概念 + 22 组合概念 + 129 实体 + 25 场景)
+- 审计报告: meta/_pending/audit-20260625.md
+
+### 🔴 严重 (0 — 全部已甄别)
+- Wiki 死链 (15): 全部为 Obsidian 文档页语法示例误报（wikilinks/笔记名/note/项目A）
+- 场景死链 (0): ✅
+- 实体关系问题 (0): ✅
+
+### 🟡 警告 (33)
+- 场景阶段条目不足 (33): 11 个场景的 33 个 phase 仅有 1 个条目（concepts+entities 合计），建议补充到 ≥2
+  - 涉及场景: write-article-from-kb, knowledge-evolution-cycle, personal-methodology-extraction,
+    hermes-config-optimization, multi-agent-orchestration, technical-troubleshooting,
+    cron-job-setup, cron-job-health-monitor, new-domain-exploration, decision-analysis,
+    system-architecture-design, learning-retrospective, content-publishing, cross-platform-sync
+
+### 🔵 建议 (181)
+- meta 实体→wiki 页面缺失 (91): 预期行为
+- meta 概念→wiki 页面缺失 (53): 预期行为
+- wiki 页面→meta 缺失 (37): 预期行为（领域知识/工具说明类）
+
+### ✅ 正面指标
+- 零真实死链 | 零孤立页面 | 零矛盾 | 零低置信度
+- 100% IPO 完整率 (35/35) | 100% decomposition (22/22) | 100% 场景 phase≥2 (25/25)
+- 100% frontmatter 完整 | 0 源文件漂移 | 0 索引缺失
+- 连续第 11 天零真实死链
+- 6 个超大页面（SIT 测试用例/蓝图大纲类，属合理范围）
