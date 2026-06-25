@@ -1008,3 +1008,22 @@
 - 100% frontmatter 完整 | 0 源文件漂移 | 0 索引缺失
 - 连续第 11 天零真实死链
 - 6 个超大页面（SIT 测试用例/蓝图大纲类，属合理范围）
+
+## [2026-06-25] check | 每日反向校验 — 0 新发现，5 维度全部稳定
+
+- 执行脚本: reverse-check.py
+- 报告: meta/_pending/reverse-check-20260625.yaml
+
+### 五维校验结果
+- 🔴 meta/ 死链: 0
+- 🔴 wiki/ 死链: 0
+- 🟡 新场景: 0
+- 🟡 新原子概念: 1（feishu-card-cli-analysis，与 6/18-6/24 相同，持续待人工审核）
+- 🟡 新组合概念: 0
+- 🟡 新实体: 5（飞书卡片系列：feishu-streaming-card/feishu-card-overview/feishu-card-cli/hermes-feishu-streaming-card/feishu-card-button，与 6/18-6/24 相同，持续待人工审核）
+- 🟡 新关系: 0
+
+### 评估
+- 连续第 12 天零死链，知识库结构稳定
+- 1 概念 + 5 实体已连续 8 天出现在校验报告中，属于飞书卡片簇（6 页，6/10 前后摄入），等待人工审核合入 meta/entities/knowledge-management.yaml
+- 无新场景、新关系发现，知识库演化趋于稳态
