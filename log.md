@@ -1084,3 +1084,30 @@
 - 连续第 14 天零真实死链，知识库结构稳定
 - 所有关键指标绿色：frontmatter/IPO/decomposition/死链/孤立页面/源文件漂移 全部清零
 - 知识层和元信息层均处于健康状态
+
+## [2026-06-27] check | 每日反向校验 — 0 真实新发现，飞书卡片簇持续待审核
+
+- 校验工具: reverse-check.py + 人工 triage
+- 校验报告: meta/_pending/reverse-check-20260627.yaml
+
+### 五维校验结果
+
+| 维度 | 脚本发现 | triage 后 |
+|------|---------|----------|
+| 🔴 meta/ 死链 | 0 | 0 |
+| 🔴 wiki/ 死链 | 0 | 0 |
+| 🟡 新场景 | 0 | 0 |
+| 🟡 新原子概念 | 1 | 0 |
+| 🟡 新组合概念 | 0 | 0 |
+| 🟡 新实体 | 5 | 5 (持续待审核) |
+| 🟡 新关系 | 0 | 0 |
+
+### 人工 triage
+- 1 新概念 (feishu-card-cli-analysis): 已知误报 — 领域分析页面，非方法概念，已在 reverse-check.py DOMAIN_KNOWLEDGE 中过滤
+- 5 新实体 (飞书卡片系列): 自 6/18 起持续出现在每日校验中，待人工审核合入 meta/entities/knowledge-management.yaml
+  - feishu-streaming-card / feishu-card-overview / feishu-card-cli / hermes-feishu-streaming-card / feishu-card-button
+
+### 评估
+- 连续第 15 天零真实死链，知识库结构稳定
+- 无新缺口发现，飞书卡片簇是唯一持续待审核项
+- 知识层和元信息层均处于健康状态

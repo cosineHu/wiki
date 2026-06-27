@@ -1,57 +1,84 @@
 # Reverse Check Result — 每日 YAML 反向校验
-# 生成时间: 2026-06-27 09:01
+# 生成时间: 2026-06-27 20:01
 # 校验维度: 新场景 / 新概念 / 新实体 / 新关系 / 死链
+# 工具: reverse-check.py + 人工 triage
 
 reverse_check_result:
-  timestamp: 2026-06-27 09:01
+  timestamp: 2026-06-27 20:01
   new_scenarios_count: 0
-  new_concepts_count: 1
-  new_entities_count: 5
+  new_concepts_count: 0  # triage: 1 脚本发现 → 全部为已知误报，归零
+  new_entities_count: 5  # triage: 5 脚本发现 → 全部为飞书卡片系列，持续待审核
   new_relations_count: 0
   dead_links_count: 0
-  summary: 发现 0 条meta死链, 0 条wiki死链, 5 个新实体, 0 条新关系
+  summary: >
+    脚本发现 1 新概念 + 5 新实体 + 0 死链。
+    人工 triage 后：1 新概念为已知误报（feishu-card-cli-analysis 是领域分析页面，非方法概念）；
+    5 新实体为飞书卡片系列（feishu-streaming-card/feishu-card-overview/feishu-card-cli/
+    hermes-feishu-streaming-card/feishu-card-button），自 6/18 起持续待人工审核合入 meta/entities/。
+    零死链、零新场景、零新关系。知识库结构持续稳定。
+
+# === 脚本原始输出（含 triage 标注） ===
+
+## 🟡 新原子概念 (1 → triage 后 0)
 new_meta_concepts:
-- id: feishu-card-cli-analysis
-  name: 飞书卡片 CLI 方案分析（Feishu Card CLI Analysis）
-  reason: Wiki concept page exists but no meta_concept entry
+  - id: feishu-card-cli-analysis
+    name: 飞书卡片 CLI 方案分析（Feishu Card CLI Analysis）
+    reason: Wiki concept page exists but no meta_concept entry
+    triage: KNOWN_FALSE_POSITIVE — 领域分析页面（分析飞书卡片 CLI 方案），非可复用的方法概念。
+      已在 reverse-check.py DOMAIN_KNOWLEDGE 集合中过滤。无需注册为 meta_concept。
+
+## 🟡 新实体 (5 → triage 后 5，持续待审核)
 new_entities:
-- id: feishu-streaming-card
-  name: 飞书流式更新卡片（Feishu Streaming Card — Official）
-  level: 1
-  type: entity
-  description: Wiki entity page exists at entities/feishu-streaming-card.md but not
-    in meta/entities/
-  category_file: knowledge-management.yaml
-  reason: Wiki entity page 'feishu-streaming-card' has no corresponding entry in meta/entities/*.yaml
-- id: feishu-card-overview
-  name: 飞书卡片概述（Feishu Card Overview — Official）
-  level: 1
-  type: entity
-  description: Wiki entity page exists at entities/feishu-card-overview.md but not
-    in meta/entities/
-  category_file: knowledge-management.yaml
-  reason: Wiki entity page 'feishu-card-overview' has no corresponding entry in meta/entities/*.yaml
-- id: feishu-card-cli
-  name: 飞书消息卡片与 CLI 发卡方案（Feishu Card + CLI）
-  level: 1
-  type: entity
-  description: Wiki entity page exists at entities/feishu-card-cli.md but not in meta/entities/
-  category_file: knowledge-management.yaml
-  reason: Wiki entity page 'feishu-card-cli' has no corresponding entry in meta/entities/*.yaml
-- id: hermes-feishu-streaming-card
-  name: Hermes 飞书流式卡片（Hermes Feishu Streaming Card）
-  level: 1
-  type: entity
-  description: Wiki entity page exists at entities/hermes-feishu-streaming-card.md
-    but not in meta/entities/
-  category_file: knowledge-management.yaml
-  reason: Wiki entity page 'hermes-feishu-streaming-card' has no corresponding entry
-    in meta/entities/*.yaml
-- id: feishu-card-button
-  name: 飞书卡片按钮组件（Feishu Card Button Component — Official）
-  level: 1
-  type: entity
-  description: Wiki entity page exists at entities/feishu-card-button.md but not in
-    meta/entities/
-  category_file: knowledge-management.yaml
-  reason: Wiki entity page 'feishu-card-button' has no corresponding entry in meta/entities/*.yaml
+  - id: feishu-streaming-card
+    name: 飞书流式更新卡片（Feishu Streaming Card — Official）
+    level: 1
+    type: entity
+    description: 飞书官方流式更新卡片文档，打字机效果、组件级更新、流式策略
+    category_file: knowledge-management.yaml
+    reason: Wiki entity page exists but not in meta/entities/
+    triage: PENDING_REVIEW — 自 6/18 起持续出现在每日校验中，待人工审核合入 meta/entities/knowledge-management.yaml
+
+  - id: feishu-card-overview
+    name: 飞书卡片概述（Feishu Card Overview — Official）
+    level: 1
+    type: entity
+    description: 飞书官方卡片概述文档，五大特性、三大场景、基础概念
+    category_file: knowledge-management.yaml
+    reason: Wiki entity page exists but not in meta/entities/
+    triage: PENDING_REVIEW — 自 6/18 起持续出现在每日校验中，待人工审核合入 meta/entities/knowledge-management.yaml
+
+  - id: feishu-card-cli
+    name: 飞书消息卡片与 CLI 发卡方案（Feishu Card + CLI）
+    level: 1
+    type: entity
+    description: 飞书卡片 CLI 发卡实践方案，JSON 模板 + 变量锚点分离 + 跨群分发
+    category_file: knowledge-management.yaml
+    reason: Wiki entity page exists but not in meta/entities/
+    triage: PENDING_REVIEW — 自 6/18 起持续出现在每日校验中，待人工审核合入 meta/entities/knowledge-management.yaml
+
+  - id: hermes-feishu-streaming-card
+    name: Hermes 飞书流式卡片（Hermes Feishu Streaming Card）
+    level: 1
+    type: entity
+    description: Hermes 飞书流式卡片插件，Sidecar 架构，事件聚合到一张卡片
+    category_file: knowledge-management.yaml
+    reason: Wiki entity page exists but not in meta/entities/
+    triage: PENDING_REVIEW — 自 6/18 起持续出现在每日校验中，待人工审核合入 meta/entities/knowledge-management.yaml
+
+  - id: feishu-card-button
+    name: 飞书卡片按钮组件（Feishu Card Button Component — Official）
+    level: 1
+    type: entity
+    description: 飞书官方卡片按钮组件文档，9 种类型、4 种尺寸、behaviors 交互
+    category_file: knowledge-management.yaml
+    reason: Wiki entity page exists but not in meta/entities/
+    triage: PENDING_REVIEW — 自 6/18 起持续出现在每日校验中，待人工审核合入 meta/entities/knowledge-management.yaml
+
+## 🔴 死链 (0)
+dead_links: []
+
+## 🟡 新场景 (0)
+new_scenarios: []
+
+## 🟡 新关系 (0)
+new_relations: []
