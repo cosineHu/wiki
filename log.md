@@ -1157,3 +1157,11 @@
 - ✅ 0 争议页面，0 低置信度页面
 - ✅ 知识层和元信息层均处于健康状态
 - ⚠️ 6 个超大页面（测试用例/蓝图大纲类，内容密集合理）
+
+## [2026-06-28] check | 每日反向校验 — 0 真实新发现，飞书卡片簇持续待审核
+- 脚本发现：1 新概念 + 5 新实体 + 0 死链
+- 人工 triage：1 新概念为已知误报（feishu-card-cli-analysis 领域分析页面），归零
+- 5 新实体为飞书卡片系列（feishu-streaming-card/feishu-card-overview/feishu-card-cli/hermes-feishu-streaming-card/feishu-card-button），自 6/18 起持续待人工审核合入
+- 零死链、零新场景、零新关系
+- 与昨日（6/27）完全一致，知识库结构持续稳定
+- 报告写入：meta/_pending/reverse-check-20260628.yaml
