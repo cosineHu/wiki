@@ -5,6 +5,15 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-06-29] lint | 每日知识审计 — 零真实死链，整体健康度优秀
+- 审计范围: wiki/ 知识层 (73 页) + wiki/meta/ 元信息层 (35 原子概念 + 22 组合概念 + 129 实体 + 25 场景)
+- 审计报告: meta/_pending/audit-20260629.md
+- 🔴 严重: 15 个脚本报告死链 → 全部为 Obsidian 语法教学误报，真实死链 0
+- 🟡 警告: 33 个场景阶段条目不足（25 个场景的 phase 只有 1 个条目）
+- 🔵 建议: 181 个 meta↔wiki 交叉覆盖（预期行为，无需操作）
+- ✅ 正面: 零 frontmatter 缺失、零孤立页面、零索引缺失、零 IPO 不完整、零源文件漂移、零争议页面、零低置信度
+- 超大页面: 6 个（SIT 测试用例、蓝图大纲、调研大纲类，内容型页面，预期行为）
+
 ## [2026-06-22] evolve | 每周知识再进化 — 零矛盾/零缺口/零死链，知识库健康度优秀
 
 - 分析范围: wiki/ 知识层 (75 页) + wiki/meta/ 元信息层 (36 原子概念 + 23 组合概念 + 146 实体 + 24 场景)
