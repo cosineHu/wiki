@@ -1,6 +1,6 @@
 # meta-concepts.yaml — 原子概念（不可再分的最小方法单元）
 # 每个原子概念必须有完整的 IPO 四元组
-# 版本: 1.2 | 更新: 2026-06-09 | 条目数: 36
+# 版本: 1.3 | 更新: 2026-06-29 | 条目数: 37
 
 meta_concepts:
 
@@ -496,3 +496,18 @@ meta_concepts:
     output: "清晰的知识主权边界 + 溯源体系"
     tools: [obsidian, llm-wiki]
     quality_check: "是否可追溯每条知识的来源？AI生成内容比例是否可控？"
+
+  - id: feishu-card-cli-analysis
+    name: 飞书卡片CLI方案分析
+    category: methodology
+    description: 从飞书卡片设计方案中提炼三层架构、变量-锚点分离模式和实现路径选择方法论，指导飞书卡片的结构化设计
+    input: "飞书卡片设计需求（场景类型、内容结构、交互需求、分发目标群）"
+    process:
+      - "识别卡片类型（单向推送/交互式/预警/汇总）"
+      - "应用变量-锚点分离模式：变量管每次变化的内容，锚点管品牌一致性"
+      - "选择实现路径（cardkit搭建工具 / lark-cli CLI / Claude Code Skill）"
+      - "确定卡片的三层架构：自然语言触发层 → 模板+变量层 → CLI执行层"
+      - "按chat_id区分目标群，设计跨群差异化分发方案"
+    output: "飞书卡片设计方案（含卡片类型映射、变量-锚点定义、技术实现路径、跨群分发策略）"
+    tools: [lark-cli, feishu-card-cli, llm-wiki]
+    quality_check: "变量和锚点是否清晰分离？实现路径是否匹配场景？跨群分发是否覆盖所有目标群？"

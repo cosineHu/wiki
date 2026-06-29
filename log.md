@@ -5,6 +5,15 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-06-29] check | 每日 YAML 反向校验 — 1 新概念 + 5 新实体已注册
+
+- 脚本发现: 1 新原子概念 (feishu-card-cli-analysis) + 5 新实体 (feishu-card-*)
+- 已注册: meta-concepts.yaml 新增 feishu-card-cli-analysis (v1.2→v1.3, 条目 36→37)
+- 已注册: 新建 meta/entities/feishu.yaml (5 实体: feishu-card-overview, feishu-card-cli, feishu-streaming-card, feishu-card-button, hermes-feishu-streaming-card)
+- 死链: 0
+- 二次验证: 全部维度清零 ✅
+- 报告: meta/_pending/reverse-check-20260629.yaml
+
 ## [2026-06-29] lint | 每日知识审计 — 零真实死链，整体健康度优秀
 - 审计范围: wiki/ 知识层 (73 页) + wiki/meta/ 元信息层 (35 原子概念 + 22 组合概念 + 129 实体 + 25 场景)
 - 审计报告: meta/_pending/audit-20260629.md

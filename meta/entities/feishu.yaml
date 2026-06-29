@@ -1,0 +1,47 @@
+# entity-feishu.yaml — 飞书卡片相关实体
+# 分类: 飞书开放平台卡片功能、组件、工具
+# 版本: 1.0 | 创建: 2026-06-29 | 条目数: 5
+
+entities:
+- id: feishu-card-overview
+  name: 飞书卡片概述
+  level: 1
+  type: platform
+  description: 飞书开放平台卡片能力：结构化内容嵌入聊天消息、群置顶、链接预览，支持轻交互和数据可视化
+  source: wiki/entities/feishu-card-overview.md
+  children:
+  - id: feishu-card-cli
+    name: 飞书卡片CLI方案
+    level: 2
+    description: 基于 lark-cli 的飞书互动卡片模板化、批量分发、AI驱动发卡方案
+    source: wiki/entities/feishu-card-cli.md
+    relations:
+    - target: feishu-card-overview
+      type: uses
+  - id: feishu-streaming-card
+    name: 飞书流式更新卡片
+    level: 2
+    description: 飞书卡片流式更新能力：打字机效果文本输出 + 组件级局部更新，10次/秒
+    source: wiki/entities/feishu-streaming-card.md
+    relations:
+    - target: feishu-card-overview
+      type: is_a
+  - id: feishu-card-button
+    name: 飞书卡片按钮组件
+    level: 2
+    description: 飞书卡片JSON 2.0按钮组件：9种按钮类型、4种尺寸、交互回调
+    source: wiki/entities/feishu-card-button.md
+    relations:
+    - target: feishu-card-overview
+      type: is_a
+- id: hermes-feishu-streaming-card
+  name: Hermes飞书流式卡片插件
+  level: 1
+  type: plugin
+  description: Hermes Agent 的飞书流式卡片插件：将思考/答案/工具调用/授权/统计聚合到同一张卡片实时更新
+  source: wiki/entities/hermes-feishu-streaming-card.md
+  relations:
+  - target: feishu-streaming-card
+    type: uses
+  - target: hermes-agent
+    type: depends_on
