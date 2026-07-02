@@ -5,6 +5,14 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-07-02] check | 每日反向校验 — 全维度零发现
+
+- 校验范围: 5 维度 (新场景/新概念/新实体/新关系/死链)
+- 校验报告: meta/_pending/reverse-check-20260702.yaml
+- 🔴 死链: meta/ 0, wiki/ 0 — 所有 scenario concept/entity/related_scenario 引用均有效
+- 🟡 新发现: 场景 0, 原子概念 0, 组合概念 0, 实体 0, 关系 0
+- ✅ meta/ 元模型与 wiki/ 知识层一致，25 个场景引用全部校验通过
+
 ## [2026-07-02] lint | 每日知识审计 — 0 真实死链，整体健康度优秀
 
 - 审计范围: wiki/ 知识层 (73 页) + wiki/meta/ 元信息层 (36 原子概念 + 22 组合概念 + 134 实体 + 25 场景)

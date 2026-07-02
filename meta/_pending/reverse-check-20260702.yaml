@@ -1,0 +1,21 @@
+# Reverse Check Result — 每日 YAML 反向校验
+# 生成时间: 2026-07-02 20:01
+# 校验维度: 新场景 / 新概念 / 新实体 / 新关系 / 死链
+# 知识库规模: 73 wiki 页面 + 37 原子概念 + 23 组合概念 + 134 实体 + 25 场景
+
+reverse_check_result:
+  timestamp: 2026-07-02 20:01
+  scenario_used: yaml-reverse-check (cron job)
+  new_scenarios_count: 0
+  new_concepts_count: 0
+  new_entities_count: 0
+  new_relations_count: 0
+  dead_links_count: 0
+  summary: "全维度零发现 — meta/ 元模型与 wiki/ 知识层一致，25 个场景的所有 concept/entity/related_scenario 引用均有效，37 个原子概念 IPO 完整，23 个组合概念 decomposition 完整，0 条死链"
+
+new_scenarios: []
+new_meta_concepts: []
+new_compose_concepts: []
+new_entities: []
+new_relations: []
+dead_links: []
