@@ -5,6 +5,19 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-07-06] check | 每日反向校验 — 🟢 全维度零发现，知识库持续健康
+
+- 校验维度: 新场景 / 新概念 / 新实体 / 新关系 / 死链 (5 维)
+- 🔴 meta/ 死链: 0
+- 🔴 wiki/ 死链: 0
+- 🟡 新场景: 0
+- 🟡 新原子概念: 0
+- 🟡 新组合概念: 0
+- 🟡 新实体: 0
+- 🟡 新关系: 0
+- 知识库状态: 25 场景, 58 概念, 134 实体 — 全部健康
+- 报告: meta/_pending/reverse-check-20260706.yaml
+
 ## [2026-07-06] evolve | 每周知识再进化 — 🟢 持续优秀，全维度零发现
 
 - 范围: 跨页面合成 + 矛盾检测 + 置信度提升 + 缺口发现 + 场景覆盖评估
