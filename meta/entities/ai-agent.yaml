@@ -1,6 +1,6 @@
 # entity-ai-agent.yaml — AI Agent 相关实体
 # 分类: Agent 平台、框架、工具、概念
-# 版本: 1.0 | 创建: 2026-06-08 | 条目数: 18
+# 版本: 1.1 | 更新: 2026-07-13 | 条目数: 19
 
 entities:
 
@@ -256,3 +256,17 @@ entities:
         type: is_a
       - target: hermes-agent
         type: depends_on
+
+  - id: matt-pocock-skills
+    name: Matt Pocock Skills
+    level: 1
+    type: methodology
+    description: "Matt Pocock 的 18 个 Claude Code Skill，解决 AI 编程四种失败模式，85800+ 星开源仓库"
+    source: wiki/entities/matt-pocock-skills.md
+    relations:
+      - target: claude-code
+        type: uses
+      - target: skill-system
+        type: is_a
+      - target: skills-authoring-guide
+        type: related_to
