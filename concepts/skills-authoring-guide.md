@@ -1,7 +1,7 @@
 ---
 title: Skills 编写指南（Skills Authoring Guide）
 created: 2026-06-04
-updated: 2026-06-08
+updated: 2026-07-13
 type: concept
 tags: [agent, skill, tutorial, agentskills]
 sources: [raw/articles/skills-creation-tutorial-2026.md]
@@ -139,5 +139,6 @@ Skills 遵循 agentskills.io 开放标准，在 Claude Code、OpenClaw、Hermes 
 ## 相关
 
 - [[hermes-skills-system]]
+- [[matt-pocock-skills]]
 - [[hermes-agent]]
 - [[openclaw-vs-hermes]]

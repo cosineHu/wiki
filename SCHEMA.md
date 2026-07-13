@@ -42,7 +42,7 @@ contradictions: [other-page-slug]
 ```
 
 ## Tag Taxonomy
-- **Tech:** programming, devops, architecture, security, database, cloud, serverless, markdown, automation, tool, platform, sync, plugin, query, testing, sit, template, report, workflow, structure, analysis, solution, package, product, channel, pickup, data-platform, data-warehouse, low-code, metrics, kpi, feishu, cli, card, component, button, official-doc, message, open-platform, streaming, openapi, hermes
+- **Tech:** programming, devops, architecture, security, database, cloud, serverless, markdown, automation, tool, platform, sync, plugin, query, testing, tdd, debugging, sit, template, report, workflow, structure, analysis, solution, package, product, channel, pickup, data-platform, data-warehouse, low-code, metrics, kpi, feishu, cli, card, component, button, official-doc, message, open-platform, streaming, openapi, hermes, claude-code, engineering
 - **AI/ML:** model, benchmark, training, inference, alignment, llm, ai, agent, memory, skill, self-improving, multi-tenant, agentskills, llm-wiki, efficiency
 - **People/Orgs:** person, company, lab, open-source
 - **Knowledge:** knowledge-base, knowledge-management, methodology, ontology, metadata, second-brain, enterprise, content-creation, business-process, delivery, implementation, survey, blueprint, standard-library, case-study

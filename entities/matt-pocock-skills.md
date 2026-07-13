@@ -1,7 +1,7 @@
 ---
 title: Matt Pocock 的 18 个 Claude Code Skill（Matt Pocock Skills）
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-07-13
 type: entity
 tags: [claude-code, skill, engineering, tdd, debugging]
 sources: [raw/2026-06-10-matt-pocock-skills/]
@@ -112,6 +112,5 @@ Matt Pocock（Total TypeScript 作者）开源的 Claude Code Skill 仓库（`ma
 
 ## 相关
 
-- [[matt-pocock-skills-analysis|Matt Pocock Skills 分析]]
 - [[skills-authoring-guide|Skills 编写指南]]
 - [[hermes-skills-system|Hermes 技能系统]]
