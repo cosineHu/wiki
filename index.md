@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-18 | Total pages: 75 | IPO coverage: 21/21 (100%)
+> Last updated: 2026-06-18 | Total pages: 76 | IPO coverage: 21/21 (100%)
 
 ## Entities
 - [[andrej-karpathy]] — AI 研究员，LLM Wiki 模式提出者，前 Tesla AI 总监
@@ -18,6 +18,7 @@
 - [[hermes-agent]] — Nous Research 的 MIT 开源 AI Agent 平台，学习闭环 + 技能系统 + 多平台
 - [[kepano]] — Obsidian 创始人兼 CEO，提出 File over app 和 Don't delegate understanding 哲学
 - [[lex-fridman]] — 全球最火 AI 播客主持人，提出跑步语音播客式知识消费
+- [[matt-pocock-skills]] — Matt Pocock 的 18 个 Claude Code Skill：四种失败模式、工程类/效率类/杂项
 - [[n8n]] — 开源工作流自动化平台，400+ 集成
 - [[obsidian]] — 基于本地 Markdown 的笔记与知识管理工具，第二大脑存储核心
 - [[ollama]] — 本地 LLM 运行工具，一键部署开源模型

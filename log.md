@@ -764,6 +764,13 @@
 
 ## [2026-06-09] update | DataMax 定位更新 — 从库存管理平台升级为数据中台
 
+## [2026-06-10] ingest | Matt Pocock 的 18 个 Claude Code Skill
+
+- 来源: 博客园文章（码哥字节）
+- 存档: raw/2026-06-10-matt-pocock-skills/
+- 创建 entities/matt-pocock-skills.md — 四种失败模式、18 个 Skill 分类、核心 Skill 详解、设计哲学
+- 更新 index.md（75→76 页）
+
 ## [2026-06-10] ingest | 飞书卡片按钮组件（官方文档）
 
 - 来源: 飞书开放平台官方文档（open.feishu.cn）
