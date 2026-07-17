@@ -5,6 +5,15 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-07-17] check | 每日反向校验 — 零发现，认知闭环健康
+
+- 脚本: reverse-check.py，5 维全扫描
+- 🔴 meta/ 死链: 0 | 🔴 wiki/ 死链: 0
+- 🟡 新场景: 0 | 🟡 新原子概念: 0 | 🟡 新组合概念: 0
+- 🟡 新实体: 0 | 🟡 新关系: 0
+- 报告: meta/_pending/reverse-check-20260717.yaml
+- 结论: 知识库连续稳定运行，无新缺口
+
 ## [2026-07-17] lint | 每日知识审计 — 🟢 零真实问题，wiki 健康
 
 - 审计范围: wiki/ 知识层 (74页) + wiki/meta/ 元信息层 (36 原子概念 + 22 组合概念 + 135 实体 + 25 场景)
