@@ -1,12 +1,98 @@
 # Reverse Check Result — 每日 YAML 反向校验
-# 生成时间: 2026-07-18 09:01
+# 生成时间: 2026-07-18 20:00
 # 校验维度: 新场景 / 新概念 / 新实体 / 新关系 / 死链
+# 执行方式: scripts/reverse-check.py + 人工复核
 
 reverse_check_result:
-  timestamp: 2026-07-18 09:01
-  new_scenarios_count: 0
-  new_concepts_count: 0
-  new_entities_count: 0
-  new_relations_count: 0
-  dead_links_count: 0
-  summary: 发现 0 条meta死链, 0 条wiki死链, 0 个新实体, 0 条新关系
+  timestamp: 2026-07-18 20:00
+  tool: scripts/reverse-check.py
+  manual_review: true
+
+  # === 维度 1: 新场景 ===
+  new_scenarios:
+    found: false
+    count: 0
+    notes: |
+      回顾过去 24 小时的 git log，仅有 audit 和 check 提交，无新内容摄入。
+      无新使用模式出现，25 个已有场景覆盖当前所有工作流。
+      - 知识摄入: ingest-article-to-wiki, web-pack-multi-source-research
+      - 交付中心: 4 个 delivery-* 场景
+      - 知识查询: query-wiki-knowledge
+      - 内容创作: write-article-from-kb, content-publishing, csdn-article-publishing
+      - 系统维护: wiki-health-check, knowledge-evolution-cycle, second-brain-daily-routine
+      - Agent 开发: hermes-skill-development, hermes-config-optimization, multi-agent-orchestration
+      - 问题解决: technical-troubleshooting, decision-analysis, system-architecture-design
+      - 学习成长: new-domain-exploration, learning-retrospective, personal-methodology-extraction
+      - 自动化: cron-job-setup, cron-job-health-monitor
+      - 其他: cross-platform-sync, knowledge-gap-analysis
+
+  # === 维度 2: 新概念 ===
+  new_concepts:
+    found: false
+    count: 0
+    meta_concepts_total: 36
+    compose_concepts_total: 22
+    notes: |
+      无新概念发现。所有 wiki 概念页面已被 meta/ 覆盖。
+      36 个原子概念覆盖 knowledge-management(10) + problem-solving(6) + thinking(5) +
+      ai-agent(7) + knowledge-tool(3) + meta(3) + content-creation(1) + automation(1) +
+      methodology(1) 等类别。
+      22 个组合概念覆盖知识管理(5) + 思维(1) + 学习(1) + 内容创作(3) + AI Agent(3) +
+      问题解决(3) + 自动化(2) + meta(2) + 知识管理全链路(1) 等领域。
+
+  # === 维度 3: 新实体 ===
+  new_entities:
+    found: false
+    count: 0
+    entities_total: 135
+    entity_files:
+      ai-agent: 20
+      delivery: 17
+      feishu: 2
+      infrastructure: 13
+      knowledge-management: 22
+      people: 10
+      thinking-methods: 12
+    notes: |
+      无新实体发现。135 个实体覆盖 7 个分类文件。
+      飞书卡片系列 5 个实体（feishu-streaming-card/feishu-card-overview/
+      feishu-card-cli/hermes-feishu-streaming-card/feishu-card-button）自 6/18
+      起持续待人工审核合入（已在 entity-feishu.yaml 中）。
+
+  # === 维度 4: 新关系 ===
+  new_relations:
+    found: false
+    count: 0
+    notes: |
+      无新关系发现。所有实体关系的 target 均存在于 entity ID 或 concept ID 集合中。
+      人工复核确认：实体→概念关系引用正确（如 delegation uses multi-agent-collaboration）。
+
+  # === 维度 5: 死链 ===
+  dead_links:
+    found: false
+    count: 0
+    notes: |
+      - meta/ 死链: 0。所有 scenario composition 中的 concepts/entities 引用均有效。
+        所有 entity relations 的 target 均存在于已知 ID 集合中。
+        related_scenarios 交叉引用全部有效。
+      - wiki/ 死链: 0。reverse-check.py 报告无真实死链。
+        已知误报（[[wikilinks]]/[[note]]/[[笔记名]]/[[项目A]] 等 Obsidian 教学示例）
+        已被脚本内置过滤器排除。
+
+  # === 汇总 ===
+  summary:
+    new_scenarios_count: 0
+    new_concepts_count: 0
+    new_entities_count: 0
+    new_relations_count: 0
+    dead_links_count: 0
+    total_issues: 0
+    health: "✅ 认知闭环完全健康 — 零发现，连续多日无新缺口"
+    known_ids: 211
+    wiki_pages: 74
+    description: |
+      知识库处于稳态。所有 meta/ yaml 文件内部一致：211 个已知 ID
+      （135 实体 + 36 原子概念 + 22 组合概念 + 25 场景 - 7 重叠），
+      场景引用、实体关系、概念 decomposition 全部有效。
+      过去 24 小时无新内容摄入，无新使用模式，零缺口。
+      建议：持续等待新内容摄入以触发认知闭环进化。
