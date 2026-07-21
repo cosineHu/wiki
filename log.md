@@ -5,6 +5,18 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-07-21] lint | 每日知识审计 — 🟢 零真实问题，连续第 24 天健康
+
+- 审计范围: wiki/ 知识层 (74页) + wiki/meta/ 元信息层 (36 原子概念 + 22 组合概念 + 135 实体 + 25 场景)
+- 脚本: wiki-audit.py
+- 🔴 严重: 0 — 15 条死链全部为 Obsidian 文档语法示例误报（[[wikilinks]]/[[笔记名]]/[[note]]/[[项目A]]），无真实死链
+- 🟡 警告: 33 场景阶段条目不足（13 个场景的单条目 phase，已知设计模式，合法）
+- 🔵 建议: 175 — meta↔wiki 交叉一致性缺口均为预期行为
+- ✅ 正面: frontmatter 完整、IPO 完整、decomposition 正常、无孤立页面、无索引缺失、无源文件漂移、无低置信度页面、无争议页面
+- 超大页面: 6 个（测试用例/蓝图大纲类，内容密集可接受）
+- 报告: meta/_pending/audit-20260721.md
+- 结论: 连续第 24 天零真实死链，知识库持续稳定
+
 ## [2026-07-20] check | 每日反向校验 — 🟢 全维度零发现
 
 - 工具: reverse-check.py 自动扫描
