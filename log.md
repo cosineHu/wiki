@@ -5,6 +5,13 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-07-31] check | 每日反向校验 — 🟢 全维度零发现
+
+- 工具: reverse-check.py
+- 5 维检查: 新场景 0 / 新概念 0 / 新实体 0 / 新关系 0 / 死链 0
+- 最近 24h 仅 audit + check 自动提交，无新内容摄入
+- 报告: meta/_pending/reverse-check-20260731.yaml
+
 ## [2026-07-31] audit | 每日知识审计 — 🟢 100% 健康，0 真实严重问题
 
 - 工具: wiki-audit.py (两层审计: wiki/ + meta/)
