@@ -5,9 +5,18 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
-## [2026-08-01] audit | 每日知识审计 — 🟢 100% 健康，0 真实严重问题
+## [2026-08-02] audit | 每日知识审计 — 🟢 0 真实严重问题
 
 - 工具: wiki-audit.py (两层审计: wiki/ + meta/)
+- 层 1 (wiki/): 74 页面, 15 死链 (全部误报: Obsidian 语法示例), 0 孤立, 0 索引缺失, 0 frontmatter 缺失
+- 层 2 (meta/): 58 概念 (IPO 全部完整), 135 实体 (关系全部有效), 25 场景 (引用全部有效)
+- 层 3 (交叉): 91 meta-entity → wiki 缺失, 53 meta-concept → wiki 缺失, 31 wiki → meta 缺失 (预期行为)
+- 阶段条目不足: 33 处 (场景设计选择，非问题)
+- 6 超大页面 (交付中心文档，结构性质)
+- 误报 triage: 全部 15 死链 = Obsidian 语法示例 ([[wikilinks]], [[笔记名]], [[note]], [[项目A]])
+- 报告: meta/_pending/audit-20260802.md
+
+## [2026-08-01] audit | 每日知识审计 — 🟢 100% 健康，0 真实严重问题
 - 原始发现: 223 项 (严重 15 / 警告 33 / 建议 175)
 - 甄别后: 严重 0 / 警告 33 (设计选择) / 建议 175 (信息性)
   - 死链 15 条全部为 Obsidian 文档语法示例误报 ([[wikilinks]], [[note]], [[笔记名]], [[项目A]])
