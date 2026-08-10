@@ -1,0 +1,35 @@
+# Reverse Check Result — 每日 YAML 反向校验
+# 生成时间: 2026-08-10 20:01
+# 校验维度: 新场景 / 新概念 / 新实体 / 新关系 / 死链
+# 方法: reverse-check.py 自动化 + 手动场景引用完整性 + 手动实体关系完整性
+
+reverse_check_result:
+  timestamp: 2026-08-10 20:01
+  new_scenarios_count: 0
+  new_concepts_count: 0
+  new_entities_count: 0
+  new_relations_count: 0
+  dead_links_count: 0
+  summary: "全维度零发现 — 25 场景 × 58 概念 × 135 实体全量引用完整，IPO 无缺失"
+
+details:
+  new_scenarios:
+    note: "24h 变更仅日志轮转，无新内容，无新使用模式"
+    findings: []
+  new_concepts:
+    note: "reverse-check.py 自动化 = 0 发现，手动确认全部已覆盖"
+    findings: []
+  new_entities:
+    note: "reverse-check.py 自动化 = 0 发现，手动确认全部已覆盖"
+    findings: []
+  new_relations:
+    note: "7 个实体文件全量扫描，0 处死链，0 处未注册关系"
+    findings: []
+  dead_links:
+    note: "meta/ 0 死链，wiki/ 0 死链，实体关系 0 死链"
+    findings: []
+
+integrity:
+  scenario_references: "25 场景 × 58 概念 × 135 实体 — 0 处引用断裂"
+  compose_decomposition: "23 个组合概念 — 0 处引用断裂"
+  ipo_completeness: "37 个原子概念 — 0 处缺失"
