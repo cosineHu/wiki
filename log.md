@@ -6,6 +6,14 @@
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 > Previous log: log-2026.md (2026-06-08 to 2026-08-10, 1915 lines)
 
+## [2026-08-17] audit | 每日知识审计 — 🟢 零实质问题 (15 死链全为误报)
+
+- 审计报告: meta/_pending/audit-20260817.md
+- 74 页面, 36 原子概念, 22 组合概念, 135 实体, 25 场景
+- 发现: 15 死链（全部为 Obsidian 文档语法示例误报）、33 场景阶段条目不足（设计选择）、175 交叉一致性（信息）
+- 分诊后: 0 严重 · 0 警告 · 0 建议 · 175 信息
+- 所有核心指标通过: 0 真实死链, 0 孤立页面, 0 frontmatter 缺失, 0 IPO 缺口, 0 场景死链, 0 实体关系死链, 0 源文件漂移
+
 ## [2026-08-16] audit | 每日知识审计 — 🟢 零实质问题 (15 死链全为误报)
 
 - 审计报告: meta/_pending/audit-20260816.md
