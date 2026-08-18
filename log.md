@@ -6,6 +6,13 @@
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 > Previous log: log-2026.md (2026-06-08 to 2026-08-10, 1915 lines)
 
+## [2026-08-18] check | 每日反向校验 — 🟢 全维度零发现
+- 校验脚本: reverse-check.py
+- 🔴 meta/ 死链: 0 | 🔴 wiki/ 死链: 0
+- 🟡 新场景: 0 | 新原子概念: 0 | 新组合概念: 0 | 新实体: 0 | 新关系: 0
+- 最近 24h 无新增 wiki 页面或 meta 变更
+- 报告: meta/_pending/reverse-check-20260818.yaml
+
 ## [2026-08-18] lint | 每日知识审计 — 🟢 零实质严重问题
 - 审计脚本: wiki-audit.py
 - 总览: 74 wiki 页面 | 36 原子概念 | 22 组合概念 | 135 实体 | 25 场景
