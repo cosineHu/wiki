@@ -16,6 +16,14 @@
 - 超大页面: 6 (交付文档类，预期行为)
 - 报告: meta/_pending/audit-20260819.md
 
+## [2026-08-20] check | 每日反向校验 — 🟢 全维度零发现
+
+- 校验脚本: reverse-check.py
+- 🔴 meta/ 死链: 0 | 🔴 wiki/ 死链: 0
+- 🟡 新场景: 0 | 新原子概念: 0 | 新组合概念: 0 | 新实体: 0 | 新关系: 0
+- 最近 24h 无新增 wiki 页面或 meta 变更
+- 报告: meta/_pending/reverse-check-20260820.yaml
+
 ## [2026-08-20] lint | 每日知识审计 — 0 严重 / 33 警告 / 175 建议
 
 - 审计脚本: wiki-audit.py
