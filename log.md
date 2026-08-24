@@ -6,6 +6,15 @@
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 > Previous log: log-2026.md (2026-06-08 to 2026-08-10, 1915 lines)
 
+## [2026-08-24] check | 每日反向校验 — 🟢 零发现
+
+- 脚本: reverse-check.py
+- 🔴 meta/ 死链: 0 | 🔴 wiki/ 死链: 0
+- 🟡 新场景: 0 | 新原子概念: 0 | 新组合概念: 0
+- 🟡 新实体: 0 | 新关系: 0
+- 24h 变更: 无新内容摄入，与审计和进化结果一致
+- 报告: meta/_pending/reverse-check-20260824.yaml
+
 ## [2026-08-24] evolve | 每周知识再进化 — 🟢 全维度零发现
 
 - 分析: evolve-analysis.py 扫描 36 概念页 + 25 场景 + 36 原子概念 + 22 组合概念
