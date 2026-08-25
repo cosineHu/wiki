@@ -6,6 +6,11 @@
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 > Previous log: log-2026.md (2026-06-08 to 2026-08-10, 1915 lines)
 
+## [2026-08-25] check | 每日反向校验 — 🟢 零发现（与昨日完全一致）
+- 5 维检查：新场景 0 / 新概念 0 / 新实体 0 / 新关系 0 / 死链 0
+- 25 场景 / 37 原子概念 / 23 组合概念 / 95 实体 — 全部引用完整
+- 过去 24h 无新增 wiki 页面，无新摄入操作
+
 ## [2026-08-25] lint | 每日知识审计 — 🟢 零实质问题（与昨日完全一致）
 
 - 审计脚本: wiki-audit.py
