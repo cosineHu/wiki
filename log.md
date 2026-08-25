@@ -6,6 +6,18 @@
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 > Previous log: log-2026.md (2026-06-08 to 2026-08-10, 1915 lines)
 
+## [2026-08-25] lint | 每日知识审计 — 🟢 零实质问题（与昨日完全一致）
+
+- 审计脚本: wiki-audit.py
+- 总览: 74 wiki 页面 | 36 原子概念 | 22 组合概念 | 135 实体 | 25 场景
+- 🔴 严重: 0 (15 处脚本报告死链全部为 Obsidian 语法教学示例误报，已分诊排除)
+- 🟡 警告: 33 处场景 phase 条目不足 (与昨日完全一致，无新增)
+- 🔵 建议: 175 处 meta↔wiki 交叉覆盖缺口 (与昨日完全一致)
+- ✅ 正面指标: 0 frontmatter 缺失 | 0 孤立页面 | 0 IPO 不完整 | 0 源文件漂移 | 0 索引缺失 | 0 低置信度 | 0 争议
+- 超大页面: 6 (交付文档类，预期行为，与昨日一致)
+- 24h 变更: 无新页面、无概念/实体/场景变更
+- 报告: meta/_pending/audit-20260825.md
+
 ## [2026-08-24] check | 每日反向校验 — 🟢 零发现
 
 - 脚本: reverse-check.py
