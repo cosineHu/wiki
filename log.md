@@ -6,8 +6,15 @@
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 > Previous log: log-2026.md (2026-06-08 to 2026-08-10, 1915 lines)
 
-## [2026-08-26] lint | 每日知识审计 — 🔴0 🟡33 🔵175
+## [2026-08-27] lint | 每日知识审计 — 🔴0 🟡33 🔵175 (误报已分类)
 - wiki-audit.py: 74 页面, 36 原子概念, 22 组合概念, 135 实体, 25 场景
+- 🔴 死链: 15 个全部为已知误报 (Obsidian 语法教学示例: wikilinks/笔记名/note/项目A)
+- 🟡 场景阶段条目不足: 33 个 phase 仅有 1 个条目 (非自动修复)
+- 🔵 交叉一致性: 91 meta 实体缺 wiki 页面, 53 meta 概念缺 wiki 页面, 31 wiki 页面缺 meta
+- 超大页面: 6 个 (交付中心大纲/测试用例, 预期行为)
+- 审计报告: meta/_pending/audit-20260827.md
+
+## [2026-08-26] lint | 每日知识审计 — 🔴0 🟡33 🔵175
 - 🔴 死链 15 条 → 全部为 Obsidian 文档语法示例误报，人工核实后清零
 - 🟡 场景阶段条目不足 33 处 → 均为设计选择（单实体/概念阶段），非 bug
 - 🔵 交叉一致性 175 处 → 均为预期差异（meta 元操作无需 wiki 页面，wiki 领域知识无需 meta 条目）
