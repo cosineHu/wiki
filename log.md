@@ -1,3 +1,9 @@
+
+## [2026-08-29] 反向校验 | YAML 反向校验 — 🟢 零发现
+- 5 维检查: scenes=0, concepts=0, entities=0, relations=0, dead_links=0
+- meta/ YAML 引用完整性: 通过
+- wiki/ [[wikilinks]] 死链: 0
+- 报告: meta/_pending/reverse-check-20260829.yaml
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.
