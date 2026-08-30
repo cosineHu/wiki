@@ -12,6 +12,14 @@
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 > Previous log: log-2026.md (2026-06-08 to 2026-08-10, 1915 lines)
 
+## [2026-08-30] lint | 每日知识审计 — 🔴0 🟡33 🔵175
+- wiki-audit.py: 74 页面, 36 原子概念, 22 组合概念, 135 实体, 25 场景
+- 死链: 15 处均为 Obsidian 语法示例误报（wikilinks/note/笔记名/项目A），已排除
+- 警告: 33 处场景 phase 条目不足（<2 entries），与昨日一致
+- 正面: frontmatter 完整，无孤立页面，无索引缺失，无源文件漂移
+- 超大页面: 6 个（交付中心大纲/测试用例，预期行为）
+- 结论: Wiki 健康 🟢
+
 ## [2026-08-29] lint | 每日知识审计 — 🔴0 🟡33 🔵175
 - wiki-audit.py: 74 页面, 36 原子概念, 22 组合概念, 135 实体, 25 场景
 - 反向校验: reverse-check.py 通过，0 死链/新场景/新概念/新实体
