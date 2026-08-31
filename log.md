@@ -1,6 +1,15 @@
 
+## [2026-08-31] evolve | 每周知识再进化 — 🟢 全维度零发现
+
+- 分析: evolve-analysis.py + 手动审查 36 概念页 + 24 场景 + 34 原子概念 + 19 组合概念
+- 🔴 矛盾: 0 — 无页面间矛盾断言
+- 🟢 置信度: 全部 high — 0 低/中置信度页面
+- 🔵 合成: 4 个集群（知识管理/认知闭环/交付/Agent）均合理，无需合并
+- 🔵 缺口: 34 原子概念 + 19 组合概念无 wiki 页面为预期行为（方法层 vs 知识层）
+- 🔵 场景覆盖: 24 场景覆盖全部工作流，7 日无新使用模式
+- 报告: meta/_pending/evolve-20260831.md
+
 ## [2026-08-29] 反向校验 | YAML 反向校验 — 🟢 零发现
-- 5 维检查: scenes=0, concepts=0, entities=0, relations=0, dead_links=0
 - meta/ YAML 引用完整性: 通过
 - wiki/ [[wikilinks]] 死链: 0
 - 报告: meta/_pending/reverse-check-20260829.yaml
