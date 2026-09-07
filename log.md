@@ -1,4 +1,14 @@
 
+## [2026-09-07] lint | 每日知识审计 — 🔴0 🟡33 🔵175 (triage后: 0 实际严重)
+- wiki-audit.py: 74 页面, 36 原子概念, 22 组合概念, 135 实体, 25 场景
+- reverse-check.py: 🟢 零发现（5 维全部通过）
+- 死链: 15 处脚本报告 → triage 后 0 实际（全部为 Obsidian 语法示例误报：[[wikilinks]]、[[笔记名]]、[[note]]、[[项目A]]）
+- 阶段条目: 33 处 PHASE_TOO_FEW_ENTRIES → 不违反 SCHEMA（SCHEMA 要求场景 ≥2 阶段，非每阶段 ≥2 条目）
+- 交叉一致性: 91 meta 实体→wiki, 53 meta 概念→wiki, 31 wiki→meta（均为预期行为，非缺陷）
+- 超大页面: 6 个（均为交付中心文档，属正常长文档）
+- Frontmatter: ✅ 全部完整 | 孤立页面: 0 | 索引完整: ✅ | IPO: ✅ | 源漂移: 0
+- 报告: meta/_pending/audit-20260907.md
+
 ## [2026-09-06] check | 每日反向校验 — 🟢 零发现
 - reverse-check.py: 0 死链, 0 新场景, 0 新概念, 0 新实体, 0 新关系
 - 知识库结构稳定，已连续 8 天零发现（自 2026-08-29）
