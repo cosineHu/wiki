@@ -1,4 +1,12 @@
 
+## [2026-09-15] check | 每日反向校验 — 🟢 全维度零发现
+- reverse-check.py: 36 原子概念, 22 组合概念, 135 实体 (7 分类文件), 25 场景
+- 新场景: 0 | 新概念: 0 | 新实体: 0 | 新关系: 0 | 死链: 0
+- 手动复查: 剩余概念页 (skills-authoring-guide, feishu-card-cli-analysis, content-production-pipeline, ai-human-knowledge-boundary, knowledge-management-pipeline) 均已在 meta/ 覆盖
+- 实体页 32/32 全覆盖 | 场景 25/25 全引用有效
+- 最近 24h 变更: 纯维护模式 (audit + check), 0 新摄入
+- 报告: meta/_pending/reverse-check-20260915.yaml
+
 ## [2026-09-15] audit | 每日知识审计 — 🟢 优秀，0 实际发现
 - wiki-audit.py: 74 wiki 页面, 36 原子概念, 22 组合概念, 135 实体 (7 分类文件), 25 场景
 - 🔴 严重 15 → 全部分诊为误报（Obsidian 语法示例 `[[笔记名]]`/`[[wikilinks]]`）
