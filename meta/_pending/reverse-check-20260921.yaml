@@ -1,12 +1,66 @@
 # Reverse Check Result — 每日 YAML 反向校验
-# 生成时间: 2026-09-21 09:01
+# 生成时间: 2026-09-21 20:01
 # 校验维度: 新场景 / 新概念 / 新实体 / 新关系 / 死链
+# 自动化工具: scripts/reverse-check.py + 手动三阶段 triage
 
 reverse_check_result:
-  timestamp: 2026-09-21 09:01
+  timestamp: 2026-09-21 20:01
   new_scenarios_count: 0
   new_concepts_count: 0
   new_entities_count: 0
   new_relations_count: 0
   dead_links_count: 0
-  summary: 发现 0 条meta死链, 0 条wiki死链, 0 个新实体, 0 条新关系
+  summary: "✅ 全维度零发现 — 知识库元模型完整"
+
+# --- 详细校验明细 ---
+
+## 1. 当前元模型规模
+meta_model_snapshot:
+  scenarios: 24          # scenarios.yaml
+  meta_concepts: 37      # meta-concepts.yaml (原子概念)
+  compose_concepts: 23   # compose-concepts.yaml (组合概念)
+  entities: 95           # 7 个分类文件合计
+  entity_files:
+    - ai-agent.yaml: 19
+    - knowledge-management.yaml: 20
+    - delivery.yaml: 17
+    - people.yaml: 10
+    - infrastructure.yaml: 12
+    - thinking-methods.yaml: 12
+    - feishu.yaml: 5
+
+## 2. 场景组成引用完整性 (24/24 通过)
+# 对所有 24 个场景的 composition phases 中引用的 concepts 和 entities
+# 逐一交叉验证，确认所有引用 ID 在 meta-concepts / compose-concepts / entities 中存在
+scenario_reference_integrity:
+  status: pass
+  checked: 24
+  dead_concept_refs: 0
+  dead_entity_refs: 0
+
+## 3. 死链检查明细
+dead_links_detail:
+  meta_dead_links: 0
+  wiki_dead_wikilinks: 0
+  false_positives_filtered:
+    - "[[wikilinks]] / [[note]] / [[笔记名]] / [[项目A]] — Obsidian 文档中的语法示例"
+    - "所有报告的死链均来自已知文档教学示例，零实际死链"
+
+## 4. 新发现（均为零）
+new_scenarios: []
+new_meta_concepts: []
+new_compose_concepts: []
+new_entities: []
+new_relations: []
+
+## 5. 近期变更上下文
+# 24h 内 git 变更:
+#   d7d59d4 evolve: 每周知识再进化 2026-09-21 — 🟢 全维度零发现
+#   c6f360e audit: 每日知识审计 2026-09-21 — 零实际发现
+# 结论: 知识库处于稳态，无新增 wiki 页面，无新元模型缺口
+
+## 6. 校验方法
+methodology:
+  automated: "python3 scripts/reverse-check.py (5 维全量扫描)"
+  manual: "24 个场景 composition 逐 phase 交叉验证 concept/entity 引用完整性"
+  triage: "死链列表人工分类，过滤 Obsidian 文档教学示例等已知误报"
