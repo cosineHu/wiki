@@ -1,7 +1,7 @@
 ---
 title: 认知闭环操作系统
 created: 2026-06-08
-updated: 2026-06-08
+updated: 2026-10-05
 type: concept
 tags: [architecture, methodology, knowledge-management, llm]
 sources: [raw/articles/cognitive-closed-loop-wiki1-2026.md]
@@ -51,6 +51,13 @@ confidence: high
 | **Output** | 可执行的认知方案 + 自动发现的知识缺口（写入 _pending/） |
 | **Tools** | meta/scenarios/scenarios.yaml, meta/meta-concepts.yaml, meta/compose-concepts.yaml, meta/entities/*.yaml, wiki/ 原始页面 |
 | **Quality Check** | 场景是否被正确匹配？组装规则是否完整执行？反向校验是否发现了新场景/概念/实体/关系？ |
+
+## 相关概念
+
+- [[atom-compose-concept-architecture]] — 原子-组合双层架构是认知闭环概念层的核心设计
+- [[ipo-closed-loop]] — IPO 闭环是贯穿三层架构的执行机制
+- [[scenario-driven-cognitive-loop]] — 场景驱动是认知闭环的核心驱动力
+- [[yaml-reverse-validation]] — YAML 反向校验是认知闭环的自我迭代机制
 
 ## 参考
 

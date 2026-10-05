@@ -1,7 +1,7 @@
 ---
 title: 场景驱动认知闭环
 created: 2026-06-08
-updated: 2026-06-08
+updated: 2026-10-05
 type: concept
 tags: [architecture, llm, knowledge-base]
 sources: [raw/articles/scenario-driven-cognitive-loop-2026.md]
@@ -71,6 +71,10 @@ confidence: high
 
 ## 相关概念
 
+- [[atom-compose-concept-architecture]] — 原子-组合架构是场景驱动认知闭环概念层的设计基础
+- [[ipo-closed-loop]] — IPO 闭环贯穿场景→概念→实体三层，是认知闭环的执行引擎
+- [[cognitive-closed-loop]] — 认知闭环操作系统是场景驱动认知闭环的完整理论框架
+- [[yaml-reverse-validation]] — YAML 反向校验是场景驱动认知闭环的自我迭代机制
 - [[second-brain]] — 第二大脑是知识存储层，认知闭环是知识调用层
 - [[llm-wiki]] — LLM Wiki 提供了萃取基础，认知闭环在其上增加组装和执行
 - [[rag-vs-wiki]] — RAG 是检索模式，认知闭环是组装模式
