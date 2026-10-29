@@ -1,3 +1,16 @@
+## [2026-10-29] check | 每日反向校验 — 5 维全零
+
+- reverse-check.py 扫描：58 概念 (37 原子+21 组合), 135 实体, 25 场景
+- 🔴 meta/ 死链: 0 — 全部 25 场景 × N phase 的 concept/entity 引用均有效
+- 🔴 wiki/ 死链: 0 — 所有 [[wikilinks]] 可解析
+- 🟡 新场景: 0 — 25 场景覆盖所有已知模式
+- 🟡 新概念: 0 — 所有概念已注册到 meta-concepts.yaml / compose-concepts.yaml
+- 🟡 新实体: 0 — 所有实体已注册到 meta/entities/*.yaml
+- 🟡 新关系: 0 — 手动校验通过，所有实体关系引用的 target 有效
+- 最近 48h 变更: 仅 audit + reverse-check 提交，无新摄入
+- 结论: 知识库结构持续健康，5 维全零已维持 4 天连续运行
+- 📝 报告: meta/_pending/reverse-check-20261029.yaml
+
 ## [2026-10-29] lint | 每日知识审计 — 🟢 0 真实问题 (15 误报已复核)
 
 - wiki-audit.py 扫描：74 页面, 36 原子+22 组合概念, 135 实体, 25 场景
