@@ -1,3 +1,8 @@
+## [2026-10-30] check | 每日反向校验 — 5 维全零
+
+- reverse-check.py 扫描：meta/ 死链 0, wiki/ 死链 0, 新场景 0, 新概念 0, 新实体 0, 新关系 0
+- 报告: meta/_pending/reverse-check-20261030.yaml
+
 ## [2026-10-30] lint | Wiki 知识审计 — 0 真实严重问题 (15 误报已核实)
 
 - wiki-audit.py 扫描：74 wiki 页面, 36 原子概念, 22 组合概念, 135 实体, 25 场景
