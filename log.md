@@ -1,3 +1,9 @@
+## [2026-10-31] check | 每日反向校验 — 5 维全零
+
+- reverse-check.py 扫描：meta/ 死链 0, wiki/ 死链 0, 新场景 0, 新概念 0, 新实体 0, 新关系 0
+- 报告: meta/_pending/reverse-check-20261031.yaml
+- 同时收录今日审计报告: meta/_pending/audit-20261031.md
+
 ## [2026-10-30] check | 每日反向校验 — 5 维全零
 
 - reverse-check.py 扫描：meta/ 死链 0, wiki/ 死链 0, 新场景 0, 新概念 0, 新实体 0, 新关系 0
