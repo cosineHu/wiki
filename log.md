@@ -1,3 +1,13 @@
+## [2026-11-02] lint | Wiki 知识审计 — 0 真实严重问题，33 场景阶段条目不足
+
+- wiki-audit.py 扫描：74 wiki 页面, 36 原子概念, 22 组合概念, 135 实体, 25 场景
+- 🔴 死链: 15 个脚本报告 → 0 真实（全部为 Obsidian 语法教学示例误报：[[wikilinks]], [[笔记名]], [[note]], [[项目A]]）→ 已人工甄别
+- 🟡 警告: 33 个场景阶段条目不足（各阶段仅 1 个 concept/entity，需 ≥2）
+- 🔵 建议: 91 meta 实体无 wiki 页面, 53 meta 概念无 wiki 页面, 31 wiki 概念无 meta 条目
+- ✅ 正面: 0 孤立页面, 0 frontmatter 缺失, 0 IPO 不完整, 0 低置信度, 0 争议, 0 源文件漂移
+- 📄 超大页面: 6 个 (youngor-e3-sit-test-cases 1007 行, e3-ai-workbench-sit-test-cases 597 行 等)
+- 报告: meta/_pending/audit-20261102.md
+
 ## [2026-11-01] lint | Wiki 知识审计 — 0 真实严重问题，33 场景阶段条目不足
 
 - wiki-audit.py 扫描：74 wiki 页面, 36 原子概念, 22 组合概念, 135 实体, 25 场景
