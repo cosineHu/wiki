@@ -1,7 +1,7 @@
 ---
 title: 交付中心知识库三大核心场景（Delivery Knowledge Scenarios）
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-11-02
 type: concept
 tags: [delivery, methodology, knowledge-base, workflow]
 sources: []
@@ -156,3 +156,6 @@ confidence: high
 - [[baisheng-delivery-methodology|百胜价值交付方法论]]
 - [[youngor-e3-solution-analysis|雅戈尔 E3+ 方案分析]]
 - [[youngor-e3-survey-analysis|雅戈尔 E3+ 调研分析]]
+- [[delivery-template-structure|交付文档模板结构分析]]
+- [[blueprint-outline-structure|蓝图大纲结构分析]]
+- [[sit-test-case-structure|SIT 测试用例结构分析]]

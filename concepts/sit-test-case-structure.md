@@ -1,7 +1,7 @@
 ---
 title: SIT 测试用例结构分析（SIT Test Case Structure）
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-11-02
 type: concept
 tags: [testing, sit, delivery, methodology, structure]
 sources: [entities/sit-test-case-library.md]
@@ -141,3 +141,6 @@ SAP采购单 → E3+采购通知单 → WMS入库 → 回写E3+ → 同步SAP
 - [[blueprint-standard-library|蓝图大纲标准方案库]]
 - [[baisheng-delivery-methodology|百胜价值交付方法论]]
 - [[youngor-e3-blueprint-outline|雅戈尔 E3+ 业务蓝图大纲]]
+- [[delivery-knowledge-scenarios|交付中心知识库场景模型]]
+- [[blueprint-outline-structure|蓝图大纲结构分析]]
+- [[delivery-template-structure|交付文档模板结构分析]]
