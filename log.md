@@ -1,3 +1,15 @@
+## [2026-11-04] audit | 每日知识审计 — 0 严重 (15误报已分诊), 33 警告, 175 建议
+
+- wiki-audit.py: 74 wiki 页面, 36 原子概念 + 22 组合概念, 135 实体, 25 场景
+- reverse-check.py: ✅ 全部 6 维度 0 发现
+- 🔴 死链 15 → 分流后 0: 全部为 Obsidian 语法示例误报 ([[wikilinks]], [[笔记名]], [[note]], [[项目A]])
+- 🟡 场景阶段条目不足: 33 处 (19 个场景的部分阶段仅 1 个条目, 未达 ≥2 阈值)
+- 🔵 交叉覆盖缺口: meta→wiki 实体 91 + 概念 53, wiki→meta 31 (预期行为)
+- ✅ 正面指标: frontmatter 完整 74/74, 0 孤立页面, 0 争议, 0 低置信度, IPO 完整 36/36, decomposition 22/22, 场景 phase≥2 25/25
+- ⚠️ 6 超大页面 (>200行): youngor-e3-sit-test-cases (1007), e3-ai-workbench-sit-test-cases (597), 等
+- 自动修复: 无 (全部为误报分流或预期行为)
+- 报告: meta/_pending/audit-20261104.md, meta/_pending/reverse-check-20261104.yaml
+
 ## [2026-11-03] audit | 每日知识审计 — 0 严重, 33 警告, 141 建议
 
 - wiki-audit.py: 74 wiki 页面, 36 原子概念 + 22 组合概念, 135 实体, 25 场景
