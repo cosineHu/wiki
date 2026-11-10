@@ -1,12 +1,48 @@
 # Reverse Check Result — 每日 YAML 反向校验
-# 生成时间: 2026-11-10 09:01
+# 生成时间: 2026-11-10 20:04
 # 校验维度: 新场景 / 新概念 / 新实体 / 新关系 / 死链
+# 状态: 全绿零发现（连续第四天）
 
 reverse_check_result:
-  timestamp: 2026-11-10 09:01
-  new_scenarios_count: 0
-  new_concepts_count: 0
-  new_entities_count: 0
-  new_relations_count: 0
-  dead_links_count: 0
-  summary: 发现 0 条meta死链, 0 条wiki死链, 0 个新实体, 0 条新关系
+  timestamp: 2026-11-10 20:04
+  automated_script: python3 ~/.hermes/skills/research/llm-wiki/scripts/reverse-check.py
+  manual_review: true
+
+  # === 自动化脚本结果 ===
+  automated:
+    dead_links_meta: 0
+    dead_links_wiki: 0
+    new_scenarios: 0
+    new_meta_concepts: 0
+    new_compose_concepts: 0
+    new_entities: 0
+    new_relations: 0
+
+  # === 手动复审结果 ===
+  manual:
+    new_scenarios: 0
+    new_concepts: 0
+    new_entities: 0
+    new_relations: 0
+    dead_links: 0
+
+    observations:
+      - type: "实体候选 (🔵 建议)"
+        severity: low
+        detail: "lark-cli 作为飞书卡片发卡 CLI 工具，在 meta-concepts.yaml → feishu-card-cli-analysis 的 tools 字段中被引用，但未在 meta/entities/ 中注册为独立实体。可考虑作为 feishu-card-cli 的子实体或独立实体添加。"
+        action: "可选：在 entities/feishu.yaml 中添加 lark-cli 实体条目"
+
+      - type: "YAML 头部计数陈旧 (🔵 建议)"
+        severity: trivial
+        detail: "meta-concepts.yaml 头部声称 37 条目 → 实际计数 36；compose-concepts.yaml 头部声称 23 条目 → 实际计数 22。YAML 头部版本/计数未与最近变更保持同步。"
+        action: "下次修改这两个文件时顺手更新头部版本号和计数"
+
+  # === 综合状态 ===
+  summary: |
+    连续第四天全绿零发现，知识库元模型与 wiki/ 完全一致，稳态运行。
+
+    自动脚本：五维全零（死链/新实体/新概念/新场景/新关系）
+    手动复审：确认脚本结果，额外发现 2 条 🔵 建议级观察（lark-cli 实体候选、YAML 头部计数陈旧）
+
+    知识库指标（不变）：74 wiki 页面, 36 原子概念, 22 组合概念, 135 实体, 25 场景
+    本周变动：无新摄入/无新页面/无场景变化
