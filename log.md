@@ -1,3 +1,14 @@
+## [2026-11-11] audit | 每日知识审计 — 0 严重, 39 警告, 175 建议
+
+- 脚本: wiki-audit.py (standalone), 74 wiki 页面, 36+22 概念, 135 实体, 25 场景
+- 🔴 死链 15 → 分诊后 0: 全部为已知误报 ([[wikilinks]], [[笔记名]], [[note]], [[项目A]] on Obsidian doc pages)
+- 🟡 场景阶段条目不足 33: 15 个场景的某些 phase 只有 1 条目 (需 ≥2)
+- 🟡 超大页面 6: youngor-e3-* 和 e3-ai-workbench-* 系列 (250–1007 行)
+- 🔵 meta→wiki 欠缺 144: 91 实体 + 53 概念 (预期行为)
+- 🔵 wiki→meta 欠缺 31: 主要为 Hermes/交付中心/认知闭环领域页面 (预期行为)
+- ✅ 正面: frontmatter 100%, 无孤立页面, IPO 100%, decomposition 100%, 无源文件漂移
+- 报告: meta/_pending/audit-20261111.md
+
 ## [2026-11-10] audit | 每日知识审计 — 0 严重 (15误报已分诊), 33 警告, 175 建议
 
 - wiki-audit.py: 74 wiki 页面, 36 原子概念 + 22 组合概念, 135 实体, 25 场景
