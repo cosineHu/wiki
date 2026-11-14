@@ -1,3 +1,13 @@
+## [2026-11-14] audit | 每日知识审计 — 0 严重 (15误报已分诊), 33 警告, 175 建议
+
+- 脚本: wiki-audit.py (standalone), 74 wiki 页面, 36+22 概念, 135 实体, 25 场景
+- 🔴 死链 15 → 分诊后 0: 全部为已知误报 ([[wikilinks]], [[笔记名]], [[note]], [[项目A]] on Obsidian doc pages) — 与前两日完全一致
+- 🟡 场景阶段条目不足 33: 19 个场景的部分阶段仅 1 条目 — 与前两日一致, 无新增/无变化
+- 🔵 meta→wiki 欠缺 144: 91 实体 + 53 概念 (预期行为, 无变化)
+- 🔵 wiki→meta 欠缺 31: 主要为 Hermes/交付中心/认知闭环领域页面 (预期行为, 无变化)
+- ✅ 正面: frontmatter 100%, 0 孤立, IPO 100%, decomposition 100%, 场景 phase≥2 25/25, 0 源文件漂移, 0 低置信度, 0 争议
+- 📄 报告: meta/_pending/audit-20261114.md
+
 ## [2026-11-13] audit | 每日知识审计 — 0 严重 (15误报已分诊), 33 警告, 175 建议
 
 - 脚本: wiki-audit.py (standalone) + reverse-check.py, 74 wiki 页面, 36+22 概念, 135 实体, 25 场景
