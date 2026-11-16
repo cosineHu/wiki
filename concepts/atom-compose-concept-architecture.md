@@ -1,7 +1,7 @@
 ---
 title: 原子-组合概念双层架构
 created: 2026-06-08
-updated: 2026-06-08
+updated: 2026-11-16
 type: concept
 tags: [architecture, knowledge-base, llm]
 sources: [raw/articles/scenario-driven-cognitive-loop-2026.md]
@@ -83,6 +83,7 @@ decomposition：
 
 - [[scenario-driven-cognitive-loop]] — 原子-组合架构是认知闭环概念层的核心设计
 - [[ipo-closed-loop]] — IPO 闭环是原子概念的建模方式
+- [[cognitive-closed-loop]] — 认知闭环操作系统是原子-组合架构的上层理论框架
 - [[llm-wiki]] — LLM Wiki 的概念层可以升级为原子-组合双层架构
 - [[hermes-skills-system]] — Hermes 技能的原子-组合模式与本架构一致
 

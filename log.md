@@ -1,3 +1,13 @@
+## [2026-11-16] evolve | 每周知识再进化 — 无矛盾 0 缺口，交叉链接修复 3 处
+
+- 脚本: evolve-analysis.py, 74 wiki 页面, 36+22 概念, 135 实体, 25 场景
+- 🔄 认知闭环集群交叉链接修复: atom-compose-concept-architecture / ipo-closed-loop / yaml-reverse-validation 均新增 → cognitive-closed-loop 链接
+- 🔍 矛盾检测: 0 处（所有页面置信度 high，无 contested 标记）
+- 📊 置信度: 全 high，无需提升
+- 🕳️ 缺口: 34 原子概念 + 19 组合概念无独立 wiki 页面（预期行为 — 方法类概念已在 YAML 中建模，创建页面会冗余）
+- 📋 场景覆盖: 0 新增（过去 7 天仅 audit/check 提交，无新知识摄入）
+- 📄 报告: meta/_pending/merge-20261116.md, gaps-20261116.md, new-scenarios-20261116.md
+
 ## [2026-11-16] lint | 每日知识审计 — 0 严重 · 33 警告 · 175 建议
 
 - 脚本: wiki-audit.py, 74 wiki 页面, 36+22 概念, 135 实体, 25 场景

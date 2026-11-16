@@ -1,7 +1,7 @@
 ---
 title: IPO 闭环
 created: 2026-06-08
-updated: 2026-06-08
+updated: 2026-11-16
 type: concept
 tags: [architecture, knowledge-base, llm]
 sources: [raw/articles/scenario-driven-cognitive-loop-2026.md]
@@ -92,6 +92,7 @@ IPO 提供了验证标准：给定正确的输入，经过规定的处理步骤�
 
 - [[scenario-driven-cognitive-loop]] — IPO 闭环是认知闭环三层架构的贯穿机制
 - [[atom-compose-concept-architecture]] — 原子概念通过 IPO 建模，组合概念通过 decomposition 编排 IPO
+- [[cognitive-closed-loop]] — 认知闭环操作系统是 IPO 闭环的上层框架
 - [[yaml-reverse-validation]] — YAML 反向校验会检查 IPO 的完整性和有效性
 - [[hermes-skills-system]] — Hermes 技能的输入输出定义与 IPO 理念一致
 

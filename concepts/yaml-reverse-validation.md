@@ -1,7 +1,7 @@
 ---
 title: YAML 反向校验
 created: 2026-06-08
-updated: 2026-06-08
+updated: 2026-11-16
 type: concept
 tags: [knowledge-base, llm, architecture]
 sources: [raw/articles/scenario-driven-cognitive-loop-2026.md]
@@ -130,6 +130,7 @@ dead_links:
 - [[scenario-driven-cognitive-loop]] — YAML 反向校验是认知闭环的自我迭代机制
 - [[ipo-closed-loop]] — 反向校验会检查 IPO 的完整性和有效性
 - [[atom-compose-concept-architecture]] — 反向校验会发现新的原子/组合概念
+- [[cognitive-closed-loop]] — 认知闭环操作系统是 YAML 反向校验的上层理论框架
 - [[llm-wiki]] — LLM Wiki 的 lint 功能是反向校验的前身
 
 ## IPO 建模
